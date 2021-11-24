@@ -1,0 +1,15 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "732cb098-695e-4941-b8f8-9881d5ec4955-12",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/732cb098-695e-4941-b8f8-9881d5ec4955-12",
+  "name" : "IntersectionUSCoreProviderRoleNuccAndPractitionerRoleVS",
+  "title" : "Intersection of US Core Provider Role (NUCC) And PractitionerRole Code",
+  "status" : "active",
+  "date" : "2021-11-24T13:09:15-05:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }]
+}

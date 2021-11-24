@@ -1,0 +1,12 @@
+{
+  "url": "http://hl7.org/fhir/us/national-healthcare-directory/ImplementationGuide/hl7.fhir.us.davinci-pdex-NatlDir",
+  "name": "ONCFASTNationalCareCoordinationDirectory",
+  "package-id": "hl7.fhir.us.davinci-pdex-NatlDir",
+  "ig-ver": "0.0.1",
+  "date": "Wed, 24 Nov, 2021 13:08:13 -0500",
+  "errs": 32,
+  "warnings": 54,
+  "hints": 0,
+  "version": "4.0.1",
+  "tool": "4.6.0 (3)"
+}

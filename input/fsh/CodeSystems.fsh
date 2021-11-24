@@ -1,3 +1,9 @@
+CodeSystem: IgTypeCS
+Title: "IG Type"
+Description: "IG Type"
+* #FHIR	"FHIR"
+* #direct	"Direct"
+
 CodeSystem: AcceptingPatientsCS
 Title: "Accepting Patients Codes"
 Description: "Codes to identify if the practice is accepting new patients"

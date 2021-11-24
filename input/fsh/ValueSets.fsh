@@ -1,4 +1,9 @@
 
+ValueSet: IgTypeVS
+Title: "IG Type"
+Description: "Codes to identify IG Type"
+* codes from system IgTypeCS
+
 ValueSet: AcceptingPatientsVS
 Title: "Accepting Patients Codes"
 Description: "Codes to identify if the practice is accepting new patients"

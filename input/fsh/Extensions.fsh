@@ -1,4 +1,26 @@
 
+Extension: IGsSupported
+Id: igsSupported
+Title: "IGs Supported"
+Description: "IGs Supported document the different types of IGs supported by the Endpoint."
+* value[x] 0..0
+* extension contains
+   type  1..1 MS and
+   formatCode 0..1 MS  and
+   versionCode 0..* MS 
+* extension[type].value[x] only CodeableConcept
+* extension[type] ^short = "IG Type"
+* extension[type].value[x] 1..1
+* extension[type].value[x] from IgTypeVS (required)
+* extension[formatCode].value[x] only CodeableConcept
+* extension[formatCode].value[x] 1..1
+* extension[formatCode] ^short = "IG Format Code"
+* extension[formatCode].value[x] from $IgFormatCodeVS (required)
+* extension[versionCode].value[x] only string
+* extension[versionCode].value[x] 1..1
+* extension[versionCode] ^short = "IG Version Code"
+
+
 Extension: OrgAliasPeriod
 Id: org-alias-period
 Title: "NatlDir Org Alias Period"
