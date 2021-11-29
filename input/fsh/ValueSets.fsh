@@ -4,6 +4,16 @@ Title: "IG Type"
 Description: "Codes to identify IG Type"
 * codes from system IgTypeCS
 
+ValueSet: EndpointTypeVS
+Title: "Endpoint Type"
+Description: "Codes to identify Endpoint Type"
+* codes from system EndpointTypeCS
+
+ValueSet: TrustFrameworkTypeVS
+Title: "Trust Framework Type"
+Description: "Trust Framework Type"
+* codes from system TrustFrameworkTypeCS
+
 ValueSet: AcceptingPatientsVS
 Title: "Accepting Patients Codes"
 Description: "Codes to identify if the practice is accepting new patients"
@@ -23,7 +33,6 @@ ValueSet: VirtualModalitiesVS
 Title: "Virtual Modalities"
 Description: "Codes for virtual service delivery modalities ."
 * codes from system VirtualModalitiesCS
-
 
 ValueSet: SpecialtiesVS
 Title: "Specialties"

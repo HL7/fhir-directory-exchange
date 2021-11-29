@@ -10,7 +10,7 @@
   "name": "ONCFASTNationalCareCoordinationDirectory",
   "title": "National Care Coordination Directory",
   "status": "active",
-  "date": "2021-11-24T13:08:13-05:00",
+  "date": "2021-11-29T12:19:39-05:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -505,6 +505,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/associatedServers"
+        },
+        "name": "Associated Servers",
+        "description": "Associated Servers",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/careteam-alias"
         },
         "name": "NatlDir Careteam Alias",
@@ -589,10 +603,38 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/dynamicRegistration"
+        },
+        "name": "Dynamic Registration",
+        "description": "Dynamic Registration",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/endpoint-reference"
         },
         "name": "NatlDir Practitioner Endpoint Reference",
         "description": "The technical details of an endpoint that can be used for electronic services",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/endpointType"
+        },
+        "name": "Endpoint Type",
+        "description": "Type of Endpoint",
         "exampleBoolean": false
       },
       {
@@ -799,6 +841,48 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/secureEndpoint"
+        },
+        "name": "Secure Endpoint",
+        "description": "Is the Endpoint Secured",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/secureExchangeArtifacts"
+        },
+        "name": "Secure Exchange Artifacts",
+        "description": "Secure Exchange Artifacts",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/trustFramework"
+        },
+        "name": "Trust Framework",
+        "description": "Trust Framework",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/usage-restriction"
         },
         "name": "NatlDir Usage Restriction",
@@ -887,6 +971,20 @@
         },
         "name": "Endpoint Payload Types",
         "description": "Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/EndpointTypeVS"
+        },
+        "name": "Endpoint Type",
+        "description": "Codes to identify Endpoint Type",
         "exampleBoolean": false
       },
       {
@@ -1163,6 +1261,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/TrustFrameworkTypeVS"
+        },
+        "name": "Trust Framework Type",
+        "description": "Trust Framework Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/VirtualModalitiesVS"
         },
         "name": "Virtual Modalities",
@@ -1237,6 +1349,20 @@
         },
         "name": "Endpoint Payload Types",
         "description": "Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/EndpointTypeCS"
+        },
+        "name": "IG Type",
+        "description": "IG Type",
         "exampleBoolean": false
       },
       {
@@ -1363,6 +1489,20 @@
         },
         "name": "Qualification Status",
         "description": "The state indicating if a qualification is currently valid.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/TrustFrameworkTypeCS"
+        },
+        "name": "Trust FrameworkType",
+        "description": "Trust Framework Type",
         "exampleBoolean": false
       },
       {

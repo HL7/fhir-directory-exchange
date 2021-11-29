@@ -20,6 +20,94 @@ Description: "IGs Supported document the different types of IGs supported by the
 * extension[versionCode].value[x] 1..1
 * extension[versionCode] ^short = "IG Version Code"
 
+Extension: EndpointType
+Id: endpointType
+Title: "Endpoint Type"
+Description: "Type of Endpoint"
+* extension contains
+   type  1..1 MS 
+* extension[type].value[x] only CodeableConcept
+* extension[type] ^short = "IG Type"
+* extension[type].value[x] 1..1
+* extension[type].value[x] from EndpointTypeVS (required)
+
+
+Extension: SecureExchangeArtifacts
+Id: secureExchangeArtifacts
+Title: "Secure Exchange Artifacts"
+Description: "Secure Exchange Artifacts"
+* extension contains
+   type  1..1 MS and
+   certificate 1..1 MS and
+   expirationDate 1..1
+* extension[type].value[x] only string
+* extension[type] ^short = "Secure Artifact Type"
+* extension[type].value[x] 1..1
+* extension[certificate].value[x] only string
+* extension[certificate] ^short = "Certificate"
+* extension[certificate].value[x] 1..1
+* extension[expirationDate].value[x] only CodeableConcept
+* extension[expirationDate] ^short = "Expiration Date"
+* extension[expirationDate].value[x] 1..1
+
+Extension: TrustFramework
+Id: trustFramework
+Title: "Trust Framework"
+Description: "Trust Framework"
+* extension contains
+   type  1..1 MS and
+   qualifier 1..1 MS and
+   signedArtifact 1..1 and
+   publicCertificate 1..1 
+* extension[type].value[x] only CodeableConcept
+* extension[type] ^short = "Trust Framework Type"
+* extension[type].value[x] from TrustFrameworkTypeVS (required)
+* extension[qualifier].value[x] only string
+* extension[qualifier] ^short = "Qualifier"
+* extension[qualifier].value[x] 1..1
+* extension[signedArtifact].value[x] only string
+* extension[signedArtifact] ^short = "Expiration Date"
+* extension[signedArtifact].value[x] 1..1
+* extension[publicCertificate].value[x] only string
+* extension[publicCertificate] ^short = "PublicCertificate"
+* extension[publicCertificate].value[x] 1..1
+
+Extension: DynamicRegistration
+Id: dynamicRegistration
+Title: "Dynamic Registration"
+Description: "Dynamic Registration"
+* extension contains
+   version  1..1 MS and
+   binary 1..1 MS 
+* extension[version].value[x] only string
+* extension[version] ^short = "Dynamic Registration Version"
+* extension[version].value[x] 1..1
+* extension[binary].value[x] only string
+* extension[binary] ^short = "Binary"
+* extension[binary].value[x] 1..1
+
+Extension: AssociatedServers
+Id: associatedServers
+Title: "Associated Servers"
+Description: "Associated Servers"
+* extension contains
+   type  1..1 MS and
+   URL 1..1 MS 
+* extension[type].value[x] only string
+* extension[type] ^short = "Dynamic Registration Version"
+* extension[type].value[x] 1..1
+* extension[URL].value[x] only string
+* extension[URL] ^short = "Binary"
+* extension[URL].value[x] 1..1
+
+Extension: SecureEndpoint
+Id: secureEndpoint
+Title: "Secure Endpoint"
+Description: "Is the Endpoint Secured"
+* value[x] 1..1 
+* value[x] only string
+* value[x] from $yesNoVS (required)
+
 
 Extension: OrgAliasPeriod
 Id: org-alias-period

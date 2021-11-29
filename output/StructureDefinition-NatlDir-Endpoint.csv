@@ -54,6 +54,34 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Endpoint Usecase","EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Endpoint.extension","ig-supported","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/igsSupported]]} {[]}
+","IGs Supported","IGs Supported document the different types of IGs supported by the Endpoint.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Endpoint.extension","endpoint-type","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/endpointType]]} {[]}
+","Endpoint Type","Type of Endpoint","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Endpoint.extension","secure-exchange-artifacts","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/secureExchangeArtifacts]]} {[]}
+","Secure Exchange Artifacts","Secure Exchange Artifacts","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Endpoint.extension","trust-framework","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/trustFramework]]} {[]}
+","Trust Framework","Trust Framework","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Endpoint.extension","dynamic-registration","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/dynamicRegistration]]} {[]}
+","Dynamic Registration","Dynamic Registration","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Endpoint.extension","associated-servers","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/associatedServers]]} {[]}
+","Associated Servers","Associated Servers","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Endpoint.extension","secured-endpoint","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/secureEndpoint]]} {[]}
+","Secure Endpoint","Is the Endpoint Secured","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Endpoint.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.

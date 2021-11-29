@@ -4,6 +4,24 @@ Description: "IG Type"
 * #FHIR	"FHIR"
 * #direct	"Direct"
 
+CodeSystem: EndpointTypeCS
+Title: "IG Type"
+Description: "IG Type"
+* #FHIR	"FHIR Server"
+* #OpEndpoint	"Operation Endpoint"
+* #CDS	"CDS Hooks"
+
+CodeSystem: TrustFrameworkTypeCS
+Title: "Trust FrameworkType"
+Description: "Trust Framework Type"
+* #DirectTrust	"Direct Trust"
+* #CareQuality	"Carequality"
+* #Commonwell	"Commonwell"
+* #TEFCA	"TEFCA"
+* #PayerToPayer	"Payer to Payer Trust Network"
+* #Exchange	"Exchange Required by Federal Regulations"
+* #PCDH "Patient Centered Data Home"
+
 CodeSystem: AcceptingPatientsCS
 Title: "Accepting Patients Codes"
 Description: "Codes to identify if the practice is accepting new patients"

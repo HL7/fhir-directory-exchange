@@ -201,7 +201,14 @@ Title:          "National Directory Exchange Endpoint"
 Description:    "The technical details of an endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging."
 * meta.lastUpdated 1..1
 * extension contains 
-    EndpointUsecase named endpoint-usecase 0..* MS
+    EndpointUsecase named endpoint-usecase 0..* MS and
+    IGsSupported named ig-supported 0..* MS and
+    EndpointType named endpoint-type 0..* MS and
+    SecureExchangeArtifacts named secure-exchange-artifacts 0..* MS and
+    TrustFramework named trust-framework 0..* MS and 
+    DynamicRegistration named dynamic-registration 0..* MS and
+    AssociatedServers named associated-servers 0..* and
+    SecureEndpoint named secured-endpoint 0..1
 * extension[endpoint-usecase] ^short = "Endpoint Usecase"
 * status 1..1 MS
 * status = #active (exactly) 

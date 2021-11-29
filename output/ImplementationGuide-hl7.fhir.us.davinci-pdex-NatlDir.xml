@@ -11,7 +11,7 @@
   <name value="ONCFASTNationalCareCoordinationDirectory"/>
   <title value="National Care Coordination Directory"/>
   <status value="active"/>
-  <date value="2021-11-24T13:08:13-05:00"/>
+  <date value="2021-11-29T12:19:39-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -348,6 +348,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/associatedServers"/>
+      </reference>
+      <name value="Associated Servers"/>
+      <description value="Associated Servers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/careteam-alias"/>
       </reference>
       <name value="NatlDir Careteam Alias"/>
@@ -414,10 +425,32 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/dynamicRegistration"/>
+      </reference>
+      <name value="Dynamic Registration"/>
+      <description value="Dynamic Registration"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/endpoint-reference"/>
       </reference>
       <name value="NatlDir Practitioner Endpoint Reference"/>
       <description value="The technical details of an endpoint that can be used for electronic services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/endpointType"/>
+      </reference>
+      <name value="Endpoint Type"/>
+      <description value="Type of Endpoint"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -579,6 +612,39 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/secureEndpoint"/>
+      </reference>
+      <name value="Secure Endpoint"/>
+      <description value="Is the Endpoint Secured"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/secureExchangeArtifacts"/>
+      </reference>
+      <name value="Secure Exchange Artifacts"/>
+      <description value="Secure Exchange Artifacts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/trustFramework"/>
+      </reference>
+      <name value="Trust Framework"/>
+      <description value="Trust Framework"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/usage-restriction"/>
       </reference>
       <name value="NatlDir Usage Restriction"/>
@@ -649,6 +715,17 @@
       </reference>
       <name value="Endpoint Payload Types"/>
       <description value="Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/EndpointTypeVS"/>
+      </reference>
+      <name value="Endpoint Type"/>
+      <description value="Codes to identify Endpoint Type"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -865,6 +942,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/TrustFrameworkTypeVS"/>
+      </reference>
+      <name value="Trust Framework Type"/>
+      <description value="Trust Framework Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/VirtualModalitiesVS"/>
       </reference>
       <name value="Virtual Modalities"/>
@@ -924,6 +1012,17 @@
       </reference>
       <name value="Endpoint Payload Types"/>
       <description value="Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/EndpointTypeCS"/>
+      </reference>
+      <name value="IG Type"/>
+      <description value="IG Type"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1023,6 +1122,17 @@
       </reference>
       <name value="Qualification Status"/>
       <description value="The state indicating if a qualification is currently valid."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/TrustFrameworkTypeCS"/>
+      </reference>
+      <name value="Trust FrameworkType"/>
+      <description value="Trust Framework Type"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
