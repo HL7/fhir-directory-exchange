@@ -824,7 +824,7 @@
       "url": "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/secureEndpoint",
       "title": "Secure Endpoint",
       "types": [
-        "string"
+        "boolean"
       ]
     },
     {
@@ -832,8 +832,8 @@
       "title": "Secure Exchange Artifacts",
       "types": [
         "string",
-        "string",
-        "CodeableConcept",
+        "base64Binary",
+        "dateTime",
         "base64Binary",
         "boolean",
         "canonical",
@@ -892,8 +892,8 @@
       "types": [
         "CodeableConcept",
         "string",
-        "string",
-        "string",
+        "base64Binary",
+        "base64Binary",
         "base64Binary",
         "boolean",
         "canonical",

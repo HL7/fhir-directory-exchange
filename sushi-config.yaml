@@ -10,7 +10,7 @@
 # │  supported properties, see:                                                                    │
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.us.davinci-pdex-NatlDir
+id: hl7.fhir.us.onc-fast-NatlDir
 canonical: http://hl7.org/fhir/us/national-healthcare-directory
 version: 0.0.1
 name: ONC FAST National Care Coordination Directory
@@ -45,6 +45,7 @@ menu:
     Implementation                              :         implementation.html
     Representing Provider Directories in Plan Net:          implementation.html#Representing
   FHIR Artifacts:
+    Profiles          : artifacts.html#1
     Extensions          : artifacts.html#3
     Search Parameters   : artifacts.html#2
     Terminology         : artifacts.html#5

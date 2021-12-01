@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ONCFASTNationalCareCoordinationDirectory"];
   fhir:ImplementationGuide.title [ fhir:value "National Care Coordination Directory"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-11-29T12:19:39-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-11-29T15:16:50-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;

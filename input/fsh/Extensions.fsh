@@ -43,10 +43,10 @@ Description: "Secure Exchange Artifacts"
 * extension[type].value[x] only string
 * extension[type] ^short = "Secure Artifact Type"
 * extension[type].value[x] 1..1
-* extension[certificate].value[x] only string
+* extension[certificate].value[x] only base64Binary
 * extension[certificate] ^short = "Certificate"
 * extension[certificate].value[x] 1..1
-* extension[expirationDate].value[x] only CodeableConcept
+* extension[expirationDate].value[x] only dateTime
 * extension[expirationDate] ^short = "Expiration Date"
 * extension[expirationDate].value[x] 1..1
 
@@ -65,10 +65,10 @@ Description: "Trust Framework"
 * extension[qualifier].value[x] only string
 * extension[qualifier] ^short = "Qualifier"
 * extension[qualifier].value[x] 1..1
-* extension[signedArtifact].value[x] only string
+* extension[signedArtifact].value[x] only base64Binary
 * extension[signedArtifact] ^short = "Expiration Date"
 * extension[signedArtifact].value[x] 1..1
-* extension[publicCertificate].value[x] only string
+* extension[publicCertificate].value[x] only base64Binary
 * extension[publicCertificate] ^short = "PublicCertificate"
 * extension[publicCertificate].value[x] 1..1
 
@@ -105,8 +105,7 @@ Id: secureEndpoint
 Title: "Secure Endpoint"
 Description: "Is the Endpoint Secured"
 * value[x] 1..1 
-* value[x] only string
-* value[x] from $yesNoVS (required)
+* value[x] only boolean
 
 
 Extension: OrgAliasPeriod
