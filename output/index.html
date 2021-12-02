@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.US.DAVINCI-PDEX-NATLDIR\Home - FHIR v4.0.1</title>
+    <title>HL7.FHIR.US.ONC-FAST-NATLDIR\Home - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -59,9 +59,6 @@
           <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
         </div>
 
-        <div id="project-nav">
-          <a no-external="true" id="project-logo" href="http://hl7.org/about/davinci"><img src="assets/images/da-vinci_logo.jpg" alt="Visit the Da Vinci website" height="55"/> </a>
-        </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">National Care Coordination Directory</span><br/>0.0.1 - draft</p>
@@ -108,6 +105,9 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Profiles</a>
+      </li>
       <li>
         <a href="artifacts.html#3">Extensions</a>
       </li>
@@ -206,7 +206,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4>Relation to US Core and other IGs</h4>
 
-<p><a name="l387">​</a>This implementation guide was written for a US audience and profiles resources from <a href="http://hl7.org/fhir/us/core/STU3.1/index.html">US Core STU 3.1</a>, where available (Practitioner, Organization and Location), and otherwise from R4 (OrganizationAffiliation, PractitionerRole, HealthCareService, Endpoint).  The PractitionerRole profile from US Core was not used because it is over-constrained for use in a Provider Directory based on Payer information.  The Network profile is based on USCore Organization, since there was no contradiction between the USCore profile and the NatlDir requirements.  However, the NPI and CLIA identifier types, which are Must-Support, are clearly intended for provider organizations only and are not expected to be populated for other organization types. Alignment with VhDir is maintained by adapting VhDir content, where possible.</p>
+<p><a name="l386">​</a>This implementation guide was written for a US audience and profiles resources from <a href="http://hl7.org/fhir/us/core/STU3.1/index.html">US Core STU 3.1</a>, where available (Practitioner, Organization and Location), and otherwise from R4 (OrganizationAffiliation, PractitionerRole, HealthCareService, Endpoint).  The PractitionerRole profile from US Core was not used because it is over-constrained for use in a Provider Directory based on Payer information.  The Network profile is based on USCore Organization, since there was no contradiction between the USCore profile and the NatlDir requirements.  However, the NPI and CLIA identifier types, which are Must-Support, are clearly intended for provider organizations only and are not expected to be populated for other organization types. Alignment with VhDir is maintained by adapting VhDir content, where possible.</p>
 
 <h4>Disclaimers and Assumptions</h4>
 <ul>
@@ -310,7 +310,7 @@ This IG addresses two actors:</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.davinci-pdex-NatlDir#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 29, 2021 15:16-0500">2021-11-29</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.onc-fast-NatlDir#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 2, 2021 09:56-0500">2021-12-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

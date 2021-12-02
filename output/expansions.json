@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "1674d6d9-ff89-49e1-ac7c-e2ecaab327bc",
+  "id" : "fce1692f-caee-434b-b2a1-035b8fbd36aa",
   "meta" : {
-    "lastUpdated" : "2021-11-29T15:16:50.825-05:00"
+    "lastUpdated" : "2021-12-02T09:56:35.359-05:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "AcceptingPatientsVS",
       "title" : "Accepting Patients Codes",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -40,8 +40,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8a852391-c31b-4a15-bcdf-373beebf52fe",
-        "timestamp" : "2021-11-29T15:19:35-05:00",
+        "identifier" : "urn:uuid:9f4a5a28-5dbe-4b47-b094-510772da3669",
+        "timestamp" : "2021-12-02T09:58:18-05:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -88,7 +88,7 @@
       "name" : "AccessibilityVS",
       "title" : "Accessibility",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -109,8 +109,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:acbca7bd-c264-41b3-a171-fad2d400bde4",
-        "timestamp" : "2021-11-29T15:19:36-05:00",
+        "identifier" : "urn:uuid:233c7924-e52d-4d16-bab3-bd007dc2a6a0",
+        "timestamp" : "2021-12-02T09:58:18-05:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -172,7 +172,7 @@
       "name" : "DeliveryMethodVS",
       "title" : "Delivery Methods",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -193,8 +193,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:aeef1921-1693-4098-a20b-673dfba90ff7",
-        "timestamp" : "2021-11-29T15:19:36-05:00",
+        "identifier" : "urn:uuid:42fd4ea3-b7af-4187-adb1-078047ffdc08",
+        "timestamp" : "2021-12-02T09:58:18-05:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -231,7 +231,7 @@
       "name" : "EndpointConnectionTypeVS",
       "title" : "Endpoint Connection Types",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -252,8 +252,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fea4cdc1-4574-42c8-9635-95b5aa4082de",
-        "timestamp" : "2021-11-29T15:19:36-05:00",
+        "identifier" : "urn:uuid:78676aa1-e8b2-40b6-b502-82db5f041e7d",
+        "timestamp" : "2021-12-02T09:58:18-05:00",
         "total" : 16,
         "parameter" : [{
           "name" : "excludeNested",
@@ -364,7 +364,7 @@
       "name" : "EndpointPayloadTypeVS",
       "title" : "Endpoint Payload Types",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -385,8 +385,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6addb179-8470-40c9-82cc-be0d431bf577",
-        "timestamp" : "2021-11-29T15:19:37-05:00",
+        "identifier" : "urn:uuid:3f7958b9-14eb-43be-9cf4-4c041edfe1f3",
+        "timestamp" : "2021-12-02T09:58:18-05:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -418,7 +418,7 @@
       "name" : "EndpointTypeVS",
       "title" : "Endpoint Type",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -439,8 +439,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0d19dbfe-f622-49cf-99f9-527a84eccd82",
-        "timestamp" : "2021-11-29T15:19:37-05:00",
+        "identifier" : "urn:uuid:64abe3da-4a3e-4f55-91bf-ef699f154064",
+        "timestamp" : "2021-12-02T09:58:18-05:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -482,7 +482,7 @@
       "name" : "EndpointUsecaseVS",
       "title" : "Endpoint Usecases",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -503,8 +503,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b7805cf2-d43f-4759-aeb3-05f4316e12c0",
-        "timestamp" : "2021-11-29T15:19:37-05:00",
+        "identifier" : "urn:uuid:06a0989d-3f22-4588-8b5a-658e906f0a18",
+        "timestamp" : "2021-12-02T09:58:19-05:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
@@ -576,7 +576,7 @@
       "name" : "HealthcareServiceCategoryVS",
       "title" : "Healthcare Service Category",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -597,8 +597,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:85e3b2f7-cc3d-4bf8-bf9a-507e84220ab6",
-        "timestamp" : "2021-11-29T15:19:37-05:00",
+        "identifier" : "urn:uuid:aba1249a-5a3f-4aa3-9902-d32295348b8d",
+        "timestamp" : "2021-12-02T09:58:19-05:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -700,7 +700,7 @@
       "name" : "IgTypeVS",
       "title" : "IG Type",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -721,8 +721,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5923900f-d14d-41e9-b407-ee203cd3b717",
-        "timestamp" : "2021-11-29T15:19:38-05:00",
+        "identifier" : "urn:uuid:91f8d24b-4449-44ae-9602-21f7cf081745",
+        "timestamp" : "2021-12-02T09:58:19-05:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -6803,7 +6803,7 @@
       "name" : "IndividualSpecialtyAndDegreeLicenseCertificateVS",
       "title" : "Individual Specialties, Degrees, Licenses, and Certificates",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -6824,8 +6824,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bb6b1220-4432-4722-abec-31b73569f244",
-        "timestamp" : "2021-11-29T15:19:39-05:00",
+        "identifier" : "urn:uuid:4cffbb22-5f7c-4b64-bd4d-92046f8e1c42",
+        "timestamp" : "2021-12-02T09:58:19-05:00",
         "total" : 730,
         "parameter" : [{
           "name" : "excludeNested",
@@ -11852,7 +11852,7 @@
       "name" : "InsurancePlanTypeVS",
       "title" : "Insurance Plan Type",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -11873,8 +11873,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cea9452d-bfa3-4d83-ad73-b3de3cf8ef48",
-        "timestamp" : "2021-11-29T15:19:39-05:00",
+        "identifier" : "urn:uuid:6b432b43-e488-449b-b8a2-06a8593c7867",
+        "timestamp" : "2021-12-02T09:58:20-05:00",
         "total" : 8,
         "parameter" : [{
           "name" : "excludeNested",
@@ -11941,7 +11941,7 @@
       "name" : "InsuranceProductTypeVS",
       "title" : "Insurance Product Type",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -11962,8 +11962,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c85e3fc6-6cc6-4725-9ac2-a9a53819e99f",
-        "timestamp" : "2021-11-29T15:19:39-05:00",
+        "identifier" : "urn:uuid:60714879-2dac-49de-9a49-77953450ee49",
+        "timestamp" : "2021-12-02T09:58:20-05:00",
         "total" : 22,
         "parameter" : [{
           "name" : "excludeNested",
@@ -12100,7 +12100,7 @@
       "name" : "LanguageProficiencyVS",
       "title" : "Language Proficiency",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -12121,8 +12121,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7754eac3-71fd-4b1a-888b-679f1079f4cb",
-        "timestamp" : "2021-11-29T15:19:39-05:00",
+        "identifier" : "urn:uuid:24c65734-2cc0-460c-be9f-4d6263ac84da",
+        "timestamp" : "2021-12-02T09:58:20-05:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -12179,7 +12179,7 @@
       "name" : "MinEndpointConnectionTypeVS",
       "title" : "Minimum Endpoint Connection Types",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -12200,8 +12200,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8e43fbb8-a248-48a0-81d5-8cb8059e51cf",
-        "timestamp" : "2021-11-29T15:19:39-05:00",
+        "identifier" : "urn:uuid:ab4cd003-889b-4b83-a5bb-a56680cff668",
+        "timestamp" : "2021-12-02T09:58:20-05:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -12257,7 +12257,7 @@
       "name" : "NetworkTypeVS",
       "title" : "Network Type",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -12278,8 +12278,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0ae901f0-91ee-4c45-a90f-7049ff96177e",
-        "timestamp" : "2021-11-29T15:19:40-05:00",
+        "identifier" : "urn:uuid:c36fb8d7-529d-488d-ba05-014626737dd5",
+        "timestamp" : "2021-12-02T09:58:20-05:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13963,7 +13963,7 @@
       "name" : "NonIndividualSpecialtyAndDegreeLicenseCertificateVS",
       "title" : "Non-Individual Specialties, Degrees, Licenses, and Certificates",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -13984,8 +13984,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6e57e304-9592-454e-b79a-227240c0106c",
-        "timestamp" : "2021-11-29T15:19:40-05:00",
+        "identifier" : "urn:uuid:8095c335-5ee9-457d-b3f5-2fa6332258b1",
+        "timestamp" : "2021-12-02T09:58:21-05:00",
         "total" : 242,
         "parameter" : [{
           "name" : "excludeNested",
@@ -15596,7 +15596,7 @@
       "name" : "OrgTypeVS",
       "title" : "Organization Type",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -15617,8 +15617,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b5b3e1c1-ccd9-499d-a7e9-44b52e5932ff",
-        "timestamp" : "2021-11-29T15:19:40-05:00",
+        "identifier" : "urn:uuid:47a2d73b-18ec-4f62-bc36-dd0c124b9940",
+        "timestamp" : "2021-12-02T09:58:21-05:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -15670,7 +15670,7 @@
       "name" : "OrganizationAffiliationRoleVS",
       "title" : "OrganizationAffiliation Roles",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -15691,8 +15691,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8346cdce-3bee-46ca-9918-fb1bb133ee18",
-        "timestamp" : "2021-11-29T15:19:40-05:00",
+        "identifier" : "urn:uuid:5508c42f-c97d-47d0-bc05-cfe3a1d2db3d",
+        "timestamp" : "2021-12-02T09:58:21-05:00",
         "total" : 24,
         "parameter" : [{
           "name" : "excludeNested",
@@ -15843,7 +15843,7 @@
       "name" : "PractitionerRoleVS",
       "title" : "PractitionerRole Code",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -15864,8 +15864,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b5aa7c52-bda6-486c-a2da-7bec9677d78e",
-        "timestamp" : "2021-11-29T15:19:41-05:00",
+        "identifier" : "urn:uuid:8d38020a-6e47-4ae9-b603-b0d106517ee9",
+        "timestamp" : "2021-12-02T09:58:21-05:00",
         "total" : 47,
         "parameter" : [{
           "name" : "excludeNested",
@@ -16131,7 +16131,7 @@
       "name" : "QualificationStatusVS",
       "title" : "Qualification Status",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -16152,8 +16152,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c6ec7a63-cf59-421d-8cc3-1042938b9e0d",
-        "timestamp" : "2021-11-29T15:19:41-05:00",
+        "identifier" : "urn:uuid:56e35523-ca4d-4be7-87aa-5b50573d5e72",
+        "timestamp" : "2021-12-02T09:58:21-05:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -16210,7 +16210,7 @@
       "name" : "SpecialtiesVS",
       "title" : "Specialties",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -16231,8 +16231,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6353fd20-996c-42f5-9a83-829915369d2d",
-        "timestamp" : "2021-11-29T15:19:41-05:00",
+        "identifier" : "urn:uuid:14dfb552-cd12-4bf6-a6ed-68b1394b4689",
+        "timestamp" : "2021-12-02T09:58:21-05:00",
         "total" : 850,
         "parameter" : [{
           "name" : "excludeNested",
@@ -22221,7 +22221,7 @@
       "name" : "SpecialtyAndDegreeLicenseCertificateVS",
       "title" : "Specialties, Degrees, Licenses, and Certificates",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -22242,8 +22242,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f4115e34-939b-4e6f-97a1-96b06dd4b6fd",
-        "timestamp" : "2021-11-29T15:19:42-05:00",
+        "identifier" : "urn:uuid:635709e2-b252-4d6c-bc7a-b8eaeb5f8cf1",
+        "timestamp" : "2021-12-02T09:58:21-05:00",
         "total" : 911,
         "parameter" : [{
           "name" : "excludeNested",
@@ -28545,7 +28545,7 @@
       "name" : "TrustFrameworkTypeVS",
       "title" : "Trust Framework Type",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -28566,8 +28566,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e1858b59-32c7-457d-963e-2d876a5e6e82",
-        "timestamp" : "2021-11-29T15:19:42-05:00",
+        "identifier" : "urn:uuid:dbfaa741-de7d-4ad0-8eaf-16f293c256e9",
+        "timestamp" : "2021-12-02T09:58:22-05:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -28629,7 +28629,7 @@
       "name" : "VirtualModalitiesVS",
       "title" : "Virtual Modalities",
       "status" : "active",
-      "date" : "2021-11-29T15:16:50-05:00",
+      "date" : "2021-12-02T09:56:35-05:00",
       "publisher" : "HL7 Patient Administration Working Group",
       "contact" : [{
         "name" : "HL7 Patient Administration Working Group",
@@ -28650,8 +28650,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8e68ff11-d297-4d63-81d6-413a189d55f5",
-        "timestamp" : "2021-11-29T15:19:42-05:00",
+        "identifier" : "urn:uuid:03a0a5e4-faf4-4404-8d82-86b17ed70ec5",
+        "timestamp" : "2021-12-02T09:58:22-05:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",

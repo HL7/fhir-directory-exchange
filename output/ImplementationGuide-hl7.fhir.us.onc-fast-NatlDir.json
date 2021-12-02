@@ -1,16 +1,16 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "hl7.fhir.us.davinci-pdex-NatlDir",
+  "id": "hl7.fhir.us.onc-fast-NatlDir",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ONCFASTNationalCareCoordinationDirectory</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/national-healthcare-directory/ImplementationGuide/hl7.fhir.us.davinci-pdex-NatlDir</pre><div><p>National Care Coordination Directory</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ONCFASTNationalCareCoordinationDirectory</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/national-healthcare-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir</pre><div><p>National Care Coordination Directory</p>\n</div></div>"
   },
-  "url": "http://hl7.org/fhir/us/national-healthcare-directory/ImplementationGuide/hl7.fhir.us.davinci-pdex-NatlDir",
+  "url": "http://hl7.org/fhir/us/national-healthcare-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir",
   "version": "0.0.1",
   "name": "ONCFASTNationalCareCoordinationDirectory",
   "title": "National Care Coordination Directory",
   "status": "active",
-  "date": "2021-11-29T15:16:50-05:00",
+  "date": "2021-12-02T09:56:35-05:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -38,7 +38,7 @@
       ]
     }
   ],
-  "packageId": "hl7.fhir.us.davinci-pdex-NatlDir",
+  "packageId": "hl7.fhir.us.onc-fast-NatlDir",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"

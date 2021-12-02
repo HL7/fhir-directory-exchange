@@ -476,9 +476,9 @@
     "name": "VirtualModalitiesCS"
   },
   {
-    "id": "hl7.fhir.us.davinci-pdex-NatlDir",
+    "id": "hl7.fhir.us.onc-fast-NatlDir",
     "type": "ImplementationGuide",
-    "url": "http://hl7.org/fhir/us/national-healthcare-directory/ImplementationGuide/hl7.fhir.us.davinci-pdex-NatlDir",
+    "url": "http://hl7.org/fhir/us/national-healthcare-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir",
     "version": "0.0.1",
     "name": "ONCFASTNationalCareCoordinationDirectory"
   },
