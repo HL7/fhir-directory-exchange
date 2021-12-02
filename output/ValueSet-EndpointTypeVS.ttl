@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "EndpointTypeVS"];
   fhir:ValueSet.title [ fhir:value "Endpoint Type"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-12-02T09:56:35-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-12-02T10:29:42-05:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;

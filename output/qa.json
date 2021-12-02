@@ -3,7 +3,7 @@
   "name": "ONCFASTNationalCareCoordinationDirectory",
   "package-id": "hl7.fhir.us.onc-fast-NatlDir",
   "ig-ver": "0.0.1",
-  "date": "Thu, 02 Dec, 2021 09:56:35 -0500",
+  "date": "Thu, 02 Dec, 2021 10:29:42 -0500",
   "errs": 32,
   "warnings": 44,
   "hints": 0,

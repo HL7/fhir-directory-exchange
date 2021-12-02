@@ -66,10 +66,10 @@ Description: "Trust Framework"
 * extension[qualifier] ^short = "Qualifier"
 * extension[qualifier].value[x] 1..1
 * extension[signedArtifact].value[x] only base64Binary
-* extension[signedArtifact] ^short = "Expiration Date"
+* extension[signedArtifact] ^short = "Signed Artifact"
 * extension[signedArtifact].value[x] 1..1
 * extension[publicCertificate].value[x] only base64Binary
-* extension[publicCertificate] ^short = "PublicCertificate"
+* extension[publicCertificate] ^short = "Public Certificate"
 * extension[publicCertificate].value[x] 1..1
 
 Extension: DynamicRegistration
