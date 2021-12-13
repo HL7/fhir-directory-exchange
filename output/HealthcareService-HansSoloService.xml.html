@@ -43,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.162"}
-    h3,h4,h5,h6{--heading-prefix:"5.162"}</style>
+    <style type="text/css">h2{--heading-prefix:"133.162"}
+    h3,h4,h5,h6{--heading-prefix:"133.162"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -63,7 +63,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">National Care Coordination Directory</span><br/>0.0.1 - draft</p>
+          <p><span style="font-size:12pt;font-weight:bold">National Directory</span><br/>0.0.1 - draft</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -90,48 +90,45 @@
     <a href="index.html">Home</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="implementation.html">Implementation</a>
+        <a href="general-guidance.html">General Guidance</a>
       </li>
       <li>
-        <a href="implementation.html#Representing">Representing Provider Directories in Plan Net</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="artifacts.html#3">Profiles</a>
+        <a href="technical-guidance.html">Technical Guidance</a>
       </li>
       <li>
-        <a href="artifacts.html#4">Extensions</a>
-      </li>
-      <li>
-        <a href="artifacts.html#2">Search Parameters</a>
-      </li>
-      <li>
-        <a href="artifacts.html#5">Terminology</a>
-      </li>
-      <li>
-        <a href="CapabilityStatement-NatlDir.html">Capability Statement</a>
+        <a href="bulk-data.html">Bulk Data and Subscriptions</a>
       </li>
     </ul>
   </li>
   <li>
-    <a href="artifacts.html#7">Examples</a>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="searchparameters.html">Search Parameters</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Capability Statement
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CapabilityStatement-NatlDir.html">Conformance Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
-  </li>
-  <li>
-    <a href="http://www.hl7.org/fhir/us/national-healthcare-directory/history.cfml">History</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -158,7 +155,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">National Care Coordination Directory - Local Development build (v0.0.1). See the <a href="http://hl7.org/fhir/us/national-healthcare-directory/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">National Directory - Local Development build (v0.0.1). See the <a href="http://hl7.org/fhir/us/national-directory/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -217,20 +214,20 @@
   &lt;<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.meta">meta</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2020-07-07T13:26:22.0314215+00:00&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-HealthcareService&quot;/&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-HealthcareService&quot;/&gt;
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en-US&quot; lang=&quot;en-US&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Delivery Method&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=&quot;Codes: {http://hl7.org/fhir/us/national-healthcare-directory/CodeSystem/DeliveryMethodCS physical}&quot;&gt;Physical&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=&quot;Codes: {http://hl7.org/fhir/us/national-healthcare-directory/CodeSystem/HealthcareServiceCategoryCS outpat}&quot;&gt;Clinic or Outpatient Facility&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;specialty&lt;/b&gt;: &lt;span title=&quot;Codes: {http://nucc.org/provider-taxonomy 207Q00000X}&quot;&gt;Family Medicine&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=&quot;Location-HansSoloClinic.html&quot;&gt;Generated Summary: language: en-US; status: active; name: OrgA CT Location 1; &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}&quot;&gt;outpatient pharmacy&lt;/span&gt;; Phone: (111)-222-3333, https://www.hanssolo.com&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en-US&quot; lang=&quot;en-US&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Delivery Method&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=&quot;Codes: {http://hl7.org/fhir/us/national-directory/CodeSystem/DeliveryMethodCS physical}&quot;&gt;Physical&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=&quot;Codes: {http://hl7.org/fhir/us/national-directory/CodeSystem/HealthcareServiceCategoryCS outpat}&quot;&gt;Clinic or Outpatient Facility&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;specialty&lt;/b&gt;: &lt;span title=&quot;Codes: {http://nucc.org/provider-taxonomy 207Q00000X}&quot;&gt;Family Medicine&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=&quot;Location-HansSoloClinic.html&quot;&gt;Generated Summary: language: en-US; status: active; name: OrgA CT Location 1; &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode OUTPHARM}&quot;&gt;outpatient pharmacy&lt;/span&gt;; Phone: (111)-222-3333, https://www.hanssolo.com&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/delivery-method&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/national-directory/StructureDefinition/delivery-method&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;type&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/national-healthcare-directory/CodeSystem/DeliveryMethodCS&quot;/&gt;
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/national-directory/CodeSystem/DeliveryMethodCS&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;physical&quot;/&gt;
         &lt;/coding&gt;
       &lt;/valueCodeableConcept&gt;
@@ -240,7 +237,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.category">category</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/national-healthcare-directory/CodeSystem/HealthcareServiceCategoryCS&quot;/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/national-directory/CodeSystem/HealthcareServiceCategoryCS&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;outpat&quot;/&gt;
     &lt;/coding&gt;
   &lt;/category&gt;
@@ -284,14 +281,14 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.onc-fast-NatlDir#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 2, 2021 10:29-0500">2021-12-02</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.onc-fast-NatlDir#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 9, 2021 08:58-0500">2021-12-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-               | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/national-healthcare-directory/history.html">Version History  |
+               | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/national-directory/history.html">Version History  |
                <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 

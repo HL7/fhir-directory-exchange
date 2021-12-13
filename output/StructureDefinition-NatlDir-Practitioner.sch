@@ -397,7 +397,7 @@
   <sch:pattern>
     <sch:title>f:Practitioner/f:qualification</sch:title>
     <sch:rule context="f:Practitioner/f:qualification">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/practitioner-qualification']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/practitioner-qualification': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/national-directory/StructureDefinition/practitioner-qualification']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/national-directory/StructureDefinition/practitioner-qualification': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -450,7 +450,7 @@
     <sch:title>f:Practitioner/f:communication</sch:title>
     <sch:rule context="f:Practitioner/f:communication">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/communication-proficiency']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/communication-proficiency': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/national-directory/StructureDefinition/communication-proficiency']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/national-directory/StructureDefinition/communication-proficiency': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

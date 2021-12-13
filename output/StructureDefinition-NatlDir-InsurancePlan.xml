@@ -38,12 +38,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="business"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-InsurancePlan"/>
+  <url value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan"/>
   <version value="0.0.1"/>
   <name value="NatlDirInsurancePlan"/>
   <title value="National Directory Exchange InsurancePlan"/>
   <status value="active"/>
-  <date value="2021-12-02T10:29:42-05:00"/>
+  <date value="2021-12-09T08:58:20-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -150,14 +150,14 @@
         <severity value="error"/>
         <human value="If an insuranceplan does not define a network, then each plan must define one"/>
         <expression value="network.exists() or plan.network.exists.allTrue()"/>
-        <source value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-InsurancePlan"/>
+        <source value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan"/>
       </constraint>
       <constraint>
         <key value="plan-type-is-distinct"/>
         <severity value="error"/>
         <human value="Each InsurancePlan.plan should have a distinct plan.type."/>
         <expression value="plan.type.coding.code.isDistinct()"/>
-        <source value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-InsurancePlan"/>
+        <source value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
@@ -1106,7 +1106,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/national-healthcare-directory/ValueSet/InsuranceProductTypeVS"/>
+        <valueSet value="http://hl7.org/fhir/us/national-directory/ValueSet/InsuranceProductTypeVS"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -1221,7 +1221,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1248,7 +1248,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1275,7 +1275,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Location"/>
+        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2199,7 +2199,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Endpoint"/>
+        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Endpoint"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2231,7 +2231,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Network"/>
+        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Network"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2994,7 +2994,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/national-healthcare-directory/ValueSet/InsurancePlanTypeVS"/>
+        <valueSet value="http://hl7.org/fhir/us/national-directory/ValueSet/InsurancePlanTypeVS"/>
       </binding>
     </element>
     <element id="InsurancePlan.plan.coverageArea">
@@ -3010,7 +3010,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Location"/>
+        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -3038,7 +3038,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Network"/>
+        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Network"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -3853,14 +3853,14 @@
         <severity value="error"/>
         <human value="If an insuranceplan does not define a network, then each plan must define one"/>
         <expression value="network.exists() or plan.network.exists.allTrue()"/>
-        <source value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-InsurancePlan"/>
+        <source value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan"/>
       </constraint>
       <constraint>
         <key value="plan-type-is-distinct"/>
         <severity value="error"/>
         <human value="Each InsurancePlan.plan should have a distinct plan.type."/>
         <expression value="plan.type.coding.code.isDistinct()"/>
-        <source value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-InsurancePlan"/>
+        <source value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan"/>
       </constraint>
     </element>
     <element id="InsurancePlan.meta.lastUpdated">
@@ -3893,7 +3893,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/national-healthcare-directory/ValueSet/InsuranceProductTypeVS"/>
+        <valueSet value="http://hl7.org/fhir/us/national-directory/ValueSet/InsuranceProductTypeVS"/>
       </binding>
     </element>
     <element id="InsurancePlan.name">
@@ -3913,7 +3913,7 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -3922,7 +3922,7 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -3930,7 +3930,7 @@
       <path value="InsurancePlan.coverageArea"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Location"/>
+        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -3962,7 +3962,7 @@
       <path value="InsurancePlan.endpoint"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Endpoint"/>
+        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Endpoint"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -3970,7 +3970,7 @@
       <path value="InsurancePlan.network"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Network"/>
+        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Network"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -3984,14 +3984,14 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/national-healthcare-directory/ValueSet/InsurancePlanTypeVS"/>
+        <valueSet value="http://hl7.org/fhir/us/national-directory/ValueSet/InsurancePlanTypeVS"/>
       </binding>
     </element>
     <element id="InsurancePlan.plan.coverageArea">
       <path value="InsurancePlan.plan.coverageArea"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Location"/>
+        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -3999,7 +3999,7 @@
       <path value="InsurancePlan.plan.network"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Network"/>
+        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Network"/>
       </type>
     </element>
   </differential>

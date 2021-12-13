@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Restriction> a fhir:StructureDefinition;
+<http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Restriction> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "NatlDir-Restriction"];
   fhir:DomainResource.text [
@@ -21,7 +21,7 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Restriction"];
+  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Restriction"];
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "NatlDirRestriction"];
   fhir:StructureDefinition.title [ fhir:value "NatlDir Restriction"];
@@ -2192,17 +2192,17 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-CareTeam";
+           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-CareTeam";
            fhir:index 1;
-           fhir:link <http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-CareTeam>
+           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-CareTeam>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Practitioner";
+           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner";
            fhir:index 2;
-           fhir:link <http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Practitioner>
+           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2954,17 +2954,17 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-CareTeam";
+           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-CareTeam";
            fhir:index 1;
-           fhir:link <http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-CareTeam>
+           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-CareTeam>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Practitioner";
+           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner";
            fhir:index 2;
-           fhir:link <http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Practitioner>
+           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
@@ -3034,9 +3034,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Restriction.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Restriction.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-healthcare-directory/StructureDefinition/NatlDir-Restriction.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/national-directory/StructureDefinition/NatlDir-Restriction.ttl> .
 
 # -------------------------------------------------------------------------------------
 

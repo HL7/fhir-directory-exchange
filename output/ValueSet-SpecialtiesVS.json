@@ -3,14 +3,14 @@
   "id": "SpecialtiesVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-IndividualAndGroupSpecialtiesVS.html\">http://hl7.org/fhir/us/national-healthcare-directory/ValueSet/IndividualAndGroupSpecialtiesVS</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-NonIndividualSpecialtiesVS.html\">http://hl7.org/fhir/us/national-healthcare-directory/ValueSet/NonIndividualSpecialtiesVS</a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-IndividualAndGroupSpecialtiesVS.html\">http://hl7.org/fhir/us/national-directory/ValueSet/IndividualAndGroupSpecialtiesVS</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-NonIndividualSpecialtiesVS.html\">http://hl7.org/fhir/us/national-directory/ValueSet/NonIndividualSpecialtiesVS</a></li></ul></div>"
   },
-  "url": "http://hl7.org/fhir/us/national-healthcare-directory/ValueSet/SpecialtiesVS",
+  "url": "http://hl7.org/fhir/us/national-directory/ValueSet/SpecialtiesVS",
   "version": "0.0.1",
   "name": "SpecialtiesVS",
   "title": "Specialties",
   "status": "active",
-  "date": "2021-12-02T10:29:42-05:00",
+  "date": "2021-12-09T08:58:20-05:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -42,12 +42,12 @@
     "include": [
       {
         "valueSet": [
-          "http://hl7.org/fhir/us/national-healthcare-directory/ValueSet/IndividualAndGroupSpecialtiesVS"
+          "http://hl7.org/fhir/us/national-directory/ValueSet/IndividualAndGroupSpecialtiesVS"
         ]
       },
       {
         "valueSet": [
-          "http://hl7.org/fhir/us/national-healthcare-directory/ValueSet/NonIndividualSpecialtiesVS"
+          "http://hl7.org/fhir/us/national-directory/ValueSet/NonIndividualSpecialtiesVS"
         ]
       }
     ]

@@ -15,7 +15,7 @@
       "valueCode": "business"
     }
   ],
-  "url": "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Validation",
+  "url": "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Validation",
   "version": "0.0.1",
   "name": "NatlDirValidation",
   "title": "NatlDir Validation",
@@ -1023,9 +1023,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization",
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Practitioner",
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-PractitionerRole"
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization",
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner",
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"
             ]
           }
         ],
@@ -1459,9 +1459,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Practitioner",
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization",
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-PractitionerRole"
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner",
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization",
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"
             ]
           }
         ],
@@ -1495,9 +1495,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Practitioner",
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization",
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-PractitionerRole"
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner",
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization",
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"
             ]
           }
         ],
@@ -1888,7 +1888,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"
             ]
           }
         ],
@@ -2063,9 +2063,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization",
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Practitioner",
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-PractitionerRole"
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization",
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner",
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"
             ]
           }
         ],
@@ -2126,9 +2126,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Practitioner",
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization",
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-PractitionerRole"
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner",
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization",
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"
             ]
           }
         ],
@@ -2141,9 +2141,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Practitioner",
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization",
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-PractitionerRole"
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner",
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization",
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"
             ]
           }
         ],
@@ -2197,7 +2197,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"
+              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"
             ]
           }
         ],

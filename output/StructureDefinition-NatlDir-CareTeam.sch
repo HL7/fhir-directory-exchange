@@ -83,8 +83,8 @@
     <sch:title>f:CareTeam/f:identifier</sch:title>
     <sch:rule context="f:CareTeam/f:identifier">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/identifier-status']) &gt;= 1">extension with URL = 'http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/identifier-status': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/identifier-status']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/identifier-status': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/national-directory/StructureDefinition/identifier-status']) &gt;= 1">extension with URL = 'http://hl7.org/fhir/us/national-directory/StructureDefinition/identifier-status': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/national-directory/StructureDefinition/identifier-status']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/national-directory/StructureDefinition/identifier-status': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
       <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>

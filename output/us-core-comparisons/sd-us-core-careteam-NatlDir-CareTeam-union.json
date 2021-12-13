@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "399fd765-98da-415d-a9e2-fd1255f45a08-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/399fd765-98da-415d-a9e2-fd1255f45a08-2",
+  "id" : "18d9c798-d194-4a31-a597-647c321a4e51-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/18d9c798-d194-4a31-a597-647c321a4e51-2",
   "name" : "UnionUSCoreCareTeamAndNatlDirCareTeam",
   "title" : "Union of US Core CareTeam Profile And National Directory Care Team",
   "status" : "active",
-  "date" : "2021-12-02T10:30:37-05:00",
+  "date" : "2021-12-09T08:59:15-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -933,7 +933,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Indicates specific responsibility of an individual within the care team, such as Primary physician, Team coordinator, Caregiver, etc.; right: Indicates specific responsibility of an individual within the care team, such as \"Primary physician\", \"Team coordinator\", \"Caregiver\", etc.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/399fd765-98da-415d-a9e2-fd1255f45a08-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/18d9c798-d194-4a31-a597-647c321a4e51-5"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -962,7 +962,7 @@
         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole",
         "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson"],
+        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"],
         "_targetProfile" : [{
           "extension" : [{
             "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
@@ -978,7 +978,13 @@
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-            "valueBoolean" : false
+            "valueBoolean" : true
+          }]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+            "valueBoolean" : true
           }]
         },
         {
@@ -990,21 +996,15 @@
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-            "valueBoolean" : false
-          }]
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-            "valueBoolean" : false
+            "valueBoolean" : true
           }]
         }]
       },
       {
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-CareTeam",
-        "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-PractitionerRole",
-        "http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-CareTeam",
+        "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole",
+        "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"]
       }],
       "constraint" : [{
         "key" : "ele-1",

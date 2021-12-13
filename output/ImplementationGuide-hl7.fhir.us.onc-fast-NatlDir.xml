@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.us.onc-fast-NatlDir"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ONCFASTNationalCareCoordinationDirectory</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/national-healthcare-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir</pre><div><p>National Care Coordination Directory</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ONCFASTNationalDirectory</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir</pre><div><p>National Directory</p>
 </div></div>
   </text>
-  <url value="http://hl7.org/fhir/us/national-healthcare-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir"/>
+  <url value="http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir"/>
   <version value="0.0.1"/>
-  <name value="ONCFASTNationalCareCoordinationDirectory"/>
-  <title value="National Care Coordination Directory"/>
+  <name value="ONCFASTNationalDirectory"/>
+  <title value="National Directory"/>
   <status value="active"/>
-  <date value="2021-12-02T10:29:42-05:00"/>
+  <date value="2021-12-09T08:58:20-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -24,7 +24,7 @@
       <value value="pafm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="National Care Coordination Directory"/>
+  <description value="National Directory"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -69,7 +69,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://hl7.org/fhir/us/national-healthcare-directory/history.html"/>
+        <valueString value="http://hl7.org/fhir/us/national-directory/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -1155,7 +1155,7 @@
       </reference>
       <name value="Acme"/>
       <description value="Payer Organization"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1166,7 +1166,7 @@
       </reference>
       <name value="AcmeOfCTPortalEndpoint"/>
       <description value="Endpoint for Acme of CT Portal"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Endpoint"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Endpoint"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1177,7 +1177,7 @@
       </reference>
       <name value="AcmeQHPBronze"/>
       <description value="Acme of CT QHP Bronze Plan"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-InsurancePlan"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1188,7 +1188,7 @@
       </reference>
       <name value="AcmeQHPGold"/>
       <description value="Acme of CT QHP Gold Plan"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-InsurancePlan"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1199,7 +1199,7 @@
       </reference>
       <name value="AcmeofCTPremNet"/>
       <description value="Acme of CT Premium Premium Network"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Network"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Network"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1210,7 +1210,7 @@
       </reference>
       <name value="AcmeofCTStdNet"/>
       <description value="Acme of CT Standard Network"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Network"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Network"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1221,7 +1221,7 @@
       </reference>
       <name value="AnonRole"/>
       <description value="Practitioner role that doesn&#39;t refer to a specific practitioner"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-PractitionerRole"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1232,7 +1232,7 @@
       </reference>
       <name value="BigBox"/>
       <description value="Organization that Manages 2 of PharmChain&#39;s pharmacies"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1243,7 +1243,7 @@
       </reference>
       <name value="BurrClinic"/>
       <description value="Burr Clinic provides service to Hartford Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1254,7 +1254,7 @@
       </reference>
       <name value="BurrClinicAffil"/>
       <description value="Burr Clinic&#39;s affiliation with Acme of CT Provider Network and Hartford General Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-OrganizationAffiliation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1265,7 +1265,7 @@
       </reference>
       <name value="BurrClinicServices"/>
       <description value="Burr Clinic Services"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-HealthcareService"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1276,7 +1276,7 @@
       </reference>
       <name value="CancerClinic"/>
       <description value="HartfordCancerClinicLLC"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1287,7 +1287,7 @@
       </reference>
       <name value="CancerClinicLoc"/>
       <description value="Location1 of Cancer Clinic"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Location"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1298,7 +1298,7 @@
       </reference>
       <name value="CancerClinicService"/>
       <description value="Cancer Clinic Services"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-HealthcareService"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1309,7 +1309,7 @@
       </reference>
       <name value="ConnHIE"/>
       <description value="Connecticut HIE"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1320,7 +1320,7 @@
       </reference>
       <name value="ConnHIEAffil"/>
       <description value="Burr Clinic&#39;s affiliation with Conn HIE"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-OrganizationAffiliation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1331,7 +1331,7 @@
       </reference>
       <name value="Counselor"/>
       <description value="Counselor Susie Smith"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Practitioner"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1342,7 +1342,7 @@
       </reference>
       <name value="CounselorRole1"/>
       <description value="Susie  Smith is a counselor via Telemedicine"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-PractitionerRole"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1353,7 +1353,7 @@
       </reference>
       <name value="HamiltonClinic"/>
       <description value="Hamilton Clinic (a Division of Hartford Hospital)"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1364,7 +1364,7 @@
       </reference>
       <name value="HamiltonClinicAffil"/>
       <description value="Hamilton Clinic&#39;s affiliation with Acme of CT Provider Network and Hartford General Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-OrganizationAffiliation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1375,7 +1375,7 @@
       </reference>
       <name value="HamiltonClinicServices"/>
       <description value="Hamilton Clinic Services"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-HealthcareService"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1386,7 +1386,7 @@
       </reference>
       <name value="HansSolo"/>
       <description value="Solo Practitioner Hans Solo"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Practitioner"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1397,7 +1397,7 @@
       </reference>
       <name value="HansSoloClinic"/>
       <description value="Location of Hans Solo&#39;s clinic"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Location"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1408,7 +1408,7 @@
       </reference>
       <name value="HansSoloRole1"/>
       <description value="Hans Solo is a solo practitioner"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-PractitionerRole"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1419,7 +1419,7 @@
       </reference>
       <name value="HansSoloService"/>
       <description value="Hans Solo Services"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-HealthcareService"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1430,7 +1430,7 @@
       </reference>
       <name value="HartfordOrthopedicAffil"/>
       <description value="Hartford Orthopedic Services affiliation with Acme of CT Provider Network and Hartford General Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-OrganizationAffiliation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1441,7 +1441,7 @@
       </reference>
       <name value="HartfordOrthopedicServices"/>
       <description value="Hartford Orthopedic Services"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-HealthcareService"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1452,7 +1452,7 @@
       </reference>
       <name value="HartfordOrthopedics"/>
       <description value="Hartford Orthpedic Services is a group providing Orthpods for Acme of CT at Hartford General Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1463,7 +1463,7 @@
       </reference>
       <name value="HospERService"/>
       <description value="Hartford General Hospital ER"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-HealthcareService"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1474,7 +1474,7 @@
       </reference>
       <name value="HospLoc1"/>
       <description value="Location1 of Hartford Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Location"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1485,7 +1485,7 @@
       </reference>
       <name value="HospLoc2"/>
       <description value="Location2 of Hartford Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Location"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1496,7 +1496,7 @@
       </reference>
       <name value="Hospital"/>
       <description value="Hartford General Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1507,7 +1507,7 @@
       </reference>
       <name value="JoeSmith"/>
       <description value="Practitioner Dr Joe Smith"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Practitioner"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1518,7 +1518,7 @@
       </reference>
       <name value="JoeSmithRole1"/>
       <description value="Dr Smith moonlighting as ER Doc at Hartford Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-PractitionerRole"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1529,7 +1529,7 @@
       </reference>
       <name value="JoeSmithRole2"/>
       <description value="Dr Smith Internal Medicine at Burr Clinic"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-PractitionerRole"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1540,7 +1540,7 @@
       </reference>
       <name value="JoeSmithRole3"/>
       <description value="Dr Smith Admitting Privileges at Hartford General"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-PractitionerRole"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1551,7 +1551,7 @@
       </reference>
       <name value="PharmChain"/>
       <description value="Organization that Provides Pharmacy Services"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Organization"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1562,7 +1562,7 @@
       </reference>
       <name value="PharmChainAffil1"/>
       <description value="Organization Affiliation for PharmChain (Retail)"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-OrganizationAffiliation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1573,7 +1573,7 @@
       </reference>
       <name value="PharmChainAffil2"/>
       <description value="Organization Affiliation for PharmChain (Compounding)"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-OrganizationAffiliation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1584,7 +1584,7 @@
       </reference>
       <name value="PharmChainAffil3"/>
       <description value="Organization Affiliation for PharmChain (MailOrder)"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-OrganizationAffiliation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1595,7 +1595,7 @@
       </reference>
       <name value="PharmChainCompService"/>
       <description value="Compound Pharmacy Service provided by PharmacyOrganization A"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-HealthcareService"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1606,7 +1606,7 @@
       </reference>
       <name value="PharmChainMailService"/>
       <description value="Mail Order Pharmacy Service provided by PharmacyOrganization A"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-HealthcareService"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1617,7 +1617,7 @@
       </reference>
       <name value="PharmChainRetailService"/>
       <description value="Pharmacy Service provided by PharmChain"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-HealthcareService"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1628,7 +1628,7 @@
       </reference>
       <name value="PharmLoc1"/>
       <description value="Location of Pharmacy1 in PharmChain&#39;s network"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Location"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1639,7 +1639,7 @@
       </reference>
       <name value="PharmLoc2"/>
       <description value="Location of Pharmacy2 in PharmChain&#39;s network"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Location"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1650,7 +1650,7 @@
       </reference>
       <name value="PharmLoc3"/>
       <description value="Location of Pharmacy3 in PharmChain&#39;s network"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Location"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1661,7 +1661,7 @@
       </reference>
       <name value="PharmLoc4"/>
       <description value="Location of Pharmacy4 in PharmChain&#39;s network"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Location"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1672,7 +1672,7 @@
       </reference>
       <name value="StateOfCTLocation"/>
       <description value="State of CT Area"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-Location"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1683,7 +1683,7 @@
       </reference>
       <name value="VirtualCounselService"/>
       <description value="Virtual Counseling Service"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/national-healthcare-directory/StructureDefinition/NatlDir-HealthcareService"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-HealthcareService"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2256,8 +2256,183 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="accessibility-diff2.html"/>
+        <title value="Accessibility Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="accessibility-search.html"/>
+        <title value="Accessibility Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="accessibility-summary.html"/>
+        <title value="Accessibility Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="all-examples.html"/>
+        <title value="All Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="bulk-data.html"/>
+        <title value="Bulk Data"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="capstatements.html"/>
+        <title value="Capstatements"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="careteam-alias-diff2.html"/>
+        <title value="Careteam Alias Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="careteam-alias-search.html"/>
+        <title value="Careteam Alias Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="careteam-alias-summary.html"/>
+        <title value="Careteam Alias Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="communication-proficiency-diff2.html"/>
+        <title value="Communication Proficiency Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="communication-proficiency-search.html"/>
+        <title value="Communication Proficiency Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="communication-proficiency-summary.html"/>
+        <title value="Communication Proficiency Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="conformance.html"/>
+        <title value="Conformance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="contactpoint-availabletime-diff2.html"/>
+        <title value="Contactpoint Availabletime Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="contactpoint-availabletime-search.html"/>
+        <title value="Contactpoint Availabletime Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="contactpoint-availabletime-summary.html"/>
+        <title value="Contactpoint Availabletime Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="contactpoint-viaintermediary-diff2.html"/>
+        <title value="Contactpoint Viaintermediary Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="contactpoint-viaintermediary-search.html"/>
+        <title value="Contactpoint Viaintermediary Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="contactpoint-viaintermediary-summary.html"/>
+        <title value="Contactpoint Viaintermediary Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="digitalcertificate-diff2.html"/>
+        <title value="Digitalcertificate Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="digitalcertificate-search.html"/>
+        <title value="Digitalcertificate Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="digitalcertificate-summary.html"/>
+        <title value="Digitalcertificate Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="ehr-diff2.html"/>
+        <title value="Ehr Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="ehr-search.html"/>
+        <title value="Ehr Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="ehr-summary.html"/>
+        <title value="Ehr Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-rank-diff2.html"/>
+        <title value="Endpoint Rank Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-rank-search.html"/>
+        <title value="Endpoint Rank Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-rank-summary.html"/>
+        <title value="Endpoint Rank Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-reference-diff2.html"/>
+        <title value="Endpoint Reference Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-reference-search.html"/>
+        <title value="Endpoint Reference Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-reference-summary.html"/>
+        <title value="Endpoint Reference Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-usecase-diff2.html"/>
+        <title value="Endpoint Usecase Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-usecase-search.html"/>
+        <title value="Endpoint Usecase Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="endpoint-usecase-summary.html"/>
+        <title value="Endpoint Usecase Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="example-list-generator.html"/>
+        <title value="Example List Generator"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -2266,8 +2441,473 @@
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="extensions.html"/>
+        <title value="Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="general-guidance.html"/>
+        <title value="General Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="guidance.html"/>
+        <title value="Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="healthcareservice-reference-diff2.html"/>
+        <title value="Healthcareservice Reference Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="healthcareservice-reference-search.html"/>
+        <title value="Healthcareservice Reference Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="healthcareservice-reference-summary.html"/>
+        <title value="Healthcareservice Reference Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="history.html"/>
+        <title value="History"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="identifier-status-diff2.html"/>
+        <title value="Identifier Status Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="identifier-status-search.html"/>
+        <title value="Identifier Status Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="identifier-status-summary.html"/>
+        <title value="Identifier Status Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="implementation.html"/>
         <title value="Implementation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="insuranceplan-reference-diff2.html"/>
+        <title value="Insuranceplan Reference Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="insuranceplan-reference-search.html"/>
+        <title value="Insuranceplan Reference Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="insuranceplan-reference-summary.html"/>
+        <title value="Insuranceplan Reference Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="link-list.html"/>
+        <title value="Link List"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="location-availability-search.html"/>
+        <title value="Location Availability Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="location-availability-summary.html"/>
+        <title value="Location Availability Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="location-reference-diff2.html"/>
+        <title value="Location Reference Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="location-reference-search.html"/>
+        <title value="Location Reference Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="location-reference-summary.html"/>
+        <title value="Location Reference Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="logo.html"/>
+        <title value="Logo"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="network-reference-diff2.html"/>
+        <title value="Network Reference Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="network-reference-search.html"/>
+        <title value="Network Reference Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="network-reference-summary.html"/>
+        <title value="Network Reference Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="newpatientprofile-diff2.html"/>
+        <title value="Newpatientprofile Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="newpatientprofile-search.html"/>
+        <title value="Newpatientprofile Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="newpatientprofile-summary.html"/>
+        <title value="Newpatientprofile Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="newpatients-diff2.html"/>
+        <title value="Newpatients Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="newpatients-search.html"/>
+        <title value="Newpatients Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="newpatients-summary.html"/>
+        <title value="Newpatients Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-alias-period-diff2.html"/>
+        <title value="Org Alias Period Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-alias-period-search.html"/>
+        <title value="Org Alias Period Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-alias-period-summary.html"/>
+        <title value="Org Alias Period Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-alias-type-diff2.html"/>
+        <title value="Org Alias Type Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-alias-type-search.html"/>
+        <title value="Org Alias Type Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-alias-type-summary.html"/>
+        <title value="Org Alias Type Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-description-diff2.html"/>
+        <title value="Org Description Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-description-search.html"/>
+        <title value="Org Description Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="org-description-summary.html"/>
+        <title value="Org Description Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="practitioner-qualification-diff2.html"/>
+        <title value="Practitioner Qualification Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="practitioner-qualification-search.html"/>
+        <title value="Practitioner Qualification Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="practitioner-qualification-summary.html"/>
+        <title value="Practitioner Qualification Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="qualification-diff2.html"/>
+        <title value="Qualification Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="qualification-search.html"/>
+        <title value="Qualification Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="qualification-summary.html"/>
+        <title value="Qualification Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="schematron-list-generator.html"/>
+        <title value="Schematron List Generator"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="searchparameters.html"/>
+        <title value="Searchparameters"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="security.html"/>
+        <title value="Security"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="sp_list.html"/>
+        <title value="Sp List"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="technical-guidance.html"/>
+        <title value="Technical Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="todo.html"/>
+        <title value="Todo"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="usage-restriction-diff2.html"/>
+        <title value="Usage Restriction Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="usage-restriction-search.html"/>
+        <title value="Usage Restriction Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="usage-restriction-summary.html"/>
+        <title value="Usage Restriction Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="validation-diff2.html"/>
+        <title value="Validation Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="validation-search.html"/>
+        <title value="Validation Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-careteam-diff2.html"/>
+        <title value="Vhdir Careteam Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-careteam-search.html"/>
+        <title value="Vhdir Careteam Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-careteam-summary.html"/>
+        <title value="Vhdir Careteam Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-endpoint-diff2.html"/>
+        <title value="Vhdir Endpoint Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-endpoint-search.html"/>
+        <title value="Vhdir Endpoint Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-endpoint-summary.html"/>
+        <title value="Vhdir Endpoint Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-healthcareservice-diff2.html"/>
+        <title value="Vhdir Healthcareservice Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-healthcareservice-search.html"/>
+        <title value="Vhdir Healthcareservice Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-healthcareservice-summary.html"/>
+        <title value="Vhdir Healthcareservice Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-insuranceplan-diff2.html"/>
+        <title value="Vhdir Insuranceplan Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-insuranceplan-search.html"/>
+        <title value="Vhdir Insuranceplan Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-insuranceplan-summary.html"/>
+        <title value="Vhdir Insuranceplan Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-location-diff2.html"/>
+        <title value="Vhdir Location Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-location-search.html"/>
+        <title value="Vhdir Location Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-location-summary.html"/>
+        <title value="Vhdir Location Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-network-diff2.html"/>
+        <title value="Vhdir Network Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-network-search.html"/>
+        <title value="Vhdir Network Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-network-summary.html"/>
+        <title value="Vhdir Network Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-organization-diff2.html"/>
+        <title value="Vhdir Organization Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-organization-search.html"/>
+        <title value="Vhdir Organization Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-organization-summary.html"/>
+        <title value="Vhdir Organization Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-organizationaffiliation-diff2.html"/>
+        <title value="Vhdir Organizationaffiliation Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-organizationaffiliation-search.html"/>
+        <title value="Vhdir Organizationaffiliation Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-organizationaffiliation-summary.html"/>
+        <title value="Vhdir Organizationaffiliation Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-practitioner-diff2.html"/>
+        <title value="Vhdir Practitioner Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-practitioner-search.html"/>
+        <title value="Vhdir Practitioner Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-practitioner-summary.html"/>
+        <title value="Vhdir Practitioner Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-practitionerrole-diff2.html"/>
+        <title value="Vhdir Practitionerrole Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-practitionerrole-search.html"/>
+        <title value="Vhdir Practitionerrole Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-practitionerrole-summary.html"/>
+        <title value="Vhdir Practitionerrole Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-restriction-diff2.html"/>
+        <title value="Vhdir Restriction Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-restriction-search.html"/>
+        <title value="Vhdir Restriction Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-restriction-summary.html"/>
+        <title value="Vhdir Restriction Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-validation-diff2.html"/>
+        <title value="Vhdir Validation Diff 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-validation-search.html"/>
+        <title value="Vhdir Validation Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="vhdir-validation-summary.html"/>
+        <title value="Vhdir Validation Summary"/>
         <generation value="markdown"/>
       </page>
     </page>

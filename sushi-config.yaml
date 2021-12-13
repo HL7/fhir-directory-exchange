@@ -11,16 +11,16 @@
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.onc-fast-NatlDir
-canonical: http://hl7.org/fhir/us/national-healthcare-directory
+canonical: http://hl7.org/fhir/us/national-directory
 version: 0.0.1
-name: ONC FAST National Care Coordination Directory
-title: National Care Coordination Directory
+name: ONC FAST National Directory
+title: National Directory
 status: active
 publisher:
   name: HL7 Patient Administration Working Group
   url: https://www.hl7.org/Special/committees/pafm/index.cfm
   email: pafm@lists.HL7.org
-description: National Care Coordination Directory
+description: National Directory
 jurisdiction: urn:iso:std:iso:3166#US
 license: CC0-1.0
 fhirVersion: 4.0.1
@@ -40,16 +40,16 @@ releaseLabel: draft
 # │  To control the menu.xml using this config, uncomment and set the "menu" property.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Home          : index.html
-  Implementation:
-    Implementation                              :         implementation.html
-    Representing Provider Directories in Plan Net:          implementation.html#Representing
-  FHIR Artifacts:
-    Profiles          : artifacts.html#3
-    Extensions          : artifacts.html#4
-    Search Parameters   : artifacts.html#2
-    Terminology         : artifacts.html#5
-    Capability Statement: CapabilityStatement-NatlDir.html
-  Examples      : artifacts.html#7
+  Home:          index.html
+  Guidance:
+    General Guidance:                              general-guidance.html
+    Technical Guidance: technical-guidance.html
+    Bulk Data and Subscriptions:          bulk-data.html
+  Profiles          : profiles.html
+  Terminology          : terminology.html
+  Search Parameters   : searchparameters.html
+  Capability Statement: 
+    Conformance Requirements  : CapabilityStatement-NatlDir.html
+  Examples      : examples.html
   Downloads     : downloads.html
-  History       : http://www.hl7.org/fhir/us/national-healthcare-directory/history.cfml
+  
