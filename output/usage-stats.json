@@ -1,5 +1,5 @@
 {
-  "package": "hl7.fhir.us.onc-fast-NatlDir",
+  "package": "hl7.fhir.us.national-directory",
   "version": "0.0.1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "US",

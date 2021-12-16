@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir> a fhir:ImplementationGuide;
+<http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.national-directory> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "hl7.fhir.us.onc-fast-NatlDir"];
+  fhir:Resource.id [ fhir:value "hl7.fhir.us.national-directory"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ONCFASTNationalDirectory</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir</pre><div><p>National Directory</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ONCFASTNationalDirectory</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.national-directory</pre><div><p>National Directory</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir"];
+  fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.national-directory"];
   fhir:ImplementationGuide.version [ fhir:value "0.0.1"];
   fhir:ImplementationGuide.name [ fhir:value "ONCFASTNationalDirectory"];
   fhir:ImplementationGuide.title [ fhir:value "National Directory"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-12-09T08:58:20-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-12-16T09:47:40-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -41,7 +41,7 @@
        fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
-  fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.us.onc-fast-NatlDir"];
+  fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.us.national-directory"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
@@ -4154,9 +4154,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.national-directory.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/national-directory/ImplementationGuide/hl7.fhir.us.national-directory.ttl> .
 
 # -------------------------------------------------------------------------------------
 

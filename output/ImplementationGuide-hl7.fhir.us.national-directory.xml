@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="hl7.fhir.us.onc-fast-NatlDir"/>
+  <id value="hl7.fhir.us.national-directory"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ONCFASTNationalDirectory</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir</pre><div><p>National Directory</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ONCFASTNationalDirectory</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.national-directory</pre><div><p>National Directory</p>
 </div></div>
   </text>
-  <url value="http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir"/>
+  <url value="http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.national-directory"/>
   <version value="0.0.1"/>
   <name value="ONCFASTNationalDirectory"/>
   <title value="National Directory"/>
   <status value="active"/>
-  <date value="2021-12-09T08:58:20-05:00"/>
+  <date value="2021-12-16T09:47:40-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -31,7 +31,7 @@
       <code value="US"/>
     </coding>
   </jurisdiction>
-  <packageId value="hl7.fhir.us.onc-fast-NatlDir"/>
+  <packageId value="hl7.fhir.us.national-directory"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7_fhir_us_core">

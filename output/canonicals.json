@@ -476,9 +476,9 @@
     "name": "VirtualModalitiesCS"
   },
   {
-    "id": "hl7.fhir.us.onc-fast-NatlDir",
+    "id": "hl7.fhir.us.national-directory",
     "type": "ImplementationGuide",
-    "url": "http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir",
+    "url": "http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.national-directory",
     "version": "0.0.1",
     "name": "ONCFASTNationalDirectory"
   },

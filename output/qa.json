@@ -1,9 +1,9 @@
 {
-  "url": "http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.onc-fast-NatlDir",
+  "url": "http://hl7.org/fhir/us/national-directory/ImplementationGuide/hl7.fhir.us.national-directory",
   "name": "ONCFASTNationalDirectory",
-  "package-id": "hl7.fhir.us.onc-fast-NatlDir",
+  "package-id": "hl7.fhir.us.national-directory",
   "ig-ver": "0.0.1",
-  "date": "Thu, 09 Dec, 2021 08:58:20 -0500",
+  "date": "Thu, 16 Dec, 2021 09:47:40 -0500",
   "errs": 37,
   "warnings": 44,
   "hints": 0,
