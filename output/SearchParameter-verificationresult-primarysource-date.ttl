@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-excahnge/SearchParameter/verificationresult-primarysource-date> a fhir:SearchParameter;
+<http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/verificationresult-primarysource-date> a fhir:SearchParameter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "verificationresult-primarysource-date"];
   fhir:DomainResource.text [
@@ -74,9 +74,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-excahnge/SearchParameter/verificationresult-primarysource-date.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/verificationresult-primarysource-date.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-excahnge/SearchParameter/verificationresult-primarysource-date.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/SearchParameter/verificationresult-primarysource-date.ttl> .
 
 # -------------------------------------------------------------------------------------
 

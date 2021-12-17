@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:PractitionerRole</sch:title>
     <sch:rule context="f:PractitionerRole">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/network-reference']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/network-reference': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/network-reference']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/network-reference': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:active) &gt;= 1">active: minimum cardinality of 'active' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

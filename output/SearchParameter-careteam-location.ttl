@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-excahnge/SearchParameter/careteam-location> a fhir:SearchParameter;
+<http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/careteam-location> a fhir:SearchParameter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "careteam-location"];
   fhir:DomainResource.text [
@@ -76,9 +76,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-excahnge/SearchParameter/careteam-location.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/careteam-location.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-excahnge/SearchParameter/careteam-location.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/SearchParameter/careteam-location.ttl> .
 
 # -------------------------------------------------------------------------------------
 

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-excahnge/SearchParameter/organization-via-intermediary> a fhir:SearchParameter;
+<http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organization-via-intermediary> a fhir:SearchParameter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "organization-via-intermediary"];
   fhir:DomainResource.text [
@@ -65,9 +65,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-excahnge/SearchParameter/organization-via-intermediary.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organization-via-intermediary.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-excahnge/SearchParameter/organization-via-intermediary.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/SearchParameter/organization-via-intermediary.ttl> .
 
 # -------------------------------------------------------------------------------------
 

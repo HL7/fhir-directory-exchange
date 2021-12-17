@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-excahnge/SearchParameter/location-contains> a fhir:SearchParameter;
+<http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-contains> a fhir:SearchParameter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "location-contains"];
   fhir:DomainResource.text [
@@ -52,9 +52,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-excahnge/SearchParameter/location-contains.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-contains.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-excahnge/SearchParameter/location-contains.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/SearchParameter/location-contains.ttl> .
 
 # -------------------------------------------------------------------------------------
 

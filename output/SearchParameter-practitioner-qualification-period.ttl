@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-excahnge/SearchParameter/practitioner-qualification-period> a fhir:SearchParameter;
+<http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitioner-qualification-period> a fhir:SearchParameter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "practitioner-qualification-period"];
   fhir:DomainResource.text [
@@ -59,9 +59,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-excahnge/SearchParameter/practitioner-qualification-period.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitioner-qualification-period.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-excahnge/SearchParameter/practitioner-qualification-period.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/SearchParameter/practitioner-qualification-period.ttl> .
 
 # -------------------------------------------------------------------------------------
 

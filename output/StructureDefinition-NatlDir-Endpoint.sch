@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:Endpoint</sch:title>
     <sch:rule context="f:Endpoint">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/secureEndpoint']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/secureEndpoint': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/secureEndpoint']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/secureEndpoint': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:payloadType) &lt;= 1">payloadType: maximum cardinality of 'payloadType' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

@@ -3,7 +3,7 @@
 
 err = 32, warn = 44, info = 0
 IG Publisher Version: 1.1.82 Out of date - current version is 1.1.91
-Generated Fri Dec 17 10:02:11 EST 2021. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-exchange#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-excahnge)
+Generated Fri Dec 17 10:44:04 EST 2021. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-exchange#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-exchange)
  Build Errors : 1 / 0 / 0
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-exchange : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-AcceptingPatientsCS : 0 / 0 / 1
@@ -378,8 +378,8 @@ WARNING: PractitionerRole/JoeSmithRole2: PractitionerRole.specialty[0]: The disp
 WARNING: PractitionerRole/JoeSmithRole3: PractitionerRole.specialty[0]: The display "Internal Medicine" is not a valid display for the code {http://nucc.org/provider-taxonomy}207R00000X - should be one of ['Internal Medicine Physician'] (from http://tx.fhir.org/r4)
 WARNING: PractitionerRole/JoeSmithRole3: PractitionerRole.specialty[1]: The display "Cardiovascular Disease" is not a valid display for the code {http://nucc.org/provider-taxonomy}207RC0000X - should be one of ['Cardiovascular Disease Physician'] (from http://tx.fhir.org/r4)
 == fsh-generated\resources\StructureDefinition-NatlDir-CareTeam.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-CareTeam').baseDefinition: US FHIR Usage rules require that all profiles on CareTeam derive from the core US profile
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-CareTeam'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-CareTeam').baseDefinition: US FHIR Usage rules require that all profiles on CareTeam derive from the core US profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-CareTeam'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-NatlDir-Endpoint.json ==
 ERROR: StructureDefinition/NatlDir-Endpoint: StructureDefinition.snapshot.element[27].binding.extension[0].value.ofType(canonical): Canonical URL 'http://hl7.org/fhir/us/davinci-pdex-NatlDir/ValueSet/MinEndpointConnectionTypeVS' does not resolve
 ERROR: StructureDefinition/NatlDir-Endpoint: StructureDefinition.differential.element[12].binding.extension[0].value.ofType(canonical): Canonical URL 'http://hl7.org/fhir/us/davinci-pdex-NatlDir/ValueSet/MinEndpointConnectionTypeVS' does not resolve
@@ -391,25 +391,25 @@ ERROR: StructureDefinition/NatlDir-Endpoint: StructureDefinition.differential.el
 == fsh-generated\resources\StructureDefinition-NatlDir-OrganizationAffiliation.json ==
 == fsh-generated\resources\StructureDefinition-NatlDir-Practitioner.json ==
 == fsh-generated\resources\StructureDefinition-NatlDir-PractitionerRole.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole').baseDefinition: US FHIR Usage rules require that all profiles on PractitionerRole derive from the core US profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-PractitionerRole').baseDefinition: US FHIR Usage rules require that all profiles on PractitionerRole derive from the core US profile
 == fsh-generated\resources\StructureDefinition-NatlDir-Restriction.json ==
 ERROR: StructureDefinition/NatlDir-Restriction: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
 ERROR: StructureDefinition/NatlDir-Restriction: StructureDefinition.snapshot.element[11].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/consent' does not resolve
 ERROR: StructureDefinition/NatlDir-Restriction: StructureDefinition.differential.element[3].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/consent' does not resolve
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Restriction'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Restriction'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-NatlDir-Validation.json ==
 ERROR: StructureDefinition/NatlDir-Validation: StructureDefinition.snapshot.element[15].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/validationprocess' does not resolve
 ERROR: StructureDefinition/NatlDir-Validation: StructureDefinition.differential.element[7].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/validationprocess' does not resolve
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Validation'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Validation'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-accessibility.json ==
 == fsh-generated\resources\StructureDefinition-associatedServers.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/associatedServers'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/associatedServers'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-careteam-alias.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/careteam-alias'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/careteam-alias'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-communication-proficiency.json ==
 == fsh-generated\resources\StructureDefinition-contactpoint-availabletime.json ==
 == fsh-generated\resources\StructureDefinition-contactpoint-viaintermediary.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/contactpoint-viaintermediary'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-viaintermediary'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-delivery-method.json ==
 == fsh-generated\resources\StructureDefinition-digitalcertificate.json ==
 ERROR: StructureDefinition/digitalcertificate: StructureDefinition.snapshot.element[8].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetype' does not resolve
@@ -420,46 +420,46 @@ ERROR: StructureDefinition/digitalcertificate: StructureDefinition.differential.
 ERROR: StructureDefinition/digitalcertificate: StructureDefinition.differential.element[11].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificateuse' does not resolve
 ERROR: StructureDefinition/digitalcertificate: StructureDefinition.differential.element[16].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatestandard' does not resolve
 ERROR: StructureDefinition/digitalcertificate: StructureDefinition.differential.element[30].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetrustframework' does not resolve
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/digitalcertificate'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/digitalcertificate'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-dynamicRegistration.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/dynamicRegistration'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/dynamicRegistration'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-endpoint-reference.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/endpoint-reference'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/endpoint-reference'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-endpoint-usecase.json ==
 == fsh-generated\resources\StructureDefinition-endpointType.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/endpointType'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/endpointType'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-healthcareservice-reference.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/healthcareservice-reference'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/healthcareservice-reference'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-identifier-status.json ==
 ERROR: StructureDefinition/identifier-status: StructureDefinition.snapshot.element[5].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/identifierstatus' does not resolve
 ERROR: StructureDefinition/identifier-status: StructureDefinition.differential.element[4].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/identifierstatus' does not resolve
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/identifier-status'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/identifier-status'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-igsSupported.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/igsSupported'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/igsSupported'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-insuranceplan-reference.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/insuranceplan-reference'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/insuranceplan-reference'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-location-reference.json ==
 == fsh-generated\resources\StructureDefinition-network-reference.json ==
 == fsh-generated\resources\StructureDefinition-newpatientprofile.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/newpatientprofile'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/newpatientprofile'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-newpatients.json ==
 == fsh-generated\resources\StructureDefinition-org-alias-period.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/org-alias-period'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/org-alias-period'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-org-alias-type.json ==
 ERROR: StructureDefinition/org-alias-type: StructureDefinition.snapshot.element[5].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/aliastype' does not resolve
 ERROR: StructureDefinition/org-alias-type: StructureDefinition.differential.element[4].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/vhdir/ValueSet/aliastype' does not resolve
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/org-alias-type'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/org-alias-type'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-org-description.json ==
 == fsh-generated\resources\StructureDefinition-practitioner-qualification.json ==
 == fsh-generated\resources\StructureDefinition-qualification.json ==
 == fsh-generated\resources\StructureDefinition-secureEndpoint.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/secureEndpoint'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/secureEndpoint'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-secureExchangeArtifacts.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/secureExchangeArtifacts'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/secureExchangeArtifacts'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-trustFramework.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/trustFramework'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/trustFramework'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-usage-restriction.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/usage-restriction'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/usage-restriction'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-via-intermediary.json ==
 == fsh-generated\resources\ValueSet-AcceptingPatientsVS.json ==
 == fsh-generated\resources\ValueSet-AccessibilityVS.json ==

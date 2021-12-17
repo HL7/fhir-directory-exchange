@@ -11,7 +11,7 @@
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.fhir-directory-exchange
-canonical: http://hl7.org/fhir/us/fhir-directory-excahnge
+canonical: http://hl7.org/fhir/us/fhir-directory-exchange
 version: 0.0.1 
 name: ONC FAST National Directory
 title: National Directory

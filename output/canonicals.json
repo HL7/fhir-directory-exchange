@@ -359,609 +359,609 @@
   {
     "id": "AcceptingPatientsCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/AcceptingPatientsCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/AcceptingPatientsCS",
     "version": "0.0.1",
     "name": "AcceptingPatientsCS"
   },
   {
     "id": "AccessibilityCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/AccessibilityCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/AccessibilityCS",
     "version": "0.0.1",
     "name": "AccessibilityCS"
   },
   {
     "id": "DeliveryMethodCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/DeliveryMethodCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/DeliveryMethodCS",
     "version": "0.0.1",
     "name": "DeliveryMethodCS"
   },
   {
     "id": "EndpointConnectionTypeCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/EndpointConnectionTypeCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/EndpointConnectionTypeCS",
     "version": "0.0.1",
     "name": "EndpointConnectionTypeCS"
   },
   {
     "id": "EndpointPayloadTypeCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/EndpointPayloadTypeCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/EndpointPayloadTypeCS",
     "version": "0.0.1",
     "name": "EndpointPayloadTypeCS"
   },
   {
     "id": "EndpointTypeCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/EndpointTypeCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/EndpointTypeCS",
     "version": "0.0.1",
     "name": "EndpointTypeCS"
   },
   {
     "id": "HealthcareServiceCategoryCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/HealthcareServiceCategoryCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/HealthcareServiceCategoryCS",
     "version": "0.0.1",
     "name": "HealthcareServiceCategoryCS"
   },
   {
     "id": "IgTypeCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/IgTypeCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/IgTypeCS",
     "version": "0.0.1",
     "name": "IgTypeCS"
   },
   {
     "id": "InsurancePlanTypeCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/InsurancePlanTypeCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/InsurancePlanTypeCS",
     "version": "0.0.1",
     "name": "InsurancePlanTypeCS"
   },
   {
     "id": "InsuranceProductTypeCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/InsuranceProductTypeCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/InsuranceProductTypeCS",
     "version": "0.0.1",
     "name": "InsuranceProductTypeCS"
   },
   {
     "id": "LanguageProficiencyCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/LanguageProficiencyCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/LanguageProficiencyCS",
     "version": "0.0.1",
     "name": "LanguageProficiencyCS"
   },
   {
     "id": "OrgTypeCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/OrgTypeCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/OrgTypeCS",
     "version": "0.0.1",
     "name": "OrgTypeCS"
   },
   {
     "id": "OrganizationAffiliationRoleCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/OrganizationAffiliationRoleCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/OrganizationAffiliationRoleCS",
     "version": "0.0.1",
     "name": "OrganizationAffiliationRoleCS"
   },
   {
     "id": "ProviderRoleCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/ProviderRoleCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS",
     "version": "0.0.1",
     "name": "ProviderRoleCS"
   },
   {
     "id": "QualificationStatusCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/QualificationStatusCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/QualificationStatusCS",
     "version": "0.0.1",
     "name": "QualificationStatusCS"
   },
   {
     "id": "TrustFrameworkTypeCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/TrustFrameworkTypeCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/TrustFrameworkTypeCS",
     "version": "0.0.1",
     "name": "TrustFrameworkTypeCS"
   },
   {
     "id": "VirtualModalitiesCS",
     "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/VirtualModalitiesCS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/VirtualModalitiesCS",
     "version": "0.0.1",
     "name": "VirtualModalitiesCS"
   },
   {
     "id": "hl7.fhir.us.fhir-directory-exchange",
     "type": "ImplementationGuide",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange",
     "version": "0.0.1",
     "name": "ONCFASTNationalDirectory"
   },
   {
     "id": "NatlDir-CareTeam",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-CareTeam",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-CareTeam",
     "version": "0.0.1",
     "name": "NatlDirCareTeam"
   },
   {
     "id": "NatlDir-Endpoint",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Endpoint",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Endpoint",
     "version": "0.0.1",
     "name": "NatlDirEndpoint"
   },
   {
     "id": "NatlDir-HealthcareService",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-HealthcareService",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService",
     "version": "0.0.1",
     "name": "NatlDirHealthcareService"
   },
   {
     "id": "NatlDir-InsurancePlan",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-InsurancePlan",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-InsurancePlan",
     "version": "0.0.1",
     "name": "NatlDirInsurancePlan"
   },
   {
     "id": "NatlDir-Location",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Location",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location",
     "version": "0.0.1",
     "name": "NatlDirLocation"
   },
   {
     "id": "NatlDir-Network",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Network",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Network",
     "version": "0.0.1",
     "name": "NatlDirNetwork"
   },
   {
     "id": "NatlDir-Organization",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization",
     "version": "0.0.1",
     "name": "NatlDirOrganization"
   },
   {
     "id": "NatlDir-OrganizationAffiliation",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-OrganizationAffiliation",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-OrganizationAffiliation",
     "version": "0.0.1",
     "name": "NatlDirOrganizationAffiliation"
   },
   {
     "id": "NatlDir-Practitioner",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Practitioner",
     "version": "0.0.1",
     "name": "NatlDirPractitioner"
   },
   {
     "id": "NatlDir-PractitionerRole",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-PractitionerRole",
     "version": "0.0.1",
     "name": "NatlDirPractitionerRole"
   },
   {
     "id": "NatlDir-Restriction",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Restriction",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Restriction",
     "version": "0.0.1",
     "name": "NatlDirRestriction"
   },
   {
     "id": "NatlDir-Validation",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Validation",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Validation",
     "version": "0.0.1",
     "name": "NatlDirValidation"
   },
   {
     "id": "accessibility",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/accessibility",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/accessibility",
     "version": "0.0.1",
     "name": "Accessibility"
   },
   {
     "id": "associatedServers",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/associatedServers",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/associatedServers",
     "version": "0.0.1",
     "name": "AssociatedServers"
   },
   {
     "id": "careteam-alias",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/careteam-alias",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/careteam-alias",
     "version": "0.0.1",
     "name": "CareteamAlias"
   },
   {
     "id": "communication-proficiency",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/communication-proficiency",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/communication-proficiency",
     "version": "0.0.1",
     "name": "CommunicationProficiency"
   },
   {
     "id": "contactpoint-availabletime",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/contactpoint-availabletime",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-availabletime",
     "version": "0.0.1",
     "name": "ContactPointAvailableTime"
   },
   {
     "id": "contactpoint-viaintermediary",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/contactpoint-viaintermediary",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/contactpoint-viaintermediary",
     "version": "0.0.1",
     "name": "ContactPointViaIntermediary"
   },
   {
     "id": "delivery-method",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/delivery-method",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/delivery-method",
     "version": "0.0.1",
     "name": "DeliveryMethod"
   },
   {
     "id": "digitalcertificate",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/digitalcertificate",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/digitalcertificate",
     "version": "0.0.1",
     "name": "DigitalCertificate"
   },
   {
     "id": "dynamicRegistration",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/dynamicRegistration",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/dynamicRegistration",
     "version": "0.0.1",
     "name": "DynamicRegistration"
   },
   {
     "id": "endpoint-reference",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/endpoint-reference",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/endpoint-reference",
     "version": "0.0.1",
     "name": "EndpointReference"
   },
   {
     "id": "endpoint-usecase",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/endpoint-usecase",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/endpoint-usecase",
     "version": "0.0.1",
     "name": "EndpointUsecase"
   },
   {
     "id": "endpointType",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/endpointType",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/endpointType",
     "version": "0.0.1",
     "name": "EndpointType"
   },
   {
     "id": "healthcareservice-reference",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/healthcareservice-reference",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/healthcareservice-reference",
     "version": "0.0.1",
     "name": "HealthcareServiceReference"
   },
   {
     "id": "identifier-status",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/identifier-status",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/identifier-status",
     "version": "0.0.1",
     "name": "IdentifierStatus"
   },
   {
     "id": "igsSupported",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/igsSupported",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/igsSupported",
     "version": "0.0.1",
     "name": "IGsSupported"
   },
   {
     "id": "insuranceplan-reference",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/insuranceplan-reference",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/insuranceplan-reference",
     "version": "0.0.1",
     "name": "InsurancePlanReference"
   },
   {
     "id": "location-reference",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/location-reference",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/location-reference",
     "version": "0.0.1",
     "name": "LocationReference"
   },
   {
     "id": "network-reference",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/network-reference",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/network-reference",
     "version": "0.0.1",
     "name": "NetworkReference"
   },
   {
     "id": "newpatientprofile",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/newpatientprofile",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/newpatientprofile",
     "version": "0.0.1",
     "name": "NewPatientProfile"
   },
   {
     "id": "newpatients",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/newpatients",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/newpatients",
     "version": "0.0.1",
     "name": "NewPatients"
   },
   {
     "id": "org-alias-period",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/org-alias-period",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/org-alias-period",
     "version": "0.0.1",
     "name": "OrgAliasPeriod"
   },
   {
     "id": "org-alias-type",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/org-alias-type",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/org-alias-type",
     "version": "0.0.1",
     "name": "OrgAliasType"
   },
   {
     "id": "org-description",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/org-description",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/org-description",
     "version": "0.0.1",
     "name": "OrgDescription"
   },
   {
     "id": "practitioner-qualification",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/practitioner-qualification",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/practitioner-qualification",
     "version": "0.0.1",
     "name": "PractitionerQualification"
   },
   {
     "id": "qualification",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/qualification",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/qualification",
     "version": "0.0.1",
     "name": "Qualification"
   },
   {
     "id": "secureEndpoint",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/secureEndpoint",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/secureEndpoint",
     "version": "0.0.1",
     "name": "SecureEndpoint"
   },
   {
     "id": "secureExchangeArtifacts",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/secureExchangeArtifacts",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/secureExchangeArtifacts",
     "version": "0.0.1",
     "name": "SecureExchangeArtifacts"
   },
   {
     "id": "trustFramework",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/trustFramework",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/trustFramework",
     "version": "0.0.1",
     "name": "TrustFramework"
   },
   {
     "id": "usage-restriction",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/usage-restriction",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/usage-restriction",
     "version": "0.0.1",
     "name": "UsageRestriction"
   },
   {
     "id": "via-intermediary",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/via-intermediary",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/via-intermediary",
     "version": "0.0.1",
     "name": "ViaIntermediary"
   },
   {
     "id": "AcceptingPatientsVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/AcceptingPatientsVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/AcceptingPatientsVS",
     "version": "0.0.1",
     "name": "AcceptingPatientsVS"
   },
   {
     "id": "AccessibilityVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/AccessibilityVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/AccessibilityVS",
     "version": "0.0.1",
     "name": "AccessibilityVS"
   },
   {
     "id": "DeliveryMethodVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/DeliveryMethodVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/DeliveryMethodVS",
     "version": "0.0.1",
     "name": "DeliveryMethodVS"
   },
   {
     "id": "EndpointConnectionTypeVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/EndpointConnectionTypeVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/EndpointConnectionTypeVS",
     "version": "0.0.1",
     "name": "EndpointConnectionTypeVS"
   },
   {
     "id": "EndpointPayloadTypeVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/EndpointPayloadTypeVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/EndpointPayloadTypeVS",
     "version": "0.0.1",
     "name": "EndpointPayloadTypeVS"
   },
   {
     "id": "EndpointTypeVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/EndpointTypeVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/EndpointTypeVS",
     "version": "0.0.1",
     "name": "EndpointTypeVS"
   },
   {
     "id": "EndpointUsecaseVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/EndpointUsecaseVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/EndpointUsecaseVS",
     "version": "0.0.1",
     "name": "EndpointUsecaseVS"
   },
   {
     "id": "HealthcareServiceCategoryVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/HealthcareServiceCategoryVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/HealthcareServiceCategoryVS",
     "version": "0.0.1",
     "name": "HealthcareServiceCategoryVS"
   },
   {
     "id": "HealthcareServiceTypeVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/HealthcareServiceTypeVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/HealthcareServiceTypeVS",
     "version": "0.0.1",
     "name": "HealthcareServiceTypeVS"
   },
   {
     "id": "IgTypeVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/IgTypeVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/IgTypeVS",
     "version": "0.0.1",
     "name": "IgTypeVS"
   },
   {
     "id": "IndividualAndGroupSpecialtiesVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/IndividualAndGroupSpecialtiesVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/IndividualAndGroupSpecialtiesVS",
     "version": "0.0.1",
     "name": "IndividualAndGroupSpecialtiesVS"
   },
   {
     "id": "IndividualSpecialtyAndDegreeLicenseCertificateVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS",
     "version": "0.0.1",
     "name": "IndividualSpecialtyAndDegreeLicenseCertificateVS"
   },
   {
     "id": "InsurancePlanTypeVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/InsurancePlanTypeVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/InsurancePlanTypeVS",
     "version": "0.0.1",
     "name": "InsurancePlanTypeVS"
   },
   {
     "id": "InsuranceProductTypeVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/InsuranceProductTypeVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/InsuranceProductTypeVS",
     "version": "0.0.1",
     "name": "InsuranceProductTypeVS"
   },
   {
     "id": "LanguageProficiencyVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/LanguageProficiencyVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/LanguageProficiencyVS",
     "version": "0.0.1",
     "name": "LanguageProficiencyVS"
   },
   {
     "id": "MinEndpointConnectionTypeVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/MinEndpointConnectionTypeVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/MinEndpointConnectionTypeVS",
     "version": "0.0.1",
     "name": "MinEndpointConnectionTypeVS"
   },
   {
     "id": "NetworkTypeVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/NetworkTypeVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/NetworkTypeVS",
     "version": "0.0.1",
     "name": "NetworkTypeVS"
   },
   {
     "id": "NonIndividualSpecialtiesVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/NonIndividualSpecialtiesVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/NonIndividualSpecialtiesVS",
     "version": "0.0.1",
     "name": "NonIndividualSpecialtiesVS"
   },
   {
     "id": "NonIndividualSpecialtyAndDegreeLicenseCertificateVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/NonIndividualSpecialtyAndDegreeLicenseCertificateVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/NonIndividualSpecialtyAndDegreeLicenseCertificateVS",
     "version": "0.0.1",
     "name": "NonIndividualSpecialtyAndDegreeLicenseCertificateVS"
   },
   {
     "id": "OrgTypeVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/OrgTypeVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/OrgTypeVS",
     "version": "0.0.1",
     "name": "OrgTypeVS"
   },
   {
     "id": "OrganizationAffiliationRoleVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/OrganizationAffiliationRoleVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/OrganizationAffiliationRoleVS",
     "version": "0.0.1",
     "name": "OrganizationAffiliationRoleVS"
   },
   {
     "id": "PractitionerRoleVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/PractitionerRoleVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/PractitionerRoleVS",
     "version": "0.0.1",
     "name": "PractitionerRoleVS"
   },
   {
     "id": "QualificationStatusVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/QualificationStatusVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/QualificationStatusVS",
     "version": "0.0.1",
     "name": "QualificationStatusVS"
   },
   {
     "id": "SpecialtiesVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/SpecialtiesVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/SpecialtiesVS",
     "version": "0.0.1",
     "name": "SpecialtiesVS"
   },
   {
     "id": "SpecialtyAndDegreeLicenseCertificateVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/SpecialtyAndDegreeLicenseCertificateVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/SpecialtyAndDegreeLicenseCertificateVS",
     "version": "0.0.1",
     "name": "SpecialtyAndDegreeLicenseCertificateVS"
   },
   {
     "id": "TrustFrameworkTypeVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/TrustFrameworkTypeVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/TrustFrameworkTypeVS",
     "version": "0.0.1",
     "name": "TrustFrameworkTypeVS"
   },
   {
     "id": "VirtualModalitiesVS",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/VirtualModalitiesVS",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/VirtualModalitiesVS",
     "version": "0.0.1",
     "name": "VirtualModalitiesVS"
   },
