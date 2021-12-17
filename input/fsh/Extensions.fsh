@@ -551,5 +551,3 @@ Title: "Via Intermediary"
 Description: "A reference to an alternative point of contact (NatlDir-PractitionerRole, NatlDir-Organization, NatlDir-OrganizationAffiliation, or NatlDir-Location) for this organization"
 * value[x] only Reference(NatlDirPractitionerRole or NatlDirOrganizationAffiliation or NatlDirLocation or NatlDirOrganization) 
 * value[x] 1..1 MS
-
-

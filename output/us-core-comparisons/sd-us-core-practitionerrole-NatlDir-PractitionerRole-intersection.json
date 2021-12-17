@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "c57af127-1124-4331-a76f-d473c902384d-9",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c57af127-1124-4331-a76f-d473c902384d-9",
+  "id" : "08d3b777-8d07-479c-b842-ebf82c855075-9",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/08d3b777-8d07-479c-b842-ebf82c855075-9",
   "name" : "IntersectionUSCorePractitionerRoleProfileAndNatlDirPractitionerRole",
   "title" : "Intersection of US Core PractitionerRole Profile And National Directory Exchange PractitionerRole",
   "status" : "active",
-  "date" : "2021-12-16T09:48:37-05:00",
+  "date" : "2021-12-17T09:58:53-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -925,7 +925,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner"]
+        "targetProfile" : ["http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -951,7 +951,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -994,7 +994,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Provider role codes consisting of NUCC Health Care Provider Taxonomy Code Set for providers.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c57af127-1124-4331-a76f-d473c902384d-12"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/08d3b777-8d07-479c-b842-ebf82c855075-12"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1031,7 +1031,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c57af127-1124-4331-a76f-d473c902384d-15"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/08d3b777-8d07-479c-b842-ebf82c855075-15"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1054,7 +1054,7 @@
       "max" : "*",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location"]
+        "targetProfile" : ["http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Location"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1088,7 +1088,7 @@
       "max" : "*",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-HealthcareService"]
+        "targetProfile" : ["http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-HealthcareService"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1804,7 +1804,7 @@
       "max" : "*",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Endpoint"]
+        "targetProfile" : ["http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Endpoint"]
       }],
       "constraint" : [{
         "key" : "ele-1",

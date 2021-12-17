@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:HealthcareService</sch:title>
     <sch:rule context="f:HealthcareService">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/national-directory/StructureDefinition/delivery-method']) &gt;= 1">extension with URL = 'http://hl7.org/fhir/us/national-directory/StructureDefinition/delivery-method': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/delivery-method']) &gt;= 1">extension with URL = 'http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/delivery-method': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:active) &gt;= 1">active: minimum cardinality of 'active' is 1</sch:assert>
       <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:category) &lt;= 1">category: maximum cardinality of 'category' is 1</sch:assert>

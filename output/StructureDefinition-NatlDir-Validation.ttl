@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Validation> a fhir:StructureDefinition;
+<http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Validation> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "NatlDir-Validation"];
   fhir:DomainResource.text [
@@ -21,7 +21,7 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "business" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Validation"];
+  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Validation"];
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "NatlDirValidation"];
   fhir:StructureDefinition.title [ fhir:value "NatlDir Validation"];
@@ -1105,17 +1105,17 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner";
            fhir:index 1;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole";
            fhir:index 2;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1580,17 +1580,17 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization";
            fhir:index 1;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole";
            fhir:index 2;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1625,17 +1625,17 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization";
            fhir:index 1;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole";
            fhir:index 2;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2049,9 +2049,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2234,17 +2234,17 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner";
            fhir:index 1;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole";
            fhir:index 2;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
@@ -2310,17 +2310,17 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization";
            fhir:index 1;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole";
            fhir:index 2;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
@@ -2332,17 +2332,17 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization";
            fhir:index 1;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization>
          ], [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole";
            fhir:index 2;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
@@ -2398,9 +2398,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
@@ -2419,9 +2419,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Validation.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Validation.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory/StructureDefinition/NatlDir-Validation.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Validation.ttl> .
 
 # -------------------------------------------------------------------------------------
 

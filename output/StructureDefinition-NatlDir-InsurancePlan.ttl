@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan> a fhir:StructureDefinition;
+<http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-InsurancePlan> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "NatlDir-InsurancePlan"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "business" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan"];
+  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-InsurancePlan"];
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "NatlDirInsurancePlan"];
   fhir:StructureDefinition.title [ fhir:value "National Directory Exchange InsurancePlan"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-12-16T09:47:40-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-12-17T09:57:57-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -166,8 +166,8 @@
          fhir:ElementDefinition.constraint.human [ fhir:value "If an insuranceplan does not define a network, then each plan must define one" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "network.exists() or plan.network.exists.allTrue()" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan";
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-InsurancePlan";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-InsurancePlan>
          ]
        ], [
          fhir:index 7;
@@ -176,8 +176,8 @@
          fhir:ElementDefinition.constraint.human [ fhir:value "Each InsurancePlan.plan should have a distinct plan.type." ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "plan.type.coding.code.isDistinct()" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan";
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-InsurancePlan";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-InsurancePlan>
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -1404,8 +1404,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/national-directory/ValueSet/InsuranceProductTypeVS";
-           fhir:link <http://hl7.org/fhir/us/national-directory/ValueSet/InsuranceProductTypeVS>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/InsuranceProductTypeVS";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/InsuranceProductTypeVS>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1551,9 +1551,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1588,9 +1588,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1625,9 +1625,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Location";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Location>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2797,9 +2797,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Endpoint";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Endpoint";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Endpoint>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Endpoint>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2840,9 +2840,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Network";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Network";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Network>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Network>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3850,8 +3850,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/national-directory/ValueSet/InsurancePlanTypeVS";
-           fhir:link <http://hl7.org/fhir/us/national-directory/ValueSet/InsurancePlanTypeVS>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/InsurancePlanTypeVS";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/InsurancePlanTypeVS>
          ]
        ]
      ], [
@@ -3871,9 +3871,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Location";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Location>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3909,9 +3909,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Network";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Network";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Network>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Network>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -4986,8 +4986,8 @@
          fhir:ElementDefinition.constraint.human [ fhir:value "If an insuranceplan does not define a network, then each plan must define one" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "network.exists() or plan.network.exists.allTrue()" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan";
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-InsurancePlan";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-InsurancePlan>
          ]
        ], [
          fhir:index 1;
@@ -4996,8 +4996,8 @@
          fhir:ElementDefinition.constraint.human [ fhir:value "Each InsurancePlan.plan should have a distinct plan.type." ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "plan.type.coding.code.isDistinct()" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan";
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-InsurancePlan";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-InsurancePlan>
          ]
        ]
      ], [
@@ -5038,8 +5038,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/national-directory/ValueSet/InsuranceProductTypeVS";
-           fhir:link <http://hl7.org/fhir/us/national-directory/ValueSet/InsuranceProductTypeVS>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/InsuranceProductTypeVS";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/InsuranceProductTypeVS>
          ]
        ]
      ], [
@@ -5066,9 +5066,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
@@ -5081,9 +5081,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
@@ -5095,9 +5095,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Location";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Location>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
@@ -5139,9 +5139,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Endpoint";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Endpoint";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Endpoint>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Endpoint>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
@@ -5153,9 +5153,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Network";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Network";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Network>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Network>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
@@ -5173,8 +5173,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/national-directory/ValueSet/InsurancePlanTypeVS";
-           fhir:link <http://hl7.org/fhir/us/national-directory/ValueSet/InsurancePlanTypeVS>
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/InsurancePlanTypeVS";
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/InsurancePlanTypeVS>
          ]
        ]
      ], [
@@ -5185,9 +5185,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Location";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Location>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Location>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
@@ -5199,9 +5199,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Network";
+           fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Network";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Network>
+           fhir:link <http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Network>
          ]
        ]
      ]
@@ -5209,9 +5209,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-InsurancePlan.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-InsurancePlan.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory/StructureDefinition/NatlDir-InsurancePlan.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-excahnge/StructureDefinition/NatlDir-InsurancePlan.ttl> .
 
 # -------------------------------------------------------------------------------------
 

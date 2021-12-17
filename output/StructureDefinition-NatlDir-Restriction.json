@@ -15,7 +15,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Restriction",
+  "url": "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Restriction",
   "version": "0.0.1",
   "name": "NatlDirRestriction",
   "title": "NatlDir Restriction",
@@ -2022,9 +2022,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization",
-              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-CareTeam",
-              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner"
+              "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization",
+              "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-CareTeam",
+              "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner"
             ]
           }
         ],
@@ -2738,9 +2738,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization",
-              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-CareTeam",
-              "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner"
+              "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization",
+              "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-CareTeam",
+              "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner"
             ]
           }
         ],

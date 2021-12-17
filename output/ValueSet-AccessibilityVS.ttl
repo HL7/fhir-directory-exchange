@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory/ValueSet/AccessibilityVS> a fhir:ValueSet;
+<http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/AccessibilityVS> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "AccessibilityVS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-AccessibilityCS.html\"><code>http://hl7.org/fhir/us/national-directory/CodeSystem/AccessibilityCS</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-AccessibilityCS.html\"><code>http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/AccessibilityCS</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/national-directory/ValueSet/AccessibilityVS"];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/AccessibilityVS"];
   fhir:ValueSet.version [ fhir:value "0.0.1"];
   fhir:ValueSet.name [ fhir:value "AccessibilityVS"];
   fhir:ValueSet.title [ fhir:value "Accessibility"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-12-16T09:47:40-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-12-17T09:57:57-05:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -44,15 +44,15 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/us/national-directory/CodeSystem/AccessibilityCS" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/AccessibilityCS" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/national-directory/ValueSet/AccessibilityVS.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/AccessibilityVS.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/national-directory/ValueSet/AccessibilityVS.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-excahnge/ValueSet/AccessibilityVS.ttl> .
 
 # -------------------------------------------------------------------------------------
 

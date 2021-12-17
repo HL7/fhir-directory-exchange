@@ -40,7 +40,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Restriction"/>
+  <url value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Restriction"/>
   <version value="0.0.1"/>
   <name value="NatlDirRestriction"/>
   <title value="NatlDir Restriction"/>
@@ -1678,9 +1678,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-CareTeam"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-CareTeam"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2255,9 +2255,9 @@
       <short value="definedUserOrGroup"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-CareTeam"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-CareTeam"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner"/>
       </type>
       <mustSupport value="true"/>
     </element>

@@ -247,7 +247,6 @@ status 1..1 MS
 * contact.use MS
 * contact.rank MS
 * contact.period MS
-
 # HealthCareService
 *** Changed
    active 1..1 MS 
@@ -262,8 +261,6 @@ status 1..1 MS
 * telecom.rank MS
 * telecom.use MS
 * telecom.period MS
-
-
 # InsurancePlan 
 *** Changed
   * obeys network-or-NatlDirwork 
@@ -284,7 +281,6 @@ status 1..1 MS
 * contact.telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * contact.telecom.use MS
 * contact.telecom.period MS
-
 # Location 
 *** Changed
   
@@ -297,7 +293,6 @@ status 1..1 MS
 * telecom.rank MS
 * telecom.use MS
 * telecom.period MS
-
 */
 
 Profile:        NatlDirHealthcareService
@@ -621,7 +616,6 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 * name.period MS
 * gender MS
 * photo MS
-
 */
 
 
@@ -666,7 +660,6 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 * identifier.assigner MS
 * telecom.use MS
 * telecom.period MS
-
 */
 
 Profile:        NatlDirPractitionerRole

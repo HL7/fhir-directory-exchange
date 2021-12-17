@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "c57af127-1124-4331-a76f-d473c902384d-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c57af127-1124-4331-a76f-d473c902384d-2",
+  "id" : "08d3b777-8d07-479c-b842-ebf82c855075-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/08d3b777-8d07-479c-b842-ebf82c855075-2",
   "name" : "UnionUSCoreCareTeamAndNatlDirCareTeam",
   "title" : "Union of US Core CareTeam Profile And National Directory Care Team",
   "status" : "active",
-  "date" : "2021-12-16T09:48:36-05:00",
+  "date" : "2021-12-17T09:58:52-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -933,7 +933,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Indicates specific responsibility of an individual within the care team, such as Primary physician, Team coordinator, Caregiver, etc.; right: Indicates specific responsibility of an individual within the care team, such as \"Primary physician\", \"Team coordinator\", \"Caregiver\", etc.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c57af127-1124-4331-a76f-d473c902384d-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/08d3b777-8d07-479c-b842-ebf82c855075-5"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1002,9 +1002,9 @@
       },
       {
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-CareTeam",
-        "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole",
-        "http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-CareTeam",
+        "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole",
+        "http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization"]
       }],
       "constraint" : [{
         "key" : "ele-1",

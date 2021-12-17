@@ -44,7 +44,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="business"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Validation"/>
+  <url value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Validation"/>
   <version value="0.0.1"/>
   <name value="NatlDirValidation"/>
   <title value="NatlDir Validation"/>
@@ -870,9 +870,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1225,9 +1225,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1254,9 +1254,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1577,7 +1577,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1720,9 +1720,9 @@
       <path value="VerificationResult.primarySource.who"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -1771,9 +1771,9 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -1781,9 +1781,9 @@
       <path value="VerificationResult.attestation.onBehalfOf"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-PractitionerRole"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -1825,7 +1825,7 @@
       <path value="VerificationResult.validator.organization"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/national-directory/StructureDefinition/NatlDir-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-excahnge/StructureDefinition/NatlDir-Organization"/>
       </type>
       <mustSupport value="true"/>
     </element>

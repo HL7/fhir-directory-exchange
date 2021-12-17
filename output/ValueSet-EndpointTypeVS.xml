@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="EndpointTypeVS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-EndpointTypeCS.html"><code>http://hl7.org/fhir/us/national-directory/CodeSystem/EndpointTypeCS</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-EndpointTypeCS.html"><code>http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/EndpointTypeCS</code></a></li></ul></div>
   </text>
-  <url value="http://hl7.org/fhir/us/national-directory/ValueSet/EndpointTypeVS"/>
+  <url value="http://hl7.org/fhir/us/fhir-directory-excahnge/ValueSet/EndpointTypeVS"/>
   <version value="0.0.1"/>
   <name value="EndpointTypeVS"/>
   <title value="Endpoint Type"/>
   <status value="active"/>
-  <date value="2021-12-16T09:47:40-05:00"/>
+  <date value="2021-12-17T09:57:57-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -32,7 +32,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/national-directory/CodeSystem/EndpointTypeCS"/>
+      <system value="http://hl7.org/fhir/us/fhir-directory-excahnge/CodeSystem/EndpointTypeCS"/>
     </include>
   </compose>
 </ValueSet>
