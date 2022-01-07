@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">NatlDir CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-11-19</li><li>Published by: HL7 Financial Management Working Group (FM WG)</li></ul><p>This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements.</p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The NatlDir  Server <strong>SHALL</strong>:</p><ol><li>Support all profiles defined in this Implementation Guide..</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:
 <ul><li>(Status 400): invalid parameter</li><li>(Status 401/4xx): unauthorized request</li><li>(Status 403): insufficient scope</li><li>(Status 404): unknown resource</li><li>(Status 410): deleted resource.</li></ul>
 </li><li>Support json source formats for all NatlDir interactions.</li><li>Identify the NatlDir  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li><li>Support the searchParameters on each profile  individually and in combination.
-1.Support forward and reverse chaining on all search parameters that specify the 'chain' property</li></ol><p>The NatlDir  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all NatlDir  interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li>See the <a href="implementation.html#general-security-considerations">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#endpoint">Endpoint</a></td><td><a href="StructureDefinition-NatlDir-Endpoint.html">NatlDir Endpoint</a></td><td>
+1.Support forward and reverse chaining on all search parameters that specify the 'chain' property</li></ol><p>The NatlDir  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all NatlDir  interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li>See the <a href="security.html">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#endpoint">Endpoint</a></td><td><a href="StructureDefinition-NatlDirEx-Endpoint.html">NatlDir Endpoint</a></td><td>
 							
 							organization, _id, _lastUpdated
 							
@@ -18,7 +18,7 @@
               
             </td><td>
 							
-						</td></tr><tr><td><a href="#healthcareservice">HealthcareService</a></td><td><a href="StructureDefinition-NatlDir-HealthcareService.html">NatlDir HealthcareService</a></td><td>
+						</td></tr><tr><td><a href="#healthcareservice">HealthcareService</a></td><td><a href="StructureDefinition-NatlDirEx-HealthcareService.html">NatlDir HealthcareService</a></td><td>
 							
 							location, coverage-area, organization, endpoint, name, service-category, service-type, specialty, _id, _lastUpdated
 							
@@ -30,7 +30,7 @@
               PractitionerRole:service, OrganizationAffiliation:service
             </td><td>
 							
-						</td></tr><tr><td><a href="#insuranceplan">InsurancePlan</a></td><td><a href="StructureDefinition-NatlDir-InsurancePlan.html">NatlDir InsurancePlan</a></td><td>
+						</td></tr><tr><td><a href="#insuranceplan">InsurancePlan</a></td><td><a href="StructureDefinition-NatlDirEx-InsurancePlan.html">NatlDir InsurancePlan</a></td><td>
 							
 							administered-by, owned-by, coverage-area, name, plan-type, identifier, _id, _lastUpdated, type
 							
@@ -42,7 +42,7 @@
               
             </td><td>
 							
-						</td></tr><tr><td><a href="#location">Location</a></td><td><a href="StructureDefinition-NatlDir-Location.html">NatlDir Location</a></td><td>
+						</td></tr><tr><td><a href="#location">Location</a></td><td><a href="StructureDefinition-NatlDirEx-Location.html">NatlDir Location</a></td><td>
 							
 							partof, organization, endpoint, address-city, address-state, address-postalcode, address, type, _id, _lastUpdated
 							
@@ -54,9 +54,9 @@
               HealthcareService:location, InsurancePlan:coverage-area, OrganizationAffiliation:location, PractitionerRole:location
             </td><td>
 							
-						</td></tr><tr><td><a href="#organization">Organization</a></td><td><a href="StructureDefinition-NatlDir-Network.html">NatlDir Network</a>, 
+						</td></tr><tr><td><a href="#organization">Organization</a></td><td><a href="StructureDefinition-NatlDirEx-Network.html">NatlDir Network</a>, 
 
-						<a href="StructureDefinition-NatlDir-Organization.html">NatlDir Organization</a></td><td>
+						<a href="StructureDefinition-NatlDirEx-Organization.html">NatlDir Organization</a></td><td>
 							
 							partof, endpoint, address, name, _id, _lastUpdated, type, coverage-area
 							
@@ -68,7 +68,7 @@
               Endpoint:organization, HealthcareService:organization, InsurancePlan:administered-by, InsurancePlan:owned-by, OrganizationAffiliation:primary-organization, PractitionerRole:organization, PractitionerRole:network, OrganizationAffiliation:participating-organization
             </td><td>
 							
-						</td></tr><tr><td><a href="#organizationaffiliation">OrganizationAffiliation</a></td><td><a href="StructureDefinition-NatlDir-OrganizationAffiliation.html">NatlDir OrganizationAffiliation</a></td><td>
+						</td></tr><tr><td><a href="#organizationaffiliation">OrganizationAffiliation</a></td><td><a href="StructureDefinition-NatlDirEx-OrganizationAffiliation.html">NatlDir OrganizationAffiliation</a></td><td>
 							
 							primary-organization, participating-organization, location, service, network, endpoint, role, specialty, _id, _lastUpdated
 							
@@ -80,7 +80,7 @@
               
             </td><td>
 							
-						</td></tr><tr><td><a href="#practitioner">Practitioner</a></td><td><a href="StructureDefinition-NatlDir-Practitioner.html">NatlDir Practitioner</a></td><td>
+						</td></tr><tr><td><a href="#practitioner">Practitioner</a></td><td><a href="StructureDefinition-NatlDirEx-Practitioner.html">NatlDir Practitioner</a></td><td>
 							
 							name, _id, _lastUpdated, family, given
 							
@@ -92,7 +92,7 @@
               PractitionerRole:practitioner
             </td><td>
 							
-						</td></tr><tr><td><a href="#practitionerrole">PractitionerRole</a></td><td><a href="StructureDefinition-NatlDir-PractitionerRole.html">NatlDir PractitionerRole</a></td><td>
+						</td></tr><tr><td><a href="#practitionerrole">PractitionerRole</a></td><td><a href="StructureDefinition-NatlDirEx-PractitionerRole.html">NatlDir PractitionerRole</a></td><td>
 							
 							practitioner, organization, location, service, network, endpoint, role, specialty, _id, _lastUpdated
 							
@@ -106,7 +106,7 @@
 							
 						</td></tr></tbody></table><br/><h4 id="endpoint" class="no_toc">Endpoint</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-Endpoint.html">NatlDir Endpoint</a>
+											<a href="StructureDefinition-NatlDirEx-Endpoint.html">NatlDir Endpoint</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -134,7 +134,7 @@
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/Endpoint?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="healthcareservice" class="no_toc">HealthcareService</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-HealthcareService.html">NatlDir HealthcareService</a>
+											<a href="StructureDefinition-NatlDirEx-HealthcareService.html">NatlDir HealthcareService</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -190,7 +190,7 @@
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/HealthcareService?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="insuranceplan" class="no_toc">InsurancePlan</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-InsurancePlan.html">NatlDir InsurancePlan</a>
+											<a href="StructureDefinition-NatlDirEx-InsurancePlan.html">NatlDir InsurancePlan</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -234,7 +234,7 @@
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/InsurancePlan?type=[system]|[code]</code></td></tr></tbody></table><hr/><h4 id="location" class="no_toc">Location</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-Location.html">NatlDir Location</a>
+											<a href="StructureDefinition-NatlDirEx-Location.html">NatlDir Location</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -292,9 +292,9 @@
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/Location?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="organization" class="no_toc">Organization</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-Network.html">NatlDir Network</a>, 
+											<a href="StructureDefinition-NatlDirEx-Network.html">NatlDir Network</a>, 
 				
-											<a href="StructureDefinition-NatlDir-Organization.html">NatlDir Organization</a>
+											<a href="StructureDefinition-NatlDirEx-Organization.html">NatlDir Organization</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -356,7 +356,7 @@
 							reference
 						</td><td><code class="highlighter-rouge">GET [base]/Organization?coverage-area=[coverage-area]</code></td></tr></tbody></table><hr/><h4 id="organizationaffiliation" class="no_toc">OrganizationAffiliation</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-OrganizationAffiliation.html">NatlDir OrganizationAffiliation</a>
+											<a href="StructureDefinition-NatlDirEx-OrganizationAffiliation.html">NatlDir OrganizationAffiliation</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -408,7 +408,7 @@
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/OrganizationAffiliation?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="practitioner" class="no_toc">Practitioner</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-Practitioner.html">NatlDir Practitioner</a>
+											<a href="StructureDefinition-NatlDirEx-Practitioner.html">NatlDir Practitioner</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -440,7 +440,7 @@
 							string
 						</td><td><code class="highlighter-rouge">GET [base]/Practitioner?given=[given]</code></td></tr></tbody></table><hr/><h4 id="practitionerrole" class="no_toc">PractitionerRole</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-NatlDir-PractitionerRole.html">NatlDir PractitionerRole</a>
+											<a href="StructureDefinition-NatlDirEx-PractitionerRole.html">NatlDir PractitionerRole</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -492,7 +492,7 @@
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><br/></div>
   </text>
-  <url value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/CapabilityStatement/NatlDir"/>
+  <url value="http://hl7.org/fhir/us/fhir-directory-exchange/CapabilityStatement/NatlDir"/>
   <version value="0.0.1"/>
   <name value="DavinciPdexNatlDirCapabilityStatement"/>
   <title value="NatlDir CapabilityStatement"/>
@@ -523,19 +523,19 @@
   <format value="xml"/>
   <format value="json"/>
   <patchFormat value="application/json-patch+json"/>
-  <implementationGuide value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/ImplementationGuide/hl7.fhir.us.davinci-pdex-NatlDir"/>
+  <implementationGuide value="http://http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/http://hl7.org/fhir/us/fhir-directory-exchange"/>
   <rest>
     <mode value="server"/>
     <documentation value="The NatlDir  Server **SHALL**:&#xA;&#xA;1. Support all profiles defined in this Implementation Guide..&#xA;1.  Implement the RESTful behavior according to the FHIR specification.&#xA;1. Return the following response classes:&#xA;   - (Status 400): invalid parameter&#xA;   - (Status 401/4xx): unauthorized request&#xA;   - (Status 403): insufficient scope&#xA;   - (Status 404): unknown resource&#xA;   - (Status 410): deleted resource.&#xA;1. Support json source formats for all NatlDir interactions.&#xA;1. Identify the NatlDir  profiles supported as part of the FHIR `meta.profile` attribute for each instance.&#xA;1. Support the searchParameters on each profile  individually and in combination.&#xA;1.Support forward and reverse chaining on all search parameters that specify the &#39;chain&#39; property&#xA;&#xA;The NatlDir  Server **SHOULD**:&#xA;&#xA;1. Support xml source formats for all NatlDir  interactions.&#xA;"/>
     <security>
-      <description value="1. See the [General Security Considerations](implementation.html#general-security-considerations) section for requirements and recommendations.&#xA;1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."/>
+      <description value="1. See the [General Security Considerations](security.html) section for requirements and recommendations.&#xA;1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."/>
     </security>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHALL"/>
       </extension>
       <type value="Endpoint"/>
-      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Endpoint"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Endpoint"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -561,7 +561,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="organization"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/endpoint-organization"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/endpoint-organization"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -586,7 +586,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="HealthcareService"/>
-      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-HealthcareService"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -617,7 +617,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="location"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-location"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-location"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -625,7 +625,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="coverage-area"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-coverage-area"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-coverage-area"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -633,7 +633,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="organization"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-organization"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-organization"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -641,7 +641,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="endpoint"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-endpoint"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-endpoint"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -649,7 +649,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="name"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-name"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-name"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -657,7 +657,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="service-category"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-service-category"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-service-category"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -665,7 +665,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="service-type"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-service-type"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-service-type"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -673,7 +673,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="specialty"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-specialty"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-specialty"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -698,7 +698,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="InsurancePlan"/>
-      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-InsurancePlan"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -726,7 +726,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="administered-by"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-administered-by"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/insuranceplan-administered-by"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -734,7 +734,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="owned-by"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-owned-by"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/insuranceplan-owned-by"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -742,7 +742,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="coverage-area"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-coverage-area"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/insuranceplan-coverage-area"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -750,7 +750,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="name"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-name"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/insuranceplan-name"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -758,7 +758,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="plan-type"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-plan-type"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/insuranceplan-plan-type"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -766,7 +766,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="identifier"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-identifier"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/insuranceplan-identifier"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -790,7 +790,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="type"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-type"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/insuranceplan-type"/>
         <type value="token"/>
       </searchParam>
     </resource>
@@ -799,7 +799,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Location"/>
-      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Location"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -831,7 +831,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="partof"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-partof"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-partof"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -839,7 +839,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="organization"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-organization"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-organization"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -847,7 +847,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="endpoint"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-endpoint"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-endpoint"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -855,7 +855,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="address-city"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-address-city"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-address-city"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -863,7 +863,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="address-state"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-address-state"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-address-state"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -871,7 +871,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="address-postalcode"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-address-postalcode"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-address-postalcode"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -879,7 +879,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="address"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-address"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-address"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -887,7 +887,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="type"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/location-type"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-type"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -912,8 +912,8 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Organization"/>
-      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Network"/>
-      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Organization"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Network"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -949,7 +949,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="partof"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-partof"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organization-partof"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -957,7 +957,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="endpoint"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-endpoint"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organization-endpoint"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -965,7 +965,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="address"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-address"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organization-address"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -973,7 +973,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="name"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-name"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organization-name"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -997,7 +997,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="type"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-type"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organization-type"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -1005,7 +1005,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="coverage-area"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-coverage-area"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organization-coverage-area"/>
         <type value="reference"/>
       </searchParam>
     </resource>
@@ -1014,7 +1014,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="OrganizationAffiliation"/>
-      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-OrganizationAffiliation"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -1045,7 +1045,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="primary-organization"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-primary-organization"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-primary-organization"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -1053,7 +1053,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="participating-organization"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-participating-organization"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-participating-organization"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -1061,7 +1061,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="location"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-location"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-location"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -1069,7 +1069,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="service"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-service"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-service"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -1077,7 +1077,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="network"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-network"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-network"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -1085,7 +1085,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="endpoint"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-endpoint"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-endpoint"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -1093,7 +1093,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="role"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-role"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-role"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -1101,7 +1101,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="specialty"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-specialty"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-specialty"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -1126,7 +1126,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Practitioner"/>
-      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Practitioner"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -1152,7 +1152,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="name"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitioner-name"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitioner-name"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -1176,7 +1176,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="family"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitioner-family-name"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitioner-family-name"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -1184,7 +1184,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="given"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitioner-given-name"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitioner-given-name"/>
         <type value="string"/>
       </searchParam>
     </resource>
@@ -1193,7 +1193,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="PractitionerRole"/>
-      <supportedProfile value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-PractitionerRole"/>
+      <supportedProfile value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -1224,7 +1224,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="practitioner"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-practitioner"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-practitioner"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -1232,7 +1232,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="organization"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-organization"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-organization"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -1240,7 +1240,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="location"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-location"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-location"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -1248,7 +1248,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="service"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-service"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-service"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -1256,7 +1256,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="network"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-network"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-network"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -1264,7 +1264,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="endpoint"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-endpoint"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-endpoint"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -1272,7 +1272,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="role"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-role"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-role"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -1280,7 +1280,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="specialty"/>
-        <definition value="http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-specialty"/>
+        <definition value="http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-specialty"/>
         <type value="token"/>
       </searchParam>
       <searchParam>

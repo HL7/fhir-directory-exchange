@@ -10,7 +10,6 @@ Alias:   $us-core-provider-specialty-vs = http://hl7.org/fhir/us/core/ValueSet/u
 //VhDir Aliases
 Alias: $SCT = http://snomed.info/sct
 Alias: $GeolocationExtension = http://hl7.org/fhir/StructureDefinition/geolocation
-Alias: $consent = http://hl7.org/fhir/uv/vhdir/ValueSet/consent
 Alias: $verificationresult-validation-type = http://hl7.org/fhir/ValueSet/verificationresult-validation-type
 Alias: $validationprocess = http://hl7.org/fhir/uv/vhdir/ValueSet/validationprocess
 Alias: $verificationresult-primary-source-type = http://hl7.org/fhir/ValueSet/verificationresult-primary-source-type
@@ -52,9 +51,33 @@ Alias:  $yesNoVS = http://terminology.hl7.org/ValueSet/v2-0136
 
 
 // NatlDir defined CS that mimic VHDir CodeSystems
+
 Alias: $LanguageProficiency = http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/LanguageProficiencyCS
 Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/QualificationStatusCS
 Alias: $MinEndpointConnectionTypeVS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/ValueSet/MinEndpointConnectionTypeVS
 Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/QualificationStatusCS
 Alias: $IgFormatCodeVS = http://hl7.org/fhir/ValueSet/formatcodes
+/*
 
+Alias: $NatlDirEndpointQryEndpoint =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Endpoint
+Alias: $NatlDirEndpointQryHealthcareService =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService
+Alias: $NatlDirEndpointQryInsurancePlan = http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-InsurancePlan
+Alias: $NatlDirEndpointQryLocation =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location
+Alias: $NatlDirEndpointQryNetwork =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Network
+
+Alias: $NatlDirEndpointQryOrganization =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization
+Alias: $NatlDirEndpointQryOrganizationAffiliation =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation
+Alias: $NatlDirEndpointQryPractitioner =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Practitioner
+*/
+Alias: $NatlDirectoryCareTeam =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-CareTeam
+Alias: $NatlDirectoryEndPoint =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Endpoint
+Alias: $NatlDirectoryHealthCareService =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-HealthcareService
+Alias: $NatlDirectoryInsurancePlan = http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-InsurancePlan
+Alias: $NatlDirectoryLocation =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Location
+Alias: $NatlDirectoryNetwork =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Network
+Alias: $NatlDirectoryOrganization =         	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Organization
+Alias: $NatlDirectoryOrganizationAfflication =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-OrganizationAffiliation
+Alias: $NatlDirectoryPractitioner =            	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Practitioner
+Alias: $NatlDirEndpointQryPractitionerRole =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole
+Alias: $NatlDirectoryPractitionerRole  =	    http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole
+//Alias: $NatlDirEndpointQryPractitionerRole =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole

@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"89"}
-    h3,h4,h5,h6{--heading-prefix:"89"}</style>
+    <style type="text/css">h2{--heading-prefix:"88"}
+    h3,h4,h5,h6{--heading-prefix:"88"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -176,38 +176,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<hr />
-<p>title: Technical Guidance for VHDir Implementations
-layout: default
-active: technical-guidance
-topofpage: true
-sectionnumbering: true
-F: http://build.fhir.org/</p>
-
-<hr />
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 <p><strong>Contents</strong></p>
 
 <ul id="markdown-toc">
-  <li><a href="#validated-healthcare-directory-concept-diagram" id="markdown-toc-validated-healthcare-directory-concept-diagram">Validated Healthcare Directory Concept Diagram</a></li>
+  <li><a href="#national-directory-concept-diagram" id="markdown-toc-national-directory-concept-diagram">National Directory Concept Diagram</a></li>
   <li><a href="#attestation" id="markdown-toc-attestation">Attestation</a></li>
   <li><a href="#validation" id="markdown-toc-validation">Validation</a></li>
   <li><a href="#exchange" id="markdown-toc-exchange">Exchange</a></li>
   <li><a href="#restricted-content" id="markdown-toc-restricted-content">Restricted Content</a></li>
   <li><a href="#redundancy--ambiguity-across-resources" id="markdown-toc-redundancy--ambiguity-across-resources">Redundancy &amp; Ambiguity Across Resources</a></li>
+  <li><a href="#subscriptions" id="markdown-toc-subscriptions">Subscriptions</a></li>
 </ul>
 
 <hr />
 
-<!-- end TOC -->
-
-<h2 id="validated-healthcare-directory-concept-diagram">Validated Healthcare Directory Concept Diagram</h2>
+<h2 id="national-directory-concept-diagram">National Directory Concept Diagram</h2>
 
 <p>This diagram depicts the high-level conceptual design of a central source of validated healthcare directory data.</p>
 
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 1: Validated Healthcare Directory Concept Diagram</strong></figcaption>
+<figcaption class="figure-caption"><strong>Figure 1: National Directory Concept Diagram</strong></figcaption>
   <img src="diagram5.jpg" class="figure-img img-responsive img-rounded center-block" alt="conceptDiagram" />
 </figure>
 
@@ -355,9 +345,9 @@ Additionally, the FHIR specification provides support for <a href="http://build.
 
 <h2 id="exchange">Exchange</h2>
 
-<p>The primary focus of this implementation guide is a RESTful API for obtaining data from a Validated Healthcare Directory. The exchange API only supports a one-directional flow of information from a Validated Healthcare Directory into local environments (i.e. HTTP GETs).</p>
+<p>The primary focus of this implementation guide is a RESTful API for obtaining data from a National Directory. The exchange API only supports a one-directional flow of information from a National Directory into local environments (i.e. HTTP GETs).</p>
 
-<p>Any Validated Healthcare Directory IG conformant implementation:</p>
+<p>Any National Directory IG conformant implementation:</p>
 
 <ul>
   <li>SHALL support profiles: Organization, Practitioner, Location, PractitionerRole, Endpoint, Validation</li>
@@ -368,7 +358,7 @@ Additionally, the FHIR specification provides support for <a href="http://build.
 
 <p>Conceptually, this guide was written to describe the flow of information from a central source of validated healthcare directory data to local workflow environments. We envisioned a national VHDir which functioned as a “source of truth” for a broad set of provider data available to support local business needs and use cases. A local environment could readily obtain all or a subset of the data it needed from the national VHDir and have confidence that the information was accurate. If necessary, a local environment could supplement VHDir data with additional data sourced and/or maintained locally. For example, a local environment doing provider credentialing might rely on a national VHDir for demographic information about a provider (e.g. name, address, educational history, license information, etc.), but also ask the provider for supplementary information such as their work history, liability insurance coverage, or military experience. Likewise, we envisioned that a VHDir would primarily share information with other systems, rather than individual end users or the general public.</p>
 
-<p>The content of this guide, however, does not preclude it from being implemented for smaller “local” directories, or accessed by the general public. Generally, conformance requirements throughout the guide are less tightly constrained so as to support a wider variety of possible implementations. We did not want to set strict requirements about the overall design, technical architecture, capabilities, etc. of a Validated Healthcare Directory that might prevent adoption of this standard. For example, although we would expect a national directory to gather and share information about healthcare provider insurance networks and health plans, implementations are not required to do so to be considered conformant.</p>
+<p>The content of this guide, however, does not preclude it from being implemented for smaller “local” directories, or accessed by the general public. Generally, conformance requirements throughout the guide are less tightly constrained so as to support a wider variety of possible implementations. We did not want to set strict requirements about the overall design, technical architecture, capabilities, etc. of a National Directory that might prevent adoption of this standard. For example, although we would expect a national directory to gather and share information about healthcare provider insurance networks and health plans, implementations are not required to do so to be considered conformant.</p>
 
 <p>We acknowledge that this decision has the potential to impact the interoperability of healthcare directory data and lead to variable implementations. However, we believe this risk is balanced by the potential for greater standardization of healthcare directory data enabled by this IG. We expect jurisdictions (e.g. countries) to further constrain this IG to meet their unique needs and publish the results openly and transparently.</p>
 
@@ -391,6 +381,19 @@ Additionally, the FHIR specification provides support for <a href="http://build.
 <p>Although FHIR resources define discrete business objects, related resources may have similar data elements. For example, the HealthcareService, PractitionerRole, and Location resources all include data elements describing availability. In some circumstances, values in these common data elements may not align across resources, potentially creating ambiguity. For example, in this IG, a Location resource might indicate that the location no longer accepts patients. However, a PractitionerRole resource for a provider working at the location might indicate that the provider is accepting patients (e.g., by referral only). In some cases, these inconsistencies are valid representations of the complexities of healthcare systems. In others, data might have been entered in error, outdated, or otherwise inaccurate.</p>
 
 <p>The FHIR specification does not provide guidance on managing common elements across resources to reduce redundancy or ambiguity. Likewise, this implementation guide does not provide additional guidance. Implementations should consider further constraining profiles, creating invariants, or requiring data sources (e.g. attesters) to contribute data in a consistent format. Some resources include elements for describing exceptions, such as the availabilityExceptions field on HealthcareService, Location, and PractitionerRole. Additionally, validation processes may help discover and address inconsistencies across resources.</p>
+
+<h2 id="subscriptions">Subscriptions</h2>
+<p>In the subscription mechanism, instead of the client system regularly querying the server to see if there are new Tasks or changes to existing Tasks, the client creates a Subscription instance on the server that indicates that it wants to be notified about changes to Tasks and, in the Subscription, provides filters that describe what subset of Tasks it is interested in. The server will then push notifications when there are new Tasks and the client can then query for the specific Tasks that have changed.</p>
+
+<p>This Gravity functionality is based on the <a href="http://hl7.org/fhir/uv/subscriptions-backport/">R5 Subscription backport</a> implementation guide. This implementation guide allows pre-adoption of the FHIR R5 topic-based subscription approach in R4 implementations and is the subscription approach that most U.S. EHR vendors have agreed to support. Implementers of this Gravity IG who choose to support Subscription must comply with the Subscription Backport IG for the purpose of monitoring Tasks and, if necessary, ServiceRequests.</p>
+
+<p>For the purposes of this IG, there will be no need for ‘topic discovery’ as there are only two topics of interest - one for monitoring Task and one for monitoring ServiceRequest. While neither of these topics are unique to the Gravity IG, because no standard topics have yet been defined for US Core, this IG will define the needed topics here. In the future, these topics may be subsumed into general-purpose topics defined by US Core and/or the FHIR core specification.</p>
+
+<p>Systems supporting subscription SHALL support the rest-hook channel mechanism, though they may choose to support other channel approaches. Servers SHALL support both JSON and XML and clients SHALL support at least one of these. Client and server SHALL support id-only, though they may also support other content approaches. The id-only approach means that the id of the Task or ServiceRequest that was updated or created will be provided. The client will then perform a read or a query to retrieve the specified record(s) specified in the subscription notification. E.g.</p>
+
+<p>[base]/Task?_id=1234,5678</p>
+
+<p>If search is used, the client MAY use _include=Task:focus to retrieve the referenced ServiceRequest as well. E.g. [base]/Task?_id=1234m5678&amp;_include=Task:focus</p>
 
 <hr />
 
@@ -418,7 +421,7 @@ Additionally, the FHIR specification provides support for <a href="http://build.
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-exchange#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 17, 2021 10:34-0500">2021-12-17</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-exchange#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 7, 2022 13:26-0500">2022-01-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

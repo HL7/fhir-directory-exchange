@@ -10,7 +10,7 @@
   "name": "ONCFASTNationalDirectory",
   "title": "National Directory",
   "status": "active",
-  "date": "2021-12-17T10:34:48-05:00",
+  "date": "2022-01-07T13:26:31-05:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -49,6 +49,12 @@
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "packageId": "hl7.fhir.us.core",
       "version": "4.0.0"
+    },
+    {
+      "id": "nationalDirectoryQuery",
+      "uri": "https://build.fhir.org/ig/HL7/fhir-directory-query/",
+      "packageId": "hl7.fhir.us.fhir-directory-query",
+      "version": "current"
     }
   ],
   "definition": {
@@ -323,7 +329,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDir-CareTeam"
+          "reference": "StructureDefinition/NatlDirEx-CareTeam"
         },
         "name": "National Directory Care Team",
         "description": "Defines the basic constraints and extensions on the CareTeam resource for use in a Validated Healthcare Directory",
@@ -337,9 +343,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDir-Endpoint"
+          "reference": "StructureDefinition/NatlDirEx-Endpoint"
         },
-        "name": "National Directory Exchange Endpoint",
+        "name": "National Directory Endpoint",
         "description": "The technical details of an endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging.",
         "exampleBoolean": false
       },
@@ -351,9 +357,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDir-HealthcareService"
+          "reference": "StructureDefinition/NatlDirEx-HealthcareService"
         },
-        "name": "National Directory Exchange HealthcareService",
+        "name": "National Directory HealthcareService",
         "description": "The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services.",
         "exampleBoolean": false
       },
@@ -365,10 +371,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDir-InsurancePlan"
+          "reference": "StructureDefinition/NatlDirEx-InsurancePlan"
         },
-        "name": "National Directory Exchange InsurancePlan",
-        "description": "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).\r\n\r\nInsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc.",
+        "name": "National Directory InsurancePlan",
+        "description": "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).",
         "exampleBoolean": false
       },
       {
@@ -379,9 +385,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDir-Location"
+          "reference": "StructureDefinition/NatlDirEx-Location"
         },
-        "name": "National Directory Exchange Location",
+        "name": "National Directory Location",
         "description": "A Location is the physical place where healthcare services are provided, practitioners are employed, \r\n                 organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.",
         "exampleBoolean": false
       },
@@ -393,10 +399,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDir-Network"
+          "reference": "StructureDefinition/NatlDirEx-Network"
         },
-        "name": "National Directory Exchange Network",
-        "description": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.\r\n\r\nIn the NatlDir IG, individuals and organizations are represented as participants in a National Directory Exchange Network through the practitionerRole and National Directory Exchange-organizationAffiliation resources, respectively.",
+        "name": "National Directory Network",
+        "description": "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.",
         "exampleBoolean": false
       },
       {
@@ -407,9 +413,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDir-Organization"
+          "reference": "StructureDefinition/NatlDirEx-Organization"
         },
-        "name": "National Directory Exchange Organization",
+        "name": "National Directory Organization",
         "description": "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.\r\nGuidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text",
         "exampleBoolean": false
       },
@@ -421,9 +427,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDir-OrganizationAffiliation"
+          "reference": "StructureDefinition/NatlDirEx-OrganizationAffiliation"
         },
-        "name": "National Directory Exchange OrganizationAffiliation",
+        "name": "National Directory OrganizationAffiliation",
         "description": "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information.",
         "exampleBoolean": false
       },
@@ -435,9 +441,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDir-Practitioner"
+          "reference": "StructureDefinition/NatlDirEx-Practitioner"
         },
-        "name": "National Directory Exchange Practitioner",
+        "name": "National Directory Practitioner",
         "description": "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.",
         "exampleBoolean": false
       },
@@ -449,9 +455,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDir-PractitionerRole"
+          "reference": "StructureDefinition/NatlDirEx-PractitionerRole"
         },
-        "name": "National Directory Exchange PractitionerRole",
+        "name": "National Directory PractitionerRole",
         "description": "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, \r\nthere may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also \r\nbe a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.",
         "exampleBoolean": false
       },
@@ -487,700 +493,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/accessibility"
-        },
-        "name": "Accessibility",
-        "description": "An extension to describe accessibility options offered by a practitioner or at a location.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/associatedServers"
-        },
-        "name": "Associated Servers",
-        "description": "Associated Servers",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/careteam-alias"
-        },
-        "name": "NatlDir Careteam Alias",
-        "description": "Alternate names by which the team is known",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/communication-proficiency"
-        },
-        "name": "Communication Proficiency",
-        "description": "An extension to express a practitioner’s spoken proficiency with the language indicated in practitioner.communication.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/contactpoint-availabletime"
-        },
-        "name": "Contactpoint Availabletime",
-        "description": "An extension representing the days and times a contact point is available",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/contactpoint-viaintermediary"
-        },
-        "name": "NatlDir Contactpoint Viaintermediary",
-        "description": "Represents an external point of contact responsible for handling communications with this entity",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/delivery-method"
-        },
-        "name": "Delivery Method",
-        "description": "An extension describing the service delivery method.   If service delivery is virtual, one or more delivery modalities should be specified.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/digitalcertificate"
-        },
-        "name": "NatlDir Digitalcertificate",
-        "description": "A digital certificate, used to identify a user or group of users, or for encrypted communications",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/dynamicRegistration"
-        },
-        "name": "Dynamic Registration",
-        "description": "Dynamic Registration",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/endpoint-reference"
-        },
-        "name": "NatlDir Practitioner Endpoint Reference",
-        "description": "The technical details of an endpoint that can be used for electronic services",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/endpointType"
-        },
-        "name": "Endpoint Type",
-        "description": "Type of Endpoint",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/endpoint-usecase"
-        },
-        "name": "Endpoint Usecase",
-        "description": "EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/healthcareservice-reference"
-        },
-        "name": "NatlDir Healthcareservice Reference",
-        "description": "Reference to healthcareservice resource",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/igsSupported"
-        },
-        "name": "IGs Supported",
-        "description": "IGs Supported document the different types of IGs supported by the Endpoint.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/identifier-status"
-        },
-        "name": "NatlDir Identifier Status",
-        "description": "Describes the status of an identifier",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/insuranceplan-reference"
-        },
-        "name": "NatlDir Insurance Plan Reference",
-        "description": "A reference to the insurancePlan resource",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/location-reference"
-        },
-        "name": "Location Reference",
-        "description": "A reference to a Location resource (NatlDir-Location) defining the coverage area of a health insurance provider network",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/network-reference"
-        },
-        "name": "Network Reference",
-        "description": "A reference to the healthcare provider insurance networks (NatlDir-Network) the practitioner participates in through their role",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/newpatientprofile"
-        },
-        "name": "NatlDir New Patient Profile",
-        "description": "Additional information about new patients a practitioner/service/location accepts (e.g. only children)",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/newpatients"
-        },
-        "name": "New Patients",
-        "description": "New Patients indicates whether new patients are being accepted in general, or from a specific network.   \r\n              This extension is included in the PractitionerRole, HealthcareService, and Location profiles.  \r\n              This provides needed flexibility for specifying whether a provider accepts new patients by location and network.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/org-alias-period"
-        },
-        "name": "NatlDir Org Alias Period",
-        "description": "the period of time the alias was actively used",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/org-alias-type"
-        },
-        "name": "NatlDir Org Alias Type",
-        "description": "Type of alias (legal alternative | historical)",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/org-description"
-        },
-        "name": "Org Description",
-        "description": "An extension to provide a human-readable description of an organization.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/practitioner-qualification"
-        },
-        "name": "Practitioner Qualification",
-        "description": "An extension to add status and whereValid elements to a practitioner’s qualifications.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/qualification"
-        },
-        "name": "Qualification",
-        "description": "An extension to add qualifications for an organization (e.g. accreditation) or practitionerRole (e.g. registered to prescribe controlled substances).",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/secureEndpoint"
-        },
-        "name": "Secure Endpoint",
-        "description": "Is the Endpoint Secured",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/secureExchangeArtifacts"
-        },
-        "name": "Secure Exchange Artifacts",
-        "description": "Secure Exchange Artifacts",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/trustFramework"
-        },
-        "name": "Trust Framework",
-        "description": "Trust Framework",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/usage-restriction"
-        },
-        "name": "NatlDir Usage Restriction",
-        "description": "The FHIR specification contains a security meta tag which can be used to inform systems of the sensitivity of resources, as well as by access control mechanisms to ensure content isn't exposed that shouldn't be.\nThis mechanism only goes to the resource level, this reference to a usage-restriction (consent) extends this further into the resource, and can be applied to any element, and may apply to all properties beneath the element (e.g. If applied to an identifier on a practitioner, then all the properties of the identifier should not be exposed unless it is understood)\nThis will be expected to be used as a modifier extension.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/via-intermediary"
-        },
-        "name": "Via Intermediary",
-        "description": "A reference to an alternative point of contact (NatlDir-PractitionerRole, NatlDir-Organization, NatlDir-OrganizationAffiliation, or NatlDir-Location) for this organization",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
         "reference": {
-          "reference": "ValueSet/AcceptingPatientsVS"
+          "reference": "ValueSet/ConsentVS"
         },
-        "name": "Accepting Patients Codes",
-        "description": "Codes to identify if the practice is accepting new patients",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/AccessibilityVS"
-        },
-        "name": "Accessibility",
-        "description": "Codes for documenting general categories of accommodations available.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/DeliveryMethodVS"
-        },
-        "name": "Delivery Methods",
-        "description": "Codes for documenting delivery methods.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/EndpointConnectionTypeVS"
-        },
-        "name": "Endpoint Connection Types",
-        "description": "Endpoint Connection Types",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/EndpointPayloadTypeVS"
-        },
-        "name": "Endpoint Payload Types",
-        "description": "Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/EndpointTypeVS"
-        },
-        "name": "Endpoint Type",
-        "description": "Codes to identify Endpoint Type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/EndpointUsecaseVS"
-        },
-        "name": "Endpoint Usecases",
-        "description": "Codes for documenting business use case by a general grouping by business area.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/HealthcareServiceCategoryVS"
-        },
-        "name": "Healthcare Service Category",
-        "description": "Broad categories of healthcare services being performed or delivered.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/HealthcareServiceTypeVS"
-        },
-        "name": "HealthcareService Types",
-        "description": "Valueset for HealthCareService type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/IgTypeVS"
-        },
-        "name": "IG Type",
-        "description": "Codes to identify IG Type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/IndividualAndGroupSpecialtiesVS"
-        },
-        "name": "Individual and Group Specialties",
-        "description": "Individual and Group Specialties from National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS"
-        },
-        "name": "Individual Specialties, Degrees, Licenses, and Certificates",
-        "description": "Individual Specialties, Degrees, Licenses, and Certificates",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/InsurancePlanTypeVS"
-        },
-        "name": "Insurance Plan Type",
-        "description": "Categories of cost-sharing used by plans.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/InsuranceProductTypeVS"
-        },
-        "name": "Insurance Product Type",
-        "description": "A distinct package of health insurance coverage benefits that are offered using a particular product network type.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/LanguageProficiencyVS"
-        },
-        "name": "Language Proficiency",
-        "description": "Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/MinEndpointConnectionTypeVS"
-        },
-        "name": "Minimum Endpoint Connection Types",
-        "description": "Minimum Endpoint Connection Types",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/NetworkTypeVS"
-        },
-        "name": "Network Type",
-        "description": "Single value describing networks.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/NonIndividualSpecialtiesVS"
-        },
-        "name": "Non-Individual Specialties",
-        "description": "Non-Individual Specialties from National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/NonIndividualSpecialtyAndDegreeLicenseCertificateVS"
-        },
-        "name": "Non-Individual Specialties, Degrees, Licenses, and Certificates",
-        "description": "Non-Individual Specialties, Degrees, Licenses, and Certificates",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/OrgTypeVS"
-        },
-        "name": "Organization Type",
-        "description": "Categories of organizations based on criteria in provider directories.",
+        "name": "National Directory Consent Value Set",
+        "description": "\t\r\nCodes for use in defining access levels for sharing subsets of constrained content (as an example).",
         "exampleBoolean": false
       },
       {
@@ -1195,90 +515,6 @@
         },
         "name": "OrganizationAffiliation Roles",
         "description": "Value Set for Organization Affiliation Roles",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/PractitionerRoleVS"
-        },
-        "name": "PractitionerRole Code",
-        "description": "Codes for the capabilities that an individual, group, or organization is acknowledged to have in a payer network, including general codes from the HL7 PractitionerRole Code System.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/QualificationStatusVS"
-        },
-        "name": "Qualification Status",
-        "description": "The state indicating if a qualification is currently valid.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/SpecialtiesVS"
-        },
-        "name": "Specialties",
-        "description": "Specialties value set based on National Uniform Claim Committee (NUCC) Health Care Provider Taxonomy code set.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/SpecialtyAndDegreeLicenseCertificateVS"
-        },
-        "name": "Specialties, Degrees, Licenses, and Certificates",
-        "description": "Specialties and Degree License and Certificates",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/TrustFrameworkTypeVS"
-        },
-        "name": "Trust Framework Type",
-        "description": "Trust Framework Type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/VirtualModalitiesVS"
-        },
-        "name": "Virtual Modalities",
-        "description": "Codes for virtual service delivery modalities .",
         "exampleBoolean": false
       },
       {
@@ -1307,6 +543,34 @@
         },
         "name": "Accessibility",
         "description": "General categories of accommodations available.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ConsentCS"
+        },
+        "name": "National Healthcare Directory Consent",
+        "description": "Codes for use in defining access levels for sharing subsets of constrained content (as an example)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ConsentScopeCS"
+        },
+        "name": "National Healthcare Directory ConsentScopeCodes",
+        "description": "This value set includes the four Consent scope codes.",
         "exampleBoolean": false
       },
       {
@@ -1518,692 +782,6 @@
         "name": "Virtual Modalities",
         "description": "Categories of virtual service delivery modalities.",
         "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/Acme"
-        },
-        "name": "Acme",
-        "description": "Payer Organization",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Endpoint"
-          }
-        ],
-        "reference": {
-          "reference": "Endpoint/AcmeOfCTPortalEndpoint"
-        },
-        "name": "AcmeOfCTPortalEndpoint",
-        "description": "Endpoint for Acme of CT Portal",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Endpoint"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "InsurancePlan"
-          }
-        ],
-        "reference": {
-          "reference": "InsurancePlan/AcmeQHPBronze"
-        },
-        "name": "AcmeQHPBronze",
-        "description": "Acme of CT QHP Bronze Plan",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-InsurancePlan"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "InsurancePlan"
-          }
-        ],
-        "reference": {
-          "reference": "InsurancePlan/AcmeQHPGold"
-        },
-        "name": "AcmeQHPGold",
-        "description": "Acme of CT QHP Gold Plan",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-InsurancePlan"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/AcmeofCTPremNet"
-        },
-        "name": "AcmeofCTPremNet",
-        "description": "Acme of CT Premium Premium Network",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Network"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/AcmeofCTStdNet"
-        },
-        "name": "AcmeofCTStdNet",
-        "description": "Acme of CT Standard Network",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Network"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "PractitionerRole"
-          }
-        ],
-        "reference": {
-          "reference": "PractitionerRole/AnonRole"
-        },
-        "name": "AnonRole",
-        "description": "Practitioner role that doesn't refer to a specific practitioner",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-PractitionerRole"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/BigBox"
-        },
-        "name": "BigBox",
-        "description": "Organization that Manages 2 of PharmChain's pharmacies",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/BurrClinic"
-        },
-        "name": "BurrClinic",
-        "description": "Burr Clinic provides service to Hartford Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "OrganizationAffiliation"
-          }
-        ],
-        "reference": {
-          "reference": "OrganizationAffiliation/BurrClinicAffil"
-        },
-        "name": "BurrClinicAffil",
-        "description": "Burr Clinic's affiliation with Acme of CT Provider Network and Hartford General Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-OrganizationAffiliation"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "HealthcareService"
-          }
-        ],
-        "reference": {
-          "reference": "HealthcareService/BurrClinicServices"
-        },
-        "name": "BurrClinicServices",
-        "description": "Burr Clinic Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/CancerClinic"
-        },
-        "name": "CancerClinic",
-        "description": "HartfordCancerClinicLLC",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
-          }
-        ],
-        "reference": {
-          "reference": "Location/CancerClinicLoc"
-        },
-        "name": "CancerClinicLoc",
-        "description": "Location1 of Cancer Clinic",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "HealthcareService"
-          }
-        ],
-        "reference": {
-          "reference": "HealthcareService/CancerClinicService"
-        },
-        "name": "CancerClinicService",
-        "description": "Cancer Clinic Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/ConnHIE"
-        },
-        "name": "ConnHIE",
-        "description": "Connecticut HIE",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "OrganizationAffiliation"
-          }
-        ],
-        "reference": {
-          "reference": "OrganizationAffiliation/ConnHIEAffil"
-        },
-        "name": "ConnHIEAffil",
-        "description": "Burr Clinic's affiliation with Conn HIE",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-OrganizationAffiliation"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Practitioner"
-          }
-        ],
-        "reference": {
-          "reference": "Practitioner/Counselor"
-        },
-        "name": "Counselor",
-        "description": "Counselor Susie Smith",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Practitioner"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "PractitionerRole"
-          }
-        ],
-        "reference": {
-          "reference": "PractitionerRole/CounselorRole1"
-        },
-        "name": "CounselorRole1",
-        "description": "Susie  Smith is a counselor via Telemedicine",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-PractitionerRole"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/HamiltonClinic"
-        },
-        "name": "HamiltonClinic",
-        "description": "Hamilton Clinic (a Division of Hartford Hospital)",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "OrganizationAffiliation"
-          }
-        ],
-        "reference": {
-          "reference": "OrganizationAffiliation/HamiltonClinicAffil"
-        },
-        "name": "HamiltonClinicAffil",
-        "description": "Hamilton Clinic's affiliation with Acme of CT Provider Network and Hartford General Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-OrganizationAffiliation"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "HealthcareService"
-          }
-        ],
-        "reference": {
-          "reference": "HealthcareService/HamiltonClinicServices"
-        },
-        "name": "HamiltonClinicServices",
-        "description": "Hamilton Clinic Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Practitioner"
-          }
-        ],
-        "reference": {
-          "reference": "Practitioner/HansSolo"
-        },
-        "name": "HansSolo",
-        "description": "Solo Practitioner Hans Solo",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Practitioner"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
-          }
-        ],
-        "reference": {
-          "reference": "Location/HansSoloClinic"
-        },
-        "name": "HansSoloClinic",
-        "description": "Location of Hans Solo's clinic",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "PractitionerRole"
-          }
-        ],
-        "reference": {
-          "reference": "PractitionerRole/HansSoloRole1"
-        },
-        "name": "HansSoloRole1",
-        "description": "Hans Solo is a solo practitioner",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-PractitionerRole"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "HealthcareService"
-          }
-        ],
-        "reference": {
-          "reference": "HealthcareService/HansSoloService"
-        },
-        "name": "HansSoloService",
-        "description": "Hans Solo Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "OrganizationAffiliation"
-          }
-        ],
-        "reference": {
-          "reference": "OrganizationAffiliation/HartfordOrthopedicAffil"
-        },
-        "name": "HartfordOrthopedicAffil",
-        "description": "Hartford Orthopedic Services affiliation with Acme of CT Provider Network and Hartford General Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-OrganizationAffiliation"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "HealthcareService"
-          }
-        ],
-        "reference": {
-          "reference": "HealthcareService/HartfordOrthopedicServices"
-        },
-        "name": "HartfordOrthopedicServices",
-        "description": "Hartford Orthopedic Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/HartfordOrthopedics"
-        },
-        "name": "HartfordOrthopedics",
-        "description": "Hartford Orthpedic Services is a group providing Orthpods for Acme of CT at Hartford General Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "HealthcareService"
-          }
-        ],
-        "reference": {
-          "reference": "HealthcareService/HospERService"
-        },
-        "name": "HospERService",
-        "description": "Hartford General Hospital ER",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
-          }
-        ],
-        "reference": {
-          "reference": "Location/HospLoc1"
-        },
-        "name": "HospLoc1",
-        "description": "Location1 of Hartford Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
-          }
-        ],
-        "reference": {
-          "reference": "Location/HospLoc2"
-        },
-        "name": "HospLoc2",
-        "description": "Location2 of Hartford Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/Hospital"
-        },
-        "name": "Hospital",
-        "description": "Hartford General Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Practitioner"
-          }
-        ],
-        "reference": {
-          "reference": "Practitioner/JoeSmith"
-        },
-        "name": "JoeSmith",
-        "description": "Practitioner Dr Joe Smith",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Practitioner"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "PractitionerRole"
-          }
-        ],
-        "reference": {
-          "reference": "PractitionerRole/JoeSmithRole1"
-        },
-        "name": "JoeSmithRole1",
-        "description": "Dr Smith moonlighting as ER Doc at Hartford Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-PractitionerRole"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "PractitionerRole"
-          }
-        ],
-        "reference": {
-          "reference": "PractitionerRole/JoeSmithRole2"
-        },
-        "name": "JoeSmithRole2",
-        "description": "Dr Smith Internal Medicine at Burr Clinic",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-PractitionerRole"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "PractitionerRole"
-          }
-        ],
-        "reference": {
-          "reference": "PractitionerRole/JoeSmithRole3"
-        },
-        "name": "JoeSmithRole3",
-        "description": "Dr Smith Admitting Privileges at Hartford General",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-PractitionerRole"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/PharmChain"
-        },
-        "name": "PharmChain",
-        "description": "Organization that Provides Pharmacy Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Organization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "OrganizationAffiliation"
-          }
-        ],
-        "reference": {
-          "reference": "OrganizationAffiliation/PharmChainAffil1"
-        },
-        "name": "PharmChainAffil1",
-        "description": "Organization Affiliation for PharmChain (Retail)",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-OrganizationAffiliation"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "OrganizationAffiliation"
-          }
-        ],
-        "reference": {
-          "reference": "OrganizationAffiliation/PharmChainAffil2"
-        },
-        "name": "PharmChainAffil2",
-        "description": "Organization Affiliation for PharmChain (Compounding)",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-OrganizationAffiliation"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "OrganizationAffiliation"
-          }
-        ],
-        "reference": {
-          "reference": "OrganizationAffiliation/PharmChainAffil3"
-        },
-        "name": "PharmChainAffil3",
-        "description": "Organization Affiliation for PharmChain (MailOrder)",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-OrganizationAffiliation"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "HealthcareService"
-          }
-        ],
-        "reference": {
-          "reference": "HealthcareService/PharmChainCompService"
-        },
-        "name": "PharmChainCompService",
-        "description": "Compound Pharmacy Service provided by PharmacyOrganization A",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "HealthcareService"
-          }
-        ],
-        "reference": {
-          "reference": "HealthcareService/PharmChainMailService"
-        },
-        "name": "PharmChainMailService",
-        "description": "Mail Order Pharmacy Service provided by PharmacyOrganization A",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "HealthcareService"
-          }
-        ],
-        "reference": {
-          "reference": "HealthcareService/PharmChainRetailService"
-        },
-        "name": "PharmChainRetailService",
-        "description": "Pharmacy Service provided by PharmChain",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
-          }
-        ],
-        "reference": {
-          "reference": "Location/PharmLoc1"
-        },
-        "name": "PharmLoc1",
-        "description": "Location of Pharmacy1 in PharmChain's network",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
-          }
-        ],
-        "reference": {
-          "reference": "Location/PharmLoc2"
-        },
-        "name": "PharmLoc2",
-        "description": "Location of Pharmacy2 in PharmChain's network",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
-          }
-        ],
-        "reference": {
-          "reference": "Location/PharmLoc3"
-        },
-        "name": "PharmLoc3",
-        "description": "Location of Pharmacy3 in PharmChain's network",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
-          }
-        ],
-        "reference": {
-          "reference": "Location/PharmLoc4"
-        },
-        "name": "PharmLoc4",
-        "description": "Location of Pharmacy4 in PharmChain's network",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
-          }
-        ],
-        "reference": {
-          "reference": "Location/StateOfCTLocation"
-        },
-        "name": "StateOfCTLocation",
-        "description": "State of CT Area",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Location"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "HealthcareService"
-          }
-        ],
-        "reference": {
-          "reference": "HealthcareService/VirtualCounselService"
-        },
-        "name": "VirtualCounselService",
-        "description": "Virtual Counseling Service",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-HealthcareService"
       },
       {
         "extension": [
@@ -4538,11 +3116,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "implementation.html",
-          "title": "Implementation",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "insuranceplan-reference-diff2.html",
           "title": "Insuranceplan Reference Diff 2",
           "generation": "markdown"
@@ -4775,186 +3348,6 @@
         {
           "nameUrl": "validation-search.html",
           "title": "Validation Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-careteam-diff2.html",
-          "title": "Vhdir Careteam Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-careteam-search.html",
-          "title": "Vhdir Careteam Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-careteam-summary.html",
-          "title": "Vhdir Careteam Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-endpoint-diff2.html",
-          "title": "Vhdir Endpoint Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-endpoint-search.html",
-          "title": "Vhdir Endpoint Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-endpoint-summary.html",
-          "title": "Vhdir Endpoint Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-healthcareservice-diff2.html",
-          "title": "Vhdir Healthcareservice Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-healthcareservice-search.html",
-          "title": "Vhdir Healthcareservice Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-healthcareservice-summary.html",
-          "title": "Vhdir Healthcareservice Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-insuranceplan-diff2.html",
-          "title": "Vhdir Insuranceplan Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-insuranceplan-search.html",
-          "title": "Vhdir Insuranceplan Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-insuranceplan-summary.html",
-          "title": "Vhdir Insuranceplan Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-location-diff2.html",
-          "title": "Vhdir Location Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-location-search.html",
-          "title": "Vhdir Location Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-location-summary.html",
-          "title": "Vhdir Location Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-network-diff2.html",
-          "title": "Vhdir Network Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-network-search.html",
-          "title": "Vhdir Network Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-network-summary.html",
-          "title": "Vhdir Network Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-organization-diff2.html",
-          "title": "Vhdir Organization Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-organization-search.html",
-          "title": "Vhdir Organization Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-organization-summary.html",
-          "title": "Vhdir Organization Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-organizationaffiliation-diff2.html",
-          "title": "Vhdir Organizationaffiliation Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-organizationaffiliation-search.html",
-          "title": "Vhdir Organizationaffiliation Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-organizationaffiliation-summary.html",
-          "title": "Vhdir Organizationaffiliation Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-practitioner-diff2.html",
-          "title": "Vhdir Practitioner Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-practitioner-search.html",
-          "title": "Vhdir Practitioner Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-practitioner-summary.html",
-          "title": "Vhdir Practitioner Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-practitionerrole-diff2.html",
-          "title": "Vhdir Practitionerrole Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-practitionerrole-search.html",
-          "title": "Vhdir Practitionerrole Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-practitionerrole-summary.html",
-          "title": "Vhdir Practitionerrole Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-restriction-diff2.html",
-          "title": "Vhdir Restriction Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-restriction-search.html",
-          "title": "Vhdir Restriction Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-restriction-summary.html",
-          "title": "Vhdir Restriction Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-validation-diff2.html",
-          "title": "Vhdir Validation Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-validation-search.html",
-          "title": "Vhdir Validation Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "vhdir-validation-summary.html",
-          "title": "Vhdir Validation Summary",
           "generation": "markdown"
         }
       ]

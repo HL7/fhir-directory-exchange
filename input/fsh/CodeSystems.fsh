@@ -1,8 +1,26 @@
+
+CodeSystem: ConsentCS
+Title: "National Healthcare Directory Consent"
+Description:  "Codes for use in defining access levels for sharing subsets of constrained content (as an example)"
+* #protect "Protect" "The data (or subset of data) provided should be only made available to the people, or types of people explicitly declared in the consent."
+* ^caseSensitive = true
+
+CodeSystem: ConsentScopeCS
+Title: "National Healthcare Directory ConsentScopeCodes"
+Description:  "This value set includes the four Consent scope codes."
+* #adr "Advanced Care Directive" "Actions to be taken if they are no longer able to make decisions for themselves."
+* #research "Research" "Consent to participate in research protocol and information sharing required."
+* #patient-privacy "Privacy Consent" "Agreement to collect, access, use or disclose (share) information."
+* #treatment "Treatment" "Consent to undergo a specific treatment."
+* ^caseSensitive = true
+
+
 CodeSystem: IgTypeCS
 Title: "IG Type"
 Description: "IG Type"
 * #FHIR	"FHIR"
 * #direct	"Direct"
+* ^caseSensitive = false
 
 CodeSystem: EndpointTypeCS
 Title: "IG Type"
@@ -10,6 +28,7 @@ Description: "IG Type"
 * #FHIR	"FHIR Server"
 * #OpEndpoint	"Operation Endpoint"
 * #CDS	"CDS Hooks"
+* ^caseSensitive = false
 
 CodeSystem: TrustFrameworkTypeCS
 Title: "Trust FrameworkType"
@@ -21,6 +40,7 @@ Description: "Trust Framework Type"
 * #PayerToPayer	"Payer to Payer Trust Network"
 * #Exchange	"Exchange Required by Federal Regulations"
 * #PCDH "Patient Centered Data Home"
+* ^caseSensitive = false
 
 CodeSystem: AcceptingPatientsCS
 Title: "Accepting Patients Codes"
@@ -29,6 +49,7 @@ Description: "Codes to identify if the practice is accepting new patients"
 * #newpt	"Accepting" "Accepting patients"
 * #existptonly	"Accepting existing patients" "Accepting existing patients"
 * #existptfam	"Accepting existing patients and their families" "Accepting existing patients and members of their families"
+* ^caseSensitive = false
 
 CodeSystem: AccessibilityCS
 Title: "Accessibility"
@@ -40,12 +61,14 @@ Description: "General categories of accommodations available."
 * #anssrvc	"answering service"	"Provides capability to communicate when intended recipient is not immediately available."
 * #cognitive	"cognitive"	"Provides services for cognitively impaired persons."
 * #mobility	"mobility"	"Provides services for mobility impaired persons."
+* ^caseSensitive = false
 
 CodeSystem: DeliveryMethodCS
 Title: "Delivery Methods"
 Description: "Categories of healthcare service delivery methods."
 * #virtual	"Virtual" "Delivery not requiring provider and patient to be physically co-located, such as tele-medicine"
 * #physical	"Physical" "Traditional delivery requiring provider and patient to be physically co-located."
+* ^caseSensitive = false
 
 CodeSystem: VirtualModalitiesCS
 Title: "Virtual Modalities"
@@ -56,19 +79,21 @@ Description: "Categories of virtual service delivery modalities."
 * #sms	"SMS" "SMS Text Messaging"
 * #app  "App" "Mobile Application"
 * #web  "Website" "Website accessed through browser"
+* ^caseSensitive = false
 
 CodeSystem:  EndpointConnectionTypeCS
   Title: "Endpoint Connection Types (additional)"
   Description:  "Extension codes for http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
 * #hl7-fhir-opn "HL7 FHIR Operation" "Interact with a FHIR server interface using FHIR's RESTful interface using an operation other than messaging. For details on its version/capabilities you should connect the value in Endpoint.address and retrieve the FHIR CapabilityStatement."
 * #rest-non-fhir "REST (not FHIR)" "Interact with a server using HTTP/REST but not FHIR.  Should be used for web portals."
- 
+* ^caseSensitive = false 
 
 CodeSystem:  EndpointPayloadTypeCS
   Title: "Endpoint Payload Types"
   Description:  "Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG"
 * #NA "Not Applicable" "Not Applicable"
- 
+* ^caseSensitive = false
+
  CodeSystem: HealthcareServiceCategoryCS
  Title: "Healthcare Service Category"
  Description: "Broad categories of healthcare services being performed or delivered"
@@ -87,6 +112,7 @@ CodeSystem:  EndpointPayloadTypeCS
 * #trans "Transportation" "Services which transport patients to or from a medical facility, e.g., ambulance."
 * #urg "Urgent Care" "Unscheduled health care services which provide for point-in-time evaluation or treatment of a non-life-threatening medical condition."
 * #vis "Vision" "Services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes."
+* ^caseSensitive = false
 
 CodeSystem: InsuranceProductTypeCS
 Title: "Insurance Product Type"
@@ -113,6 +139,7 @@ Description:  "A distinct package of health insurance coverage benefits that are
 * #denthmo "Dental HMO" "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity provided through a Health Maintenance Organization (HMO)."
 * #vis "Vision Plan" "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes."
 * #vishmo "Vision HMO" "Health insurance provided to cover services related to the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the eyes provided through a Health Maintenance Organization (HMO)."
+* ^caseSensitive = false
 
 CodeSystem: InsurancePlanTypeCS
 Title: "Insurance Plan Type"
@@ -125,6 +152,7 @@ Description:  "Categories of cost-sharing used by plans"
 * #lowdeductible "Low Deductible" "A plan that requires the insured to pay out of pocket a smaller proportion of incurred health care costs than a traditional insurance plan."
 * #highdeductible "High Deductible" "A plan that requires the insured to pay out of pocket a larger proportion of incurred health care costs than a traditional insurance plan."
 * #catastrophicplan "Catastrophic Plan" "A plan that requires the insured to pay out of pocket a much larger proportion of incurred health care costs than a traditional insurance plan."
+* ^caseSensitive = false
 
 CodeSystem:  OrgTypeCS
   Title: "Organization Type"
@@ -135,7 +163,7 @@ CodeSystem:  OrgTypeCS
 * #atyprv "Atypical Provider" "Providers that do not provide healthcare"
 * #bus "Non-Healthcare Business" "An organization that does not meet the definitions of a Healthcare or Atypical Provider, and is not a payer or healthcare facility"
 * #ntwk "Network" "A healthcare provider insurance network"
-
+* ^caseSensitive = false
 
 CodeSystem: QualificationStatusCS
 Title: "Qualification Status"
@@ -146,7 +174,7 @@ Description: "The state indicating if a qualification is currently valid."
 * #revoked "revoked" "The credential was revoked by the issuing organization and should not be considered valid for use."
 * #pending "pending" "The credential has not been officially assigned. It may or may not be considered valid for use."
 * #unknown "unknown" "The status of this credential is unknown. It may or may not be considered valid for use."
-
+* ^caseSensitive = false
 
 CodeSystem: ProviderRoleCS
 Title: "Provider Role Codes"
@@ -193,7 +221,22 @@ Description: "A capability that an individual, group, or organization is acknowl
 * #sp "Speech Language Pathologist" "Speech Language Pathologist"
 * #sh "Speech, Language and Hearing Service Providers" "Speech, Language and Hearing Service Providers"
 * #te "Technologists, Technicians and Other Technical Service Providers" "Technologists, Technicians and Other Technical Service Providers"
+* ^caseSensitive = false
 
 
 
-
+CodeSystem:  LanguageProficiencyCS
+Title: "Language Proficiency"
+Description: "Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language."
+* #00	"No proficiency"	"Unable to function in the spoken language."
+//* #06	"Memorized proficiency"	"Able to satisfy immediate needs using rehearsed utterances. Shows little real autonomy of expression, flexibility or spontaneity."
+* #10	"Elementary proficiency"	"Able to satisfy minimum courtesy requirements and maintain very simple face-to-face conversations on familiar topics. A native speaker must often use slowed speech, repetition, paraphrase, or a combination of these to be understood by this individual."
+//* #16	"Elementary proficiency, plus"	"Can initiate and maintain predictable face-to-face conversations and satisfy limited social demands."
+* #20	"Limited working proficiency"	"Able to satisfy routine social demands and limited work requirements."
+//* #26	"Limited working proficiency, plus"	"Able to satisfy most work requirements with language usage that is often, but not always, acceptable and effective."
+* #30	"General professional proficiency"	"Able to speak the language with sufficient structural accuracy and vocabulary to participate effectively in most formal and informal conversations in practical, social and professional topics."
+//* #36	"General professional proficiency, plus"	"Is often able to use the language to satisfy professional needs in a wide range of sophisticated and demanding tasks."
+* #40	"Advanced professional proficiency"	"Able to use the language fluently and accurately on all levels normally pertinent to professional needs."
+//* #46	"Advanced professional proficiency, plus"	"Speaking proficiency is regularly superior in all respects, usually equivalent to that of a well educated, highly articulate native speaker."
+* #50	"Functional native proficiency"	"Speaking proficiency is functionally equivalent to that of a highly articulate well-educated native speaker and reflects the cultural standards of the country where the language is natively spoken."
+* ^caseSensitive = false

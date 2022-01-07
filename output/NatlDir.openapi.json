@@ -15,7 +15,7 @@
     }
   },
   "externalDocs": {
-    "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/CapabilityStatement/NatlDir",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CapabilityStatement/NatlDir",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {
@@ -129,8 +129,7 @@
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Endpoints managed by the specified organization"
+            }
           },
           {
             "name": "_id",
@@ -341,64 +340,56 @@
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select HealthcareServices available at the specified location"
+            }
           },
           {
             "name": "coverage-area",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select services available in a region described by the specified location"
+            }
           },
           {
             "name": "organization",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select HealthcareServices provided by the specified organization"
+            }
           },
           {
             "name": "endpoint",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select HealthcareServices with the specified endpoint"
+            }
           },
           {
             "name": "name",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select HealthcareServices with the specified name"
+            }
           },
           {
             "name": "service-category",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select HealthcareServices providing the specified category of services"
+            }
           },
           {
             "name": "service-type",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select HealthcareServices of the specified type"
+            }
           },
           {
             "name": "specialty",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select services associated with the specified specialty"
+            }
           },
           {
             "name": "_id",
@@ -609,48 +600,42 @@
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select products that are administered by the specified organization"
+            }
           },
           {
             "name": "owned-by",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select products that are owned by the specified organization"
+            }
           },
           {
             "name": "coverage-area",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select products that are offered in the specified location"
+            }
           },
           {
             "name": "name",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select products with the specified name"
+            }
           },
           {
             "name": "plan-type",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select plans of the specified type"
+            }
           },
           {
             "name": "identifier",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select products with the specified identifier"
+            }
           },
           {
             "name": "_id",
@@ -674,8 +659,7 @@
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select insurance plans of the specified type"
+            }
           }
         ]
       }
@@ -869,64 +853,56 @@
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Locations that are part of the specified location"
+            }
           },
           {
             "name": "organization",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Locations managed by the specified organization"
+            }
           },
           {
             "name": "endpoint",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Locations with the specified endpoint"
+            }
           },
           {
             "name": "address-city",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Locations with the specified address.city"
+            }
           },
           {
             "name": "address-state",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Locations with the specified address.state"
+            }
           },
           {
             "name": "address-postalcode",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Locations with the specified address"
+            }
           },
           {
             "name": "address",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Locations with the specified address"
+            }
           },
           {
             "name": "type",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Locations of the specified type"
+            }
           },
           {
             "name": "_id",
@@ -1137,32 +1113,28 @@
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Organizations that are part of the specified organization"
+            }
           },
           {
             "name": "endpoint",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Organizations with the specified endpoint"
+            }
           },
           {
             "name": "address",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select organizations with the specified address (matches any of the string elements of an address)"
+            }
           },
           {
             "name": "name",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Organizations with the specified name"
+            }
           },
           {
             "name": "_id",
@@ -1186,16 +1158,14 @@
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Organizations of the specified type"
+            }
           },
           {
             "name": "coverage-area",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select health insurance provider networks available in a region described by the specified location"
+            }
           }
         ]
       }
@@ -1389,64 +1359,56 @@
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select roles offered by the specified organization"
+            }
           },
           {
             "name": "participating-organization",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select roles filled by the specified organization"
+            }
           },
           {
             "name": "location",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select OrganizationAffiliations available at the specified location"
+            }
           },
           {
             "name": "service",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select OrganizationAffiliations providing the specified service"
+            }
           },
           {
             "name": "network",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select roles where the organization is a member of the specified health insurance provider network"
+            }
           },
           {
             "name": "endpoint",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select OrganizationAffiliations with the specified endpoint"
+            }
           },
           {
             "name": "role",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select OrganizationAffiliations with the specified role"
+            }
           },
           {
             "name": "specialty",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select OrganizationAffiliations associated with the specified specialty"
+            }
           },
           {
             "name": "_id",
@@ -1657,8 +1619,7 @@
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Practitioners with the specified name (matches against any of the elements in the HumanName data type)"
+            }
           },
           {
             "name": "_id",
@@ -1682,16 +1643,14 @@
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Practitioners with the specified family name"
+            }
           },
           {
             "name": "given",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select Practitioners with the specified given name"
+            }
           }
         ]
       }
@@ -1885,64 +1844,56 @@
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select roles filled by the specified practitioner"
+            }
           },
           {
             "name": "organization",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select PractitionerRoles available at the specified organization"
+            }
           },
           {
             "name": "location",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select PractitionerRoles available at the specified location"
+            }
           },
           {
             "name": "service",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select PractitionerRoles providing the specified service"
+            }
           },
           {
             "name": "network",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select roles where the practitioner is a member of the specified health insurance provider network"
+            }
           },
           {
             "name": "endpoint",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select PractitionerRoles with the specified endpoint"
+            }
           },
           {
             "name": "role",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select PractitionerRoles with the specified role"
+            }
           },
           {
             "name": "specialty",
             "in": "query",
             "schema": {
               "type": "string"
-            },
-            "description": "Select PractitionerRoles associated with the specified specialty"
+            }
           },
           {
             "name": "_id",

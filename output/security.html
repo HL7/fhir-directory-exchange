@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"87"}
-    h3,h4,h5,h6{--heading-prefix:"87"}</style>
+    <style type="text/css">h2{--heading-prefix:"86"}
+    h3,h4,h5,h6{--heading-prefix:"86"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -176,37 +176,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<hr />
-<p>title: General Security Considerations
-layout: default
-active: security
-topofpage: true
-sectionnumbering: true
-F: http://build.fhir.org/
-—</p>
 
-<p>The following are the VhDir security considerations that implementers should follow:</p>
+<p>The following are the security considerations that implementers should follow:</p>
 <ul>
   <li>All implementers of FHIR servers and clients should pay attention to <a href="http://hl7.org/fhir/security.html">FHIR Security</a> considerations.</li>
-  <li>In addition to the <a href="http://hl7.org/fhir/security.html">FHIR Security</a> considerations, the VhDir requests need to contain specific information about VhDir client identity and organization information.</li>
+  <li>In addition to the <a href="http://hl7.org/fhir/security.html">FHIR Security</a> considerations, the VhDir requests need to contain specific information about National Healthcare Directory client identity and organization information.</li>
   <li>Providing this information using FHIR Search APIs is very cumbersome and is not necessary. This kind of information can be collected by the VhDir Authorization Server during application registration and avoid repeating the information on each request.</li>
   <li>These mechanisms are outlined in detail in the <a href="http://docs.smarthealthit.org/authorization/backend-services/">SMART Backend Services Authorization Guide</a>.</li>
 </ul>
 
 <p>The following are security conformance requirements for VhDir actors:</p>
 <ul>
-  <li>VhDir actors <em>SHALL</em> use the <a href="http://docs.smarthealthit.org/authorization/backend-services/">SMART Backend Services Authorization Guide</a> to collect the necessary requestor information appropriate for making the VhDir data request.</li>
-  <li>VhDir actors <em>SHALL</em> reference a single time source to establish a common time base for security auditing across the system.</li>
-  <li>VhDir actors <em>SHALL</em> use the <a href="http://hl7.org/fhir/STU3/auditevent.html">AuditEvent</a> resource to capture audit logs of the various transactions. VhDir actors <em>SHOULD</em> capture as many AuditEvent resource data elements as appropriate based on requirements of FHIR <a href="http://hl7.org/fhir/STU3/security.html#audit">Audit Logging</a> and local policies.</li>
-  <li>VhDir transactions <em>SHALL</em> use TLS version 1.2 or higher to secure the transmission channel unless the transmission is taking place over a more secure network.(Using TLS even within a secured network environment is still encouraged to provide defense in depth.) US Federal systems implementing VhDir actors <em>SHOULD</em> conform with FIPS PUB 140-2.</li>
-  <li>VhDir actors <em>SHALL</em> conform to <a href="http://hl7.org/fhir/STU3/security.html#http">FHIR Communications</a> requirements.</li>
-  <li>VhDir actors <em>SHOULD</em> retain Provenance information using the <a href="http://hl7.org/fhir/STU3/provenance.html">FHIR Provenance</a> resource.</li>
+  <li>National Healthcare Directory actors <em>SHALL</em> use the <a href="http://docs.smarthealthit.org/authorization/backend-services/">SMART Backend Services Authorization Guide</a> to collect the necessary requestor information appropriate for making the VhDir data request.</li>
+  <li>National Healthcare Directory actors <em>SHALL</em> reference a single time source to establish a common time base for security auditing across the system.</li>
+  <li>National Healthcare Directory actors <em>SHALL</em> use the <a href="http://hl7.org/fhir/STU3/auditevent.html">AuditEvent</a> resource to capture audit logs of the various transactions. VhDir actors <em>SHOULD</em> capture as many AuditEvent resource data elements as appropriate based on requirements of FHIR <a href="http://hl7.org/fhir/STU3/security.html#audit">Audit Logging</a> and local policies.</li>
+  <li>National Healthcare Directory transactions <em>SHALL</em> use TLS version 1.2 or higher to secure the transmission channel unless the transmission is taking place over a more secure network.(Using TLS even within a secured network environment is still encouraged to provide defense in depth.) US Federal systems implementing VhDir actors <em>SHOULD</em> conform with FIPS PUB 140-2.</li>
+  <li>National Healthcare Directory actors <em>SHALL</em> conform to <a href="http://hl7.org/fhir/STU3/security.html#http">FHIR Communications</a> requirements.</li>
+  <li>National Healthcare Directory actors <em>SHOULD</em> retain Provenance information using the <a href="http://hl7.org/fhir/STU3/provenance.html">FHIR Provenance</a> resource.</li>
 </ul>
 
 <p>The following are security conformance requirements for the overall program/system:</p>
 
 <ul>
-  <li>VhDir implementers <em>SHOULD</em> establish a risk analysis and management regime that conforms with HIPAA security regulatory requirements. In addition, implementers in the US Federal systems <em>SHOULD</em> conform with the risk management and mitigation requirements defined in NIST 800 series documents. This <em>SHOULD</em> include security category assignment in accordance with NIST 800-60 vol. 2 Appendix D.14. The coordination of risk management and the related security and privacy controls – policies, administrative practices, and technical controls – <em>SHOULD</em> be defined in the Business Associate Agreements.</li>
+  <li>National Healthcare Directory implementers <em>SHOULD</em> establish a risk analysis and management regime that conforms with HIPAA security regulatory requirements. In addition, implementers in the US Federal systems <em>SHOULD</em> conform with the risk management and mitigation requirements defined in NIST 800 series documents. This <em>SHOULD</em> include security category assignment in accordance with NIST 800-60 vol. 2 Appendix D.14. The coordination of risk management and the related security and privacy controls – policies, administrative practices, and technical controls – <em>SHOULD</em> be defined in the Business Associate Agreements.</li>
   <li>
     <p>The time service used for auditing <em>SHOULD</em> be documented in the Business Associate Agreements.</p>
 
@@ -238,7 +230,7 @@ F: http://build.fhir.org/
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-exchange#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 17, 2021 10:34-0500">2021-12-17</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-exchange#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 7, 2022 13:26-0500">2022-01-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
