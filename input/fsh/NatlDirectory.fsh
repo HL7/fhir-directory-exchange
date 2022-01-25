@@ -5,7 +5,11 @@ Parent: $NatlDirectoryCareTeam
 Id: NatlDirEx-CareTeam
 Title: "National Directory Care Team"
 Description: "Defines the basic constraints and extensions on the CareTeam resource for use in a Validated Healthcare Directory"
+* extension contains
+    UsageRestriction named restriction 0..* MS and
 * identifier.use 0..1
+* extension[restriction] ^short = "Restriction"
+* extension[restriction] ^definition = "Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties"
 
 
 Profile:        NatlDirExEndPoint
