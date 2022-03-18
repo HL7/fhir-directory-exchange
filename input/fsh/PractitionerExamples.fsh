@@ -1,8 +1,8 @@
 Instance: JoeSmith
-InstanceOf: NatlDirEndpointQryPractitioner
+InstanceOf: NatlDirExPractitioner
 Description: "Practitioner Dr Joe Smith"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitioner)
+* meta.profile = Canonical(NatlDirExPractitioner)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -29,10 +29,10 @@ Usage: #example
 
 
 Instance: HansSolo
-InstanceOf: NatlDirEndpointQryPractitioner
+InstanceOf: NatlDirExPractitioner
 Description: "Solo Practitioner Hans Solo"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitioner)
+* meta.profile = Canonical(NatlDirExPractitioner)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -61,10 +61,10 @@ Usage: #example
 
 
 Instance: HansSoloRole1
-InstanceOf: NatlDirEndpointQryPractitionerRole
+InstanceOf: NatlDirExPractitionerRole
 Description: "Hans Solo is a solo practitioner"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitionerRole)
+* meta.profile = Canonical(NatlDirExPractitionerRole)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -80,11 +80,12 @@ Usage: #example
 // specialty = internal medicine
 // available M-F
 
+/*REMOVE
 Instance: HansSoloService
-InstanceOf: NatlDirEndpointQryHealthcareService
+InstanceOf: NatlDirExHealthcareService
 Description: "Hans Solo Services"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthcareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -92,12 +93,12 @@ Usage: #example
 * category = HealthcareServiceCategoryCS#outpat 
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine"  
 * location[0] = Reference(HansSoloClinic)
-
+*/
 Instance: HansSoloClinic
-InstanceOf: NatlDirEndpointQryLocation
+InstanceOf: NatlDirExLocation
 Description: "Location of Hans Solo's clinic"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryLocation) 
+* meta.profile = Canonical(NatlDirExLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -137,10 +138,10 @@ Usage: #example
 
 
 Instance: Counselor
-InstanceOf: NatlDirEndpointQryPractitioner
+InstanceOf: NatlDirExPractitioner
 Description: "Counselor Susie Smith"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitioner)
+* meta.profile = Canonical(NatlDirExPractitioner)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -159,10 +160,10 @@ Usage: #example
 * communication = $BCP47#ru 
 
 Instance: CounselorRole1
-InstanceOf: NatlDirEndpointQryPractitionerRole
+InstanceOf: NatlDirExPractitionerRole
 Description: "Susie  Smith is a counselor via Telemedicine"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitionerRole)
+* meta.profile = Canonical(NatlDirExPractitionerRole)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -172,12 +173,12 @@ Usage: #example
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional Counselor"
 
-
+/*REMOVE
 Instance: VirtualCounselService
-InstanceOf: NatlDirEndpointQryHealthcareService
+InstanceOf: NatlDirExHealthcareService
 Description: "Virtual Counseling Service"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthcareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -190,10 +191,10 @@ Usage: #example
 * specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional"
 
 Instance: JoeSmithRole1
-InstanceOf: NatlDirEndpointQryPractitionerRole
+InstanceOf: NatlDirExPractitionerRole
 Description: "Dr Smith moonlighting as ER Doc at Hartford Hospital"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitionerRole)
+* meta.profile = Canonical(NatlDirExPractitionerRole)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -208,10 +209,10 @@ Usage: #example
 // available M-F
 
 Instance: JoeSmithRole2
-InstanceOf: NatlDirEndpointQryPractitionerRole
+InstanceOf: NatlDirExPractitionerRole
 Description: "Dr Smith Internal Medicine at Burr Clinic"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitionerRole)
+* meta.profile = Canonical(NatlDirExPractitionerRole)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -225,10 +226,10 @@ Usage: #example
 * organization = Reference(BurrClinic)
 
 Instance: JoeSmithRole3
-InstanceOf: NatlDirEndpointQryPractitionerRole
+InstanceOf: NatlDirExPractitionerRole
 Description: "Dr Smith Admitting Privileges at Hartford General"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitionerRole)
+* meta.profile = Canonical(NatlDirExPractitionerRole)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -239,10 +240,10 @@ Usage: #example
 * organization = Reference(Hospital)
 
 Instance: AnonRole
-InstanceOf: NatlDirEndpointQryPractitionerRole
+InstanceOf: NatlDirExPractitionerRole
 Description: "Practitioner role that doesn't refer to a specific practitioner"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitionerRole)
+* meta.profile = Canonical(NatlDirExPractitionerRole)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -254,10 +255,10 @@ Usage: #example
 * organization = Reference(CancerClinic)
 
 Instance: CancerClinicService
-InstanceOf: NatlDirEndpointQryHealthcareService
+InstanceOf: NatlDirExHealthcareService
 Description: "Cancer Clinic Services"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthcareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -267,11 +268,12 @@ Usage: #example
 * specialty = $NUCCProviderTaxonomy#207RX0202X "Medical Oncology"  
 * location[0] = Reference(CancerClinicLoc)
 
+*/
 Instance: CancerClinicLoc
-InstanceOf: NatlDirEndpointQryLocation
+InstanceOf: NatlDirExLocation
 Description: "Location1 of Cancer Clinic"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryLocation) 
+* meta.profile = Canonical(NatlDirExLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -305,10 +307,10 @@ Usage: #example
 * hoursOfOperation[0].daysOfWeek[4]  = #fri 
 
 Instance: CancerClinic
-InstanceOf: NatlDirEndpointQryOrganization
+InstanceOf: NatlDirExOrganization
 Description: "HartfordCancerClinicLLC"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryOrganization)
+* meta.profile = Canonical(NatlDirExOrganization)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true

@@ -1,8 +1,8 @@
-Instance: HartfordOrthopedics 
-InstanceOf: NatlDirEndpointQryOrganization
+Instance: HartfordOrthopedics
+InstanceOf: NatlDirExOrganization
 Description: "Hartford Orthpedic Services is a group providing Orthpods for Acme of CT at Hartford General Hospital"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryOrganization)
+* meta.profile = Canonical(NatlDirExOrganization)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -45,10 +45,10 @@ Usage: #example
 * contact.telecom[0].extension[contactpoint-availabletime][1].extension[availableEndTime].valueTime = 17:00:00
 
 Instance: Hospital
-InstanceOf: NatlDirEndpointQryOrganization
+InstanceOf: NatlDirExOrganization
 Description: "Hartford General Hospital"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryOrganization)
+* meta.profile = Canonical(NatlDirExOrganization)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -76,11 +76,13 @@ Usage: #example
 * extension[qualification].extension[status] = $QualificationStatusCS#active
 */
 
+/*
+REMOVE 
 Instance: HospERService
-InstanceOf: NatlDirEndpointQryHealthcareService
+InstanceOf: NatlDirExHealthCareService
 Description: "Hartford General Hospital ER"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthcareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -90,13 +92,13 @@ Usage: #example
 * providedBy = Reference(Hospital)
 * location[0] = Reference(HospLoc1)
 
-
+*/
 
 Instance: HospLoc1
-InstanceOf: NatlDirEndpointQryLocation
+InstanceOf: NatlDirExLocation
 Description: "Location1 of Hartford Hospital"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryLocation) 
+* meta.profile = Canonical(NatlDirExLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -137,10 +139,10 @@ Usage: #example
 
 
 Instance: HospLoc2
-InstanceOf: NatlDirEndpointQryLocation
+InstanceOf: NatlDirExLocation
 Description: "Location2 of Hartford Hospital"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryLocation) 
+* meta.profile = Canonical(NatlDirExLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -177,12 +179,12 @@ Usage: #example
 * hoursOfOperation[0].allDay = true
 * hoursOfOperation[0].daysOfWeek[5]  = #sat
 * hoursOfOperation[0].daysOfWeek[6]  = #sun
-
+/* REMOVE
 Instance: HartfordOrthopedicServices
-InstanceOf: NatlDirEndpointQryHealthcareService
+InstanceOf: NatlDirExHealthCareService
 Description: "Hartford Orthopedic Services"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthcareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -194,10 +196,10 @@ Usage: #example
 * location[0] = Reference(HospLoc1)
 
 Instance: HartfordOrthopedicAffil
-InstanceOf: NatlDirEndpointQryOrganizationAffiliation
+InstanceOf: NatlDirExOrganizationAfflication
 Description: "Hartford Orthopedic Services affiliation with Acme of CT Provider Network and Hartford General Hospital"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryOrganizationAffiliation)
+* meta.profile = Canonical(NatlDirExOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -210,10 +212,10 @@ Usage: #example
 * network = Reference(AcmeofCTStdNet)
 
 Instance: HamiltonClinicAffil
-InstanceOf: NatlDirEndpointQryOrganizationAffiliation
+InstanceOf: NatlDirExOrganizationAffiliation
 Description: "Hamilton Clinic's affiliation with Acme of CT Provider Network and Hartford General Hospital"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryOrganizationAffiliation)
+* meta.profile = Canonical(NatlDirExOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -225,10 +227,10 @@ Usage: #example
 
 
 Instance: HamiltonClinicServices
-InstanceOf: NatlDirEndpointQryHealthcareService
+InstanceOf: NatlDirExHealthcareService
 Description: "Hamilton Clinic Services"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthcareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -240,10 +242,10 @@ Usage: #example
 
 
 Instance: HamiltonClinic
-InstanceOf: NatlDirEndpointQryOrganization
+InstanceOf: NatlDirExOrganization
 Description: "Hamilton Clinic (a Division of Hartford Hospital)"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryOrganization)
+* meta.profile = Canonical(NatlDirExOrganization)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -268,10 +270,10 @@ Usage: #example
 
 
 Instance: BurrClinicAffil
-InstanceOf: NatlDirEndpointQryOrganizationAffiliation
+InstanceOf: NatlDirExOrganizationAffiliation
 Description: "Burr Clinic's affiliation with Acme of CT Provider Network and Hartford General Hospital"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryOrganizationAffiliation)
+* meta.profile = Canonical(NatlDirExOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -283,10 +285,10 @@ Usage: #example
 * organization = Reference(Hospital)
 
 Instance: BurrClinicServices
-InstanceOf: NatlDirEndpointQryHealthcareService
+InstanceOf: NatlDirExHealthcareService
 Description: "Burr Clinic Services"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthcareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -295,13 +297,13 @@ Usage: #example
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine"  
 * providedBy = Reference(BurrClinic)
 * location[0] = Reference(HospLoc1)
-
+*/
 
 Instance: BurrClinic
-InstanceOf: NatlDirEndpointQryOrganization
+InstanceOf: NatlDirExOrganization
 Description: "Burr Clinic provides service to Hartford Hospital"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryOrganization)
+* meta.profile = Canonical(NatlDirExOrganization)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -325,10 +327,10 @@ Usage: #example
 
 
 Instance: ConnHIE
-InstanceOf: NatlDirEndpointQryOrganization
+InstanceOf: NatlDirExOrganization
 Description: "Connecticut HIE"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryOrganization)
+* meta.profile = Canonical(NatlDirExOrganization)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -347,28 +349,28 @@ Usage: #example
 * contact.telecom[0].value = "(111)-222-3333"
 * contact.telecom[0].rank = 1
 * type = OrgTypeCS#atyprv "Atypical Provider"
-
+/* REMOVE 
 Instance: ConnHIEAffil
-InstanceOf: NatlDirEndpointQryOrganizationAffiliation
+InstanceOf: NatlDirExOrganizationAffiliation
 Description: "Burr Clinic's affiliation with Conn HIE"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryOrganizationAffiliation)
+* meta.profile = Canonical(NatlDirExOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
 * code = OrganizationAffiliationRoleCS#bt
 * participatingOrganization = Reference(BurrClinic)
 * organization = Reference(ConnHIE)
-
+*/
 
 /*
 
 
 Instance: PractitionerARole1
-InstanceOf: NatlDirEndpointQryPractitionerRole
+InstanceOf: NatlDirExPractitionerRole
 Description: "Dr Smith moonlighting as ER Doc at Rockville Hospital"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitionerRole)
+* meta.profile = Canonical(NatlDirExPractitionerRole)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -379,10 +381,10 @@ Usage: #example
 // available M-F
 
 Instance: PractitionerARole2
-InstanceOf: NatlDirEndpointQryPractitionerRole
+InstanceOf: NatlDirExPractitionerRole
 Description: "Dr Smith Internal Medicine at Rockville Clinic"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitionerRole)
+* meta.profile = Canonical(NatlDirExPractitionerRole)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -392,10 +394,10 @@ Usage: #example
 * healthcareService = Reference(HealthCareServiceOutpatientClinic)
 
 Instance: HealthCareServiceOutpatientClinic
-InstanceOf: NatlDirEndpointQryHealthcareService
+InstanceOf: NatlDirExHealthcareService
 Description: "Rockville Clinic Outpatient Internal Medicine Service"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthcareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -406,10 +408,10 @@ Usage: #example
 * location[0] = Reference(RockvilleClinicLocation)
 
 Instance: HealthCareServiceEmergency
-InstanceOf: NatlDirEndpointQryHealthcareService
+InstanceOf: NatlDirExHealthcareService
 Description: "Rockville Hospital ER"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitionerRole)
+* meta.profile = Canonical(NatlDirExPractitionerRole)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -420,11 +422,11 @@ Usage: #example
 
 
 Instance: PharmacyOrganizationAffiliation1
-InstanceOf: NatlDirEndpointQryOrganizationAffiliation
+InstanceOf: NatlDirExOrganizationAffiliation
 Description: "Organization Affiliation for PharmacyOrganizationA"
 Usage: #example
 * id = "1"
-* meta.profile = Canonical(NatlDirEndpointQryOrganizationAffiliation)
+* meta.profile = Canonical(NatlDirExOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -435,11 +437,11 @@ Usage: #example
 * location[1] = Reference(PharmacyLocation2)
 
 Instance: AcmeOfCTSPreferredProviderNetwork
-InstanceOf: NatlDirEndpointQryNetwork
+InstanceOf: NatlDirExNetwork
 Description: "Acme of CT Preferred Provider Network"
 Usage: #example
 * id = "1"
-* meta.profile = Canonical(NatlDirEndpointQryNetwork)
+* meta.profile = Canonical(NatlDirExNetwork)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -447,20 +449,20 @@ Usage: #example
 * type = #payer 
 
 Instance: PharmacyLocation1
-InstanceOf: NatlDirEndpointQryLocation
+InstanceOf: NatlDirExLocation
 Description: "Location of Pharmacy1 in PharmacyOrganizationA's network"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryLocation)
+* meta.profile = Canonical(NatlDirExLocation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
 * name = "CT Location 1"
 * type = $V3RoleCode#OUTPHARM
 Instance: PharmacyLocation2
-InstanceOf: NatlDirEndpointQryLocation
+InstanceOf: NatlDirExLocation
 Description: "Location of Pharmacy1 in PharmacyOrganizationA's network"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryLocation)
+* meta.profile = Canonical(NatlDirExLocation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -468,10 +470,10 @@ Usage: #example
 * type = $V3RoleCode#OUTPHARM
 
 Instance: PharmacyLocation3
-InstanceOf: NatlDirEndpointQryLocation
+InstanceOf: NatlDirExLocation
 Description: "Location of Pharmacy1 in PharmacyOrganizationA's network"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryLocation)
+* meta.profile = Canonical(NatlDirExLocation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -479,10 +481,10 @@ Usage: #example
 * type = $V3RoleCode#OUTPHARM
 
 Instance: PharmacyLocation4
-InstanceOf: NatlDirEndpointQryLocation
+InstanceOf: NatlDirExLocation
 Description: "Location of Pharmacy1 in PharmacyOrganizationA's network"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryLocation)
+* meta.profile = Canonical(NatlDirExLocation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -490,10 +492,10 @@ Usage: #example
 * type = $V3RoleCode#OUTPHARM
 
 Instance: PayerOrganizationA
-InstanceOf: NatlDirEndpointQryOrganization
+InstanceOf: NatlDirExOrganization
 Description: "Payer Organization"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryOrganization)
+* meta.profile = Canonical(NatlDirExOrganization)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true

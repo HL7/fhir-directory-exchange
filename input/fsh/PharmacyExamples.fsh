@@ -1,8 +1,8 @@
 Instance: PharmChain
-InstanceOf: NatlDirEndpointQryOrganization
+InstanceOf: NatlDirExOrganization
 Description: "Organization that Provides Pharmacy Services"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryOrganization) 
+* meta.profile = Canonical(NatlDirExOrganization) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -29,10 +29,10 @@ Usage: #example
 * address.postalCode = "00014-1234"
 
 Instance: BigBox
-InstanceOf: NatlDirEndpointQryOrganization
+InstanceOf: NatlDirExOrganization
 Description: "Organization that Manages 2 of PharmChain's pharmacies"
 Usage: #example
-* meta.profile =  Canonical(NatlDirEndpointQryOrganization) 
+* meta.profile =  Canonical(NatlDirExOrganization) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -57,12 +57,12 @@ Usage: #example
 * address.state = "CT"
 * address.postalCode = "00014-1234"
 
-
+/*
 Instance: PharmChainRetailService
-InstanceOf: NatlDirEndpointQryHealthcareService
+InstanceOf: NatlDirExHealthcareService
 Description: "Pharmacy Service provided by PharmChain"
 Usage: #example
-* meta.profile =  Canonical(NatlDirEndpointQryHealthcareService) 
+* meta.profile =  Canonical(NatlDirExHealthcareService) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -81,10 +81,10 @@ Usage: #example
 
 
 Instance: PharmChainAffil1
-InstanceOf: NatlDirEndpointQryOrganizationAffiliation
+InstanceOf: NatlDirExOrganizationAffiliation
 Description: "Organization Affiliation for PharmChain (Retail)"
 Usage: #example
-* meta.profile =  Canonical(NatlDirEndpointQryOrganizationAffiliation)
+* meta.profile =  Canonical(NatlDirExOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -97,10 +97,10 @@ Usage: #example
 * specialty = $NUCCProviderTaxonomy#3336C0003X "Community/Retail Pharmacy"
 
 Instance: PharmChainAffil2
-InstanceOf: NatlDirEndpointQryOrganizationAffiliation
+InstanceOf: NatlDirExOrganizationAffiliation
 Description: "Organization Affiliation for PharmChain (Compounding)"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryOrganizationAffiliation)
+* meta.profile = Canonical(NatlDirExOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -112,10 +112,10 @@ Usage: #example
 * code = OrganizationAffiliationRoleCS#pharmacy 
 
 Instance: PharmChainAffil3
-InstanceOf: NatlDirEndpointQryOrganizationAffiliation
+InstanceOf: NatlDirExOrganizationAffiliation
 Description: "Organization Affiliation for PharmChain (MailOrder)"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryOrganizationAffiliation)
+* meta.profile = Canonical(NatlDirExOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -127,10 +127,10 @@ Usage: #example
 
 
 Instance: PharmChainCompService
-InstanceOf: NatlDirEndpointQryHealthcareService
+InstanceOf: NatlDirExHealthcareService
 Description: "Compound Pharmacy Service provided by PharmacyOrganization A"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryHealthcareService) 
+* meta.profile = Canonical(NatlDirExHealthcareService) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -144,10 +144,10 @@ Usage: #example
 * telecom.extension[via-intermediary].valueReference = Reference(PharmLoc1)
 
 Instance: PharmChainMailService
-InstanceOf: NatlDirEndpointQryHealthcareService
+InstanceOf: NatlDirExHealthcareService
 Description: "Mail Order Pharmacy Service provided by PharmacyOrganization A"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryHealthcareService) 
+* meta.profile = Canonical(NatlDirExHealthcareService) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -167,13 +167,13 @@ Usage: #example
 * telecom[1].value = "https://mailorderrx.com"
 * telecom[1].rank = 1
 
-
+*/
 
 Instance: PharmLoc1
-InstanceOf: NatlDirEndpointQryLocation
+InstanceOf: NatlDirExLocation
 Description: "Location of Pharmacy1 in PharmChain's network"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryLocation) 
+* meta.profile = Canonical(NatlDirExLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -220,10 +220,10 @@ Usage: #example
 
 
 Instance: PharmLoc2
-InstanceOf: NatlDirEndpointQryLocation
+InstanceOf: NatlDirExLocation
 Description: "Location of Pharmacy2 in PharmChain's network"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryLocation) 
+* meta.profile = Canonical(NatlDirExLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -269,10 +269,10 @@ Usage: #example
 
 
 Instance: PharmLoc3
-InstanceOf: NatlDirEndpointQryLocation
+InstanceOf: NatlDirExLocation
 Description: "Location of Pharmacy3 in PharmChain's network"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryLocation) 
+* meta.profile = Canonical(NatlDirExLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -316,10 +316,10 @@ Usage: #example
 
 
 Instance: PharmLoc4
-InstanceOf: NatlDirEndpointQryLocation
+InstanceOf: NatlDirExLocation
 Description: "Location of Pharmacy4 in PharmChain's network"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryLocation) 
+* meta.profile = Canonical(NatlDirExLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
