@@ -3,7 +3,7 @@
   <sch:ns prefix="f" uri="http://hl7.org/fhir"/>
   <sch:ns prefix="h" uri="http://www.w3.org/1999/xhtml"/>
   <!-- 
-    This file contains just the constraints for the profile NatlDirPractitioner
+    This file contains just the constraints for the profile NatlDirEndpointQryPractitioner
     It includes the base constraints for the resource as well.
     Because of the way that schematrons and containment work, 
     you may need to use this schematron fragment to build a, 
@@ -89,8 +89,10 @@
   <sch:pattern>
     <sch:title>Practitioner.extension</sch:title>
     <sch:rule context="f:Practitioner/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -360,7 +362,7 @@
   <sch:pattern>
     <sch:title>f:Practitioner/f:qualification</sch:title>
     <sch:rule context="f:Practitioner/f:qualification">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/practitioner-qualification']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/practitioner-qualification': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -412,7 +414,7 @@
   <sch:pattern>
     <sch:title>f:Practitioner/f:communication</sch:title>
     <sch:rule context="f:Practitioner/f:communication">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/communication-proficiency']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/communication-proficiency': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/communication-proficiency']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/communication-proficiency': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

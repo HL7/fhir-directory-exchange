@@ -581,6 +581,20 @@
     "name": "NatlDirExPractitionerRole"
   },
   {
+    "id": "NatlDirEx-restriction",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-restriction",
+    "version": "0.0.1",
+    "name": "NatlDirExRestriction"
+  },
+  {
+    "id": "usage-restriction",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/usage-restriction",
+    "version": "0.0.1",
+    "name": "UsageRestriction"
+  },
+  {
     "id": "ConsentVS",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/ConsentVS",

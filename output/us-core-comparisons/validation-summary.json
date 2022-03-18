@@ -3,49 +3,89 @@
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-CareTeam": {
+  "StructureDefinition/NatlDirEndpointQry-CareTeam": {
     "errors": 0,
     "warnings": 1
   },
-  "StructureDefinition/NatlDir-Endpoint": {
-    "errors": 1,
+  "StructureDefinition/NatlDirEndpointQry-CareTeamComplete": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "StructureDefinition/NatlDirEndpointQry-Endpoint": {
+    "errors": 2,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-HealthcareService": {
+  "StructureDefinition/NatlDirEndpointQry-EndpointComplete": {
+    "errors": 2,
+    "warnings": 1
+  },
+  "StructureDefinition/NatlDirEndpointQry-HealthcareService": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-InsurancePlan": {
+  "StructureDefinition/NatlDirEndpointQry-HealthcareServiceComplete": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "StructureDefinition/NatlDirEndpointQry-InsurancePlan": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-Location": {
+  "StructureDefinition/NatlDirEndpointQry-InsurancePlanComplete": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "StructureDefinition/NatlDirEndpointQry-Location": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-Network": {
+  "StructureDefinition/NatlDirEndpointQry-LocationComplete": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "StructureDefinition/NatlDirEndpointQry-Network": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-Organization": {
+  "StructureDefinition/NatlDirEndpointQry-NetworkComplete": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "StructureDefinition/NatlDirEndpointQry-Organization": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-OrganizationAffiliation": {
+  "StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-Practitioner": {
+  "StructureDefinition/NatlDirEndpointQry-OrganizationAffiliationComplete": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "StructureDefinition/NatlDirEndpointQry-OrganizationComplete": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "StructureDefinition/NatlDirEndpointQry-Practitioner": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDir-PractitionerRole": {
+  "StructureDefinition/NatlDirEndpointQry-PractitionerComplete": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "StructureDefinition/NatlDirEndpointQry-PractitionerRole": {
     "errors": 0,
     "warnings": 0
+  },
+  "StructureDefinition/NatlDirEndpointQry-PractitionerRoleComplete": {
+    "errors": 0,
+    "warnings": 1
   },
   "StructureDefinition/accessibility": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
   "StructureDefinition/associatedServers": {
     "errors": 0,
@@ -61,7 +101,7 @@
   },
   "StructureDefinition/contactpoint-availabletime": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
   "StructureDefinition/contactpoint-viaintermediary": {
     "errors": 0,
@@ -69,7 +109,7 @@
   },
   "StructureDefinition/delivery-method": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
   "StructureDefinition/digitalcertificate": {
     "errors": 8,
@@ -89,7 +129,7 @@
   },
   "StructureDefinition/endpoint-usecase": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
   "StructureDefinition/healthcareservice-reference": {
     "errors": 0,
@@ -109,11 +149,11 @@
   },
   "StructureDefinition/location-reference": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
   "StructureDefinition/network-reference": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
   "StructureDefinition/newpatientprofile": {
     "errors": 0,
@@ -121,7 +161,7 @@
   },
   "StructureDefinition/newpatients": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
   "StructureDefinition/org-alias-period": {
     "errors": 0,
@@ -133,13 +173,17 @@
   },
   "StructureDefinition/org-description": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
   "StructureDefinition/practitioner-qualification": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
   "StructureDefinition/qualification": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/rating": {
     "errors": 0,
     "warnings": 1
   },
@@ -155,13 +199,9 @@
     "errors": 0,
     "warnings": 1
   },
-  "StructureDefinition/usage-restriction": {
-    "errors": 0,
-    "warnings": 1
-  },
   "StructureDefinition/via-intermediary": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
   "ValueSet/AcceptingPatientsVS": {
     "errors": 0,
@@ -356,15 +396,15 @@
     "warnings": 0
   },
   "Organization/AcmeofCTPremNet": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 0
   },
   "Organization/AcmeofCTStdNet": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 0
   },
   "PractitionerRole/AnonRole": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 1
   },
   "Organization/BigBox": {
@@ -380,7 +420,7 @@
     "warnings": 0
   },
   "HealthcareService/BurrClinicServices": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 1
   },
   "Organization/CancerClinic": {
@@ -392,7 +432,7 @@
     "warnings": 0
   },
   "HealthcareService/CancerClinicService": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 1
   },
   "Organization/ConnHIE": {
@@ -408,8 +448,40 @@
     "warnings": 0
   },
   "PractitionerRole/CounselorRole1": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 0
+  },
+  "SearchParameter/Endpoint-connection-type": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/Endpoint-identifier": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/Endpoint-mime-type": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/Endpoint-organization": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/Endpoint-payload-type": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/Endpoint-status": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "SearchParameter/Endpoint-usecase-standard": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/Endpoint-usecase-type": {
+    "errors": 0,
+    "warnings": 1
   },
   "Organization/HamiltonClinic": {
     "errors": 0,
@@ -420,7 +492,7 @@
     "warnings": 0
   },
   "HealthcareService/HamiltonClinicServices": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 1
   },
   "Practitioner/HansSolo": {
@@ -428,15 +500,15 @@
     "warnings": 2
   },
   "Location/HansSoloClinic": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 0
   },
   "PractitionerRole/HansSoloRole1": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 1
   },
   "HealthcareService/HansSoloService": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 1
   },
   "OrganizationAffiliation/HartfordOrthopedicAffil": {
@@ -444,15 +516,47 @@
     "warnings": 0
   },
   "HealthcareService/HartfordOrthopedicServices": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 1
   },
   "Organization/HartfordOrthopedics": {
     "errors": 0,
     "warnings": 0
   },
+  "SearchParameter/HealthcareService-coverage-area": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/HealthcareService-endpoint": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/HealthcareService-location": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/HealthcareService-name": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/HealthcareService-organization": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/HealthcareService-service-category": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/HealthcareService-service-type": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/HealthcareService-specialty": {
+    "errors": 0,
+    "warnings": 1
+  },
   "HealthcareService/HospERService": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 1
   },
   "Location/HospLoc1": {
@@ -467,21 +571,141 @@
     "errors": 0,
     "warnings": 0
   },
+  "SearchParameter/InsurancePlan-administrated-by": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/InsurancePlan-coverage-area": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/InsurancePlan-coverage-benefit-type": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/InsurancePlan-coverage-network": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/InsurancePlan-identifier": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/InsurancePlan-name": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/InsurancePlan-owned-by": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/InsurancePlan-type": {
+    "errors": 1,
+    "warnings": 1
+  },
   "Practitioner/JoeSmith": {
     "errors": 0,
     "warnings": 2
   },
   "PractitionerRole/JoeSmithRole1": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 1
   },
   "PractitionerRole/JoeSmithRole2": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 1
   },
   "PractitionerRole/JoeSmithRole3": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 2
+  },
+  "SearchParameter/Location-address": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/Location-endpoint": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/Location-organization": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/Location-partOf": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/Location-physicalType": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/Location-type": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/Network-coverage-area": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/Network-name": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/Organization-address": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/Organization-endpoint": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/Organization-identifier": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/Organization-name": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/Organization-partOf": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/Organization-type": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/OrganizationAffiliation-endpoint": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/OrganizationAffiliation-location": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/OrganizationAffiliation-network": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/OrganizationAffiliation-participating-organization": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/OrganizationAffiliation-primary-organization": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/OrganizationAffiliation-role": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/OrganizationAffiliation-service": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/OrganizationAffiliation-specialty": {
+    "errors": 0,
+    "warnings": 1
   },
   "Organization/PharmChain": {
     "errors": 0,
@@ -500,243 +724,167 @@
     "warnings": 0
   },
   "HealthcareService/PharmChainCompService": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 0
   },
   "HealthcareService/PharmChainMailService": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 0
   },
   "HealthcareService/PharmChainRetailService": {
-    "errors": 2,
+    "errors": 0,
     "warnings": 0
   },
   "Location/PharmLoc1": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 0
   },
   "Location/PharmLoc2": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 0
   },
   "Location/PharmLoc3": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 0
   },
   "Location/PharmLoc4": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 0
+  },
+  "SearchParameter/Practicioner-family": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/Practicioner-given": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/Practicioner-identifier": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/Practicioner-identifier-assigner": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/Practicioner-name": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/Practicioner-qualification-code": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/Practicioner-qualification-issuer": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/PracticionerRole-Practicioner": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/PracticionerRole-endpoint": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/PracticionerRole-location": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/PracticionerRole-network": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/PracticionerRole-organization": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/PracticionerRole-role": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/PracticionerRole-service": {
+    "errors": 1,
+    "warnings": 1
+  },
+  "SearchParameter/PracticionerRole-specialty": {
+    "errors": 1,
+    "warnings": 1
   },
   "Location/StateOfCTLocation": {
     "errors": 0,
     "warnings": 0
   },
+  "SearchParameter/VerificationResult-attestation-who": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/VerificationResult-primarysource-who": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "SearchParameter/VerificationResult-target": {
+    "errors": 0,
+    "warnings": 1
+  },
   "HealthcareService/VirtualCounselService": {
-    "errors": 1,
+    "errors": 0,
     "warnings": 1
   },
-  "SearchParameter/endpoint-organization": {
+  "SearchParameter/careTeam-category": {
     "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/healthcareservice-coverage-area": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/healthcareservice-endpoint": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/healthcareservice-location": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/healthcareservice-name": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/healthcareservice-organization": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/healthcareservice-service-category": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/healthcareservice-service-type": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/healthcareservice-specialty": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/insuranceplan-administered-by": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/insuranceplan-coverage-area": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/insuranceplan-identifier": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/insuranceplan-name": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/insuranceplan-owned-by": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/insuranceplan-plan-type": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/insuranceplan-type": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/location-address-city": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/location-address-postalcode": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/location-address-state": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/location-address": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/location-endpoint": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/location-organization": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/location-partof": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/location-type": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/organization-address": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/organization-coverage-area": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/organization-endpoint": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/organization-name": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/organization-partof": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/organization-type": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/organizationaffiliation-endpoint": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/organizationaffiliation-location": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/organizationaffiliation-network": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/organizationaffiliation-participating-organization": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/organizationaffiliation-primary-organization": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/organizationaffiliation-role": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/organizationaffiliation-service": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/organizationaffiliation-specialty": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/practitioner-family-name": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/practitioner-given-name": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/practitioner-name": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/practitionerrole-endpoint": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/practitionerrole-location": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/practitionerrole-network": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/practitionerrole-organization": {
-    "errors": 0,
-    "warnings": 0
-  },
-  "SearchParameter/practitionerrole-period": {
-    "errors": 1,
     "warnings": 1
   },
-  "SearchParameter/practitionerrole-practitioner": {
+  "SearchParameter/careTeam-endpoint": {
     "errors": 0,
-    "warnings": 0
+    "warnings": 1
   },
-  "SearchParameter/practitionerrole-role": {
+  "SearchParameter/careTeam-location": {
     "errors": 0,
-    "warnings": 0
+    "warnings": 1
   },
-  "SearchParameter/practitionerrole-service": {
+  "SearchParameter/careTeam-name": {
     "errors": 0,
-    "warnings": 0
+    "warnings": 1
   },
-  "SearchParameter/practitionerrole-specialty": {
+  "SearchParameter/careTeam-organization": {
     "errors": 0,
-    "warnings": 0
+    "warnings": 1
   },
-  "CapabilityStatement/NatlDir": {
-    "errors": 10,
-    "warnings": 0
+  "SearchParameter/careTeam-service": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "CapabilityStatement/fhir-directory-query-basic-endpoint": {
+    "errors": 8,
+    "warnings": 1
+  },
+  "CapabilityStatement/fhir-directory-query-basic-expanded": {
+    "errors": 8,
+    "warnings": 1
+  },
+  "CapabilityStatement/fhir-directory-query-health-or-human-services-endpoint": {
+    "errors": 8,
+    "warnings": 1
+  },
+  "CapabilityStatement/fhir-directory-query-health-or-human-services-expanded": {
+    "errors": 8,
+    "warnings": 1
+  },
+  "CapabilityStatement/fhir-directory-query-human-services-endpoint": {
+    "errors": 8,
+    "warnings": 1
+  },
+  "CapabilityStatement/fhir-directory-query-human-services-expanded": {
+    "errors": 8,
+    "warnings": 1
+  },
+  "CapabilityStatement/fhir-directory-query-provider-endpoint": {
+    "errors": 8,
+    "warnings": 1
+  },
+  "CapabilityStatement/fhir-directory-query-provider-expanded": {
+    "errors": 8,
+    "warnings": 1
   }
 }

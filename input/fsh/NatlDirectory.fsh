@@ -1,12 +1,77 @@
 
 /**/
+Profile:  NatlDirExRestriction
+Parent: Consent
+Id:  NatlDirEx-restriction
+Title: " NatlDirEx Restriction"
+Description: "Restriction on use/release of exchanged information"
+* ^status = #active
+* ^date = "2017-12-15T01:01:31.325+11:00"
+* . ^short = "A policy may permit or deny recipients or roles to perform actions for specific purposes and periods of time"
+* . ^alias = "Restriction"
+* identifier ..0 MS
+* status MS
+* status ^short = "Indicates the current state of this restriction"
+* status ^comment = "This element is labeled as a modifier because the status contains the codes rejected and entered-in-error that mark the restriction as not currently valid."
+* scope MS
+* scope from ConsentVS (extensible)
+* scope ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* scope ^binding.extension.valueString = "ConsentScope"
+* category MS
+* category ^label = "Type"
+* category ^short = "Type of restriction"
+* category ^definition = "Type of restriction (conditional release (per DUA); requires flowdown agreement (for redisclosure); internal use only; release defined by access rights (as specified by the national source))"
+* patient ..0 MS
+* dateTime MS
+* dateTime ^label = "last updated"
+* dateTime ^short = "date/time of last update for this restriction"
+* dateTime ^definition = "When this Restriction was issued / created / indexed."
+* performer ..0 MS
+* organization ..0 MS
+* source[x] ..0 MS
+* policy MS
+* policy.authority ..0 MS
+* policy.uri MS
+* policy.uri ^short = "Specific policy covered by this restriction"
+* policyRule ..0 MS
+* verification ..0 MS
+* verification.verified MS
+* verification.verifiedWith MS
+* verification.verificationDate MS
+* provision MS
+* provision ^short = "Access rights"
+* provision.type = #permit (exactly)
+* provision.type MS
+* provision.period ..0 MS
+* provision.actor 1.. MS
+* provision.actor.role MS
+* provision.actor.reference only Reference( NatlDirExOrganization or  NatlDirExCareTeam or  NatlDirExPractitioner)
+* provision.actor.reference MS
+* provision.actor.reference ^short = "definedUserOrGroup"
+* provision.action ..1 MS
+* provision.action ^short = "reasonType"
+* provision.action ^definition = "Describes how the reference is related to the restriction (contributes to; reason for; existance of; specific value)"
+* provision.securityLabel MS
+* provision.securityLabel ^short = "userType"
+* provision.purpose MS
+* provision.purpose ^short = "reasonName"
+* provision.purpose ^definition = "Name assigned to the restriction condition"
+* provision.class ..0 MS
+* provision.code ..0 MS
+* provision.dataPeriod ..0 MS
+* provision.data ..0 MS
+* provision.data.meaning MS
+* provision.data.reference MS
+* provision.provision ..0 MS
+
+
 Profile: NatlDirExCareTeam
 Parent: $NatlDirectoryCareTeam
 Id: NatlDirEx-CareTeam
 Title: "National Directory Care Team"
 Description: "Defines the basic constraints and extensions on the CareTeam resource for use in a Validated Healthcare Directory"
 * extension contains
-    UsageRestriction named restriction 0..* MS and
+    UsageRestriction named restriction 0..* MS 
 * identifier.use 0..1
 * extension[restriction] ^short = "Restriction"
 * extension[restriction] ^definition = "Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties"
