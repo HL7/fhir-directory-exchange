@@ -564,7 +564,7 @@
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation",
     "version": "0.0.1",
-    "name": "NatlDirExOrganizationAfflication"
+    "name": "NatlDirExOrganizationAffiliation"
   },
   {
     "id": "NatlDirEx-Practitioner",

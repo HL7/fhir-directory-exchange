@@ -17,10 +17,10 @@
   ],
   "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation",
   "version": "0.0.1",
-  "name": "NatlDirExOrganizationAfflication",
+  "name": "NatlDirExOrganizationAffiliation",
   "title": "National Directory OrganizationAffiliation",
   "status": "active",
-  "date": "2022-03-18T15:39:35-04:00",
+  "date": "2022-03-21T10:14:10-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {

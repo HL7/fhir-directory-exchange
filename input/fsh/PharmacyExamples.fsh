@@ -57,12 +57,12 @@ Usage: #example
 * address.state = "CT"
 * address.postalCode = "00014-1234"
 
-/*
+
 Instance: PharmChainRetailService
-InstanceOf: NatlDirExHealthcareService
+InstanceOf: NatlDirExHealthCareService
 Description: "Pharmacy Service provided by PharmChain"
 Usage: #example
-* meta.profile =  Canonical(NatlDirExHealthcareService) 
+* meta.profile =  Canonical(NatlDirExHealthCareService) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -127,10 +127,10 @@ Usage: #example
 
 
 Instance: PharmChainCompService
-InstanceOf: NatlDirExHealthcareService
+InstanceOf: NatlDirExHealthCareService
 Description: "Compound Pharmacy Service provided by PharmacyOrganization A"
 Usage: #example
-* meta.profile = Canonical(NatlDirExHealthcareService) 
+* meta.profile = Canonical(NatlDirExHealthCareService) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -144,10 +144,10 @@ Usage: #example
 * telecom.extension[via-intermediary].valueReference = Reference(PharmLoc1)
 
 Instance: PharmChainMailService
-InstanceOf: NatlDirExHealthcareService
+InstanceOf: NatlDirExHealthCareService
 Description: "Mail Order Pharmacy Service provided by PharmacyOrganization A"
 Usage: #example
-* meta.profile = Canonical(NatlDirExHealthcareService) 
+* meta.profile = Canonical(NatlDirExHealthCareService) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -167,7 +167,7 @@ Usage: #example
 * telecom[1].value = "https://mailorderrx.com"
 * telecom[1].rank = 1
 
-*/
+
 
 Instance: PharmLoc1
 InstanceOf: NatlDirExLocation

@@ -10,7 +10,7 @@
   "name": "ONCFASTNationalDirectory",
   "title": "National Directory",
   "status": "active",
-  "date": "2022-03-18T15:39:35-04:00",
+  "date": "2022-03-21T10:14:10-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -925,6 +925,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PractitionerRole"
+          }
+        ],
+        "reference": {
+          "reference": "PractitionerRole/AnonRole"
+        },
+        "name": "AnonRole",
+        "description": "Practitioner role that doesn't refer to a specific practitioner",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Organization"
           }
         ],
@@ -948,6 +962,34 @@
         "name": "BurrClinic",
         "description": "Burr Clinic provides service to Hartford Hospital",
         "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OrganizationAffiliation"
+          }
+        ],
+        "reference": {
+          "reference": "OrganizationAffiliation/BurrClinicAffil"
+        },
+        "name": "BurrClinicAffil",
+        "description": "Burr Clinic's affiliation with Acme of CT Provider Network and Hartford General Hospital",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "HealthcareService"
+          }
+        ],
+        "reference": {
+          "reference": "HealthcareService/BurrClinicServices"
+        },
+        "name": "BurrClinicServices",
+        "description": "Burr Clinic Services",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [
@@ -981,6 +1023,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "HealthcareService"
+          }
+        ],
+        "reference": {
+          "reference": "HealthcareService/CancerClinicService"
+        },
+        "name": "CancerClinicService",
+        "description": "Cancer Clinic Services",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Organization"
           }
         ],
@@ -990,6 +1046,20 @@
         "name": "ConnHIE",
         "description": "Connecticut HIE",
         "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OrganizationAffiliation"
+          }
+        ],
+        "reference": {
+          "reference": "OrganizationAffiliation/ConnHIEAffil"
+        },
+        "name": "ConnHIEAffil",
+        "description": "Burr Clinic's affiliation with Conn HIE",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
       },
       {
         "extension": [
@@ -1018,6 +1088,48 @@
         "name": "CounselorRole1",
         "description": "Susie  Smith is a counselor via Telemedicine",
         "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/HamiltonClinic"
+        },
+        "name": "HamiltonClinic",
+        "description": "Hamilton Clinic (a Division of Hartford Hospital)",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OrganizationAffiliation"
+          }
+        ],
+        "reference": {
+          "reference": "OrganizationAffiliation/HamiltonClinicAffil"
+        },
+        "name": "HamiltonClinicAffil",
+        "description": "Hamilton Clinic's affiliation with Acme of CT Provider Network and Hartford General Hospital",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "HealthcareService"
+          }
+        ],
+        "reference": {
+          "reference": "HealthcareService/HamiltonClinicServices"
+        },
+        "name": "HamiltonClinicServices",
+        "description": "Hamilton Clinic Services",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [
@@ -1065,6 +1177,48 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "HealthcareService"
+          }
+        ],
+        "reference": {
+          "reference": "HealthcareService/HansSoloService"
+        },
+        "name": "HansSoloService",
+        "description": "Hans Solo Services",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OrganizationAffiliation"
+          }
+        ],
+        "reference": {
+          "reference": "OrganizationAffiliation/HartfordOrthopedicAffil"
+        },
+        "name": "HartfordOrthopedicAffil",
+        "description": "Hartford Orthopedic Services affiliation with Acme of CT Provider Network and Hartford General Hospital",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "HealthcareService"
+          }
+        ],
+        "reference": {
+          "reference": "HealthcareService/HartfordOrthopedicServices"
+        },
+        "name": "HartfordOrthopedicServices",
+        "description": "Hartford Orthopedic Services",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Organization"
           }
         ],
@@ -1074,6 +1228,20 @@
         "name": "HartfordOrthopedics",
         "description": "Hartford Orthpedic Services is a group providing Orthpods for Acme of CT at Hartford General Hospital",
         "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "HealthcareService"
+          }
+        ],
+        "reference": {
+          "reference": "HealthcareService/HospERService"
+        },
+        "name": "HospERService",
+        "description": "Hartford General Hospital ER",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [
@@ -1135,6 +1303,48 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PractitionerRole"
+          }
+        ],
+        "reference": {
+          "reference": "PractitionerRole/JoeSmithRole1"
+        },
+        "name": "JoeSmithRole1",
+        "description": "Dr Smith moonlighting as ER Doc at Hartford Hospital",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PractitionerRole"
+          }
+        ],
+        "reference": {
+          "reference": "PractitionerRole/JoeSmithRole2"
+        },
+        "name": "JoeSmithRole2",
+        "description": "Dr Smith Internal Medicine at Burr Clinic",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PractitionerRole"
+          }
+        ],
+        "reference": {
+          "reference": "PractitionerRole/JoeSmithRole3"
+        },
+        "name": "JoeSmithRole3",
+        "description": "Dr Smith Admitting Privileges at Hartford General",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Organization"
           }
         ],
@@ -1144,6 +1354,90 @@
         "name": "PharmChain",
         "description": "Organization that Provides Pharmacy Services",
         "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OrganizationAffiliation"
+          }
+        ],
+        "reference": {
+          "reference": "OrganizationAffiliation/PharmChainAffil1"
+        },
+        "name": "PharmChainAffil1",
+        "description": "Organization Affiliation for PharmChain (Retail)",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OrganizationAffiliation"
+          }
+        ],
+        "reference": {
+          "reference": "OrganizationAffiliation/PharmChainAffil2"
+        },
+        "name": "PharmChainAffil2",
+        "description": "Organization Affiliation for PharmChain (Compounding)",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OrganizationAffiliation"
+          }
+        ],
+        "reference": {
+          "reference": "OrganizationAffiliation/PharmChainAffil3"
+        },
+        "name": "PharmChainAffil3",
+        "description": "Organization Affiliation for PharmChain (MailOrder)",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "HealthcareService"
+          }
+        ],
+        "reference": {
+          "reference": "HealthcareService/PharmChainCompService"
+        },
+        "name": "PharmChainCompService",
+        "description": "Compound Pharmacy Service provided by PharmacyOrganization A",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "HealthcareService"
+          }
+        ],
+        "reference": {
+          "reference": "HealthcareService/PharmChainMailService"
+        },
+        "name": "PharmChainMailService",
+        "description": "Mail Order Pharmacy Service provided by PharmacyOrganization A",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "HealthcareService"
+          }
+        ],
+        "reference": {
+          "reference": "HealthcareService/PharmChainRetailService"
+        },
+        "name": "PharmChainRetailService",
+        "description": "Pharmacy Service provided by PharmChain",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [
@@ -1214,6 +1508,20 @@
         "name": "StateOfCTLocation",
         "description": "State of CT Area",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "HealthcareService"
+          }
+        ],
+        "reference": {
+          "reference": "HealthcareService/VirtualCounselService"
+        },
+        "name": "VirtualCounselService",
+        "description": "Virtual Counseling Service",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [

@@ -23,10 +23,10 @@
   ];
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"];
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
-  fhir:StructureDefinition.name [ fhir:value "NatlDirExOrganizationAfflication"];
+  fhir:StructureDefinition.name [ fhir:value "NatlDirExOrganizationAffiliation"];
   fhir:StructureDefinition.title [ fhir:value "National Directory OrganizationAffiliation"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-18T15:39:35-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-21T10:14:10-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

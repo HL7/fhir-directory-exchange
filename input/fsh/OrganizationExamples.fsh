@@ -76,13 +76,12 @@ Usage: #example
 * extension[qualification].extension[status] = $QualificationStatusCS#active
 */
 
-/*
-REMOVE 
+
 Instance: HospERService
 InstanceOf: NatlDirExHealthCareService
 Description: "Hartford General Hospital ER"
 Usage: #example
-* meta.profile = Canonical(NatlDirExHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthCareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -92,7 +91,7 @@ Usage: #example
 * providedBy = Reference(Hospital)
 * location[0] = Reference(HospLoc1)
 
-*/
+
 
 Instance: HospLoc1
 InstanceOf: NatlDirExLocation
@@ -179,12 +178,12 @@ Usage: #example
 * hoursOfOperation[0].allDay = true
 * hoursOfOperation[0].daysOfWeek[5]  = #sat
 * hoursOfOperation[0].daysOfWeek[6]  = #sun
-/* REMOVE
+
 Instance: HartfordOrthopedicServices
 InstanceOf: NatlDirExHealthCareService
 Description: "Hartford Orthopedic Services"
 Usage: #example
-* meta.profile = Canonical(NatlDirExHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthCareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -196,7 +195,7 @@ Usage: #example
 * location[0] = Reference(HospLoc1)
 
 Instance: HartfordOrthopedicAffil
-InstanceOf: NatlDirExOrganizationAfflication
+InstanceOf: NatlDirExOrganizationAffiliation
 Description: "Hartford Orthopedic Services affiliation with Acme of CT Provider Network and Hartford General Hospital"
 Usage: #example
 * meta.profile = Canonical(NatlDirExOrganizationAffiliation)
@@ -227,10 +226,10 @@ Usage: #example
 
 
 Instance: HamiltonClinicServices
-InstanceOf: NatlDirExHealthcareService
+InstanceOf: NatlDirExHealthCareService
 Description: "Hamilton Clinic Services"
 Usage: #example
-* meta.profile = Canonical(NatlDirExHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthCareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -285,10 +284,10 @@ Usage: #example
 * organization = Reference(Hospital)
 
 Instance: BurrClinicServices
-InstanceOf: NatlDirExHealthcareService
+InstanceOf: NatlDirExHealthCareService
 Description: "Burr Clinic Services"
 Usage: #example
-* meta.profile = Canonical(NatlDirExHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthCareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -297,7 +296,7 @@ Usage: #example
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine"  
 * providedBy = Reference(BurrClinic)
 * location[0] = Reference(HospLoc1)
-*/
+
 
 Instance: BurrClinic
 InstanceOf: NatlDirExOrganization
@@ -349,7 +348,7 @@ Usage: #example
 * contact.telecom[0].value = "(111)-222-3333"
 * contact.telecom[0].rank = 1
 * type = OrgTypeCS#atyprv "Atypical Provider"
-/* REMOVE 
+
 Instance: ConnHIEAffil
 InstanceOf: NatlDirExOrganizationAffiliation
 Description: "Burr Clinic's affiliation with Conn HIE"
@@ -361,8 +360,6 @@ Usage: #example
 * code = OrganizationAffiliationRoleCS#bt
 * participatingOrganization = Reference(BurrClinic)
 * organization = Reference(ConnHIE)
-*/
-
 /*
 
 

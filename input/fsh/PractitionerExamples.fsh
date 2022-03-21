@@ -80,12 +80,12 @@ Usage: #example
 // specialty = internal medicine
 // available M-F
 
-/*REMOVE
+
 Instance: HansSoloService
-InstanceOf: NatlDirExHealthcareService
+InstanceOf: NatlDirExHealthCareService
 Description: "Hans Solo Services"
 Usage: #example
-* meta.profile = Canonical(NatlDirExHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthCareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -93,7 +93,7 @@ Usage: #example
 * category = HealthcareServiceCategoryCS#outpat 
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine"  
 * location[0] = Reference(HansSoloClinic)
-*/
+
 Instance: HansSoloClinic
 InstanceOf: NatlDirExLocation
 Description: "Location of Hans Solo's clinic"
@@ -173,12 +173,12 @@ Usage: #example
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional Counselor"
 
-/*REMOVE
+
 Instance: VirtualCounselService
-InstanceOf: NatlDirExHealthcareService
+InstanceOf: NatlDirExHealthCareService
 Description: "Virtual Counseling Service"
 Usage: #example
-* meta.profile = Canonical(NatlDirExHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthCareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -255,10 +255,10 @@ Usage: #example
 * organization = Reference(CancerClinic)
 
 Instance: CancerClinicService
-InstanceOf: NatlDirExHealthcareService
+InstanceOf: NatlDirExHealthCareService
 Description: "Cancer Clinic Services"
 Usage: #example
-* meta.profile = Canonical(NatlDirExHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthCareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -268,7 +268,7 @@ Usage: #example
 * specialty = $NUCCProviderTaxonomy#207RX0202X "Medical Oncology"  
 * location[0] = Reference(CancerClinicLoc)
 
-*/
+
 Instance: CancerClinicLoc
 InstanceOf: NatlDirExLocation
 Description: "Location1 of Cancer Clinic"
