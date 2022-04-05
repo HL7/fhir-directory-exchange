@@ -79,5 +79,8 @@ Alias: $NatlDirectoryOrganization =         	http://hl7.org/fhir/us/fhir-directo
 Alias: $NatlDirExOrganizationAffiliation =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation
 Alias: $NatlDirectoryPractitioner =            	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner
 Alias: $NatlDirEndpointQryPractitionerRole =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole
-Alias: $NatlDirectoryPractitionerRole  =	    http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole
+Alias: $NatlDirectoryRestriction  =	    http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Restriction
+Alias: $NatlDirectoryValidation  =	    http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Validation
+
+
 //Alias: $NatlDirEndpointQryPractitionerRole =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole

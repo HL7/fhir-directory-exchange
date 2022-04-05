@@ -27,7 +27,7 @@ fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 4.0.0
   hl7.fhir.us.fhir-directory-query:
-    id: nationalDirectoryQuery
+    id: ONCFASTNationalDirectoryEndpointQuery
     uri: https://build.fhir.org/ig/HL7/fhir-directory-query/
     version: current
 parameters:

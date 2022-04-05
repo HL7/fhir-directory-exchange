@@ -126,3 +126,4 @@ Usage: #example
 * payloadType = EndpointPayloadTypeCS#NA
 * address = "https://urlofportal.acmect.com"
 * extension[endpoint-usecase].extension[type].valueCodeableConcept = $V3ActReason#HOPERAT
+* extension[endpoint-type].extension[type].valueCodeableConcept = #FHIR

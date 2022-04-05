@@ -10,7 +10,7 @@
   "name": "ONCFASTNationalDirectory",
   "title": "National Directory",
   "status": "active",
-  "date": "2022-03-21T10:14:10-04:00",
+  "date": "2022-04-05T18:56:51-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -51,7 +51,7 @@
       "version": "4.0.0"
     },
     {
-      "id": "nationalDirectoryQuery",
+      "id": "ONCFASTNationalDirectoryEndpointQuery",
       "uri": "https://build.fhir.org/ig/HL7/fhir-directory-query/",
       "packageId": "hl7.fhir.us.fhir-directory-query",
       "version": "current"
@@ -344,6 +344,19 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludelogbinaryformat"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
     "resource": [
@@ -495,10 +508,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDirEx-restriction"
+          "reference": "StructureDefinition/NatlDirEx-Restriction"
         },
-        "name": " NatlDirEx Restriction",
-        "description": "Restriction on use/release of exchanged information",
+        "name": "National Directory Restriction",
+        "description": "Restriction describes details about a...",
         "exampleBoolean": false
       },
       {
@@ -509,52 +522,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/NatlDir-Restriction"
+          "reference": "StructureDefinition/NatlDirEx-Validation"
         },
-        "name": "NatlDir Restriction",
-        "description": "Restriction on use/release of exchanged information",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/NatlDir-Validation"
-        },
-        "name": "NatlDir Validation",
-        "description": "Describes validation requirements, source(s), status and dates for one or more elements",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/usage-restriction"
-        },
-        "name": "NatlDir Usage Restriction",
-        "description": "The FHIR specification contains a security meta tag which can be used to inform systems of the sensitivity of resources, as well as by access control mechanisms to ensure content isn't exposed that shouldn't be.\nThis mechanism only goes to the resource level, this reference to a usage-restriction (consent) extends this further into the resource, and can be applied to any element, and may apply to all properties beneath the element (e.g. If applied to an identifier on a practitioner, then all the properties of the identifier should not be exposed unless it is understood)\nThis will be expected to be used as a modifier extension.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/ConsentVS"
-        },
-        "name": "National Directory Consent Value Set",
-        "description": "\t\r\nCodes for use in defining access levels for sharing subsets of constrained content (as an example).",
+        "name": "National Directory Validation",
+        "description": "Validation describes details about...",
         "exampleBoolean": false
       },
       {
@@ -933,7 +904,7 @@
         },
         "name": "AnonRole",
         "description": "Practitioner role that doesn't refer to a specific practitioner",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1003,7 +974,7 @@
         },
         "name": "CancerClinic",
         "description": "HartfordCancerClinicLLC",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1017,7 +988,7 @@
         },
         "name": "CancerClinicLoc",
         "description": "Location1 of Cancer Clinic",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1031,7 +1002,7 @@
         },
         "name": "CancerClinicService",
         "description": "Cancer Clinic Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1073,7 +1044,7 @@
         },
         "name": "Counselor",
         "description": "Counselor Susie Smith",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1087,7 +1058,7 @@
         },
         "name": "CounselorRole1",
         "description": "Susie  Smith is a counselor via Telemedicine",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1143,7 +1114,7 @@
         },
         "name": "HansSolo",
         "description": "Solo Practitioner Hans Solo",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1157,7 +1128,7 @@
         },
         "name": "HansSoloClinic",
         "description": "Location of Hans Solo's clinic",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1171,7 +1142,7 @@
         },
         "name": "HansSoloRole1",
         "description": "Hans Solo is a solo practitioner",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1185,7 +1156,7 @@
         },
         "name": "HansSoloService",
         "description": "Hans Solo Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1297,7 +1268,7 @@
         },
         "name": "JoeSmith",
         "description": "Practitioner Dr Joe Smith",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1311,7 +1282,7 @@
         },
         "name": "JoeSmithRole1",
         "description": "Dr Smith moonlighting as ER Doc at Hartford Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1325,7 +1296,7 @@
         },
         "name": "JoeSmithRole2",
         "description": "Dr Smith Internal Medicine at Burr Clinic",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1339,7 +1310,7 @@
         },
         "name": "JoeSmithRole3",
         "description": "Dr Smith Admitting Privileges at Hartford General",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1521,7 +1492,7 @@
         },
         "name": "VirtualCounselService",
         "description": "Virtual Counseling Service",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+        "exampleBoolean": true
       },
       {
         "extension": [

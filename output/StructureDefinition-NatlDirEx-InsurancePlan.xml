@@ -17,7 +17,7 @@
   <name value="NatlDirExInsurancePlan"/>
   <title value="National Directory InsurancePlan"/>
   <status value="active"/>
-  <date value="2022-03-21T10:14:10-04:00"/>
+  <date value="2022-04-05T18:56:51-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -666,6 +666,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -675,333 +676,6 @@
       <mapping>
         <identity value="rim"/>
         <map value=".scopes[Role](classCode=IDENT)"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.identifier.id">
-      <path value="InsurancePlan.identifier.id"/>
-      <representation value="xmlAttr"/>
-      <short value="Unique id for inter-element referencing"/>
-      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Element.id"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
-          <valueUrl value="string"/>
-        </extension>
-        <code value="http://hl7.org/fhirpath/System.String"/>
-      </type>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.identifier.extension">
-      <path value="InsurancePlan.identifier.extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
-      <short value="Additional content defined by implementations"/>
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
-      <alias value="extensions"/>
-      <alias value="user content"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="Element.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="ext-1"/>
-        <severity value="error"/>
-        <human value="Must have either extensions or value[x], not both"/>
-        <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.identifier.use">
-      <path value="InsurancePlan.identifier.use"/>
-      <short value="usual | official | temp | secondary | old (If known)"/>
-      <definition value="The purpose of this identifier."/>
-      <comment value="Applications can assume that an identifier is permanent unless it explicitly says that it is temporary."/>
-      <requirements value="Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Identifier.use"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <isModifier value="true"/>
-      <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one."/>
-      <isSummary value="true"/>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="IdentifierUse"/>
-        </extension>
-        <strength value="required"/>
-        <description value="Identifies the purpose for this identifier, if known ."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"/>
-      </binding>
-      <mapping>
-        <identity value="v2"/>
-        <map value="N/A"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="Role.code or implied by context"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.identifier.type">
-      <path value="InsurancePlan.identifier.type"/>
-      <short value="Description of identifier"/>
-      <definition value="A coded type for the identifier that can be used to determine which identifier to use for a specific purpose."/>
-      <comment value="This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type."/>
-      <requirements value="Allows users to make use of identifiers when the identifier system is not known."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Identifier.type"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="CodeableConcept"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <mustSupport value="true"/>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="IdentifierType"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
-        </extension>
-        <strength value="extensible"/>
-        <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type"/>
-      </binding>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CX.5"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="Role.code or implied by context"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.identifier.system">
-      <path value="InsurancePlan.identifier.system"/>
-      <short value="The namespace for the identifier value"/>
-      <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique."/>
-      <comment value="Identifier.system is always case sensitive."/>
-      <requirements value="There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we&#39;re dealing with. The system identifies a particular set of unique identifiers."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Identifier.system"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="uri"/>
-      </type>
-      <example>
-        <label value="General"/>
-        <valueUri value="http://www.acme.com/identifiers/patient"/>
-      </example>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CX.4 / EI-2-4"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="II.root or Role.id.root"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./IdentifierType"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.identifier.value">
-      <path value="InsurancePlan.identifier.value"/>
-      <short value="The value that is unique"/>
-      <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system."/>
-      <comment value="If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value&#39;s primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Identifier.value"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="string"/>
-      </type>
-      <example>
-        <label value="General"/>
-        <valueString value="123456"/>
-      </example>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <mustSupport value="true"/>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CX.1 / EI.1"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./Value"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.identifier.period">
-      <path value="InsurancePlan.identifier.period"/>
-      <short value="Time period when id is/was valid for use"/>
-      <definition value="Time period during which identifier is/was valid for use."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Identifier.period"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="Period"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CX.7 + CX.8"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="Role.effectiveTime or implied by context"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./StartDate and ./EndDate"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.identifier.assigner">
-      <path value="InsurancePlan.identifier.assigner"/>
-      <short value="Organization that issued id (may be just text)"/>
-      <definition value="Organization that issued/manages the identifier."/>
-      <comment value="The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Identifier.assigner"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <mustSupport value="true"/>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CX.4 / (CX.4,CX.9,CX.10)"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./IdentifierIssuingAuthority"/>
       </mapping>
     </element>
     <element id="InsurancePlan.status">
@@ -1029,7 +703,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="true"/>
       <isModifierReason value="This element is labeled as a modifier because it is a status element that contains codes which means that the resource should not be treated as valid"/>
       <isSummary value="true"/>
@@ -1147,7 +820,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -1177,7 +849,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
@@ -1287,7 +958,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -1464,359 +1134,11 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="./name"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.name.id">
-      <path value="InsurancePlan.contact.name.id"/>
-      <representation value="xmlAttr"/>
-      <short value="Unique id for inter-element referencing"/>
-      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Element.id"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
-          <valueUrl value="string"/>
-        </extension>
-        <code value="http://hl7.org/fhirpath/System.String"/>
-      </type>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.name.extension">
-      <path value="InsurancePlan.contact.name.extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
-      <short value="Additional content defined by implementations"/>
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
-      <alias value="extensions"/>
-      <alias value="user content"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="Element.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="ext-1"/>
-        <severity value="error"/>
-        <human value="Must have either extensions or value[x], not both"/>
-        <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.name.use">
-      <path value="InsurancePlan.contact.name.use"/>
-      <short value="usual | official | temp | nickname | anonymous | old | maiden"/>
-      <definition value="Identifies the purpose for this name."/>
-      <comment value="Applications can assume that a name is current unless it explicitly says that it is temporary or old."/>
-      <requirements value="Allows the appropriate name for a particular context of use to be selected from among a set of names."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="HumanName.use"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <isModifier value="true"/>
-      <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary or old name etc.for a current/permanent one"/>
-      <isSummary value="true"/>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="NameUse"/>
-        </extension>
-        <strength value="required"/>
-        <description value="The use of a human name."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/name-use|4.0.1"/>
-      </binding>
-      <mapping>
-        <identity value="v2"/>
-        <map value="XPN.7, but often indicated by which field contains the name"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="unique(./use)"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./NamePurpose"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.name.text">
-      <path value="InsurancePlan.contact.name.text"/>
-      <short value="Text representation of the full name"/>
-      <definition value="Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts."/>
-      <comment value="Can provide both a text representation and parts. Applications updating a name SHALL ensure that when both text and parts are present,  no content is included in the text that isn&#39;t found in a part."/>
-      <requirements value="A renderable, unencoded form."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="HumanName.text"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="string"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <mustSupport value="true"/>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="implied by XPN.11"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="./formatted"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.name.family">
-      <path value="InsurancePlan.contact.name.family"/>
-      <short value="Family name (often called &#39;Surname&#39;)"/>
-      <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."/>
-      <comment value="Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures)."/>
-      <alias value="surname"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="HumanName.family"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="string"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="XPN.1/FN.1"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="./part[partType = FAM]"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./FamilyName"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.name.given">
-      <path value="InsurancePlan.contact.name.given"/>
-      <short value="Given names (not always &#39;first&#39;). Includes middle names"/>
-      <definition value="Given name."/>
-      <comment value="If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren&#39;t due to paractical limitations.  This element is not called &quot;first name&quot; since given names do not always come first."/>
-      <alias value="first name"/>
-      <alias value="middle name"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="HumanName.given"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="string"/>
-      </type>
-      <orderMeaning value="Given Names appear in the correct order for presenting the name"/>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="XPN.2 + XPN.3"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="./part[partType = GIV]"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./GivenNames"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.name.prefix">
-      <path value="InsurancePlan.contact.name.prefix"/>
-      <short value="Parts that come before the name"/>
-      <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name."/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="HumanName.prefix"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="string"/>
-      </type>
-      <orderMeaning value="Prefixes appear in the correct order for presenting the name"/>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="XPN.5"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="./part[partType = PFX]"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./TitleCode"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.name.suffix">
-      <path value="InsurancePlan.contact.name.suffix"/>
-      <short value="Parts that come after the name"/>
-      <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name."/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="HumanName.suffix"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="string"/>
-      </type>
-      <orderMeaning value="Suffixes appear in the correct order for presenting the name"/>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="XPN/4"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="./part[partType = SFX]"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.name.period">
-      <path value="InsurancePlan.contact.name.period"/>
-      <short value="Time period when name was/is in use"/>
-      <definition value="Indicates the period of time when this name was valid for the named person."/>
-      <requirements value="Allows names to be placed in historical context."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="HumanName.period"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="Period"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="XPN.13 + XPN.14"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="./usablePeriod[type=&quot;IVL&lt;TS&gt;&quot;]"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./StartDate and ./EndDate"/>
       </mapping>
     </element>
     <element id="InsurancePlan.contact.telecom">
@@ -1842,291 +1164,11 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="./telecom"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.telecom.id">
-      <path value="InsurancePlan.contact.telecom.id"/>
-      <representation value="xmlAttr"/>
-      <short value="Unique id for inter-element referencing"/>
-      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Element.id"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
-          <valueUrl value="string"/>
-        </extension>
-        <code value="http://hl7.org/fhirpath/System.String"/>
-      </type>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.telecom.extension">
-      <path value="InsurancePlan.contact.telecom.extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
-      <short value="Additional content defined by implementations"/>
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
-      <alias value="extensions"/>
-      <alias value="user content"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="Element.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="ext-1"/>
-        <severity value="error"/>
-        <human value="Must have either extensions or value[x], not both"/>
-        <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.telecom.system">
-      <path value="InsurancePlan.contact.telecom.system"/>
-      <short value="phone | fax | email | pager | url | sms | other"/>
-      <definition value="Telecommunications form for contact point - what communications system is required to make use of the contact."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ContactPoint.system"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <condition value="cpt-2"/>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <mustSupport value="true"/>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ContactPointSystem"/>
-        </extension>
-        <strength value="required"/>
-        <description value="Telecommunications form for contact point."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1"/>
-      </binding>
-      <mapping>
-        <identity value="v2"/>
-        <map value="XTN.3"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="./scheme"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./ContactPointType"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.telecom.value">
-      <path value="InsurancePlan.contact.telecom.value"/>
-      <short value="The actual contact point details"/>
-      <definition value="The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address)."/>
-      <comment value="Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value."/>
-      <requirements value="Need to support legacy numbers that are not in a tightly controlled format."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ContactPoint.value"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="string"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <mustSupport value="true"/>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="XTN.1 (or XTN.12)"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="./url"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./Value"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.telecom.use">
-      <path value="InsurancePlan.contact.telecom.use"/>
-      <short value="home | work | temp | old | mobile - purpose of this contact point"/>
-      <definition value="Identifies the purpose for the contact point."/>
-      <comment value="Applications can assume that a contact is current unless it explicitly says that it is temporary or old."/>
-      <requirements value="Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ContactPoint.use"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <isModifier value="true"/>
-      <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary or old contact etc.for a current/permanent one"/>
-      <isSummary value="true"/>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ContactPointUse"/>
-        </extension>
-        <strength value="required"/>
-        <description value="Use of contact point."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1"/>
-      </binding>
-      <mapping>
-        <identity value="v2"/>
-        <map value="XTN.2 - but often indicated by field"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="unique(./use)"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./ContactPointPurpose"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.telecom.rank">
-      <path value="InsurancePlan.contact.telecom.rank"/>
-      <short value="Specify preferred order of use (1 = highest)"/>
-      <definition value="Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values."/>
-      <comment value="Note that rank does not necessarily follow the order in which the contacts are represented in the instance."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ContactPoint.rank"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="positiveInt"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-    </element>
-    <element id="InsurancePlan.contact.telecom.period">
-      <path value="InsurancePlan.contact.telecom.period"/>
-      <short value="Time period when the contact point was/is in use"/>
-      <definition value="Time period when the contact point was/is in use."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ContactPoint.period"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="Period"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="N/A"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="./usablePeriod[type=&quot;IVL&lt;TS&gt;&quot;]"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./StartDate and ./EndDate"/>
       </mapping>
     </element>
     <element id="InsurancePlan.contact.address">
@@ -2183,7 +1225,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -2401,6 +1442,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
@@ -2562,6 +1604,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
@@ -2963,7 +2006,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <binding>
@@ -2994,7 +2036,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
     </element>

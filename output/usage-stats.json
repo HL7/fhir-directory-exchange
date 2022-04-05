@@ -3,35 +3,8 @@
   "version": "0.0.1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "US",
-  "extensions": [
-    {
-      "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/usage-restriction",
-      "title": "NatlDir Usage Restriction",
-      "types": [
-        "Reference",
-        "Reference",
-        "string",
-        "Extension",
-        "string",
-        "uri",
-        "Identifier",
-        "string"
-      ]
-    }
-  ],
+  "extensions": [],
   "profiles": {
-    "Consent": [
-      {
-        "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-restriction",
-        "title": " NatlDirEx Restriction"
-      }
-    ],
-    "VerificationResult": [
-      {
-        "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Validation",
-        "title": "NatlDir Validation"
-      }
-    ],
     "CareTeam": [
       {
         "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-CareTeam",
@@ -89,6 +62,18 @@
         "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole",
         "title": "National Directory PractitionerRole"
       }
+    ],
+    "Consent": [
+      {
+        "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Restriction",
+        "title": "National Directory Restriction"
+      }
+    ],
+    "VerificationResult": [
+      {
+        "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Validation",
+        "title": "National Directory Validation"
+      }
     ]
   },
   "usage": {
@@ -104,7 +89,6 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
-      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
@@ -146,9 +130,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/usage-restriction": [
-      "CareTeam"
     ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/accessibility": [
       "Location"
@@ -233,6 +214,9 @@
     ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/trustFramework": [
       "Endpoint"
+    ],
+    "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction": [
+      "CareTeam"
     ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary": [
       "CareTeam.telecom",

@@ -11,7 +11,7 @@
   <name value="ONCFASTNationalDirectory"/>
   <title value="National Directory"/>
   <status value="active"/>
-  <date value="2022-03-21T10:14:10-04:00"/>
+  <date value="2022-04-05T18:56:51-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -39,7 +39,7 @@
     <packageId value="hl7.fhir.us.core"/>
     <version value="4.0.0"/>
   </dependsOn>
-  <dependsOn id="nationalDirectoryQuery">
+  <dependsOn id="ONCFASTNationalDirectoryEndpointQuery">
     <uri value="https://build.fhir.org/ig/HL7/fhir-directory-query/"/>
     <packageId value="hl7.fhir.us.fhir-directory-query"/>
     <version value="current"/>
@@ -221,6 +221,14 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
@@ -336,10 +344,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/NatlDirEx-restriction"/>
+        <reference value="StructureDefinition/NatlDirEx-Restriction"/>
       </reference>
-      <name value=" NatlDirEx Restriction"/>
-      <description value="Restriction on use/release of exchanged information"/>
+      <name value="National Directory Restriction"/>
+      <description value="Restriction describes details about a..."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -347,43 +355,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/NatlDir-Restriction"/>
+        <reference value="StructureDefinition/NatlDirEx-Validation"/>
       </reference>
-      <name value="NatlDir Restriction"/>
-      <description value="Restriction on use/release of exchanged information"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/NatlDir-Validation"/>
-      </reference>
-      <name value="NatlDir Validation"/>
-      <description value="Describes validation requirements, source(s), status and dates for one or more elements"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/usage-restriction"/>
-      </reference>
-      <name value="NatlDir Usage Restriction"/>
-      <description value="The FHIR specification contains a security meta tag which can be used to inform systems of the sensitivity of resources, as well as by access control mechanisms to ensure content isn&#39;t exposed that shouldn&#39;t be.&#xA;This mechanism only goes to the resource level, this reference to a usage-restriction (consent) extends this further into the resource, and can be applied to any element, and may apply to all properties beneath the element (e.g. If applied to an identifier on a practitioner, then all the properties of the identifier should not be exposed unless it is understood)&#xA;This will be expected to be used as a modifier extension."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentVS"/>
-      </reference>
-      <name value="National Directory Consent Value Set"/>
-      <description value="&#x9;&#xD;&#xA;Codes for use in defining access levels for sharing subsets of constrained content (as an example)."/>
+      <name value="National Directory Validation"/>
+      <description value="Validation describes details about..."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -681,7 +656,7 @@
       </reference>
       <name value="AnonRole"/>
       <description value="Practitioner role that doesn&#39;t refer to a specific practitioner"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -736,7 +711,7 @@
       </reference>
       <name value="CancerClinic"/>
       <description value="HartfordCancerClinicLLC"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -747,7 +722,7 @@
       </reference>
       <name value="CancerClinicLoc"/>
       <description value="Location1 of Cancer Clinic"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -758,7 +733,7 @@
       </reference>
       <name value="CancerClinicService"/>
       <description value="Cancer Clinic Services"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -791,7 +766,7 @@
       </reference>
       <name value="Counselor"/>
       <description value="Counselor Susie Smith"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -802,7 +777,7 @@
       </reference>
       <name value="CounselorRole1"/>
       <description value="Susie  Smith is a counselor via Telemedicine"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -846,7 +821,7 @@
       </reference>
       <name value="HansSolo"/>
       <description value="Solo Practitioner Hans Solo"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -857,7 +832,7 @@
       </reference>
       <name value="HansSoloClinic"/>
       <description value="Location of Hans Solo&#39;s clinic"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -868,7 +843,7 @@
       </reference>
       <name value="HansSoloRole1"/>
       <description value="Hans Solo is a solo practitioner"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -879,7 +854,7 @@
       </reference>
       <name value="HansSoloService"/>
       <description value="Hans Solo Services"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -967,7 +942,7 @@
       </reference>
       <name value="JoeSmith"/>
       <description value="Practitioner Dr Joe Smith"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -978,7 +953,7 @@
       </reference>
       <name value="JoeSmithRole1"/>
       <description value="Dr Smith moonlighting as ER Doc at Hartford Hospital"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -989,7 +964,7 @@
       </reference>
       <name value="JoeSmithRole2"/>
       <description value="Dr Smith Internal Medicine at Burr Clinic"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1000,7 +975,7 @@
       </reference>
       <name value="JoeSmithRole3"/>
       <description value="Dr Smith Admitting Privileges at Hartford General"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1143,7 +1118,7 @@
       </reference>
       <name value="VirtualCounselService"/>
       <description value="Virtual Counseling Service"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

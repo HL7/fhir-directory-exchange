@@ -1,7 +1,7 @@
 {
   "ImplementationGuide/hl7.fhir.us.fhir-directory-query": {
     "errors": 0,
-    "warnings": 0
+    "warnings": 1
   },
   "StructureDefinition/NatlDirEndpointQry-CareTeam": {
     "errors": 0,
@@ -83,6 +83,14 @@
     "errors": 0,
     "warnings": 1
   },
+  "StructureDefinition/NatlDir-Validation": {
+    "errors": 2,
+    "warnings": 3
+  },
+  "StructureDefinition/NatlDir-Restriction": {
+    "errors": 1,
+    "warnings": 1
+  },
   "StructureDefinition/accessibility": {
     "errors": 0,
     "warnings": 0
@@ -125,7 +133,7 @@
   },
   "StructureDefinition/endpointType": {
     "errors": 0,
-    "warnings": 1
+    "warnings": 0
   },
   "StructureDefinition/endpoint-usecase": {
     "errors": 0,
@@ -199,6 +207,10 @@
     "errors": 0,
     "warnings": 1
   },
+  "StructureDefinition/usage-restriction": {
+    "errors": 0,
+    "warnings": 1
+  },
   "StructureDefinition/via-intermediary": {
     "errors": 0,
     "warnings": 0
@@ -208,6 +220,10 @@
     "warnings": 0
   },
   "ValueSet/AccessibilityVS": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ValueSet/ConsentVS": {
     "errors": 0,
     "warnings": 0
   },
@@ -319,6 +335,14 @@
     "errors": 0,
     "warnings": 1
   },
+  "CodeSystem/ConsentCS": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "CodeSystem/ConsentScopeCS": {
+    "errors": 0,
+    "warnings": 0
+  },
   "CodeSystem/DeliveryMethodCS": {
     "errors": 0,
     "warnings": 1
@@ -384,8 +408,8 @@
     "warnings": 0
   },
   "Endpoint/AcmeOfCTPortalEndpoint": {
-    "errors": 0,
-    "warnings": 0
+    "errors": 1,
+    "warnings": 1
   },
   "InsurancePlan/AcmeQHPBronze": {
     "errors": 0,
@@ -420,7 +444,7 @@
     "warnings": 0
   },
   "HealthcareService/BurrClinicServices": {
-    "errors": 0,
+    "errors": 1,
     "warnings": 1
   },
   "Organization/CancerClinic": {
@@ -432,7 +456,7 @@
     "warnings": 0
   },
   "HealthcareService/CancerClinicService": {
-    "errors": 0,
+    "errors": 1,
     "warnings": 1
   },
   "Organization/ConnHIE": {
@@ -492,7 +516,7 @@
     "warnings": 0
   },
   "HealthcareService/HamiltonClinicServices": {
-    "errors": 0,
+    "errors": 1,
     "warnings": 1
   },
   "Practitioner/HansSolo": {
@@ -508,7 +532,7 @@
     "warnings": 1
   },
   "HealthcareService/HansSoloService": {
-    "errors": 0,
+    "errors": 1,
     "warnings": 1
   },
   "OrganizationAffiliation/HartfordOrthopedicAffil": {
@@ -516,7 +540,7 @@
     "warnings": 0
   },
   "HealthcareService/HartfordOrthopedicServices": {
-    "errors": 0,
+    "errors": 1,
     "warnings": 1
   },
   "Organization/HartfordOrthopedics": {
@@ -556,7 +580,7 @@
     "warnings": 1
   },
   "HealthcareService/HospERService": {
-    "errors": 0,
+    "errors": 1,
     "warnings": 1
   },
   "Location/HospLoc1": {
@@ -712,27 +736,27 @@
     "warnings": 0
   },
   "OrganizationAffiliation/PharmChainAffil1": {
-    "errors": 0,
+    "errors": 1,
     "warnings": 0
   },
   "OrganizationAffiliation/PharmChainAffil2": {
-    "errors": 0,
+    "errors": 1,
     "warnings": 0
   },
   "OrganizationAffiliation/PharmChainAffil3": {
-    "errors": 0,
+    "errors": 1,
     "warnings": 0
   },
   "HealthcareService/PharmChainCompService": {
-    "errors": 0,
+    "errors": 1,
     "warnings": 0
   },
   "HealthcareService/PharmChainMailService": {
-    "errors": 0,
+    "errors": 1,
     "warnings": 0
   },
   "HealthcareService/PharmChainRetailService": {
-    "errors": 0,
+    "errors": 1,
     "warnings": 0
   },
   "Location/PharmLoc1": {
@@ -828,7 +852,7 @@
     "warnings": 1
   },
   "HealthcareService/VirtualCounselService": {
-    "errors": 0,
+    "errors": 1,
     "warnings": 1
   },
   "SearchParameter/careTeam-category": {

@@ -212,43 +212,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>OrganizationAffiliation.telecom.extension</sch:title>
-    <sch:rule context="f:OrganizationAffiliation/f:telecom/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>OrganizationAffiliation.telecom.system</sch:title>
-    <sch:rule context="f:OrganizationAffiliation/f:telecom/f:system">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>OrganizationAffiliation.telecom.value</sch:title>
-    <sch:rule context="f:OrganizationAffiliation/f:telecom/f:value">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>OrganizationAffiliation.telecom.use</sch:title>
-    <sch:rule context="f:OrganizationAffiliation/f:telecom/f:use">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>OrganizationAffiliation.telecom.rank</sch:title>
-    <sch:rule context="f:OrganizationAffiliation/f:telecom/f:rank">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>OrganizationAffiliation.telecom.period</sch:title>
-    <sch:rule context="f:OrganizationAffiliation/f:telecom/f:period">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>OrganizationAffiliation.endpoint</sch:title>
     <sch:rule context="f:OrganizationAffiliation/f:endpoint">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>

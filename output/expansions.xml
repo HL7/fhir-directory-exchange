@@ -1,164 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e79ee996-0777-4eaf-9452-3aa3276d8a0b"/>
+  <id value="87b7b986-95ce-4550-9a81-5a90e14565b2"/>
   <meta>
-    <lastUpdated value="2022-03-21T10:14:10.968-04:00"/>
+    <lastUpdated value="2022-04-05T18:56:51.580-04:00"/>
   </meta>
   <type value="collection"/>
-  <entry>
-    <fullUrl value="http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/ConsentVS"/>
-    <resource>
-      <ValueSet>
-        <id value="ConsentVS"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>
-                  <a href="CodeSystem-ConsentScopeCS.html">National Healthcare Directory ConsentScopeCodes v0.0.1 (CodeSystem)</a>
-                </li>
-                <li>
-                  <a href="CodeSystem-ConsentCS.html">National Healthcare Directory Consent v0.0.1 (CodeSystem)</a>
-                </li>
-              </ul>
-            </div>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-fhir-directory-exchange-CodeSystem-ConsentCS-protect"> </a>
-                  <a href="CodeSystem-ConsentCS.html#ConsentCS-protect">protect</a>
-                </td>
-                <td>http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ConsentCS</td>
-                <td>Protect</td>
-                <td>The data (or subset of data) provided should be only made available to the people, or types of people explicitly declared in the consent.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-fhir-directory-exchange-CodeSystem-ConsentScopeCS-adr"> </a>
-                  <a href="CodeSystem-ConsentScopeCS.html#ConsentScopeCS-adr">adr</a>
-                </td>
-                <td>http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ConsentScopeCS</td>
-                <td>Advanced Care Directive</td>
-                <td>Actions to be taken if they are no longer able to make decisions for themselves.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-fhir-directory-exchange-CodeSystem-ConsentScopeCS-research"> </a>
-                  <a href="CodeSystem-ConsentScopeCS.html#ConsentScopeCS-research">research</a>
-                </td>
-                <td>http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ConsentScopeCS</td>
-                <td>Research</td>
-                <td>Consent to participate in research protocol and information sharing required.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-fhir-directory-exchange-CodeSystem-ConsentScopeCS-patient-privacy"> </a>
-                  <a href="CodeSystem-ConsentScopeCS.html#ConsentScopeCS-patient-privacy">patient-privacy</a>
-                </td>
-                <td>http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ConsentScopeCS</td>
-                <td>Privacy Consent</td>
-                <td>Agreement to collect, access, use or disclose (share) information.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-fhir-directory-exchange-CodeSystem-ConsentScopeCS-treatment"> </a>
-                  <a href="CodeSystem-ConsentScopeCS.html#ConsentScopeCS-treatment">treatment</a>
-                </td>
-                <td>http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ConsentScopeCS</td>
-                <td>Treatment</td>
-                <td>Consent to undergo a specific treatment.</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/ConsentVS"/>
-        <version value="0.0.1"/>
-        <name value="ConsentVS"/>
-        <title value="National Directory Consent Value Set"/>
-        <status value="active"/>
-        <date value="2022-03-21T10:14:10-04:00"/>
-        <publisher value="HL7 Patient Administration Working Group"/>
-        <contact>
-          <name value="HL7 Patient Administration Working Group"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="pafm@lists.HL7.org"/>
-          </telecom>
-        </contact>
-        <description value="&#x9;&#xD;&#xA;Codes for use in defining access levels for sharing subsets of constrained content (as an example)."/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:67c5b3a0-d085-4ff4-926a-d404a2d6d665"/>
-          <timestamp value="2022-03-21T10:14:50-04:00"/>
-          <total value="5"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ConsentCS|0.0.1"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ConsentScopeCS|0.0.1"/>
-          </parameter>
-          <contains>
-            <system value="http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ConsentCS"/>
-            <code value="protect"/>
-            <display value="Protect"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ConsentScopeCS"/>
-            <code value="adr"/>
-            <display value="Advanced Care Directive"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ConsentScopeCS"/>
-            <code value="research"/>
-            <display value="Research"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ConsentScopeCS"/>
-            <code value="patient-privacy"/>
-            <display value="Privacy Consent"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ConsentScopeCS"/>
-            <code value="treatment"/>
-            <display value="Treatment"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
   <entry>
     <fullUrl value="http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/OrganizationAffiliationRoleVS"/>
     <resource>
@@ -418,7 +265,7 @@
         <name value="OrganizationAffiliationRoleVS"/>
         <title value="OrganizationAffiliation Roles"/>
         <status value="active"/>
-        <date value="2022-03-21T10:14:10-04:00"/>
+        <date value="2022-04-05T18:56:51-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -439,8 +286,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c4650a12-4b7c-49f4-a46c-a2569f3d1435"/>
-          <timestamp value="2022-03-21T10:14:50-04:00"/>
+          <identifier value="urn:uuid:d2d7059a-134d-43f5-bf80-5bab2d8538cd"/>
+          <timestamp value="2022-04-05T18:57:28-04:00"/>
           <total value="24"/>
           <parameter>
             <name value="excludeNested"/>

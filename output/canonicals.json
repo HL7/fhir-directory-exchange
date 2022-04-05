@@ -497,20 +497,6 @@
     "name": "ONCFASTNationalDirectory"
   },
   {
-    "id": "NatlDir-Restriction",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Restriction",
-    "version": "0.0.1",
-    "name": "NatlDirRestriction"
-  },
-  {
-    "id": "NatlDir-Validation",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDir-Validation",
-    "version": "0.0.1",
-    "name": "NatlDirValidation"
-  },
-  {
     "id": "NatlDirEx-CareTeam",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-CareTeam",
@@ -581,25 +567,18 @@
     "name": "NatlDirExPractitionerRole"
   },
   {
-    "id": "NatlDirEx-restriction",
+    "id": "NatlDirEx-Restriction",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-restriction",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Restriction",
     "version": "0.0.1",
     "name": "NatlDirExRestriction"
   },
   {
-    "id": "usage-restriction",
+    "id": "NatlDirEx-Validation",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/usage-restriction",
+    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Validation",
     "version": "0.0.1",
-    "name": "UsageRestriction"
-  },
-  {
-    "id": "ConsentVS",
-    "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ValueSet/ConsentVS",
-    "version": "0.0.1",
-    "name": "ConsentVS"
+    "name": "NatlDirExValidation"
   },
   {
     "id": "OrganizationAffiliationRoleVS",

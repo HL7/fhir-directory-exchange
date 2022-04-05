@@ -108,49 +108,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>InsurancePlan.identifier.extension</sch:title>
-    <sch:rule context="f:InsurancePlan/f:identifier/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.identifier.use</sch:title>
-    <sch:rule context="f:InsurancePlan/f:identifier/f:use">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.identifier.type</sch:title>
-    <sch:rule context="f:InsurancePlan/f:identifier/f:type">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.identifier.system</sch:title>
-    <sch:rule context="f:InsurancePlan/f:identifier/f:system">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.identifier.value</sch:title>
-    <sch:rule context="f:InsurancePlan/f:identifier/f:value">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.identifier.period</sch:title>
-    <sch:rule context="f:InsurancePlan/f:identifier/f:period">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.identifier.assigner</sch:title>
-    <sch:rule context="f:InsurancePlan/f:identifier/f:assigner">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>InsurancePlan.status</sch:title>
     <sch:rule context="f:InsurancePlan/f:status">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -231,94 +188,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>InsurancePlan.contact.name.extension</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:name/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.contact.name.use</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:name/f:use">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.contact.name.text</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:name/f:text">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.contact.name.family</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:name/f:family">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.contact.name.given</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:name/f:given">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.contact.name.prefix</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:name/f:prefix">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.contact.name.suffix</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:name/f:suffix">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.contact.name.period</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:name/f:period">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>InsurancePlan.contact.telecom</sch:title>
     <sch:rule context="f:InsurancePlan/f:contact/f:telecom">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.contact.telecom.extension</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:telecom/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.contact.telecom.system</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:telecom/f:system">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.contact.telecom.value</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:telecom/f:value">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.contact.telecom.use</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:telecom/f:use">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.contact.telecom.rank</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:telecom/f:rank">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>InsurancePlan.contact.telecom.period</sch:title>
-    <sch:rule context="f:InsurancePlan/f:contact/f:telecom/f:period">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
