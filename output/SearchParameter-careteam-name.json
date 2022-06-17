@@ -1,15 +1,16 @@
 {
   "resourceType": "SearchParameter",
-  "id": "careteam-name",
+  "id": "careTeam-name",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"careteam-name\" </p></div><p><b>url</b>: <code>http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-name</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: VhDir_sp_careteam_name</p><p><b>status</b>: draft</p><p><b>date</b>: 2018-05-23</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href=\"https://www.hl7.org/Special/committees/pafm/index.cfm\">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: Select care teams with the specified name</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: name</p><p><b>base</b>: CareTeam</p><p><b>type</b>: string</p><p><b>expression</b>: CareTeam.name|CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/careteam-alias')</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: exact, contains</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"careTeam-name\" </p></div><p><b>url</b>: <code>https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-careteam-name.html</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: careTeamNameSearchParameter</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/Resource-id\">http://hl7.org/fhir/SearchParameter/Resource-id</a></p><p><b>status</b>: active</p><p><b>date</b>: 2022-06-17T09:52:28-04:00</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href=\"https://www.hl7.org/Special/committees/pafm/index.cfm\">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: This SearchParameter enables query of Careteams by `name` with `mutlipleOr` enabled.</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: name</p><p><b>base</b>: CareTeam</p><p><b>type</b>: token</p><p><b>multipleOr</b>: true</p></div>"
   },
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-name",
+  "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-careteam-name.html",
   "version": "0.0.1",
-  "name": "VhDir_sp_careteam_name",
-  "status": "draft",
-  "date": "2018-05-23",
+  "name": "careTeamNameSearchParameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Resource-id",
+  "status": "active",
+  "date": "2022-06-17T09:52:28-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -26,7 +27,7 @@
       ]
     }
   ],
-  "description": "Select care teams with the specified name",
+  "description": "This SearchParameter enables query of Careteams by `name` with `mutlipleOr` enabled.",
   "jurisdiction": [
     {
       "coding": [
@@ -41,12 +42,6 @@
   "base": [
     "CareTeam"
   ],
-  "type": "string",
-  "expression": "CareTeam.name|CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/careteam-alias')",
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": [
-    "exact",
-    "contains"
-  ]
+  "type": "token",
+  "multipleOr": true
 }

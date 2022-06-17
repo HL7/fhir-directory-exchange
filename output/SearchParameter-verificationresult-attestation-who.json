@@ -1,15 +1,16 @@
 {
   "resourceType": "SearchParameter",
-  "id": "verificationresult-attestation-who",
+  "id": "VerificationResult-attestation-who",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"verificationresult-attestation-who\" </p></div><p><b>url</b>: <code>http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-who</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: VhDir_sp_verificationresult_attestation_who</p><p><b>status</b>: draft</p><p><b>date</b>: 2018-05-23</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href=\"https://www.hl7.org/Special/committees/pafm/index.cfm\">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: Select validation information for data that was attested to by the specified source</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: attestation-who</p><p><b>base</b>: VerificationResult</p><p><b>type</b>: reference</p><p><b>expression</b>: VerificationResult.attestation.who</p><p><b>target</b>: Practitioner, Organization, PractitionerRole</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: type</p><p><b>chain</b>: identifier, address, name, partof, location, organization, practitioner</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"VerificationResult-attestation-who\" </p></div><p><b>url</b>: <code>https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-VerificationResult-attestation-who.html</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: VerificationResultAttestationWhoBySearchParameter</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/Resource-id\">http://hl7.org/fhir/SearchParameter/Resource-id</a></p><p><b>status</b>: active</p><p><b>date</b>: 2022-06-17T09:52:28-04:00</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href=\"https://www.hl7.org/Special/committees/pafm/index.cfm\">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: This SearchParameter enables query of VerificationResult by `attestation-who` with `mutlipleOr` enabled.</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: attestation-who</p><p><b>base</b>: VerificationResult</p><p><b>type</b>: token</p><p><b>multipleOr</b>: true</p></div>"
   },
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/verificationresult-attestation-who",
+  "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-VerificationResult-attestation-who.html",
   "version": "0.0.1",
-  "name": "VhDir_sp_verificationresult_attestation_who",
-  "status": "draft",
-  "date": "2018-05-23",
+  "name": "VerificationResultAttestationWhoBySearchParameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Resource-id",
+  "status": "active",
+  "date": "2022-06-17T09:52:28-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -26,7 +27,7 @@
       ]
     }
   ],
-  "description": "Select validation information for data that was attested to by the specified source",
+  "description": "This SearchParameter enables query of VerificationResult by `attestation-who` with `mutlipleOr` enabled.",
   "jurisdiction": [
     {
       "coding": [
@@ -41,25 +42,6 @@
   "base": [
     "VerificationResult"
   ],
-  "type": "reference",
-  "expression": "VerificationResult.attestation.who",
-  "target": [
-    "Practitioner",
-    "Organization",
-    "PractitionerRole"
-  ],
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": [
-    "type"
-  ],
-  "chain": [
-    "identifier",
-    "address",
-    "name",
-    "partof",
-    "location",
-    "organization",
-    "practitioner"
-  ]
+  "type": "token",
+  "multipleOr": true
 }

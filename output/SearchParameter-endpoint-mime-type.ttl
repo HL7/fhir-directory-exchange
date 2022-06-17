@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/endpoint-mime-type> a fhir:SearchParameter;
+<http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/Endpoint-mime-type> a fhir:SearchParameter;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "endpoint-mime-type"];
+  fhir:Resource.id [ fhir:value "Endpoint-mime-type"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"endpoint-mime-type\" </p></div><p><b>url</b>: <code>http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-mime-type</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: VhDir_sp_endpoint_mime_type</p><p><b>status</b>: draft</p><p><b>date</b>: 2018-05-23</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href=\"https://www.hl7.org/Special/committees/pafm/index.cfm\">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: Select endpoints that support the specified media type</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: mime-type</p><p><b>base</b>: Endpoint</p><p><b>type</b>: token</p><p><b>expression</b>: Endpoint.payloadMimeType</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Endpoint-mime-type\" </p></div><p><b>url</b>: <code>https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-endpoint-mime-type.html</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: NatlDirEndpointQryMimetype</p><p><b>status</b>: active</p><p><b>date</b>: 2022-06-17T09:52:28-04:00</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href=\"https://www.hl7.org/Special/committees/pafm/index.cfm\">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: Accesses the  mime-type of an Endpoint</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: mime-type</p><p><b>base</b>: Endpoint</p><p><b>type</b>: token</p><p><b>expression</b>: Endpoint.mime-type</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p></div>"
   ];
-  fhir:SearchParameter.url [ fhir:value "http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-mime-type"];
+  fhir:SearchParameter.url [ fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-endpoint-mime-type.html"];
   fhir:SearchParameter.version [ fhir:value "0.0.1"];
-  fhir:SearchParameter.name [ fhir:value "VhDir_sp_endpoint_mime_type"];
-  fhir:SearchParameter.status [ fhir:value "draft"];
-  fhir:SearchParameter.date [ fhir:value "2018-05-23"^^xsd:date];
+  fhir:SearchParameter.name [ fhir:value "NatlDirEndpointQryMimetype"];
+  fhir:SearchParameter.status [ fhir:value "active"];
+  fhir:SearchParameter.date [ fhir:value "2022-06-17T09:52:28-04:00"^^xsd:dateTime];
   fhir:SearchParameter.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:SearchParameter.contact [
      fhir:index 0;
@@ -31,7 +31,7 @@
        fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
      ]
   ];
-  fhir:SearchParameter.description [ fhir:value "Select endpoints that support the specified media type"];
+  fhir:SearchParameter.description [ fhir:value "Accesses the  mime-type of an Endpoint"];
   fhir:SearchParameter.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -46,15 +46,15 @@
      fhir:index 0
   ];
   fhir:SearchParameter.type [ fhir:value "token"];
-  fhir:SearchParameter.expression [ fhir:value "Endpoint.payloadMimeType"];
+  fhir:SearchParameter.expression [ fhir:value "Endpoint.mime-type"];
   fhir:SearchParameter.multipleOr [ fhir:value "true"^^xsd:boolean];
   fhir:SearchParameter.multipleAnd [ fhir:value "true"^^xsd:boolean] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/endpoint-mime-type.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/Endpoint-mime-type.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/SearchParameter/endpoint-mime-type.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/SearchParameter/Endpoint-mime-type.ttl> .
 
 # -------------------------------------------------------------------------------------
 

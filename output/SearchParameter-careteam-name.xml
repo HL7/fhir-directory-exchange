@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <SearchParameter xmlns="http://hl7.org/fhir">
-  <id value="careteam-name"/>
+  <id value="careTeam-name"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "careteam-name" </p></div><p><b>url</b>: <code>http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-name</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: VhDir_sp_careteam_name</p><p><b>status</b>: draft</p><p><b>date</b>: 2018-05-23</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href="https://www.hl7.org/Special/committees/pafm/index.cfm">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href="mailto:pafm@lists.HL7.org">pafm@lists.HL7.org</a></p><p><b>description</b>: Select care teams with the specified name</p><p><b>jurisdiction</b>: United States of America <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#US)</span></p><p><b>code</b>: name</p><p><b>base</b>: CareTeam</p><p><b>type</b>: string</p><p><b>expression</b>: CareTeam.name|CareTeam.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/careteam-alias')</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: exact, contains</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "careTeam-name" </p></div><p><b>url</b>: <code>https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-careteam-name.html</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: careTeamNameSearchParameter</p><p><b>derivedFrom</b>: <a href="http://hl7.org/fhir/SearchParameter/Resource-id">http://hl7.org/fhir/SearchParameter/Resource-id</a></p><p><b>status</b>: active</p><p><b>date</b>: 2022-06-17T09:52:28-04:00</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href="https://www.hl7.org/Special/committees/pafm/index.cfm">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href="mailto:pafm@lists.HL7.org">pafm@lists.HL7.org</a></p><p><b>description</b>: This SearchParameter enables query of Careteams by `name` with `mutlipleOr` enabled.</p><p><b>jurisdiction</b>: United States of America <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#US)</span></p><p><b>code</b>: name</p><p><b>base</b>: CareTeam</p><p><b>type</b>: token</p><p><b>multipleOr</b>: true</p></div>
   </text>
-  <url value="http://hl7.org/fhir/uv/vhdir/SearchParameter/careteam-name"/>
+  <url value="https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-careteam-name.html"/>
   <version value="0.0.1"/>
-  <name value="VhDir_sp_careteam_name"/>
-  <status value="draft"/>
-  <date value="2018-05-23"/>
+  <name value="careTeamNameSearchParameter"/>
+  <derivedFrom value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+  <status value="active"/>
+  <date value="2022-06-17T09:52:28-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -22,7 +23,7 @@
       <value value="pafm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="Select care teams with the specified name"/>
+  <description value="This SearchParameter enables query of Careteams by `name` with `mutlipleOr` enabled."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -31,10 +32,6 @@
   </jurisdiction>
   <code value="name"/>
   <base value="CareTeam"/>
-  <type value="string"/>
-  <expression value="CareTeam.name|CareTeam.extension(&#39;http://hl7.org/fhir/uv/vhdir/StructureDefinition/careteam-alias&#39;)"/>
+  <type value="token"/>
   <multipleOr value="true"/>
-  <multipleAnd value="true"/>
-  <modifier value="exact"/>
-  <modifier value="contains"/>
 </SearchParameter>

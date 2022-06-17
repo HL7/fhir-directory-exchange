@@ -10,7 +10,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * partOf = Reference(Acme)
-* type = OrgTypeCS#ntwk "Network"
+* type = $NatlDirectoryOrgTypeCS#ntwk "Network"
 * name = "ACME CT Preferred Provider Network"
 * contact.telecom.extension[via-intermediary].valueReference = Reference(Acme)
 * contact.name.family = "Kawasaki"
@@ -26,7 +26,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * partOf = Reference(Acme)
-* type = OrgTypeCS#ntwk "Network"
+* type = $NatlDirectoryOrgTypeCS#ntwk "Network"
 * name = "ACME CT Premium Preferred Provider Network"
 * contact.telecom.extension[via-intermediary].valueReference = Reference(Acme)
 * contact.name.family = "Kawasaki"
@@ -42,7 +42,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * name = "Acme of CT"
-* type = OrgTypeCS#payer "Payer"
+* type = $NatlDirectoryOrgTypeCS#payer "Payer"
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
@@ -70,8 +70,8 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * name = "Acme of CT QHP Gold"
-* type = InsuranceProductTypeCS#qhp "Qualified Health Plan"
-* plan.type = InsurancePlanTypeCS#gold "Gold-QHP"
+* type = $NatlDirectoryInsProdTypCS#qhp "Qualified Health Plan"
+* plan.type = $NatlDirectoryInsPlanTypCS#gold "Gold-QHP"
 * ownedBy = Reference (Acme)
 * administeredBy = Reference (Acme)     // 1..1
 * network[0] = Reference(AcmeofCTStdNet)
@@ -88,8 +88,8 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * name = "Acme of CT QHP Bronze"
-* type = InsuranceProductTypeCS#qhp "Qualified Health Plan"
-* plan.type = InsurancePlanTypeCS#bronze "Bronze-QHP"
+* type = $NatlDirectoryInsProdTypCS#qhp "Qualified Health Plan"
+* plan.type = $NatlDirectoryInsPlanTypCS#bronze "Bronze-QHP"
 * ownedBy = Reference (Acme)
 * administeredBy = Reference (Acme)     // 1..1
 * network[0] = Reference(AcmeofCTStdNet)
@@ -122,8 +122,8 @@ Usage: #example
 * language = #en-US
 * status = #active 
 * name = "Endpoint for Acme of CT Portal"
-* connectionType = EndpointConnectionTypeCS#rest-non-fhir
-* payloadType = EndpointPayloadTypeCS#NA
+* connectionType = $NatlDirectoryEndpointConnTypeCS#rest-non-fhir
+* payloadType = $NatlDirectoryEndpointPayldTypeCS#NA
 * address = "https://urlofportal.acmect.com"
 * extension[endpoint-usecase].extension[type].valueCodeableConcept = $V3ActReason#HOPERAT
-* extension[endpoint-type].extension[type].valueCodeableConcept = #FHIR
+* extension[endpoint-type].extension[type].valueCodeableConcept = $NatlDirectoryEndpointTypeCS#FHIR

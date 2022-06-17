@@ -9,7 +9,7 @@ Usage: #example
 * identifier[NPI].value = "NPI456"
 * identifier[NPI].system = $NPICS
 * name = "Hartford Orthopedics Services"
-* type = OrgTypeCS#prvgrp "Provider Group"
+* type = $NatlDirectoryOrgTypeCS#prvgrp "Provider Group"
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
@@ -68,7 +68,7 @@ Usage: #example
 * contact.telecom[0].system = #phone
 * contact.telecom[0].value = "(111)-222-3333"
 * contact.telecom[0].rank = 1
-* type = OrgTypeCS#fac "Facility"
+* type = $NatlDirectoryOrgTypeCS#fac "Facility"
 /* 
 * extension[qualification].extension[identifier]
 * extension[qualification].extension[code] = 
@@ -85,9 +85,9 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* category = HealthcareServiceCategoryCS#emerg  
-* specialty =  $NUCCProviderTaxonomy#207P00000X   "Emergency Medicine"
+* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
+* category = $NatlDirectoryHealthcareServiceCatCS#emerg  
+* specialty =  $NUCCProviderTaxonomy#207P00000X   "Emergency Medicine Physician"
 * providedBy = Reference(Hospital)
 * location[0] = Reference(HospLoc1)
 
@@ -104,8 +104,8 @@ Usage: #example
 * name = "Hartford Hospital Location 1"
 * type = $V3RoleCode#HOSP 
 * managingOrganization = Reference(Hospital)
-* extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
-* extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
+* extension[accessibility][1].valueCodeableConcept = $NatlDirectoryAccessibilityCS#pubtrans
+* extension[accessibility][0].valueCodeableConcept = $NatlDirectoryAccessibilityCS#adacomp
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
@@ -148,8 +148,8 @@ Usage: #example
 * name = "Hartford Hospital Location 2"
 * type = $V3RoleCode#HOSP
 * managingOrganization = Reference(Hospital)
-* extension[accessibility][1].valueCodeableConcept = AccessibilityCS#pubtrans
-* extension[accessibility][0].valueCodeableConcept = AccessibilityCS#adacomp
+* extension[accessibility][1].valueCodeableConcept = $NatlDirectoryAccessibilityCS#pubtrans
+* extension[accessibility][0].valueCodeableConcept = $NatlDirectoryAccessibilityCS#adacomp
 * telecom[0].system = #phone
 * telecom[0].value = "(111)-222-3333"
 * telecom[0].rank = 2
@@ -187,8 +187,8 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* category = HealthcareServiceCategoryCS#prov 
+* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
+* category = $NatlDirectoryHealthcareServiceCatCS#prov 
 * specialty = $NUCCProviderTaxonomy#207X00000X "Orthopedic Surgery"   // Orthopedics
 * providedBy = Reference(HartfordOrthopedics)
 * location[1] = Reference(HospLoc2)
@@ -233,9 +233,9 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* category = HealthcareServiceCategoryCS#outpat
-* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine"  
+* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
+* category = $NatlDirectoryHealthcareServiceCatCS#outpat
+* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
 * providedBy = Reference(HamiltonClinic)
 * location[0] = Reference(HospLoc1)
 
@@ -265,7 +265,7 @@ Usage: #example
 * contact.telecom[0].system = #phone
 * contact.telecom[0].value = "(111)-222-3333"
 * contact.telecom[0].rank = 1
-* type = OrgTypeCS#fac "Facility"
+* type = $NatlDirectoryOrgTypeCS#fac "Facility"
 
 
 Instance: BurrClinicAffil
@@ -291,9 +291,9 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* category = HealthcareServiceCategoryCS#outpat
-* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine"  
+* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
+* category = $NatlDirectoryHealthcareServiceCatCS#outpat
+* specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
 * providedBy = Reference(BurrClinic)
 * location[0] = Reference(HospLoc1)
 
@@ -322,7 +322,7 @@ Usage: #example
 * contact.telecom[0].system = #phone
 * contact.telecom[0].value = "(111)-222-3333"
 * contact.telecom[0].rank = 1
-* type = OrgTypeCS#fac "Facility"
+* type = $NatlDirectoryOrgTypeCS#fac "Facility"
 
 
 Instance: ConnHIE
@@ -347,7 +347,7 @@ Usage: #example
 * contact.telecom[0].system = #phone
 * contact.telecom[0].value = "(111)-222-3333"
 * contact.telecom[0].rank = 1
-* type = OrgTypeCS#atyprv "Atypical Provider"
+* type = $NatlDirectoryOrgTypeCS#atyprv "Atypical Provider"
 
 Instance: ConnHIEAffil
 InstanceOf: NatlDirExOrganizationAffiliation
@@ -371,7 +371,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = ProviderRoleCS#PH 
+* code = $NatlDirectoryProvdrRoleCS#PH 
 * practitioner = Reference(PractitionerA)
 * healthcareService = Reference(HealthCareServiceEmergency)
 // specialty = internal medicine
@@ -385,7 +385,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = ProviderRoleCS#PH
+* code = $NatlDirectoryProvdrRoleCS#PH
 // specialty = internal medicine
 // Available:  Sat/Sun
 * healthcareService = Reference(HealthCareServiceOutpatientClinic)
@@ -398,8 +398,8 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* category = HealthcareServiceCategoryCS#Outpatient
+* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
+* category = $NatlDirectoryHealthcareServiceCatCS#Outpatient
 * specialty = $NUCCProviderTaxonomy#3336C0003X   // Fix to Internal Medicine
 * providedBy = Reference(OrganizationInternalMedicineLLC)
 * location[0] = Reference(RockvilleClinicLocation)
@@ -412,8 +412,8 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = DeliveryMethodCS#physical
-* category = HealthcareServiceCategoryCS#Emergency 
+* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
+* category = $NatlDirectoryHealthcareServiceCatCS#Emergency 
 * providedBy = Reference(OrganizationRockvilleHospital)
 * location[0] = Reference(RockvilleHospitalLocation)
 

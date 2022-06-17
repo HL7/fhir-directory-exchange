@@ -10,7 +10,7 @@
   "name": "NatlDirExPractitioner",
   "title": "National Directory Practitioner",
   "status": "active",
-  "date": "2022-04-05T18:56:51-04:00",
+  "date": "2022-06-17T09:52:28-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -746,6 +746,50 @@
             "code": "Extension",
             "profile": [
               "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/rating"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Practitioner.extension:qualification",
+        "path": "Practitioner.extension",
+        "sliceName": "qualification",
+        "short": "Qualification",
+        "definition": "An extension to add qualifications for an organization (e.g. accreditation) or practitionerRole (e.g. registered to prescribe controlled substances).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/qualification"
             ]
           }
         ],

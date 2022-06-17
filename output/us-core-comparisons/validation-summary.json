@@ -7,17 +7,9 @@
     "errors": 0,
     "warnings": 1
   },
-  "StructureDefinition/NatlDirEndpointQry-CareTeamComplete": {
-    "errors": 0,
-    "warnings": 1
-  },
   "StructureDefinition/NatlDirEndpointQry-Endpoint": {
     "errors": 2,
     "warnings": 0
-  },
-  "StructureDefinition/NatlDirEndpointQry-EndpointComplete": {
-    "errors": 2,
-    "warnings": 1
   },
   "StructureDefinition/NatlDirEndpointQry-HealthcareService": {
     "errors": 0,
@@ -31,25 +23,13 @@
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDirEndpointQry-InsurancePlanComplete": {
-    "errors": 0,
-    "warnings": 1
-  },
   "StructureDefinition/NatlDirEndpointQry-Location": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDirEndpointQry-LocationComplete": {
-    "errors": 0,
-    "warnings": 1
-  },
   "StructureDefinition/NatlDirEndpointQry-Network": {
     "errors": 0,
     "warnings": 0
-  },
-  "StructureDefinition/NatlDirEndpointQry-NetworkComplete": {
-    "errors": 0,
-    "warnings": 1
   },
   "StructureDefinition/NatlDirEndpointQry-Organization": {
     "errors": 0,
@@ -59,29 +39,13 @@
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDirEndpointQry-OrganizationAffiliationComplete": {
-    "errors": 0,
-    "warnings": 1
-  },
-  "StructureDefinition/NatlDirEndpointQry-OrganizationComplete": {
-    "errors": 0,
-    "warnings": 1
-  },
   "StructureDefinition/NatlDirEndpointQry-Practitioner": {
     "errors": 0,
     "warnings": 0
   },
-  "StructureDefinition/NatlDirEndpointQry-PractitionerComplete": {
-    "errors": 0,
-    "warnings": 1
-  },
   "StructureDefinition/NatlDirEndpointQry-PractitionerRole": {
     "errors": 0,
     "warnings": 0
-  },
-  "StructureDefinition/NatlDirEndpointQry-PractitionerRoleComplete": {
-    "errors": 0,
-    "warnings": 1
   },
   "StructureDefinition/NatlDir-Validation": {
     "errors": 2,

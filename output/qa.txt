@@ -1,55 +1,38 @@
 ﻿ONCFASTNationalDirectory : Validation Results
 =========================================
 
-err = 81, warn = 32, info = 5
-IG Publisher Version: 1.1.98 Out of date - current version is 1.1.114
-Generated Tue Apr 05 18:58:16 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-exchange#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-exchange)
- Build Errors : 1 / 1 / 1
+err = 8, warn = 38, info = 5
+IG Publisher Version: 1.1.98 Out of date - current version is 1.1.121
+Generated Fri Jun 17 09:53:44 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-exchange#0.0.1 (canonical = http://hl7.org/fhir/us/fhir-directory-exchange)
+ Build Errors : 3 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-exchange : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-AcceptingPatientsCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-AccessibilityCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-ConsentCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-ConsentScopeCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-DeliveryMethodCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-EndpointConnectionTypeCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-EndpointPayloadTypeCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-EndpointTypeCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-HealthcareServiceCategoryCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-IgTypeCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-InsurancePlanTypeCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-InsuranceProductTypeCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-LanguageProficiencyCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-OrgTypeCS : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\capabilitystatement-fhir-national-directory : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-OrganizationAffiliationRoleCS : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-ProviderRoleCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-QualificationStatusCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-TrustFrameworkTypeCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\codesystem-VirtualModalitiesCS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\endpoint-AcmeOfCTPortalEndpoint : 1 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-BurrClinicServices : 1 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-CancerClinicService : 1 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HamiltonClinicServices : 1 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HansSoloService : 1 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HartfordOrthopedicServices : 1 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HospERService : 1 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-PharmChainCompService : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-PharmChainMailService : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-PharmChainRetailService : 2 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-VirtualCounselService : 1 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\endpoint-AcmeOfCTPortalEndpoint : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-BurrClinicServices : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-CancerClinicService : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HamiltonClinicServices : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HansSoloService : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HartfordOrthopedicServices : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HospERService : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-PharmChainCompService : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-PharmChainMailService : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-PharmChainRetailService : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-VirtualCounselService : 1 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\insuranceplan-AcmeQHPBronze : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\insuranceplan-AcmeQHPGold : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\location-CancerClinicLoc : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\location-HansSoloClinic : 1 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\location-HansSoloClinic : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\location-HospLoc1 : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\location-HospLoc2 : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\location-PharmLoc1 : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\location-PharmLoc2 : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\location-PharmLoc3 : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\location-PharmLoc4 : 1 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\location-PharmLoc1 : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\location-PharmLoc2 : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\location-PharmLoc3 : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\location-PharmLoc4 : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\location-StateOfCTLocation : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organization-Acme : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organization-AcmeofCTPremNet : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organization-AcmeofCTStdNet : 1 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organization-AcmeofCTPremNet : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organization-AcmeofCTStdNet : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organization-BigBox : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organization-BurrClinic : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organization-CancerClinic : 0 / 0 / 1
@@ -65,15 +48,85 @@ Generated Tue Apr 05 18:58:16 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organizationaffiliation-PharmChainAffil1 : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organizationaffiliation-PharmChainAffil2 : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organizationaffiliation-PharmChainAffil3 : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitioner-Counselor : 1 / 0 / 2
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitioner-HansSolo : 1 / 2 / 2
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitioner-Counselor : 0 / 0 / 2
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitioner-HansSolo : 2 / 0 / 2
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitioner-JoeSmith : 0 / 2 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-AnonRole : 1 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-CounselorRole1 : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-HansSoloRole1 : 1 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-JoeSmithRole1 : 1 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-JoeSmithRole2 : 1 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-JoeSmithRole3 : 1 / 2 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-AnonRole : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-CounselorRole1 : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-HansSoloRole1 : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-JoeSmithRole1 : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-JoeSmithRole2 : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-JoeSmithRole3 : 1 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Endpoint-connection-type : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Endpoint-identifier : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Endpoint-mime-type : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Endpoint-organization : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Endpoint-payload-type : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Endpoint-status : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Endpoint-usecase-standard : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Endpoint-usecase-type : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-HealthcareService-coverage-area : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-HealthcareService-endpoint : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-HealthcareService-location : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-HealthcareService-name : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-HealthcareService-organization : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-HealthcareService-service-category : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-HealthcareService-service-type : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-HealthcareService-specialty : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-InsurancePlan-administrated-by : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-InsurancePlan-coverage-area : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-InsurancePlan-coverage-benefit-type : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-InsurancePlan-coverage-network : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-InsurancePlan-identifier : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-InsurancePlan-name : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-InsurancePlan-owned-by : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-InsurancePlan-type : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Location-address : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Location-endpoint : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Location-organization : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Location-partOf : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Location-physicalType : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Location-type : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Network-coverage-area : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Network-name : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Organization-address : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Organization-endpoint : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Organization-identifier : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Organization-name : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Organization-partOf : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-Organization-type : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-OrganizationAffiliation-endpoint : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-OrganizationAffiliation-location : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-OrganizationAffiliation-network : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-OrganizationAffiliation-participating-organization : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-OrganizationAffiliation-primary-organization : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-OrganizationAffiliation-role : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-OrganizationAffiliation-service : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-OrganizationAffiliation-specialty : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-VerificationResult-attestation-who : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-VerificationResult-primarysource-who : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-VerificationResult-target : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-careTeam-category : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-careTeam-endpoint : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-careTeam-location : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-careTeam-name : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-careTeam-organization : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-careTeam-service : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-practitioner-family : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-practitioner-given : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-practitioner-identifier : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-practitioner-identifier-assigner : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-practitioner-name : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-practitioner-qualification-code : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-practitioner-qualification-issuer : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-practitionerRole-endpoint : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-practitionerRole-location : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-practitionerRole-network : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-practitionerRole-organization : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-practitionerRole-practitioner : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-practitionerRole-role : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-practitionerRole-service : 0 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\searchparameter-practitionerRole-specialty : 0 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\structuredefinition-NatlDirEx-CareTeam : 0 / 2 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\structuredefinition-NatlDirEx-Endpoint : 1 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\structuredefinition-NatlDirEx-HealthcareService : 0 / 0 / 1
@@ -87,233 +140,44 @@ Generated Tue Apr 05 18:58:16 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\structuredefinition-NatlDirEx-Restriction : 1 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\structuredefinition-NatlDirEx-Validation : 1 / 2 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\valueset-OrganizationAffiliationRoleVS : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\capabilitystatement-NatlDir : 49 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-careteam-category : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-careteam-endpoint : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-careteam-identifier : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-careteam-identifier-assigner : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-careteam-location : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-careteam-name : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-careteam-organization : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-careteam-participant : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-careteam-service : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-careteam-status : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-careteam-via-intermediary : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-endpoint-connection-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-endpoint-identifier : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-endpoint-identifier-assigner : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-endpoint-mime-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-endpoint-organization : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-endpoint-payload-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-endpoint-status : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-endpoint-usecase-standard : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-endpoint-usecase-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-endpoint-via-intermediary : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-healthcareservice-characteristic : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-healthcareservice-coverage-area : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-healthcareservice-eligibility : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-healthcareservice-endpoint : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-healthcareservice-identifier : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-healthcareservice-identifier-assigner : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-healthcareservice-location : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-healthcareservice-name : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-healthcareservice-new-patient : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-healthcareservice-new-patient-network : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-healthcareservice-organization : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-healthcareservice-service-category : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-healthcareservice-service-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-healthcareservice-specialty : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-healthcareservice-via-intermediary : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-administered-by : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-coverage-area : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-coverage-benefit-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-coverage-limit-value : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-coverage-network : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-coverage-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-endpoint : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-general-cost-groupsize : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-general-cost-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-general-cost-value : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-identifier : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-name : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-network : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-owned-by : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-plan-coverage-area : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-plan-identifier : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-plan-network : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-plan-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-specific-cost-benefit-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-specific-cost-category : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-specific-cost-cost-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-specific-cost-value : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-status : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-insuranceplan-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-accessibility : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-address : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-address-city : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-address-postalcode : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-address-state : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-contains : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-endpoint : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-identifier : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-identifier-assigner : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-new-patient : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-new-patient-network : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-organization : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-partof : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-status : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-location-via-intermediary : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-address : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-address-city : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-address-country : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-address-postalcode : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-address-state : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-coverage-area : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-endpoint : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-identifier : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-identifier-assigner : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-name : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-partof : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-qualification-code : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-qualification-issuer : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-qualification-status : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-qualification-wherevalid-code : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-qualification-wherevalid-location : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organization-via-intermediary : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organizationaffiliation-endpoint : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organizationaffiliation-identifier : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organizationaffiliation-identifier-assigner : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organizationaffiliation-location : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organizationaffiliation-network : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organizationaffiliation-participating-organization : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organizationaffiliation-primary-organization : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organizationaffiliation-role : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organizationaffiliation-service : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organizationaffiliation-specialty : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-organizationaffiliation-via-intermediary : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitioner-endpoint : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitioner-family-name : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitioner-given-name : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitioner-identifier : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitioner-identifier-assigner : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitioner-name : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitioner-phonetic : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitioner-qualification-code : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitioner-qualification-issuer : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitioner-qualification-period : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitioner-qualification-status : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitioner-qualification-wherevalid-code : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitioner-qualification-wherevalid-location : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitioner-via-intermediary : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-endpoint : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-identifier : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-identifier-assigner : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-location : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-network : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-new-patient : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-new-patient-network : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-organization : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-period : 1 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-practitioner : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-qualification-code : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-qualification-issuer : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-qualification-status : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-qualification-wherevalid-code : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-qualification-wherevalid-location : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-role : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-service : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-specialty : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-practitionerrole-via-intermediary : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-verificationresult-attestation-method : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-verificationresult-attestation-onbehalfof : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-verificationresult-attestation-who : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-verificationresult-primarysource-date : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-verificationresult-primarysource-type : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-verificationresult-primarysource-who : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-verificationresult-status-date : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-verificationresult-target : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-verificationresult-validation-status : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\input\resources\searchparameter-verificationresult-validator-organization : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.dependency[1].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[1].url: The correct canonical URL for this dependency is http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query
 ERROR: There is no jira specification file defined with the expected name of FHIR-us-fhir-directory-exchange in the xml folder of the  https://github.com/HL7/Jira-Spec-Artifacts project.  This must exist before ballot or publication.
+ERROR: C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\output\conformance.html#/html/body/div/div/div/div/div/p/a at Line 207, column 22: The link 'CapabilityStatement-NatlDir.xml.html' for "XML" cannot be resolved
+ERROR: C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\output\conformance.html#/html/body/div/div/div/div/div/p/a at Line 207, column 77: The link 'CapabilityStatement-NatlDir.json.html' for "JSON" cannot be resolved
 == fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-exchange.json ==
-== fsh-generated\resources\CodeSystem-AcceptingPatientsCS.json ==
-== fsh-generated\resources\CodeSystem-AccessibilityCS.json ==
-== fsh-generated\resources\CodeSystem-ConsentCS.json ==
-== fsh-generated\resources\CodeSystem-ConsentScopeCS.json ==
-== fsh-generated\resources\CodeSystem-DeliveryMethodCS.json ==
-== fsh-generated\resources\CodeSystem-EndpointConnectionTypeCS.json ==
-== fsh-generated\resources\CodeSystem-EndpointPayloadTypeCS.json ==
-== fsh-generated\resources\CodeSystem-EndpointTypeCS.json ==
-== fsh-generated\resources\CodeSystem-HealthcareServiceCategoryCS.json ==
-== fsh-generated\resources\CodeSystem-IgTypeCS.json ==
-== fsh-generated\resources\CodeSystem-InsurancePlanTypeCS.json ==
-== fsh-generated\resources\CodeSystem-InsuranceProductTypeCS.json ==
-== fsh-generated\resources\CodeSystem-LanguageProficiencyCS.json ==
-== fsh-generated\resources\CodeSystem-OrgTypeCS.json ==
+== fsh-generated\resources\CapabilityStatement-fhir-national-directory.json ==
 == fsh-generated\resources\CodeSystem-OrganizationAffiliationRoleCS.json ==
 WARNING: CodeSystem/OrganizationAffiliationRoleCS: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly 
-== fsh-generated\resources\CodeSystem-ProviderRoleCS.json ==
-== fsh-generated\resources\CodeSystem-QualificationStatusCS.json ==
-== fsh-generated\resources\CodeSystem-TrustFrameworkTypeCS.json ==
-== fsh-generated\resources\CodeSystem-VirtualModalitiesCS.json ==
 == fsh-generated\resources\Endpoint-AcmeOfCTPortalEndpoint.json ==
-WARNING: Endpoint/AcmeOfCTPortalEndpoint: Endpoint.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: Endpoint/AcmeOfCTPortalEndpoint: Endpoint.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Endpoint Type' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointTypeVS), and a coding from this value set is required) (codes = null#FHIR)
 == fsh-generated\resources\HealthcareService-BurrClinicServices.json ==
-ERROR: HealthcareService/BurrClinicServices: HealthcareService.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Delivery Methods' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/DeliveryMethodVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/DeliveryMethodCS#physical)
-WARNING: HealthcareService/BurrClinicServices: HealthcareService.specialty[0]: The display "Family Medicine" is not a valid display for the code {http://nucc.org/provider-taxonomy}207Q00000X - should be one of ['Family Medicine Physician'] (from http://tx.fhir.org/r4)
 == fsh-generated\resources\HealthcareService-CancerClinicService.json ==
-ERROR: HealthcareService/CancerClinicService: HealthcareService.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Delivery Methods' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/DeliveryMethodVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/DeliveryMethodCS#physical)
-WARNING: HealthcareService/CancerClinicService: HealthcareService.specialty[0]: The display "Medical Oncology" is not a valid display for the code {http://nucc.org/provider-taxonomy}207RX0202X - should be one of ['Medical Oncology Physician'] (from http://tx.fhir.org/r4)
 == fsh-generated\resources\HealthcareService-HamiltonClinicServices.json ==
-ERROR: HealthcareService/HamiltonClinicServices: HealthcareService.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Delivery Methods' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/DeliveryMethodVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/DeliveryMethodCS#physical)
-WARNING: HealthcareService/HamiltonClinicServices: HealthcareService.specialty[0]: The display "Family Medicine" is not a valid display for the code {http://nucc.org/provider-taxonomy}207Q00000X - should be one of ['Family Medicine Physician'] (from http://tx.fhir.org/r4)
 == fsh-generated\resources\HealthcareService-HansSoloService.json ==
-ERROR: HealthcareService/HansSoloService: HealthcareService.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Delivery Methods' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/DeliveryMethodVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/DeliveryMethodCS#physical)
-WARNING: HealthcareService/HansSoloService: HealthcareService.specialty[0]: The display "Family Medicine" is not a valid display for the code {http://nucc.org/provider-taxonomy}207Q00000X - should be one of ['Family Medicine Physician'] (from http://tx.fhir.org/r4)
 == fsh-generated\resources\HealthcareService-HartfordOrthopedicServices.json ==
-ERROR: HealthcareService/HartfordOrthopedicServices: HealthcareService.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Delivery Methods' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/DeliveryMethodVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/DeliveryMethodCS#physical)
 WARNING: HealthcareService/HartfordOrthopedicServices: HealthcareService.specialty[0]: The display "Orthopedic Surgery" is not a valid display for the code {http://nucc.org/provider-taxonomy}207X00000X - should be one of ['Orthopaedic Surgery Physician'] (from http://tx.fhir.org/r4)
 == fsh-generated\resources\HealthcareService-HospERService.json ==
-ERROR: HealthcareService/HospERService: HealthcareService.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Delivery Methods' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/DeliveryMethodVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/DeliveryMethodCS#physical)
-WARNING: HealthcareService/HospERService: HealthcareService.specialty[0]: The display "Emergency Medicine" is not a valid display for the code {http://nucc.org/provider-taxonomy}207P00000X - should be one of ['Emergency Medicine Physician'] (from http://tx.fhir.org/r4)
 == fsh-generated\resources\HealthcareService-PharmChainCompService.json ==
-ERROR: HealthcareService/PharmChainCompService: HealthcareService.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Delivery Methods' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/DeliveryMethodVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/DeliveryMethodCS#physical)
 == fsh-generated\resources\HealthcareService-PharmChainMailService.json ==
-ERROR: HealthcareService/PharmChainMailService: HealthcareService.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Delivery Methods' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/DeliveryMethodVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/DeliveryMethodCS#virtual)
 == fsh-generated\resources\HealthcareService-PharmChainRetailService.json ==
-ERROR: HealthcareService/PharmChainRetailService: HealthcareService.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Delivery Methods' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/DeliveryMethodVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/DeliveryMethodCS#physical)
-ERROR: HealthcareService/PharmChainRetailService: HealthcareService.extension[1].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Accepting Patients Codes' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/AcceptingPatientsVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/AcceptingPatientsCS#existptonly)
 == fsh-generated\resources\HealthcareService-VirtualCounselService.json ==
-ERROR: HealthcareService/VirtualCounselService: HealthcareService.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Delivery Methods' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/DeliveryMethodVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/DeliveryMethodCS#virtual)
-WARNING: HealthcareService/VirtualCounselService: HealthcareService.specialty[0]: The display "Professional" is not a valid display for the code {http://nucc.org/provider-taxonomy}101YP2500X - should be one of ['Professional Counselor'] (from http://tx.fhir.org/r4)
+ERROR: HealthcareService/VirtualCounselService: HealthcareService.specialty[0]: Error parsing response message: This does not appear to be a FHIR resource (wrong namespace '') (@ /)
 == fsh-generated\resources\InsurancePlan-AcmeQHPBronze.json ==
 == fsh-generated\resources\InsurancePlan-AcmeQHPGold.json ==
 == fsh-generated\resources\Location-CancerClinicLoc.json ==
 == fsh-generated\resources\Location-HansSoloClinic.json ==
-ERROR: Location/HansSoloClinic: Location.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Accepting Patients Codes' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/AcceptingPatientsVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/AcceptingPatientsCS#existptonly)
 == fsh-generated\resources\Location-HospLoc1.json ==
 == fsh-generated\resources\Location-HospLoc2.json ==
 == fsh-generated\resources\Location-PharmLoc1.json ==
-ERROR: Location/PharmLoc1: Location.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Accepting Patients Codes' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/AcceptingPatientsVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/AcceptingPatientsCS#existptonly)
 == fsh-generated\resources\Location-PharmLoc2.json ==
-ERROR: Location/PharmLoc2: Location.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Accepting Patients Codes' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/AcceptingPatientsVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/AcceptingPatientsCS#existptonly)
 == fsh-generated\resources\Location-PharmLoc3.json ==
-ERROR: Location/PharmLoc3: Location.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Accepting Patients Codes' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/AcceptingPatientsVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/AcceptingPatientsCS#existptonly)
 == fsh-generated\resources\Location-PharmLoc4.json ==
-ERROR: Location/PharmLoc4: Location.extension[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Accepting Patients Codes' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/AcceptingPatientsVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/AcceptingPatientsCS#existptonly)
 == fsh-generated\resources\Location-StateOfCTLocation.json ==
 == fsh-generated\resources\Organization-Acme.json ==
 == fsh-generated\resources\Organization-AcmeofCTPremNet.json ==
-ERROR: Organization/AcmeofCTPremNet: Organization.type[0]: None of the codings provided are in the value set 'Network Type' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/NetworkTypeVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/OrgTypeCS#ntwk)
 == fsh-generated\resources\Organization-AcmeofCTStdNet.json ==
-ERROR: Organization/AcmeofCTStdNet: Organization.type[0]: None of the codings provided are in the value set 'Network Type' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/NetworkTypeVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/OrgTypeCS#ntwk)
 == fsh-generated\resources\Organization-BigBox.json ==
 == fsh-generated\resources\Organization-BurrClinic.json ==
 == fsh-generated\resources\Organization-CancerClinic.json ==
@@ -331,33 +195,112 @@ ERROR: Organization/AcmeofCTStdNet: Organization.type[0]: None of the codings pr
 == fsh-generated\resources\OrganizationAffiliation-PharmChainAffil3.json ==
 == fsh-generated\resources\Practitioner-Counselor.json ==
 INFORMATION: Practitioner/Counselor: Practitioner.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner
-ERROR: Practitioner/Counselor: Practitioner.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Language Proficiency' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/LanguageProficiencyVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/LanguageProficiencyCS#30)
 == fsh-generated\resources\Practitioner-HansSolo.json ==
 INFORMATION: Practitioner/HansSolo: Practitioner.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner
-ERROR: Practitioner/HansSolo: Practitioner.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Language Proficiency' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/LanguageProficiencyVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/LanguageProficiencyCS#30)
-WARNING: Practitioner/HansSolo: Practitioner.qualification[1].code: The display "Internal Medicine" is not a valid display for the code {http://nucc.org/provider-taxonomy}207R00000X - should be one of ['Internal Medicine Physician'] (from http://tx.fhir.org/r4)
-WARNING: Practitioner/HansSolo: Practitioner.qualification[2].code: The display "Cardiovascular Disease" is not a valid display for the code {http://nucc.org/provider-taxonomy}207RC0000X - should be one of ['Cardiovascular Disease Physician'] (from http://tx.fhir.org/r4)
+ERROR: Practitioner/HansSolo: Practitioner.qualification[1].code: Error parsing response message: This does not appear to be a FHIR resource (wrong namespace '') (@ /)
+ERROR: Practitioner/HansSolo: Practitioner.qualification[2].code: Error parsing response message: This does not appear to be a FHIR resource (wrong namespace '') (@ /)
 == fsh-generated\resources\Practitioner-JoeSmith.json ==
 WARNING: Practitioner/JoeSmith: Practitioner.qualification[1].code: The display "Internal Medicine" is not a valid display for the code {http://nucc.org/provider-taxonomy}207R00000X - should be one of ['Internal Medicine Physician'] (from http://tx.fhir.org/r4)
 WARNING: Practitioner/JoeSmith: Practitioner.qualification[2].code: The display "Cardiovascular Disease" is not a valid display for the code {http://nucc.org/provider-taxonomy}207RC0000X - should be one of ['Cardiovascular Disease Physician'] (from http://tx.fhir.org/r4)
 == fsh-generated\resources\PractitionerRole-AnonRole.json ==
-ERROR: PractitionerRole/AnonRole: PractitionerRole.code[0]: None of the codings provided are in the value set 'PractitionerRole Code' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/PractitionerRoleVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS#ph)
-WARNING: PractitionerRole/AnonRole: PractitionerRole.specialty[0]: The display "Internal Medicine" is not a valid display for the code {http://nucc.org/provider-taxonomy}207R00000X - should be one of ['Internal Medicine Physician'] (from http://tx.fhir.org/r4)
 == fsh-generated\resources\PractitionerRole-CounselorRole1.json ==
-ERROR: PractitionerRole/CounselorRole1: PractitionerRole.code[0]: None of the codings provided are in the value set 'PractitionerRole Code' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/PractitionerRoleVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS#co)
 == fsh-generated\resources\PractitionerRole-HansSoloRole1.json ==
-ERROR: PractitionerRole/HansSoloRole1: PractitionerRole.code[0]: None of the codings provided are in the value set 'PractitionerRole Code' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/PractitionerRoleVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS#ph)
-WARNING: PractitionerRole/HansSoloRole1: PractitionerRole.specialty[0]: The display "Internal Medicine" is not a valid display for the code {http://nucc.org/provider-taxonomy}207R00000X - should be one of ['Internal Medicine Physician'] (from http://tx.fhir.org/r4)
 == fsh-generated\resources\PractitionerRole-JoeSmithRole1.json ==
-ERROR: PractitionerRole/JoeSmithRole1: PractitionerRole.code[0]: None of the codings provided are in the value set 'PractitionerRole Code' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/PractitionerRoleVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS#ph)
-WARNING: PractitionerRole/JoeSmithRole1: PractitionerRole.specialty[0]: The display "Internal Medicine" is not a valid display for the code {http://nucc.org/provider-taxonomy}207R00000X - should be one of ['Internal Medicine Physician'] (from http://tx.fhir.org/r4)
 == fsh-generated\resources\PractitionerRole-JoeSmithRole2.json ==
-ERROR: PractitionerRole/JoeSmithRole2: PractitionerRole.code[0]: None of the codings provided are in the value set 'PractitionerRole Code' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/PractitionerRoleVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS#ph)
-WARNING: PractitionerRole/JoeSmithRole2: PractitionerRole.specialty[0]: The display "Internal Medicine" is not a valid display for the code {http://nucc.org/provider-taxonomy}207R00000X - should be one of ['Internal Medicine Physician'] (from http://tx.fhir.org/r4)
 == fsh-generated\resources\PractitionerRole-JoeSmithRole3.json ==
-ERROR: PractitionerRole/JoeSmithRole3: PractitionerRole.code[0]: None of the codings provided are in the value set 'PractitionerRole Code' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/PractitionerRoleVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-exchange/CodeSystem/ProviderRoleCS#ap)
-WARNING: PractitionerRole/JoeSmithRole3: PractitionerRole.specialty[0]: The display "Internal Medicine" is not a valid display for the code {http://nucc.org/provider-taxonomy}207R00000X - should be one of ['Internal Medicine Physician'] (from http://tx.fhir.org/r4)
-WARNING: PractitionerRole/JoeSmithRole3: PractitionerRole.specialty[1]: The display "Cardiovascular Disease" is not a valid display for the code {http://nucc.org/provider-taxonomy}207RC0000X - should be one of ['Cardiovascular Disease Physician'] (from http://tx.fhir.org/r4)
+ERROR: PractitionerRole/JoeSmithRole3: PractitionerRole.specialty[1]: Error parsing response message: This does not appear to be a FHIR resource (wrong namespace '') (@ /)
+== fsh-generated\resources\SearchParameter-Endpoint-connection-type.json ==
+== fsh-generated\resources\SearchParameter-Endpoint-identifier.json ==
+== fsh-generated\resources\SearchParameter-Endpoint-mime-type.json ==
+== fsh-generated\resources\SearchParameter-Endpoint-organization.json ==
+== fsh-generated\resources\SearchParameter-Endpoint-payload-type.json ==
+== fsh-generated\resources\SearchParameter-Endpoint-status.json ==
+== fsh-generated\resources\SearchParameter-Endpoint-usecase-standard.json ==
+== fsh-generated\resources\SearchParameter-Endpoint-usecase-type.json ==
+== fsh-generated\resources\SearchParameter-HealthcareService-coverage-area.json ==
+== fsh-generated\resources\SearchParameter-HealthcareService-endpoint.json ==
+== fsh-generated\resources\SearchParameter-HealthcareService-location.json ==
+== fsh-generated\resources\SearchParameter-HealthcareService-name.json ==
+== fsh-generated\resources\SearchParameter-HealthcareService-organization.json ==
+== fsh-generated\resources\SearchParameter-HealthcareService-service-category.json ==
+== fsh-generated\resources\SearchParameter-HealthcareService-service-type.json ==
+== fsh-generated\resources\SearchParameter-HealthcareService-specialty.json ==
+== fsh-generated\resources\SearchParameter-InsurancePlan-administrated-by.json ==
+== fsh-generated\resources\SearchParameter-InsurancePlan-coverage-area.json ==
+== fsh-generated\resources\SearchParameter-InsurancePlan-coverage-benefit-type.json ==
+== fsh-generated\resources\SearchParameter-InsurancePlan-coverage-network.json ==
+== fsh-generated\resources\SearchParameter-InsurancePlan-identifier.json ==
+== fsh-generated\resources\SearchParameter-InsurancePlan-name.json ==
+== fsh-generated\resources\SearchParameter-InsurancePlan-owned-by.json ==
+== fsh-generated\resources\SearchParameter-InsurancePlan-type.json ==
+== fsh-generated\resources\SearchParameter-Location-address.json ==
+== fsh-generated\resources\SearchParameter-Location-endpoint.json ==
+== fsh-generated\resources\SearchParameter-Location-organization.json ==
+== fsh-generated\resources\SearchParameter-Location-partOf.json ==
+== fsh-generated\resources\SearchParameter-Location-physicalType.json ==
+== fsh-generated\resources\SearchParameter-Location-type.json ==
+== fsh-generated\resources\SearchParameter-Network-coverage-area.json ==
+== fsh-generated\resources\SearchParameter-Network-name.json ==
+WARNING: SearchParameter/Network-name: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-Organization-address.json ==
+== fsh-generated\resources\SearchParameter-Organization-endpoint.json ==
+== fsh-generated\resources\SearchParameter-Organization-identifier.json ==
+== fsh-generated\resources\SearchParameter-Organization-name.json ==
+== fsh-generated\resources\SearchParameter-Organization-partOf.json ==
+== fsh-generated\resources\SearchParameter-Organization-type.json ==
+== fsh-generated\resources\SearchParameter-OrganizationAffiliation-endpoint.json ==
+== fsh-generated\resources\SearchParameter-OrganizationAffiliation-location.json ==
+== fsh-generated\resources\SearchParameter-OrganizationAffiliation-network.json ==
+== fsh-generated\resources\SearchParameter-OrganizationAffiliation-participating-organization.json ==
+== fsh-generated\resources\SearchParameter-OrganizationAffiliation-primary-organization.json ==
+== fsh-generated\resources\SearchParameter-OrganizationAffiliation-role.json ==
+== fsh-generated\resources\SearchParameter-OrganizationAffiliation-service.json ==
+== fsh-generated\resources\SearchParameter-OrganizationAffiliation-specialty.json ==
+== fsh-generated\resources\SearchParameter-VerificationResult-attestation-who.json ==
+== fsh-generated\resources\SearchParameter-VerificationResult-primarysource-who.json ==
+== fsh-generated\resources\SearchParameter-VerificationResult-target.json ==
+== fsh-generated\resources\SearchParameter-careTeam-category.json ==
+WARNING: SearchParameter/careTeam-category: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-careTeam-endpoint.json ==
+WARNING: SearchParameter/careTeam-endpoint: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-careTeam-location.json ==
+WARNING: SearchParameter/careTeam-location: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-careTeam-name.json ==
+WARNING: SearchParameter/careTeam-name: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-careTeam-organization.json ==
+WARNING: SearchParameter/careTeam-organization: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-careTeam-service.json ==
+WARNING: SearchParameter/careTeam-service: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-practitioner-family.json ==
+WARNING: SearchParameter/practitioner-family: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-practitioner-given.json ==
+WARNING: SearchParameter/practitioner-given: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-practitioner-identifier.json ==
+WARNING: SearchParameter/practitioner-identifier: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-practitioner-identifier-assigner.json ==
+WARNING: SearchParameter/practitioner-identifier-assigner: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-practitioner-name.json ==
+WARNING: SearchParameter/practitioner-name: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-practitioner-qualification-code.json ==
+WARNING: SearchParameter/practitioner-qualification-code: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-practitioner-qualification-issuer.json ==
+WARNING: SearchParameter/practitioner-qualification-issuer: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-practitionerRole-endpoint.json ==
+WARNING: SearchParameter/practitionerRole-endpoint: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-practitionerRole-location.json ==
+WARNING: SearchParameter/practitionerRole-location: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-practitionerRole-network.json ==
+WARNING: SearchParameter/practitionerRole-network: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-practitionerRole-organization.json ==
+WARNING: SearchParameter/practitionerRole-organization: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-practitionerRole-practitioner.json ==
+WARNING: SearchParameter/practitionerRole-practitioner: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-practitionerRole-role.json ==
+WARNING: SearchParameter/practitionerRole-role: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-practitionerRole-service.json ==
+WARNING: SearchParameter/practitionerRole-service: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\SearchParameter-practitionerRole-specialty.json ==
+WARNING: SearchParameter/practitionerRole-specialty: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated\resources\StructureDefinition-NatlDirEx-CareTeam.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-CareTeam').baseDefinition: US FHIR Usage rules require that all profiles on CareTeam derive from the core US profile
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-CareTeam'): The Implementation Guide contains no examples for this profile
@@ -387,203 +330,3 @@ ERROR: StructureDefinition/NatlDirEx-Validation: StructureDefinition.snapshot.el
 WARNING: StructureDefinition/NatlDirEx-Validation: StructureDefinition.snapshot.element[15].binding: The valueSet reference http://hl7.org/fhir/uv/vhdir/ValueSet/validationprocess on element VerificationResult.validationProcess could not be resolved
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Validation'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\ValueSet-OrganizationAffiliationRoleVS.json ==
-== input\resources\capabilitystatement-NatlDir.json ==
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[0].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/endpoint-organization' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[1].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-location' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[1].searchParam[1].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-coverage-area' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[1].searchParam[2].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-organization' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[1].searchParam[3].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-endpoint' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[1].searchParam[4].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-name' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[1].searchParam[5].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-service-category' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[1].searchParam[6].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-service-type' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[1].searchParam[7].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/healthcareservice-specialty' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[2].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/insuranceplan-administered-by' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[2].searchParam[1].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/insuranceplan-owned-by' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[2].searchParam[2].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/insuranceplan-coverage-area' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[2].searchParam[3].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/insuranceplan-name' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[2].searchParam[4].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/insuranceplan-plan-type' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[2].searchParam[5].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/insuranceplan-identifier' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[2].searchParam[8].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/insuranceplan-type' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[3].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-partof' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[3].searchParam[1].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-organization' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[3].searchParam[2].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-endpoint' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[3].searchParam[3].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-address-city' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[3].searchParam[4].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-address-state' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[3].searchParam[5].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-address-postalcode' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[3].searchParam[6].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-address' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[3].searchParam[7].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/location-type' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[4].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organization-partof' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[4].searchParam[1].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organization-endpoint' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[4].searchParam[2].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organization-address' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[4].searchParam[3].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organization-name' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[4].searchParam[6].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organization-type' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[4].searchParam[7].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organization-coverage-area' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[5].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-primary-organization' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[5].searchParam[1].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-participating-organization' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[5].searchParam[2].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-location' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[5].searchParam[3].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-service' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[5].searchParam[4].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-network' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[5].searchParam[5].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-endpoint' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[5].searchParam[6].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-role' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[5].searchParam[7].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/organizationaffiliation-specialty' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[6].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitioner-name' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[6].searchParam[3].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitioner-family-name' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[6].searchParam[4].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitioner-given-name' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[7].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-practitioner' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[7].searchParam[1].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-organization' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[7].searchParam[2].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-location' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[7].searchParam[3].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-service' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[7].searchParam[4].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-network' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[7].searchParam[5].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-endpoint' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[7].searchParam[6].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-role' does not resolve
-ERROR: CapabilityStatement/NatlDir: CapabilityStatement.rest[0].resource[7].searchParam[7].definition: Canonical URL 'http://hl7.org/fhir/us/fhir-directory-exchange/SearchParameter/practitionerrole-specialty' does not resolve
-== input\resources\searchparameter-careteam-category.json ==
-== input\resources\searchparameter-careteam-endpoint.json ==
-== input\resources\searchparameter-careteam-identifier.json ==
-== input\resources\searchparameter-careteam-identifier-assigner.json ==
-== input\resources\searchparameter-careteam-location.json ==
-== input\resources\searchparameter-careteam-name.json ==
-== input\resources\searchparameter-careteam-organization.json ==
-== input\resources\searchparameter-careteam-participant.json ==
-== input\resources\searchparameter-careteam-service.json ==
-== input\resources\searchparameter-careteam-status.json ==
-== input\resources\searchparameter-careteam-via-intermediary.json ==
-== input\resources\searchparameter-endpoint-connection-type.json ==
-== input\resources\searchparameter-endpoint-identifier.json ==
-== input\resources\searchparameter-endpoint-identifier-assigner.json ==
-== input\resources\searchparameter-endpoint-mime-type.json ==
-== input\resources\SearchParameter-endpoint-organization.json ==
-== input\resources\searchparameter-endpoint-payload-type.json ==
-== input\resources\searchparameter-endpoint-status.json ==
-== input\resources\searchparameter-endpoint-usecase-standard.json ==
-== input\resources\searchparameter-endpoint-usecase-type.json ==
-== input\resources\searchparameter-endpoint-via-intermediary.json ==
-== input\resources\searchparameter-healthcareservice-characteristic.json ==
-== input\resources\SearchParameter-healthcareservice-coverage-area.json ==
-== input\resources\searchparameter-healthcareservice-eligibility.json ==
-== input\resources\SearchParameter-healthcareservice-endpoint.json ==
-== input\resources\searchparameter-healthcareservice-identifier.json ==
-== input\resources\searchparameter-healthcareservice-identifier-assigner.json ==
-== input\resources\SearchParameter-healthcareservice-location.json ==
-== input\resources\SearchParameter-healthcareservice-name.json ==
-== input\resources\searchparameter-healthcareservice-new-patient.json ==
-== input\resources\searchparameter-healthcareservice-new-patient-network.json ==
-== input\resources\SearchParameter-healthcareservice-organization.json ==
-== input\resources\SearchParameter-healthcareservice-service-category.json ==
-== input\resources\SearchParameter-healthcareservice-service-type.json ==
-== input\resources\SearchParameter-healthcareservice-specialty.json ==
-== input\resources\searchparameter-healthcareservice-via-intermediary.json ==
-== input\resources\SearchParameter-insuranceplan-administered-by.json ==
-== input\resources\SearchParameter-insuranceplan-coverage-area.json ==
-== input\resources\searchparameter-insuranceplan-coverage-benefit-type.json ==
-== input\resources\searchparameter-insuranceplan-coverage-limit-value.json ==
-== input\resources\searchparameter-insuranceplan-coverage-network.json ==
-== input\resources\searchparameter-insuranceplan-coverage-type.json ==
-== input\resources\searchparameter-insuranceplan-endpoint.json ==
-== input\resources\searchparameter-insuranceplan-general-cost-groupsize.json ==
-== input\resources\searchparameter-insuranceplan-general-cost-type.json ==
-== input\resources\searchparameter-insuranceplan-general-cost-value.json ==
-== input\resources\SearchParameter-insuranceplan-identifier.json ==
-== input\resources\SearchParameter-insuranceplan-name.json ==
-== input\resources\searchparameter-insuranceplan-network.json ==
-== input\resources\SearchParameter-insuranceplan-owned-by.json ==
-== input\resources\searchparameter-insuranceplan-plan-coverage-area.json ==
-== input\resources\searchparameter-insuranceplan-plan-identifier.json ==
-== input\resources\searchparameter-insuranceplan-plan-network.json ==
-== input\resources\SearchParameter-insuranceplan-plan-type.json ==
-== input\resources\searchparameter-insuranceplan-specific-cost-benefit-type.json ==
-== input\resources\searchparameter-insuranceplan-specific-cost-category.json ==
-== input\resources\searchparameter-insuranceplan-specific-cost-cost-type.json ==
-== input\resources\searchparameter-insuranceplan-specific-cost-value.json ==
-== input\resources\searchparameter-insuranceplan-status.json ==
-== input\resources\SearchParameter-insuranceplan-type.json ==
-== input\resources\searchparameter-location-accessibility.json ==
-== input\resources\SearchParameter-location-address.json ==
-== input\resources\SearchParameter-location-address-city.json ==
-== input\resources\SearchParameter-location-address-postalcode.json ==
-== input\resources\SearchParameter-location-address-state.json ==
-== input\resources\searchparameter-location-contains.json ==
-== input\resources\SearchParameter-location-endpoint.json ==
-== input\resources\searchparameter-location-identifier.json ==
-== input\resources\searchparameter-location-identifier-assigner.json ==
-== input\resources\searchparameter-location-new-patient.json ==
-== input\resources\searchparameter-location-new-patient-network.json ==
-== input\resources\SearchParameter-location-organization.json ==
-== input\resources\SearchParameter-location-partof.json ==
-== input\resources\searchparameter-location-status.json ==
-== input\resources\SearchParameter-location-type.json ==
-== input\resources\searchparameter-location-via-intermediary.json ==
-== input\resources\SearchParameter-organization-address.json ==
-== input\resources\searchparameter-organization-address-city.json ==
-== input\resources\searchparameter-organization-address-country.json ==
-== input\resources\searchparameter-organization-address-postalcode.json ==
-== input\resources\searchparameter-organization-address-state.json ==
-== input\resources\SearchParameter-organization-coverage-area.json ==
-== input\resources\SearchParameter-organization-endpoint.json ==
-== input\resources\searchparameter-organization-identifier.json ==
-== input\resources\searchparameter-organization-identifier-assigner.json ==
-== input\resources\SearchParameter-organization-name.json ==
-== input\resources\SearchParameter-organization-partof.json ==
-== input\resources\searchparameter-organization-qualification-code.json ==
-== input\resources\searchparameter-organization-qualification-issuer.json ==
-== input\resources\searchparameter-organization-qualification-status.json ==
-== input\resources\searchparameter-organization-qualification-wherevalid-code.json ==
-== input\resources\searchparameter-organization-qualification-wherevalid-location.json ==
-== input\resources\SearchParameter-organization-type.json ==
-== input\resources\searchparameter-organization-via-intermediary.json ==
-== input\resources\SearchParameter-organizationaffiliation-endpoint.json ==
-== input\resources\searchparameter-organizationaffiliation-identifier.json ==
-== input\resources\searchparameter-organizationaffiliation-identifier-assigner.json ==
-== input\resources\SearchParameter-organizationaffiliation-location.json ==
-== input\resources\SearchParameter-organizationaffiliation-network.json ==
-== input\resources\SearchParameter-organizationaffiliation-participating-organization.json ==
-== input\resources\SearchParameter-organizationaffiliation-primary-organization.json ==
-== input\resources\SearchParameter-organizationaffiliation-role.json ==
-== input\resources\SearchParameter-organizationaffiliation-service.json ==
-== input\resources\SearchParameter-organizationaffiliation-specialty.json ==
-== input\resources\searchparameter-organizationaffiliation-via-intermediary.json ==
-== input\resources\searchparameter-practitioner-endpoint.json ==
-== input\resources\SearchParameter-practitioner-family-name.json ==
-== input\resources\SearchParameter-practitioner-given-name.json ==
-== input\resources\searchparameter-practitioner-identifier.json ==
-== input\resources\searchparameter-practitioner-identifier-assigner.json ==
-== input\resources\SearchParameter-practitioner-name.json ==
-== input\resources\searchparameter-practitioner-phonetic.json ==
-== input\resources\searchparameter-practitioner-qualification-code.json ==
-== input\resources\searchparameter-practitioner-qualification-issuer.json ==
-== input\resources\searchparameter-practitioner-qualification-period.json ==
-== input\resources\searchparameter-practitioner-qualification-status.json ==
-== input\resources\searchparameter-practitioner-qualification-wherevalid-code.json ==
-== input\resources\searchparameter-practitioner-qualification-wherevalid-location.json ==
-== input\resources\searchparameter-practitioner-via-intermediary.json ==
-== input\resources\SearchParameter-practitionerrole-endpoint.json ==
-== input\resources\searchparameter-practitionerrole-identifier.json ==
-== input\resources\searchparameter-practitionerrole-identifier-assigner.json ==
-== input\resources\SearchParameter-practitionerrole-location.json ==
-== input\resources\SearchParameter-practitionerrole-network.json ==
-== input\resources\searchparameter-practitionerrole-new-patient.json ==
-== input\resources\searchparameter-practitionerrole-new-patient-network.json ==
-== input\resources\SearchParameter-practitionerrole-organization.json ==
-== input\resources\SearchParameter-practitionerrole-period.json ==
-ERROR: SearchParameter/practitionerrole-period: SearchParameter.target[0]: The value provided ('Period') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#Period in http://hl7.org/fhir/resource-types)
-WARNING: SearchParameter/practitionerrole-period: SearchParameter: The expression 'PractitionerRole.period' is not compatible with the expression 'PractitionerRole.location' in the derivedFrom SearchParameter http://hl7.org/fhir/SearchParameter/PractitionerRole-location, and this likely indicates that the derivation relationship is not valid
-== input\resources\SearchParameter-practitionerrole-practitioner.json ==
-== input\resources\searchparameter-practitionerrole-qualification-code.json ==
-== input\resources\searchparameter-practitionerrole-qualification-issuer.json ==
-== input\resources\searchparameter-practitionerrole-qualification-status.json ==
-== input\resources\searchparameter-practitionerrole-qualification-wherevalid-code.json ==
-== input\resources\searchparameter-practitionerrole-qualification-wherevalid-location.json ==
-== input\resources\SearchParameter-practitionerrole-role.json ==
-== input\resources\SearchParameter-practitionerrole-service.json ==
-== input\resources\SearchParameter-practitionerrole-specialty.json ==
-== input\resources\searchparameter-practitionerrole-via-intermediary.json ==
-== input\resources\searchparameter-verificationresult-attestation-method.json ==
-== input\resources\searchparameter-verificationresult-attestation-onbehalfof.json ==
-== input\resources\searchparameter-verificationresult-attestation-who.json ==
-== input\resources\searchparameter-verificationresult-primarysource-date.json ==
-== input\resources\searchparameter-verificationresult-primarysource-type.json ==
-== input\resources\searchparameter-verificationresult-primarysource-who.json ==
-== input\resources\searchparameter-verificationresult-status-date.json ==
-== input\resources\searchparameter-verificationresult-target.json ==
-== input\resources\searchparameter-verificationresult-validation-status.json ==
-== input\resources\searchparameter-verificationresult-validator-organization.json ==

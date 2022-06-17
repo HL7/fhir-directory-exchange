@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"96"}
-    h3,h4,h5,h6{--heading-prefix:"96.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"95"}
+    h3,h4,h5,h6{--heading-prefix:"95.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -124,7 +124,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="CapabilityStatement-NatlDir.html">Conformance Requirements</a>
+        <a href="CapabilityStatement-fhir-national-directory.html">Conformance Requirements</a>
       </li>
     </ul>
   </li>
@@ -212,11 +212,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="CapabilityStatement-NatlDir.html"
-                     title="CapabilityStatement/NatlDir">NatlDir CapabilityStatement</a>
+                  <a href="CapabilityStatement-fhir-national-directory.html"
+                     title="CapabilityStatement/fhir-national-directory">fhir-national-directory</a>
                </td>
                <td>
-<p>This Section describes the expected capabilities of the NatlDir Server actor which is responsible for providing responses to the queries submitted by the NatlDir Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by NatlDir Servers are defined. Systems implementing this capability statement should meet the CMS FInal Rule requirement for provider directory access.  NatlDir  Clients can use the required capabilities to access necessary data based on their local use cases and other contextual requirements.</p>
+<p>Capabilities for a validated national directory server</p>
 </td>
             </tr>
          </tbody>
@@ -233,1334 +233,632 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-careteam-category.html"
-                     title="SearchParameter/careteam-category">VhDir_sp_careteam_category</a>
+                  <a href="SearchParameter-Endpoint-connection-type.html"
+                     title="SearchParameter/Endpoint-connection-type">Search by Connection Type in Endpoints</a>
                </td>
                <td>
-<p>Select CareTeams of the specified type</p>
+<p>Accesses the  connection type of an Endpoint</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-careteam-endpoint.html"
-                     title="SearchParameter/careteam-endpoint">VhDir_sp_careteam_endpoint</a>
+                  <a href="SearchParameter-Endpoint-identifier.html"
+                     title="SearchParameter/Endpoint-identifier">Search by Indentifer in Endpoints</a>
                </td>
                <td>
-<p>Select CareTeams with the specified endpoint</p>
+<p>Accesses the  identifier of an Endpoint</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-careteam-identifier-assigner.html"
-                     title="SearchParameter/careteam-identifier-assigner">VhDir_sp_careteam_identifier_assigner</a>
+                  <a href="SearchParameter-Endpoint-mime-type.html"
+                     title="SearchParameter/Endpoint-mime-type">Search by mime-type in Endpoints</a>
                </td>
                <td>
-<p>Select CareTeams with an identifier issued by the specified organization</p>
+<p>Accesses the  mime-type of an Endpoint</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-careteam-identifier.html"
-                     title="SearchParameter/careteam-identifier">VhDir_sp_careteam_identifier</a>
+                  <a href="SearchParameter-Endpoint-organization.html"
+                     title="SearchParameter/Endpoint-organization">Search by organization in Endpoints</a>
                </td>
                <td>
-<p>Select CareTeams with the specified identifier</p>
+<p>Accesses the  organization of an Endpoint</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-careteam-location.html"
-                     title="SearchParameter/careteam-location">VhDir_sp_careteam_location</a>
+                  <a href="SearchParameter-Endpoint-payload-type.html"
+                     title="SearchParameter/Endpoint-payload-type">Search by payload-type in Endpoints</a>
                </td>
                <td>
-<p>Select care teams operating at the specified location</p>
+<p>Accesses the  payload-type of an Endpoint</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-careteam-name.html"
-                     title="SearchParameter/careteam-name">VhDir_sp_careteam_name</a>
+                  <a href="SearchParameter-Endpoint-status.html"
+                     title="SearchParameter/Endpoint-status">Search by status in Endpoints</a>
                </td>
                <td>
-<p>Select care teams with the specified name</p>
+<p>Accesses the status of an Endpoint</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-careteam-organization.html"
-                     title="SearchParameter/careteam-organization">VhDir_sp_careteam_organization</a>
+                  <a href="SearchParameter-Endpoint-usecase-standard.html"
+                     title="SearchParameter/Endpoint-usecase-standard">Search by usecase-standard in Endpoints</a>
                </td>
                <td>
-<p>Select care teams managed by the specified organization</p>
+<p>Accesses the usecase-standard of an Endpoint</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-careteam-participant.html"
-                     title="SearchParameter/careteam-participant">VhDir_sp_careteam_member</a>
+                  <a href="SearchParameter-Endpoint-usecase-type.html"
+                     title="SearchParameter/Endpoint-usecase-type">Search by usecase-type in Endpoints</a>
                </td>
                <td>
-<p>Select care teams that include the specified member</p>
+<p>Accesses the  usecase-type of an Endpoint</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-careteam-service.html"
-                     title="SearchParameter/careteam-service">VhDir_sp_careteam_service</a>
+                  <a href="SearchParameter-HealthcareService-coverage-area.html"
+                     title="SearchParameter/HealthcareService-coverage-area">Search by coverage-area in HealthcareService with multipleOr</a>
                </td>
                <td>
-<p>Select care teams providing the specified service</p>
+<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">coverage-area</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-careteam-status.html"
-                     title="SearchParameter/careteam-status">VhDir_sp_careteam_status</a>
+                  <a href="SearchParameter-HealthcareService-endpoint.html"
+                     title="SearchParameter/HealthcareService-endpoint">Search by endpoint in HealthcareService with multipleOr</a>
                </td>
                <td>
-<p>Select CareTeams with the specified status</p>
+<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">endpoint</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-careteam-via-intermediary.html"
-                     title="SearchParameter/careteam-via-intermediary">VhDir_sp_careteam_via_intermediary</a>
+                  <a href="SearchParameter-HealthcareService-location.html"
+                     title="SearchParameter/HealthcareService-location">Search by location in HealthcareService with multipleOr</a>
                </td>
                <td>
-<p>Select CareTeams with contact information available through the specified intermediary</p>
+<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">location</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-endpoint-connection-type.html"
-                     title="SearchParameter/endpoint-connection-type">VhDir_sp_endpoint_connection_type</a>
+                  <a href="SearchParameter-HealthcareService-name.html"
+                     title="SearchParameter/HealthcareService-name">Search by name in HealthcareService with multipleOr</a>
                </td>
                <td>
-<p>Select Endpoints that support the specified protocol/profile/standard</p>
+<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">name</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-endpoint-identifier-assigner.html"
-                     title="SearchParameter/endpoint-identifier-assigner">VhDir_sp_endpoint_identifier_assigner</a>
+                  <a href="SearchParameter-HealthcareService-organization.html"
+                     title="SearchParameter/HealthcareService-organization">Search by organization in HealthcareService with multipleOr</a>
                </td>
                <td>
-<p>Select Endpoints with an identifier issued by the specified organization</p>
+<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">organization</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-endpoint-identifier.html"
-                     title="SearchParameter/endpoint-identifier">VhDir_sp_endpoint_identifier</a>
+                  <a href="SearchParameter-HealthcareService-service-category.html"
+                     title="SearchParameter/HealthcareService-service-category">Search by service-category in HealthcareService with multipleOr</a>
                </td>
                <td>
-<p>Select Endpoints with the specified identifier</p>
+<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">service-category</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-endpoint-mime-type.html"
-                     title="SearchParameter/endpoint-mime-type">VhDir_sp_endpoint_mime_type</a>
+                  <a href="SearchParameter-HealthcareService-service-type.html"
+                     title="SearchParameter/HealthcareService-service-type">Search by service-type in HealthcareService with multipleOr</a>
                </td>
                <td>
-<p>Select endpoints that support the specified media type</p>
+<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">service-type</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-endpoint-organization.html"
-                     title="SearchParameter/endpoint-organization">NatlDir_sp_endpoint_organization</a>
+                  <a href="SearchParameter-HealthcareService-specialty.html"
+                     title="SearchParameter/HealthcareService-specialty">Search by specialty in HealthcareService with multipleOr</a>
                </td>
                <td>
-<p>Select Endpoints managed by the specified organization</p>
+<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">specialty</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-endpoint-payload-type.html"
-                     title="SearchParameter/endpoint-payload-type">VhDir_sp_endpoint_payload_type</a>
+                  <a href="SearchParameter-InsurancePlan-administrated-by.html"
+                     title="SearchParameter/InsurancePlan-administrated-by">Search by administrated-by in InsurancePlan with multipleOr</a>
                </td>
                <td>
-<p>Select Endpoints that support the specified type of content</p>
+<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">administrated-by</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-endpoint-status.html"
-                     title="SearchParameter/endpoint-status">VhDir_sp_endpoint_status</a>
+                  <a href="SearchParameter-InsurancePlan-coverage-area.html"
+                     title="SearchParameter/InsurancePlan-coverage-area">Search by coverage-area in InsurancePlan with multipleOr</a>
                </td>
                <td>
-<p>Select Endpoints with the specified status</p>
+<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">coverage-area</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-endpoint-usecase-standard.html"
-                     title="SearchParameter/endpoint-usecase-standard">VhDir_sp_endpoint_usecase_standard</a>
+                  <a href="SearchParameter-InsurancePlan-coverage-benefit-type.html"
+                     title="SearchParameter/InsurancePlan-coverage-benefit-type">Search by coverage-benefit-type in InsurancePlan with multipleOr</a>
                </td>
                <td>
-<p>Select endpoints that support the specified standard</p>
+<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">coverage-benefit-type</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-endpoint-usecase-type.html"
-                     title="SearchParameter/endpoint-usecase-type">VhDir_sp_endpoint_usecase_type</a>
+                  <a href="SearchParameter-InsurancePlan-coverage-network.html"
+                     title="SearchParameter/InsurancePlan-coverage-network">Search by coverage-network in InsurancePlan with multipleOr</a>
                </td>
                <td>
-<p>Select endpoints that support the type of services indicated by the specified code</p>
+<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">coverage-network</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-endpoint-via-intermediary.html"
-                     title="SearchParameter/endpoint-via-intermediary">VhDir_sp_endpoint_via_intermediary</a>
+                  <a href="SearchParameter-InsurancePlan-identifier.html"
+                     title="SearchParameter/InsurancePlan-identifier">Search by identifier in InsurancePlan with multipleOr</a>
                </td>
                <td>
-<p>Select Endpoints with contact information available through the specified intermediary</p>
+<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">identifier</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-healthcareservice-characteristic.html"
-                     title="SearchParameter/healthcareservice-characteristic">VhDir_sp_healthcareservice_characteristic</a>
+                  <a href="SearchParameter-InsurancePlan-name.html"
+                     title="SearchParameter/InsurancePlan-name">Search by name in InsurancePlan with multipleOr</a>
                </td>
                <td>
-<p>Select HealthcareServices with the specified characteristic</p>
+<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">specialty</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-healthcareservice-coverage-area.html"
-                     title="SearchParameter/healthcareservice-coverage-area">NatlDir_sp_healthcareservice_coverage_area</a>
+                  <a href="SearchParameter-InsurancePlan-owned-by.html"
+                     title="SearchParameter/InsurancePlan-owned-by">Search by owned-by in InsurancePlan with multipleOr</a>
                </td>
                <td>
-<p>Select services available in a region described by the specified location</p>
+<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">owned-by</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-healthcareservice-eligibility.html"
-                     title="SearchParameter/healthcareservice-eligibility">VhDir_sp_healthcareservice_eligibility</a>
+                  <a href="SearchParameter-InsurancePlan-type.html"
+                     title="SearchParameter/InsurancePlan-type">Search by type in InsurancePlan with multipleOr</a>
                </td>
                <td>
-<p>Select services with the specified eligibility requirements</p>
+<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">type</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-healthcareservice-endpoint.html"
-                     title="SearchParameter/healthcareservice-endpoint">NatlDir_sp_healthcareservice_endpoint</a>
+                  <a href="SearchParameter-Location-address.html"
+                     title="SearchParameter/Location-address">Search by address in Location with multipleOr</a>
                </td>
                <td>
-<p>Select HealthcareServices with the specified endpoint</p>
+<p>This SearchParameter enables query of Location by <code class="language-plaintext highlighter-rouge">address</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-healthcareservice-identifier-assigner.html"
-                     title="SearchParameter/healthcareservice-identifier-assigner">VhDir_sp_healthcareservice_identifier_assigner</a>
+                  <a href="SearchParameter-Location-endpoint.html"
+                     title="SearchParameter/Location-endpoint">Search by endpoint in Location with multipleOr</a>
                </td>
                <td>
-<p>Select HealthcareServices with an identifier issued by the specified organization</p>
+<p>This SearchParameter enables query of Location by <code class="language-plaintext highlighter-rouge">endpoint</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-healthcareservice-identifier.html"
-                     title="SearchParameter/healthcareservice-identifier">VhDir_sp_healthcareservice_identifier</a>
+                  <a href="SearchParameter-Location-organization.html"
+                     title="SearchParameter/Location-organization">Search by organization in Location with multipleOr</a>
                </td>
                <td>
-<p>Select HealthcareServices with the specified identifier</p>
+<p>This SearchParameter enables query of Location by <code class="language-plaintext highlighter-rouge">organization</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-healthcareservice-location.html"
-                     title="SearchParameter/healthcareservice-location">NatlDir_sp_healthcareservice_location</a>
+                  <a href="SearchParameter-Location-partOf.html"
+                     title="SearchParameter/Location-partOf">Search by partOf in Location with multipleOr</a>
                </td>
                <td>
-<p>Select HealthcareServices available at the specified location</p>
+<p>This SearchParameter enables query of Location by <code class="language-plaintext highlighter-rouge">partOf</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-healthcareservice-name.html"
-                     title="SearchParameter/healthcareservice-name">NatlDir_sp_healthcareservice_name</a>
+                  <a href="SearchParameter-Location-physicalType.html"
+                     title="SearchParameter/Location-physicalType">Search by physicalType in Location with multipleOr</a>
                </td>
                <td>
-<p>Select HealthcareServices with the specified name</p>
+<p>This SearchParameter enables query of Location by <code class="language-plaintext highlighter-rouge">physicalType</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-healthcareservice-new-patient-network.html"
-                     title="SearchParameter/healthcareservice-new-patient-network">VhDir_sp_healthcareservice_new_patient_network</a>
+                  <a href="SearchParameter-Location-type.html"
+                     title="SearchParameter/Location-type">Search by type in Location with multipleOr</a>
                </td>
                <td>
-<p>Select HealthcareServices that are part of the specified network and are/are not accepting new patients</p>
+<p>This SearchParameter enables query of Location by <code class="language-plaintext highlighter-rouge">type</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-healthcareservice-new-patient.html"
-                     title="SearchParameter/healthcareservice-new-patient">VhDir_sp_healthcareservice_new_patient</a>
+                  <a href="SearchParameter-Network-coverage-area.html"
+                     title="SearchParameter/Network-coverage-area">Search by coverage-area in Network with multipleOr</a>
                </td>
                <td>
-<p>Select HealthcareServices that are/are not accepting new patients</p>
+<p>This SearchParameter enables query of Network by <code class="language-plaintext highlighter-rouge">coverage-area</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-healthcareservice-organization.html"
-                     title="SearchParameter/healthcareservice-organization">NatlDir_sp_healthcareservice_organization</a>
+                  <a href="SearchParameter-Network-name.html"
+                     title="SearchParameter/Network-name">Search by name in Network with multipleOr</a>
                </td>
                <td>
-<p>Select HealthcareServices provided by the specified organization</p>
+<p>This SearchParameter enables query of Network by <code class="language-plaintext highlighter-rouge">name</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-healthcareservice-service-category.html"
-                     title="SearchParameter/healthcareservice-service-category">NatlDir_sp_healthcareservice_category</a>
+                  <a href="SearchParameter-Organization-address.html"
+                     title="SearchParameter/Organization-address">Search by address in Organization with multipleOr</a>
                </td>
                <td>
-<p>Select HealthcareServices providing the specified category of services</p>
+<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">address</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-healthcareservice-service-type.html"
-                     title="SearchParameter/healthcareservice-service-type">NatlDir_sp_healthcareservice_type</a>
+                  <a href="SearchParameter-Organization-endpoint.html"
+                     title="SearchParameter/Organization-endpoint">Search by endpoint in Organization with multipleOr</a>
                </td>
                <td>
-<p>Select HealthcareServices of the specified type</p>
+<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">endpoint</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-healthcareservice-specialty.html"
-                     title="SearchParameter/healthcareservice-specialty">NatlDir_sp_healthcareservice_specialty</a>
+                  <a href="SearchParameter-Organization-identifier.html"
+                     title="SearchParameter/Organization-identifier">Search by identifier in Organization with multipleOr</a>
                </td>
                <td>
-<p>Select services associated with the specified specialty</p>
+<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">identifier</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-healthcareservice-via-intermediary.html"
-                     title="SearchParameter/healthcareservice-via-intermediary">VhDir_sp_healthcareservice_via_intermediary</a>
+                  <a href="SearchParameter-Organization-name.html"
+                     title="SearchParameter/Organization-name">Search by name in Organization with multipleOr</a>
                </td>
                <td>
-<p>Select HealthcareServices with contact information available through the specified intermediary</p>
+<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">name</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-administered-by.html"
-                     title="SearchParameter/insuranceplan-administered-by">NatlDir_sp_insuranceplan_administered_by</a>
+                  <a href="SearchParameter-Organization-partOf.html"
+                     title="SearchParameter/Organization-partOf">Search by partOf in Organization with multipleOr</a>
                </td>
                <td>
-<p>Select products that are administered by the specified organization</p>
+<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">partOf</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-coverage-area.html"
-                     title="SearchParameter/insuranceplan-coverage-area">NatlDir_sp_insuranceplan_coverage_area</a>
+                  <a href="SearchParameter-Organization-type.html"
+                     title="SearchParameter/Organization-type">Search by type in Organization with multipleOr</a>
                </td>
                <td>
-<p>Select products that are offered in the specified location</p>
+<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">type</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-coverage-benefit-type.html"
-                     title="SearchParameter/insuranceplan-coverage-benefit-type">VhDir_sp_insuranceplan_coverage_benefit_type</a>
+                  <a href="SearchParameter-OrganizationAffiliation-endpoint.html"
+                     title="SearchParameter/OrganizationAffiliation-endpoint">Search by endpoint in OrganizationAffiliation with multipleOr</a>
                </td>
                <td>
-<p>Select health insurance products offering covered benefits of the specified type</p>
+<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">endpoint</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-coverage-limit-value.html"
-                     title="SearchParameter/insuranceplan-coverage-limit-value">VhDir_sp_insuranceplan_coverage_limit_value</a>
+                  <a href="SearchParameter-OrganizationAffiliation-location.html"
+                     title="SearchParameter/OrganizationAffiliation-location">Search by location in OrganizationAffiliation with multipleOr</a>
                </td>
                <td>
-<p>Select health insurance products with covered benefits limited in the specified manner</p>
+<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">location</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-coverage-network.html"
-                     title="SearchParameter/insuranceplan-coverage-network">VhDir_sp_insuranceplan_coverage_network</a>
+                  <a href="SearchParameter-OrganizationAffiliation-network.html"
+                     title="SearchParameter/OrganizationAffiliation-network">Search by network in OrganizationAffiliation with multipleOr</a>
                </td>
                <td>
-<p>Select products offering covered benefits through the specified health insurance provider network</p>
+<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">network</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-coverage-type.html"
-                     title="SearchParameter/insuranceplan-coverage-type">VhDir_sp_insuranceplan_coverage_type</a>
+                  <a href="SearchParameter-OrganizationAffiliation-participating-organization.html"
+                     title="SearchParameter/OrganizationAffiliation-participating-organization">Search by participating-organization in OrganizationAffiliation with multipleOr</a>
                </td>
                <td>
-<p>Select products offering the specified type of coverage</p>
+<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">participating-organization</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-endpoint.html"
-                     title="SearchParameter/insuranceplan-endpoint">VhDir_sp_insuranceplan_endpoint</a>
+                  <a href="SearchParameter-OrganizationAffiliation-primary-organization.html"
+                     title="SearchParameter/OrganizationAffiliation-primary-organization">Search by primary-organization in OrganizationAffiliation with multipleOr</a>
                </td>
                <td>
-<p>Select health insurance products/plans with the specified endpoint</p>
+<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">primary-organization</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-general-cost-groupsize.html"
-                     title="SearchParameter/insuranceplan-general-cost-groupsize">VhDir_sp_insuranceplan_general_cost_groupsize</a>
+                  <a href="SearchParameter-OrganizationAffiliation-role.html"
+                     title="SearchParameter/OrganizationAffiliation-role">Search by role in OrganizationAffiliation with multipleOr</a>
                </td>
                <td>
-<p>Select plans with costs for the specified group size</p>
+<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">role</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-general-cost-type.html"
-                     title="SearchParameter/insuranceplan-general-cost-type">VhDir_sp_insuranceplan_general_cost_type</a>
+                  <a href="SearchParameter-OrganizationAffiliation-service.html"
+                     title="SearchParameter/OrganizationAffiliation-service">Search by service in OrganizationAffiliation with multipleOr</a>
                </td>
                <td>
-<p>Select plans with the specified type of cost</p>
+<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">service</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-general-cost-value.html"
-                     title="SearchParameter/insuranceplan-general-cost-value">VhDir_sp_insuranceplan_general_cost_value</a>
+                  <a href="SearchParameter-OrganizationAffiliation-specialty.html"
+                     title="SearchParameter/OrganizationAffiliation-specialty">Search by specialty in OrganizationAffiliation with multipleOr</a>
                </td>
                <td>
-<p>Select plans which include the specified cost</p>
+<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">specialty</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-identifier.html"
-                     title="SearchParameter/insuranceplan-identifier">NatlDir_sp_insuranceplan_identifier</a>
+                  <a href="SearchParameter-VerificationResult-attestation-who.html"
+                     title="SearchParameter/VerificationResult-attestation-who">Search by attestation-who in VerificationResult with multipleOr</a>
                </td>
                <td>
-<p>Select products with the specified identifier</p>
+<p>This SearchParameter enables query of VerificationResult by <code class="language-plaintext highlighter-rouge">attestation-who</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-name.html"
-                     title="SearchParameter/insuranceplan-name">NatlDir_sp_insuranceplan_name</a>
+                  <a href="SearchParameter-VerificationResult-primarysource-who.html"
+                     title="SearchParameter/VerificationResult-primarysource-who">Search by primarysource-who in VerificationResult with multipleOr</a>
                </td>
                <td>
-<p>Select products with the specified name</p>
+<p>This SearchParameter enables query of VerificationResult by <code class="language-plaintext highlighter-rouge">primarysource-who</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-network.html"
-                     title="SearchParameter/insuranceplan-network">VhDir_sp_insuranceplan_network</a>
+                  <a href="SearchParameter-VerificationResult-target.html"
+                     title="SearchParameter/VerificationResult-target">Search by target in InsurancePlan with multipleOr</a>
                </td>
                <td>
-<p>Select products associated with the specified health insurance provider network</p>
+<p>This SearchParameter enables query of VerificationResult by <code class="language-plaintext highlighter-rouge">target</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-owned-by.html"
-                     title="SearchParameter/insuranceplan-owned-by">NatlDir_sp_insuranceplan_owned_by</a>
+                  <a href="SearchParameter-careTeam-category.html"
+                     title="SearchParameter/careTeam-category">Search by category in CareTeam with multipleOr</a>
                </td>
                <td>
-<p>Select products that are owned by the specified organization</p>
+<p>This SearchParameter enables query of Careteams by <code class="language-plaintext highlighter-rouge">category</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-plan-coverage-area.html"
-                     title="SearchParameter/insuranceplan-plan-coverage-area">VhDir_sp_insuranceplan_plan_coverage_area</a>
+                  <a href="SearchParameter-careTeam-endpoint.html"
+                     title="SearchParameter/careTeam-endpoint">Search by endpoint in CareTeam with multipleOr</a>
                </td>
                <td>
-<p>Select plans that are available in the specified location</p>
+<p>This SearchParameter enables query of Careteams by <code class="language-plaintext highlighter-rouge">endpoint</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-plan-identifier.html"
-                     title="SearchParameter/insuranceplan-plan-identifier">VhDir_sp_insuranceplan_plan_identifier</a>
+                  <a href="SearchParameter-careTeam-location.html"
+                     title="SearchParameter/careTeam-location">Search by location in CareTeam with multipleOr</a>
                </td>
                <td>
-<p>Select plans with the specified identifier</p>
+<p>This SearchParameter enables query of Careteams by <code class="language-plaintext highlighter-rouge">location</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-plan-network.html"
-                     title="SearchParameter/insuranceplan-plan-network">VhDir_sp_insuranceplan_plan_network</a>
+                  <a href="SearchParameter-careTeam-name.html"
+                     title="SearchParameter/careTeam-name">Search by name in CareTeam with multipleOr</a>
                </td>
                <td>
-<p>Select plans associated with the specified health insurance provider network</p>
+<p>This SearchParameter enables query of Careteams by <code class="language-plaintext highlighter-rouge">name</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-plan-type.html"
-                     title="SearchParameter/insuranceplan-plan-type">NatlDir_sp_insuranceplan_plan_type</a>
+                  <a href="SearchParameter-careTeam-organization.html"
+                     title="SearchParameter/careTeam-organization">Search by organization in CareTeam with multipleOr</a>
                </td>
                <td>
-<p>Select plans of the specified type</p>
+<p>This SearchParameter enables query of Careteams by <code class="language-plaintext highlighter-rouge">organization</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-specific-cost-benefit-type.html"
-                     title="SearchParameter/insuranceplan-specific-cost-benefit-type">VhDir_sp_insuranceplan_specific_cost_benefit_type</a>
+                  <a href="SearchParameter-careTeam-service.html"
+                     title="SearchParameter/careTeam-service">Search by service in CareTeam with multipleOr</a>
                </td>
                <td>
-<p>Select plans which include costs for the specified type of benefit</p>
+<p>This SearchParameter enables query of Careteams by <code class="language-plaintext highlighter-rouge">service</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-specific-cost-category.html"
-                     title="SearchParameter/insuranceplan-specific-cost-category">VhDir_sp_insuranceplan_specific_cost_category</a>
+                  <a href="SearchParameter-practitioner-family.html"
+                     title="SearchParameter/practitioner-family">Search by family name in practitioner with multipleOr</a>
                </td>
                <td>
-<p>Select plans which include costs for the specified category of coverage</p>
+<p>This SearchParameter enables query of practitioner by <code class="language-plaintext highlighter-rouge">family</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-specific-cost-cost-type.html"
-                     title="SearchParameter/insuranceplan-specific-cost-cost-type">VhDir_sp_insuranceplan_specific_cost_cost_type</a>
+                  <a href="SearchParameter-practitioner-given.html"
+                     title="SearchParameter/practitioner-given">Search by given name in practitioner with multipleOr</a>
                </td>
                <td>
-<p>Select plans which include the specified type of cost</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-specific-cost-value.html"
-                     title="SearchParameter/insuranceplan-specific-cost-value">VhDir_sp_insuranceplan_specific_cost_value</a>
-               </td>
-               <td>
-<p>Select plans which include the specified cost</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-status.html"
-                     title="SearchParameter/insuranceplan-status">VhDir_sp_insuranceplan_status</a>
-               </td>
-               <td>
-<p>Select health insurance products/plans with the specified status</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-insuranceplan-type.html"
-                     title="SearchParameter/insuranceplan-type">NatlDir_sp_insuranceplan_type</a>
-               </td>
-               <td>
-<p>Select insurance plans of the specified type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-accessibility.html"
-                     title="SearchParameter/location-accessibility">VhDir_sp_location_accessibility</a>
-               </td>
-               <td>
-<p>Select locations that offer the specified accessibility options</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-address-city.html"
-                     title="SearchParameter/location-address-city">NatlDir_sp_location_address_city</a>
-               </td>
-               <td>
-<p>Select Locations with the specified address.city</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-address-postalcode.html"
-                     title="SearchParameter/location-address-postalcode">NatlDir_sp_location_address_postalcode</a>
-               </td>
-               <td>
-<p>Select Locations with the specified address</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-address-state.html"
-                     title="SearchParameter/location-address-state">NatlDir_sp_location_address_state</a>
-               </td>
-               <td>
-<p>Select Locations with the specified address.state</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-address.html"
-                     title="SearchParameter/location-address">NatlDir_sp_location_address</a>
-               </td>
-               <td>
-<p>Select Locations with the specified address</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-contains.html"
-                     title="SearchParameter/location-contains">VhDir_sp_location_contains</a>
-               </td>
-               <td>
-<p>Select locations that contain the specified co-ordinates</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-endpoint.html"
-                     title="SearchParameter/location-endpoint">NatlDir_sp_location_endpoint</a>
-               </td>
-               <td>
-<p>Select Locations with the specified endpoint</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-identifier-assigner.html"
-                     title="SearchParameter/location-identifier-assigner">VhDir_sp_location_identifier_assigner</a>
-               </td>
-               <td>
-<p>Select Locations with an identifier issued by the specified organization</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-identifier.html"
-                     title="SearchParameter/location-identifier">VhDir_sp_location_identifier</a>
-               </td>
-               <td>
-<p>Select Locations with the specified identifier</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-new-patient-network.html"
-                     title="SearchParameter/location-new-patient-network">VhDir_sp_location_new_patient_network</a>
-               </td>
-               <td>
-<p>Select locations that are part of the specified network and are/are not accepting new patients</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-new-patient.html"
-                     title="SearchParameter/location-new-patient">VhDir_sp_location_new_patient</a>
-               </td>
-               <td>
-<p>Select locations that are/are not accepting new patients</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-organization.html"
-                     title="SearchParameter/location-organization">NatlDir_sp_location_organization</a>
-               </td>
-               <td>
-<p>Select Locations managed by the specified organization</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-partof.html"
-                     title="SearchParameter/location-partof">NatlDir_sp_location_partof</a>
-               </td>
-               <td>
-<p>Select Locations that are part of the specified location</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-status.html"
-                     title="SearchParameter/location-status">VhDir_sp_location_status</a>
-               </td>
-               <td>
-<p>Select Locations with the specified status</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-type.html"
-                     title="SearchParameter/location-type">NatlDir_sp_location_type</a>
-               </td>
-               <td>
-<p>Select Locations of the specified type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-location-via-intermediary.html"
-                     title="SearchParameter/location-via-intermediary">VhDir_sp_location_via_intermediary</a>
-               </td>
-               <td>
-<p>Select Locations with contact information available through the specified intermediary</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-address-city.html"
-                     title="SearchParameter/organization-address-city">VhDir_sp_organization_address_city</a>
-               </td>
-               <td>
-<p>Select organizations with an address in the specified city</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-address-country.html"
-                     title="SearchParameter/organization-address-country">VhDir_sp_organization_address_country</a>
-               </td>
-               <td>
-<p>Select organizations with an address in the specified country</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-address-postalcode.html"
-                     title="SearchParameter/organization-address-postalcode">VhDir_sp_organization_address_postalcode</a>
-               </td>
-               <td>
-<p>Select organizations with an address with the specified postal code</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-address-state.html"
-                     title="SearchParameter/organization-address-state">VhDir_sp_organization_address_state</a>
-               </td>
-               <td>
-<p>Select organizations with an address in the specified state</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-address.html"
-                     title="SearchParameter/organization-address">NatlDir_sp_organization_address</a>
-               </td>
-               <td>
-<p>Select organizations with the specified address (matches any of the string elements of an address)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-coverage-area.html"
-                     title="SearchParameter/organization-coverage-area">NatlDir_sp_network_coverage_area</a>
-               </td>
-               <td>
-<p>Select health insurance provider networks available in a region described by the specified location</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-endpoint.html"
-                     title="SearchParameter/organization-endpoint">NatlDir_sp_organization_endpoint</a>
-               </td>
-               <td>
-<p>Select Organizations with the specified endpoint</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-identifier-assigner.html"
-                     title="SearchParameter/organization-identifier-assigner">VhDir_sp_organization_identifier_assigner</a>
-               </td>
-               <td>
-<p>Select Organizations with an identifier issued by the specified organization</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-identifier.html"
-                     title="SearchParameter/organization-identifier">VhDir_sp_organization_identifier</a>
-               </td>
-               <td>
-<p>Select Organizations with the specified identifier</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-name.html"
-                     title="SearchParameter/organization-name">NatlDir_sp_organization_name</a>
-               </td>
-               <td>
-<p>Select Organizations with the specified name</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-partof.html"
-                     title="SearchParameter/organization-partof">NatlDir_sp_organization_partof</a>
-               </td>
-               <td>
-<p>Select Organizations that are part of the specified organization</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-qualification-code.html"
-                     title="SearchParameter/organization-qualification-code">VhDir_sp_organization_qualification_code</a>
-               </td>
-               <td>
-<p>Select Organizations with a type of qualification matching the specified code</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-qualification-issuer.html"
-                     title="SearchParameter/organization-qualification-issuer">VhDir_sp_organization_qualification_issuer</a>
-               </td>
-               <td>
-<p>Select Organizations with a qualification issued by the specified organization</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-qualification-status.html"
-                     title="SearchParameter/organization-qualification-status">VhDir_sp_organization_qualification_status</a>
-               </td>
-               <td>
-<p>Select Organizations with a qualification status matching the specified code</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-qualification-wherevalid-code.html"
-                     title="SearchParameter/organization-qualification-wherevalid-code">VhDir_sp_organization_qualification_wherevalid_code</a>
-               </td>
-               <td>
-<p>Select Organizations with a qualification that is valid at the location indicated by the specified code</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-qualification-wherevalid-location.html"
-                     title="SearchParameter/organization-qualification-wherevalid-location">VhDir_sp_organization_qualification_wherevalid_location</a>
-               </td>
-               <td>
-<p>Select Organizations with a qualification that is valid at the specified location</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-type.html"
-                     title="SearchParameter/organization-type">NatlDir_sp_organization_type</a>
-               </td>
-               <td>
-<p>Select Organizations of the specified type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organization-via-intermediary.html"
-                     title="SearchParameter/organization-via-intermediary">VhDir_sp_organization_via_intermediary</a>
-               </td>
-               <td>
-<p>Select Organizations with contact information available through the specified intermediary</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organizationaffiliation-endpoint.html"
-                     title="SearchParameter/organizationaffiliation-endpoint">NatlDir_sp_organizationaffiliation_endpoint</a>
-               </td>
-               <td>
-<p>Select OrganizationAffiliations with the specified endpoint</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organizationaffiliation-identifier-assigner.html"
-                     title="SearchParameter/organizationaffiliation-identifier-assigner">VhDir_sp_organizationaffiliation_identifier_assigner</a>
-               </td>
-               <td>
-<p>Select OrganizationAffiliations with an identifier issued by the specified organization</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organizationaffiliation-identifier.html"
-                     title="SearchParameter/organizationaffiliation-identifier">VhDir_sp_organizationaffiliation_identifier</a>
-               </td>
-               <td>
-<p>Select OrganizationAffiliations with the specified identifier</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organizationaffiliation-location.html"
-                     title="SearchParameter/organizationaffiliation-location">NatlDir_sp_organizationaffiliation_location</a>
-               </td>
-               <td>
-<p>Select OrganizationAffiliations available at the specified location</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organizationaffiliation-network.html"
-                     title="SearchParameter/organizationaffiliation-network">NatlDir_sp_organizationaffiliation_network</a>
-               </td>
-               <td>
-<p>Select roles where the organization is a member of the specified health insurance provider network</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organizationaffiliation-participating-organization.html"
-                     title="SearchParameter/organizationaffiliation-participating-organization">NatlDir_sp_organizationaffiliation_participating_organization</a>
-               </td>
-               <td>
-<p>Select roles filled by the specified organization</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organizationaffiliation-primary-organization.html"
-                     title="SearchParameter/organizationaffiliation-primary-organization">NatlDir_sp_organizationaffiliation_primary_organization</a>
-               </td>
-               <td>
-<p>Select roles offered by the specified organization</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organizationaffiliation-role.html"
-                     title="SearchParameter/organizationaffiliation-role">NatlDir_sp_organizationaffiliation_role</a>
-               </td>
-               <td>
-<p>Select OrganizationAffiliations with the specified role</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organizationaffiliation-service.html"
-                     title="SearchParameter/organizationaffiliation-service">NatlDir_sp_organizationaffiliation_service</a>
-               </td>
-               <td>
-<p>Select OrganizationAffiliations providing the specified service</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organizationaffiliation-specialty.html"
-                     title="SearchParameter/organizationaffiliation-specialty">NatlDir_sp_organizationaffiliation_specialty</a>
-               </td>
-               <td>
-<p>Select OrganizationAffiliations associated with the specified specialty</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-organizationaffiliation-via-intermediary.html"
-                     title="SearchParameter/organizationaffiliation-via-intermediary">VhDir_sp_organizationaffiliation_via_intermediary</a>
-               </td>
-               <td>
-<p>Select OrganizationAffiliations with contact information available through the specified intermediary</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-endpoint.html"
-                     title="SearchParameter/practitioner-endpoint">VhDir_sp_practitioner_endpoint</a>
-               </td>
-               <td>
-<p>Select Practitioners with the specified endpoint</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-family-name.html"
-                     title="SearchParameter/practitioner-family-name">NatlDir_sp_practitioner_family_name</a>
-               </td>
-               <td>
-<p>Select Practitioners with the specified family name</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-given-name.html"
-                     title="SearchParameter/practitioner-given-name">NatlDir_sp_practitioner_given_name</a>
-               </td>
-               <td>
-<p>Select Practitioners with the specified given name</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-identifier-assigner.html"
-                     title="SearchParameter/practitioner-identifier-assigner">VhDir_sp_practitioner_identifier_assigner</a>
-               </td>
-               <td>
-<p>Select Practitioners with an identifier issued by the specified organization</p>
+<p>This SearchParameter enables query of practitioner by <code class="language-plaintext highlighter-rouge">given</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="SearchParameter-practitioner-identifier.html"
-                     title="SearchParameter/practitioner-identifier">VhDir_sp_practitioner_identifier</a>
+                     title="SearchParameter/practitioner-identifier">Search by identifier in practitioner with multipleOr</a>
                </td>
                <td>
-<p>Select Practitioners with the specified identifier</p>
+<p>This SearchParameter enables query of practitioner by <code class="language-plaintext highlighter-rouge">identifier</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitioner-identifier-assigner.html"
+                     title="SearchParameter/practitioner-identifier-assigner">Search by identifier-assigner in practitioner with multipleOr</a>
+               </td>
+               <td>
+<p>This SearchParameter enables query of practitioner by <code class="language-plaintext highlighter-rouge">identifier-assigner</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="SearchParameter-practitioner-name.html"
-                     title="SearchParameter/practitioner-name">NatlDir_sp_practitioner_name</a>
+                     title="SearchParameter/practitioner-name">Search by name in practitioner with multipleOr</a>
                </td>
                <td>
-<p>Select Practitioners with the specified name (matches against any of the elements in the HumanName data type)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-phonetic.html"
-                     title="SearchParameter/practitioner-phonetic">VhDir_sp_practitioner_phonetic</a>
-               </td>
-               <td>
-<p>Select Practitioners with the specified name (A portion of name using some kind of phonetic matching algorithm)</p>
+<p>This SearchParameter enables query of practitioner by <code class="language-plaintext highlighter-rouge">name</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="SearchParameter-practitioner-qualification-code.html"
-                     title="SearchParameter/practitioner-qualification-code">VhDir_sp_practitioner_qualification_code</a>
+                     title="SearchParameter/practitioner-qualification-code">Search by qualification-code in practitioner with multipleOr</a>
                </td>
                <td>
-<p>Select Practitioners with a type of qualification matching the specified code</p>
+<p>This SearchParameter enables query of practitioner by <code class="language-plaintext highlighter-rouge">qualification-code</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="SearchParameter-practitioner-qualification-issuer.html"
-                     title="SearchParameter/practitioner-qualification-issuer">VhDir_sp_practitioner_qualification_issuer</a>
+                     title="SearchParameter/practitioner-qualification-issuer">Search by qualification-issuer in practitioner with multipleOr</a>
                </td>
                <td>
-<p>Select Practitioners with a qualification issued by the specified organization</p>
+<p>This SearchParameter enables query of practitioner by <code class="language-plaintext highlighter-rouge">qualification-issuer</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-qualification-period.html"
-                     title="SearchParameter/practitioner-qualification-period">VhDir_sp_practitioner_qualification_period</a>
+                  <a href="SearchParameter-practitionerRole-endpoint.html"
+                     title="SearchParameter/practitionerRole-endpoint">Search by endpoint in practitionerRole with multipleOr</a>
                </td>
                <td>
-<p>Select Practitioners that have a qualification relevant to the date provided</p>
+<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">endpoint</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-qualification-status.html"
-                     title="SearchParameter/practitioner-qualification-status">VhDir_sp_practitioner_qualification_status</a>
+                  <a href="SearchParameter-practitionerRole-location.html"
+                     title="SearchParameter/practitionerRole-location">Search by location in practitionerRole with multipleOr</a>
                </td>
                <td>
-<p>Select Practitioners with a qualification status matching the specified code</p>
+<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">location</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-qualification-wherevalid-code.html"
-                     title="SearchParameter/practitioner-qualification-wherevalid-code">VhDir_sp_practitioner_qualification_wherevalid_code</a>
+                  <a href="SearchParameter-practitionerRole-network.html"
+                     title="SearchParameter/practitionerRole-network">Search by network in practitionerRole with multipleOr</a>
                </td>
                <td>
-<p>Select Practitioners with a qualification that is valid at the location indicated by the specified code</p>
+<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">network</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-qualification-wherevalid-location.html"
-                     title="SearchParameter/practitioner-qualification-wherevalid-location">VhDir_sp_practitioner_qualification_wherevalid_location</a>
+                  <a href="SearchParameter-practitionerRole-organization.html"
+                     title="SearchParameter/practitionerRole-organization">Search by organization in practitionerRole with multipleOr</a>
                </td>
                <td>
-<p>Select Practitioners with a qualification that is valid at the specified location</p>
+<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">organization</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-via-intermediary.html"
-                     title="SearchParameter/practitioner-via-intermediary">VhDir_sp_practitioner_via_intermediary</a>
+                  <a href="SearchParameter-practitionerRole-practitioner.html"
+                     title="SearchParameter/practitionerRole-practitioner">Search by practitioner in practitionerRole with multipleOr</a>
                </td>
                <td>
-<p>Select Practitioners with contact information available through the specified intermediary</p>
+<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">practitioner</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-endpoint.html"
-                     title="SearchParameter/practitionerrole-endpoint">NatlDir_sp_practitionerrole_endpoint</a>
+                  <a href="SearchParameter-practitionerRole-role.html"
+                     title="SearchParameter/practitionerRole-role">Search by role in practitionerRole with multipleOr</a>
                </td>
                <td>
-<p>Select PractitionerRoles with the specified endpoint</p>
+<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">role</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-identifier-assigner.html"
-                     title="SearchParameter/practitionerrole-identifier-assigner">VhDir_sp_practitionerrole_identifier_assigner</a>
+                  <a href="SearchParameter-practitionerRole-service.html"
+                     title="SearchParameter/practitionerRole-service">Search by service in practitionerRole with multipleOr</a>
                </td>
                <td>
-<p>Select PractitionerRoles with an identifier issued by the specified organization</p>
+<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">service</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-identifier.html"
-                     title="SearchParameter/practitionerrole-identifier">VhDir_sp_practitionerrole_identifier</a>
+                  <a href="SearchParameter-practitionerRole-specialty.html"
+                     title="SearchParameter/practitionerRole-specialty">Search by specialty in practitionerRole with multipleOr</a>
                </td>
                <td>
-<p>Select PractitionerRoles with the specified identifier</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-location.html"
-                     title="SearchParameter/practitionerrole-location">NatlDir_sp_practitionerrole_location</a>
-               </td>
-               <td>
-<p>Select PractitionerRoles available at the specified location</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-network.html"
-                     title="SearchParameter/practitionerrole-network">NatlDir_sp_practitionerrole_network</a>
-               </td>
-               <td>
-<p>Select roles where the practitioner is a member of the specified health insurance provider network</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-new-patient-network.html"
-                     title="SearchParameter/practitionerrole-new-patient-network">VhDir_sp_practitionerrole_new_patient_network</a>
-               </td>
-               <td>
-<p>Select PractitionerRoles that are part of the specified network and are/are not accepting new patients</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-new-patient.html"
-                     title="SearchParameter/practitionerrole-new-patient">VhDir_sp_practitionerrole_new_patient</a>
-               </td>
-               <td>
-<p>Select PractitionerRoles that are/are not accepting new patients</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-organization.html"
-                     title="SearchParameter/practitionerrole-organization">NatlDir_sp_practitionerrole_organization</a>
-               </td>
-               <td>
-<p>Select PractitionerRoles available at the specified organization</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-period.html"
-                     title="SearchParameter/practitionerrole-period">NatlDir_sp_practitionerrole_period</a>
-               </td>
-               <td>
-<p>Select PractitionerRoles available in the specified period</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-practitioner.html"
-                     title="SearchParameter/practitionerrole-practitioner">NatlDir_sp_practitionerrole_practitioner</a>
-               </td>
-               <td>
-<p>Select roles filled by the specified practitioner</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-qualification-code.html"
-                     title="SearchParameter/practitionerrole-qualification-code">VhDir_sp_practitionerrole_qualification_code</a>
-               </td>
-               <td>
-<p>Select PractitionerRoles with a type of qualification matching the specified code</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-qualification-issuer.html"
-                     title="SearchParameter/practitionerrole-qualification-issuer">VhDir_sp_practitionerrole_qualification_issuer</a>
-               </td>
-               <td>
-<p>Select PractitionerRoles with a qualification issued by the specified organization</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-qualification-status.html"
-                     title="SearchParameter/practitionerrole-qualification-status">VhDir_sp_practitionerrole_qualification_status</a>
-               </td>
-               <td>
-<p>Select PractitionerRoles with a qualification status matching the specified code</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-qualification-wherevalid-code.html"
-                     title="SearchParameter/practitionerrole-qualification-wherevalid-code">VhDir_sp_practitionerrole_qualification_wherevalid_code</a>
-               </td>
-               <td>
-<p>Select PractitionerRoles with a qualification that is valid at the location indicated by the specified code</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-qualification-wherevalid-location.html"
-                     title="SearchParameter/practitionerrole-qualification-wherevalid-location">VhDir_sp_practitionerrole_qualification_wherevalid_location</a>
-               </td>
-               <td>
-<p>Select PractitionerRoles with a qualification that is valid at the specified location</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-role.html"
-                     title="SearchParameter/practitionerrole-role">NatlDir_sp_practitionerrole_role</a>
-               </td>
-               <td>
-<p>Select PractitionerRoles with the specified role</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-service.html"
-                     title="SearchParameter/practitionerrole-service">NatlDir_sp_practitionerrole_service</a>
-               </td>
-               <td>
-<p>Select PractitionerRoles providing the specified service</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-specialty.html"
-                     title="SearchParameter/practitionerrole-specialty">NatlDir_sp_practitionerrole_specialty</a>
-               </td>
-               <td>
-<p>Select PractitionerRoles associated with the specified specialty</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-via-intermediary.html"
-                     title="SearchParameter/practitionerrole-via-intermediary">VhDir_sp_practitionerrole_via_intermediary</a>
-               </td>
-               <td>
-<p>Select PractitionerRoles with contact information available through the specified intermediary</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-verificationresult-attestation-method.html"
-                     title="SearchParameter/verificationresult-attestation-method">VhDir_sp_verificationresult_attestation_method</a>
-               </td>
-               <td>
-<p>Select validation information for data that was attested to using the specified method</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-verificationresult-attestation-onbehalfof.html"
-                     title="SearchParameter/verificationresult-attestation-onbehalfof">VhDir_sp_verificationresult_attestation_onbehalfof</a>
-               </td>
-               <td>
-<p>Select validation information for data that was attested to on behalf of the specified source</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-verificationresult-attestation-who.html"
-                     title="SearchParameter/verificationresult-attestation-who">VhDir_sp_verificationresult_attestation_who</a>
-               </td>
-               <td>
-<p>Select validation information for data that was attested to by the specified source</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-verificationresult-primarysource-date.html"
-                     title="SearchParameter/verificationresult-primarysource-date">VhDir_sp_verificationresult_primarysource_date</a>
-               </td>
-               <td>
-<p>Select validation information for data that was validated against a primary source on the specified date</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-verificationresult-primarysource-type.html"
-                     title="SearchParameter/verificationresult-primarysource-type">VhDir_sp_verificationresult_primarysource_type</a>
-               </td>
-               <td>
-<p>Select validation information for data that was validated against the specified type of primary source organization</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-verificationresult-primarysource-who.html"
-                     title="SearchParameter/verificationresult-primarysource-who">VhDir_sp_verificationresult_primarysource_who</a>
-               </td>
-               <td>
-<p>Select validation information for data that was validated against the specified primary source</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-verificationresult-status-date.html"
-                     title="SearchParameter/verificationresult-status-date">VhDir_sp_verificationresult_status_date</a>
-               </td>
-               <td>
-<p>Select validation information with a validation status that occurred at the specified date/time</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-verificationresult-target.html"
-                     title="SearchParameter/verificationresult-target">VhDir_sp_verificationresult_target</a>
-               </td>
-               <td>
-<p>Select validation information for the specified resource</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-verificationresult-validation-status.html"
-                     title="SearchParameter/verificationresult-validation-status">VhDir_sp_verificationresult_validation_status</a>
-               </td>
-               <td>
-<p>Select validation information with the specified status</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-verificationresult-validator-organization.html"
-                     title="SearchParameter/verificationresult-validator-organization">VhDir_sp_verificationresult_validator_organization</a>
-               </td>
-               <td>
-<p>Select validation information for data that was validated by the specified organization</p>
+<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">specialty</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
 </td>
             </tr>
          </tbody>
@@ -1722,167 +1020,11 @@ be a relationship to an organization. Practitioner participation in healthcare p
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-AcceptingPatientsCS.html"
-                     title="CodeSystem/AcceptingPatientsCS">Accepting Patients Codes</a>
-               </td>
-               <td>
-<p>Codes to identify if the practice is accepting new patients</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-AccessibilityCS.html"
-                     title="CodeSystem/AccessibilityCS">Accessibility</a>
-               </td>
-               <td>
-<p>General categories of accommodations available.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-ConsentCS.html" title="CodeSystem/ConsentCS">National Healthcare Directory Consent</a>
-               </td>
-               <td>
-<p>Codes for use in defining access levels for sharing subsets of constrained content (as an example)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-ConsentScopeCS.html" title="CodeSystem/ConsentScopeCS">National Healthcare Directory ConsentScopeCodes</a>
-               </td>
-               <td>
-<p>This value set includes the four Consent scope codes.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-DeliveryMethodCS.html"
-                     title="CodeSystem/DeliveryMethodCS">Delivery Methods</a>
-               </td>
-               <td>
-<p>Categories of healthcare service delivery methods.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-EndpointConnectionTypeCS.html"
-                     title="CodeSystem/EndpointConnectionTypeCS">Endpoint Connection Types (additional)</a>
-               </td>
-               <td>
-<p>Extension codes for http://terminology.hl7.org/CodeSystem/endpoint-connection-type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-EndpointPayloadTypeCS.html"
-                     title="CodeSystem/EndpointPayloadTypeCS">Endpoint Payload Types</a>
-               </td>
-               <td>
-<p>Endpoint Payload Types are constrained to NA (Not Applicable) as part of this IG</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-EndpointTypeCS.html" title="CodeSystem/EndpointTypeCS">IG Type</a>
-               </td>
-               <td>
-<p>IG Type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-HealthcareServiceCategoryCS.html"
-                     title="CodeSystem/HealthcareServiceCategoryCS">Healthcare Service Category</a>
-               </td>
-               <td>
-<p>Broad categories of healthcare services being performed or delivered</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-IgTypeCS.html" title="CodeSystem/IgTypeCS">IG Type</a>
-               </td>
-               <td>
-<p>IG Type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-InsurancePlanTypeCS.html"
-                     title="CodeSystem/InsurancePlanTypeCS">Insurance Plan Type</a>
-               </td>
-               <td>
-<p>Categories of cost-sharing used by plans</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-InsuranceProductTypeCS.html"
-                     title="CodeSystem/InsuranceProductTypeCS">Insurance Product Type</a>
-               </td>
-               <td>
-<p>A distinct package of health insurance coverage benefits that are offered using a particular product network type.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-LanguageProficiencyCS.html"
-                     title="CodeSystem/LanguageProficiencyCS">Language Proficiency</a>
-               </td>
-               <td>
-<p>Codes for documenting spoken language proficiency based on the Interagency Language Roundtable scale of abilities to communicate in a language.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-OrgTypeCS.html" title="CodeSystem/OrgTypeCS">Organization Type</a>
-               </td>
-               <td>
-<p>Categories of organizations based on criteria in provider directories.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="CodeSystem-OrganizationAffiliationRoleCS.html"
                      title="CodeSystem/OrganizationAffiliationRoleCS">Organization Affiliation Role</a>
                </td>
                <td>
 <p>Codes For Organization Affiliation Role</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-ProviderRoleCS.html" title="CodeSystem/ProviderRoleCS">Provider Role Codes</a>
-               </td>
-               <td>
-<p>A capability that an individual, group, or organization is acknowledged to have in a payer network.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-QualificationStatusCS.html"
-                     title="CodeSystem/QualificationStatusCS">Qualification Status</a>
-               </td>
-               <td>
-<p>The state indicating if a qualification is currently valid.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-TrustFrameworkTypeCS.html"
-                     title="CodeSystem/TrustFrameworkTypeCS">Trust FrameworkType</a>
-               </td>
-               <td>
-<p>Trust Framework Type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-VirtualModalitiesCS.html"
-                     title="CodeSystem/VirtualModalitiesCS">Virtual Modalities</a>
-               </td>
-               <td>
-<p>Categories of virtual service delivery modalities.</p>
 </td>
             </tr>
          </tbody>
@@ -2345,7 +1487,7 @@ be a relationship to an organization. Practitioner participation in healthcare p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-exchange#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 5, 2022 18:56-0400">2022-04-05</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-exchange#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 17, 2022 09:52-0400">2022-06-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

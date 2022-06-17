@@ -71,6 +71,9 @@ Parent:         $NatlDirExOrganizationAffiliation
 Id:             NatlDirEx-OrganizationAffiliation
 Title:          "National Directory OrganizationAffiliation"
 Description:    "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."
+* identifier.type MS
+* identifier.value MS
+* identifier.assigner MS 
 
 
 Profile:        NatlDirExPractitioner
@@ -87,7 +90,9 @@ Title:          "National Directory PractitionerRole"
 Description:    "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, 
 there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also 
 be a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization."
-
+* identifier.type MS
+* identifier.value MS
+* identifier.assigner MS 
 
 Profile:        NatlDirExRestriction
 Parent:         $NatlDirectoryRestriction

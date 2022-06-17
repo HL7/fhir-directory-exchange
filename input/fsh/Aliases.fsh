@@ -11,7 +11,7 @@ Alias:   $us-core-provider-specialty-vs = http://hl7.org/fhir/us/core/ValueSet/u
 Alias: $SCT = http://snomed.info/sct
 Alias: $GeolocationExtension = http://hl7.org/fhir/StructureDefinition/geolocation
 Alias: $verificationresult-validation-type = http://hl7.org/fhir/ValueSet/verificationresult-validation-type
-Alias: $validationprocess = http://hl7.org/fhir/uv/vhdir/ValueSet/validationprocess
+//Alias: $validationprocess = http://hl7.org/fhir/uv/vhdir/ValueSet/validationprocess
 Alias: $verificationresult-primary-source-type = http://hl7.org/fhir/ValueSet/verificationresult-primary-source-type
 Alias: $verificationresult-communication-method_1 = http://hl7.org/fhir/ValueSet/verificationresult-communication-method
 Alias: $identifierstatus = http://hl7.org/fhir/uv/vhdir/ValueSet/identifierstatus
@@ -53,9 +53,7 @@ Alias:  $yesNoVS = http://terminology.hl7.org/ValueSet/v2-0136
 // NatlDir defined CS that mimic VHDir CodeSystems
 
 Alias: $LanguageProficiency = http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/LanguageProficiencyCS
-Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/QualificationStatusCS
 Alias: $MinEndpointConnectionTypeVS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/ValueSet/MinEndpointConnectionTypeVS
-Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/QualificationStatusCS
 Alias: $IgFormatCodeVS = http://hl7.org/fhir/ValueSet/formatcodes
 /*
 
@@ -81,6 +79,20 @@ Alias: $NatlDirectoryPractitioner =            	http://hl7.org/fhir/us/fhir-dire
 Alias: $NatlDirEndpointQryPractitionerRole =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole
 Alias: $NatlDirectoryRestriction  =	    http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Restriction
 Alias: $NatlDirectoryValidation  =	    http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Validation
+Alias: $NatlDirectoryEndpointTypeCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointTypeCS
+Alias: $NatlDirectoryHealthcareServiceDeliveryMthdCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/DeliveryMethodCS
+Alias: $NatlDirectoryOrgTypeCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS
+Alias: $NatlDirectoryInsProdTypCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/InsuranceProductTypeCS
+Alias: $NatlDirectoryInsPlanTypCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/InsurancePlanTypeCS
+Alias: $NatlDirectoryEndpointConnTypeCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointConnectionTypeCS
+Alias: $NatlDirectoryEndpointPayldTypeCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointPayloadTypeCS
+Alias: $NatlDirectoryAccessibilityCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS
+Alias: $NatlDirectoryHealthcareServiceCatCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS
+Alias: $NatlDirectoryProvdrRoleCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ProviderRoleCS
+Alias: $NatlDirectoryVirModalitiesCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/VirtualModalitiesCS
+Alias: $NatlDirectoryQualStatusCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/QualificationStatusCS
+Alias: $NatlDirectoryAcceptPatientsCSCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AcceptingPatientsCS
+Alias: $NatlDirectoryDelvMthdCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/DeliveryMethodCS
+Alias: $NatlDirectoryLangProfCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/LanguageProficiencyCS
 
 
-//Alias: $NatlDirEndpointQryPractitionerRole =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-PractitionerRole

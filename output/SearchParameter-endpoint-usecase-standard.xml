@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <SearchParameter xmlns="http://hl7.org/fhir">
-  <id value="endpoint-usecase-standard"/>
+  <id value="Endpoint-usecase-standard"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "endpoint-usecase-standard" </p></div><p><b>url</b>: <code>http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-usecase-standard</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: VhDir_sp_endpoint_usecase_standard</p><p><b>status</b>: draft</p><p><b>date</b>: 2018-05-23</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href="https://www.hl7.org/Special/committees/pafm/index.cfm">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href="mailto:pafm@lists.HL7.org">pafm@lists.HL7.org</a></p><p><b>description</b>: Select endpoints that support the specified standard</p><p><b>jurisdiction</b>: United States of America <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#US)</span></p><p><b>code</b>: usecase-standard</p><p><b>base</b>: Endpoint</p><p><b>type</b>: uri</p><p><b>expression</b>: Endpoint.extension('http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase').extension('standard')</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: below</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Endpoint-usecase-standard" </p></div><p><b>url</b>: <code>https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-endpoint-usecase-standard.html</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: NatlDirEndpointQryUsecaseStandard</p><p><b>status</b>: active</p><p><b>date</b>: 2022-06-17T09:52:28-04:00</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href="https://www.hl7.org/Special/committees/pafm/index.cfm">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href="mailto:pafm@lists.HL7.org">pafm@lists.HL7.org</a></p><p><b>description</b>: Accesses the usecase-standard of an Endpoint</p><p><b>jurisdiction</b>: United States of America <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#US)</span></p><p><b>code</b>: usecase-standard</p><p><b>base</b>: Endpoint</p><p><b>type</b>: token</p><p><b>expression</b>: Endpoint.usecase-standard</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p></div>
   </text>
-  <url value="http://hl7.org/fhir/uv/vhdir/SearchParameter/endpoint-usecase-standard"/>
+  <url value="https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-endpoint-usecase-standard.html"/>
   <version value="0.0.1"/>
-  <name value="VhDir_sp_endpoint_usecase_standard"/>
-  <status value="draft"/>
-  <date value="2018-05-23"/>
+  <name value="NatlDirEndpointQryUsecaseStandard"/>
+  <status value="active"/>
+  <date value="2022-06-17T09:52:28-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -22,7 +22,7 @@
       <value value="pafm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="Select endpoints that support the specified standard"/>
+  <description value="Accesses the usecase-standard of an Endpoint"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -31,9 +31,8 @@
   </jurisdiction>
   <code value="usecase-standard"/>
   <base value="Endpoint"/>
-  <type value="uri"/>
-  <expression value="Endpoint.extension(&#39;http://hl7.org/fhir/uv/vhdir/StructureDefinition/endpoint-usecase&#39;).extension(&#39;standard&#39;)"/>
+  <type value="token"/>
+  <expression value="Endpoint.usecase-standard"/>
   <multipleOr value="true"/>
   <multipleAnd value="true"/>
-  <modifier value="below"/>
 </SearchParameter>

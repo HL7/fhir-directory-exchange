@@ -1,15 +1,16 @@
 {
   "resourceType": "SearchParameter",
-  "id": "insuranceplan-coverage-benefit-type",
+  "id": "InsurancePlan-coverage-benefit-type",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"insuranceplan-coverage-benefit-type\" </p></div><p><b>url</b>: <code>http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-benefit-type</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: VhDir_sp_insuranceplan_coverage_benefit_type</p><p><b>status</b>: draft</p><p><b>date</b>: 2018-05-23</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href=\"https://www.hl7.org/Special/committees/pafm/index.cfm\">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: Select health insurance products offering covered benefits of the specified type</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: coverage-benefit-type</p><p><b>base</b>: InsurancePlan</p><p><b>type</b>: token</p><p><b>expression</b>: InsurancePlan.coverage.benefit.type</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: text</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"InsurancePlan-coverage-benefit-type\" </p></div><p><b>url</b>: <code>https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlan-coverage-benefit-type.html</code></p><p><b>version</b>: 0.0.1</p><p><b>name</b>: InsurancePlanCoverageBenefittypeSearchParameter</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/Resource-id\">http://hl7.org/fhir/SearchParameter/Resource-id</a></p><p><b>status</b>: active</p><p><b>date</b>: 2022-06-17T09:52:28-04:00</p><p><b>publisher</b>: HL7 Patient Administration Working Group</p><p><b>contact</b>: HL7 Patient Administration Working Group: <a href=\"https://www.hl7.org/Special/committees/pafm/index.cfm\">https://www.hl7.org/Special/committees/pafm/index.cfm</a>,<a href=\"mailto:pafm@lists.HL7.org\">pafm@lists.HL7.org</a></p><p><b>description</b>: This SearchParameter enables query of InsurancePlan by `coverage-benefit-type` with `mutlipleOr` enabled.</p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>code</b>: coverage-benefit-type</p><p><b>base</b>: Organization</p><p><b>type</b>: token</p><p><b>multipleOr</b>: true</p></div>"
   },
-  "url": "http://hl7.org/fhir/uv/vhdir/SearchParameter/insuranceplan-coverage-benefit-type",
+  "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlan-coverage-benefit-type.html",
   "version": "0.0.1",
-  "name": "VhDir_sp_insuranceplan_coverage_benefit_type",
-  "status": "draft",
-  "date": "2018-05-23",
+  "name": "InsurancePlanCoverageBenefittypeSearchParameter",
+  "derivedFrom": "http://hl7.org/fhir/SearchParameter/Resource-id",
+  "status": "active",
+  "date": "2022-06-17T09:52:28-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -26,7 +27,7 @@
       ]
     }
   ],
-  "description": "Select health insurance products offering covered benefits of the specified type",
+  "description": "This SearchParameter enables query of InsurancePlan by `coverage-benefit-type` with `mutlipleOr` enabled.",
   "jurisdiction": [
     {
       "coding": [
@@ -39,13 +40,8 @@
   ],
   "code": "coverage-benefit-type",
   "base": [
-    "InsurancePlan"
+    "Organization"
   ],
   "type": "token",
-  "expression": "InsurancePlan.coverage.benefit.type",
-  "multipleOr": true,
-  "multipleAnd": true,
-  "modifier": [
-    "text"
-  ]
+  "multipleOr": true
 }

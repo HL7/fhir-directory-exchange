@@ -53,7 +53,7 @@ menu:
   Terminology          : terminology.html
   Search Parameters   : searchparameters.html
   Capability Statement: 
-    Conformance Requirements  : CapabilityStatement-NatlDir.html
+    Conformance Requirements  : CapabilityStatement-fhir-national-directory.html
   Examples      : examples.html
   Downloads     : downloads.html
   

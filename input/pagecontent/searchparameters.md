@@ -19,10 +19,6 @@ The following search parameters have been defined for the Validated Healthcare D
 
 Search Parameter
 
-<!--
-{% raw %}
-{% include list-simple-searchparameters.xhtml %}
-{% endraw %}
--->
+  {%  include list-simple-searchparameters.xhtml %}
 
-{% include sp_list.md %}
+

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="87b7b986-95ce-4550-9a81-5a90e14565b2"/>
+  <id value="a6696b3d-62f8-47f1-90f0-f42c55a99a24"/>
   <meta>
-    <lastUpdated value="2022-04-05T18:56:51.580-04:00"/>
+    <lastUpdated value="2022-06-17T09:52:28.323-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -265,7 +265,7 @@
         <name value="OrganizationAffiliationRoleVS"/>
         <title value="OrganizationAffiliation Roles"/>
         <status value="active"/>
-        <date value="2022-04-05T18:56:51-04:00"/>
+        <date value="2022-06-17T09:52:28-04:00"/>
         <publisher value="HL7 Patient Administration Working Group"/>
         <contact>
           <name value="HL7 Patient Administration Working Group"/>
@@ -286,8 +286,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d2d7059a-134d-43f5-bf80-5bab2d8538cd"/>
-          <timestamp value="2022-04-05T18:57:28-04:00"/>
+          <identifier value="urn:uuid:37d2f9da-7d1e-4997-8ed8-b519acdf11be"/>
+          <timestamp value="2022-06-17T09:53:04-04:00"/>
           <total value="24"/>
           <parameter>
             <name value="excludeNested"/>

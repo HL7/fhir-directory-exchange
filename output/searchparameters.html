@@ -124,7 +124,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="CapabilityStatement-NatlDir.html">Conformance Requirements</a>
+        <a href="CapabilityStatement-fhir-national-directory.html">Conformance Requirements</a>
       </li>
     </ul>
   </li>
@@ -198,229 +198,76 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Search Parameter</p>
 
-<!--
-
-{% include list-simple-searchparameters.xhtml %}
-
--->
-
-<p><strong>CareTeam</strong></p>
-
-<ul>
-  <li><a href="SearchParameter-careteam-endpoint.html">endpoint</a></li>
-  <li><a href="SearchParameter-careteam-identifier.html">identifier</a></li>
-  <li><a href="SearchParameter-careteam-identifier-assigner.html">identifier-assigner</a></li>
-  <li><a href="SearchParameter-careteam-location.html">location</a></li>
-  <li><a href="SearchParameter-careteam-name.html">name</a></li>
-  <li><a href="SearchParameter-careteam-organization.html">organization</a></li>
-  <li><a href="SearchParameter-careteam-service.html">service</a></li>
-  <li><a href="SearchParameter-careteam-status.html">status</a></li>
-  <li><a href="SearchParameter-careteam-via-intermediary.html">via-intermediary</a></li>
-  <li><a href="SearchParameter-careteam-category.html">category</a></li>
-  <li><a href="SearchParameter-careteam-participant.html">participant</a></li>
-</ul>
-
-<p><strong>Endpoint</strong></p>
-
-<ul>
-  <li><a href="SearchParameter-endpoint-connection-type.html">connection-type</a></li>
-  <li><a href="SearchParameter-endpoint-identifier.html">identifier</a></li>
-  <li><a href="SearchParameter-endpoint-identifier-assigner.html">identifier-assigner</a></li>
-  <li><a href="SearchParameter-endpoint-mime-type.html">mime-type</a></li>
-  <li><a href="SearchParameter-endpoint-organization.html">organization</a></li>
-  <li><a href="SearchParameter-endpoint-payload-type.html">payload-type</a></li>
-  <li><a href="SearchParameter-endpoint-status.html">status</a></li>
-  <li><a href="SearchParameter-endpoint-usecase-standard.html">usecase-standard</a></li>
-  <li><a href="SearchParameter-endpoint-usecase-type.html">usecase-type</a></li>
-  <li><a href="SearchParameter-endpoint-via-intermediary.html">via-intermediary</a></li>
-</ul>
-
-<p><strong>HealthcareService</strong></p>
-
-<ul>
-  <li>active <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/SearchParameter/HealthcareService-active</code></li>
-  <li><a href="SearchParameter-healthcareservice-service-category.html">service-category</a></li>
-  <li><a href="SearchParameter-healthcareservice-characteristic.html">characteristic</a></li>
-  <li><a href="SearchParameter-healthcareservice-coverage-area.html">coverage-area</a></li>
-  <li><a href="SearchParameter-healthcareservice-eligibility.html">eligibility</a></li>
-  <li><a href="SearchParameter-healthcareservice-endpoint.html">endpoint</a></li>
-  <li><a href="SearchParameter-healthcareservice-identifier.html">identifier</a></li>
-  <li><a href="SearchParameter-healthcareservice-identifier-assigner.html">identifier-assigner</a></li>
-  <li><a href="SearchParameter-healthcareservice-location.html">location</a></li>
-  <li><a href="SearchParameter-healthcareservice-name.html">name</a></li>
-  <li><a href="SearchParameter-healthcareservice-new-patient.html">new-patient</a></li>
-  <li><a href="SearchParameter-healthcareservice-new-patient-network.html">new-patient-network</a></li>
-  <li><a href="SearchParameter-healthcareservice-organization.html">organization</a></li>
-  <li><a href="SearchParameter-healthcareservice-specialty.html">specialty</a></li>
-  <li><a href="SearchParameter-healthcareservice-service-type.html">service-type</a></li>
-  <li><a href="SearchParameter-healthcareservice-via-intermediary.html">via-intermediary</a></li>
-</ul>
-
-<p><strong>Location</strong></p>
-
-<ul>
-  <li><a href="SearchParameter-location-accessibility.html">accessibility</a></li>
-  <li><a href="SearchParameter-location-address.html">address</a></li>
-  <li><a href="SearchParameter-location-endpoint.html">endpoint</a></li>
-  <li><a href="SearchParameter-location-identifier.html">identifier</a></li>
-  <li><a href="SearchParameter-location-identifier-assigner.html">identifier-assigner</a></li>
-  <li><a href="SearchParameter-location-new-patient.html">new-patient</a></li>
-  <li><a href="SearchParameter-location-new-patient-network.html">new-patient-network</a></li>
-  <li><a href="SearchParameter-location-organization.html">organization</a></li>
-  <li><a href="SearchParameter-location-partof.html">partof</a></li>
-  <li><a href="http://hl7.org/fhir/location.html#positional">near</a> <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/SearchParameter/Location-near</code></li>
-  <li><a href="SearchParameter-location-contains.html">contains</a></li>
-  <li><a href="SearchParameter-location-status.html">status</a></li>
-  <li><a href="SearchParameter-location-type.html">type</a></li>
-  <li><a href="SearchParameter-location-via-intermediary.html">via-intermediary</a></li>
-</ul>
-
-<p><strong>Organization</strong></p>
-
-<ul>
-  <li>active <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/SearchParameter/Organization-active</code></li>
-  <li>address-use <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/SearchParameter/Organization-address-use</code></li>
-  <li><a href="SearchParameter-organization-address.html">address</a></li>
-  <li><a href="SearchParameter-organization-address-city.html">address-city</a></li>
-  <li><a href="SearchParameter-organization-address-country.html">address-country</a></li>
-  <li><a href="SearchParameter-organization-address-postalcode.html">address-postalcode</a></li>
-  <li><a href="SearchParameter-organization-address-state.html">address-state</a></li>
-  <li><a href="SearchParameter-organization-endpoint.html">endpoint</a></li>
-  <li><a href="SearchParameter-organization-identifier.html">identifier</a></li>
-  <li><a href="SearchParameter-organization-identifier-assigner.html">identifier-assigner</a></li>
-  <li><a href="SearchParameter-organization-name.html">name</a></li>
-  <li><a href="SearchParameter-organization-partof.html">partof</a></li>
-  <li><a href="SearchParameter-organization-via-intermediary.html">via-intermediary</a></li>
-  <li><a href="SearchParameter-organization-qualification-code.html">qualification-code</a></li>
-  <li><a href="SearchParameter-organization-qualification-issuer.html">qualification-issuer</a></li>
-  <li><a href="SearchParameter-organization-qualification-status.html">qualification-status</a></li>
-  <li><a href="SearchParameter-organization-qualification-wherevalid-code.html">qualification-wherevalid-code</a></li>
-  <li><a href="SearchParameter-organization-qualification-wherevalid-location.html">qualification-wherevalid-location</a></li>
-</ul>
-
-<p><strong>Network</strong></p>
-
-<ul>
-  <li>active <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/SearchParameter/Organization-active</code></li>
-  <li>address-use <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/SearchParameter/Organization-address-use</code></li>
-  <li><a href="SearchParameter-organization-coverage-area.html">coverage-area</a></li>
-  <li><a href="SearchParameter-organization-address.html">address</a></li>
-  <li><a href="SearchParameter-organization-address-city.html">address-city</a></li>
-  <li><a href="SearchParameter-organization-address-country.html">address-country</a></li>
-  <li><a href="SearchParameter-organization-address-postalcode.html">address-postalcode</a></li>
-  <li><a href="SearchParameter-organization-address-state.html">address-state</a></li>
-  <li><a href="SearchParameter-organization-endpoint.html">endpoint</a></li>
-  <li><a href="SearchParameter-organization-identifier.html">identifier</a></li>
-  <li><a href="SearchParameter-organization-identifier-assigner.html">identifier-assigner</a></li>
-  <li><a href="SearchParameter-organization-name.html">name</a></li>
-  <li><a href="SearchParameter-organization-partof.html">partof</a></li>
-  <li><a href="SearchParameter-organization-via-intermediary.html">via-intermediary</a></li>
-</ul>
-
-<p><strong>OrganizationAffiliation</strong></p>
-
-<ul>
-  <li>active <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-active</code></li>
-  <li><a href="SearchParameter-organizationaffiliation-endpoint.html">endpoint</a></li>
-  <li><a href="SearchParameter-organizationaffiliation-identifier.html">identifier</a></li>
-  <li><a href="SearchParameter-organizationaffiliation-identifier-assigner.html">identifier-assigner</a></li>
-  <li><a href="SearchParameter-organizationaffiliation-location.html">location</a></li>
-  <li><a href="SearchParameter-organizationaffiliation-network.html">network</a></li>
-  <li><a href="SearchParameter-organizationaffiliation-participating-organization.html">participating-organization</a></li>
-  <li><a href="SearchParameter-organizationaffiliation-primary-organization.html">primary-organization</a></li>
-  <li><a href="SearchParameter-organizationaffiliation-role.html">role</a></li>
-  <li><a href="SearchParameter-organizationaffiliation-service.html">service</a></li>
-  <li><a href="SearchParameter-organizationaffiliation-specialty.html">specialty</a></li>
-  <li><a href="SearchParameter-organizationaffiliation-via-intermediary.html">via-intermediary</a></li>
-</ul>
-
-<p><strong>Practitioner</strong></p>
-
-<ul>
-  <li>active <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/SearchParameter/Practitioner-active</code></li>
-  <li><a href="SearchParameter-practitioner-endpoint.html">endpoint</a></li>
-  <li><a href="SearchParameter-practitioner-name.html">name</a></li>
-  <li><a href="SearchParameter-practitioner-family-name.html">family</a></li>
-  <li><a href="SearchParameter-practitioner-given-name.html">given</a></li>
-  <li><a href="SearchParameter-practitioner-phonetic.html">phonetic</a></li>
-  <li><a href="SearchParameter-practitioner-identifier.html">identifier</a></li>
-  <li><a href="SearchParameter-practitioner-identifier-assigner.html">identifier-assigner</a></li>
-  <li><a href="SearchParameter-practitioner-via-intermediary.html">via-intermediary</a></li>
-  <li><a href="SearchParameter-practitioner-qualification-code.html">qualification-code</a></li>
-  <li><a href="SearchParameter-practitioner-qualification-issuer.html">qualification-issuer</a></li>
-  <li><a href="SearchParameter-practitioner-qualification-period.html">qualification-period</a></li>
-  <li><a href="SearchParameter-practitioner-qualification-status.html">qualification-status</a></li>
-  <li><a href="SearchParameter-practitioner-qualification-wherevalid-code.html">qualification-wherevalid-code</a></li>
-  <li><a href="SearchParameter-practitioner-qualification-wherevalid-location.html">qualification-wherevalid-location</a></li>
-</ul>
-
-<p><strong>PractitionerRole</strong></p>
-
-<ul>
-  <li>active <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/SearchParameter/PractitionerRole-active</code></li>
-  <li><a href="SearchParameter-practitionerrole-endpoint.html">endpoint</a></li>
-  <li><a href="SearchParameter-practitionerrole-identifier.html">identifier</a></li>
-  <li><a href="SearchParameter-practitionerrole-identifier-assigner.html">identifier-assigner</a></li>
-  <li><a href="SearchParameter-practitionerrole-location.html">location</a></li>
-  <li><a href="SearchParameter-practitionerrole-network.html">network</a></li>
-  <li><a href="SearchParameter-practitionerrole-new-patient.html">new-patient</a></li>
-  <li><a href="SearchParameter-practitionerrole-new-patient-network.html">new-patient-network</a></li>
-  <li><a href="SearchParameter-practitionerrole-organization.html">organization</a></li>
-  <li><a href="SearchParameter-practitionerrole-practitioner.html">practitioner</a></li>
-  <li><a href="SearchParameter-practitionerrole-role.html">role</a></li>
-  <li><a href="SearchParameter-practitionerrole-service.html">service</a></li>
-  <li><a href="SearchParameter-practitionerrole-specialty.html">specialty</a></li>
-  <li><a href="SearchParameter-practitionerrole-via-intermediary.html">via-intermediary</a></li>
-  <li><a href="SearchParameter-practitionerrole-qualification-code.html">qualification-code</a></li>
-  <li><a href="SearchParameter-practitionerrole-qualification-issuer.html">qualification-issuer</a></li>
-  <li><a href="SearchParameter-practitionerrole-qualification-status.html">qualification-status</a></li>
-  <li><a href="SearchParameter-practitionerrole-qualification-wherevalid-code.html">qualification-wherevalid-code</a></li>
-  <li><a href="SearchParameter-practitionerrole-qualification-wherevalid-location.html">qualification-wherevalid-location</a></li>
-</ul>
-
-<p><strong>InsurancePlan</strong></p>
-
-<ul>
-  <li><a href="SearchParameter-insuranceplan-coverage-area.html">coverage-area</a></li>
-  <li><a href="SearchParameter-insuranceplan-administered-by.html">administered-by</a></li>
-  <li><a href="SearchParameter-insuranceplan-coverage-benefit-type.html">coverage-benefit-type</a></li>
-  <li><a href="SearchParameter-insuranceplan-coverage-limit-value.html">coverage-limit-value</a></li>
-  <li><a href="SearchParameter-insuranceplan-coverage-network.html">coverage-network</a></li>
-  <li><a href="SearchParameter-insuranceplan-coverage-type.html">coverage-type</a></li>
-  <li><a href="SearchParameter-insuranceplan-identifier.html">identifier</a></li>
-  <li><a href="SearchParameter-insuranceplan-network.html">network</a></li>
-  <li><a href="SearchParameter-insuranceplan-type.html">type</a></li>
-  <li><a href="SearchParameter-insuranceplan-status.html">status</a></li>
-  <li><a href="SearchParameter-insuranceplan-endpoint.html">endpoint</a></li>
-  <li><a href="SearchParameter-insuranceplan-general-cost-groupsize.html">general-cost-groupsize</a></li>
-  <li><a href="SearchParameter-insuranceplan-general-cost-type.html">general-cost-type</a></li>
-  <li><a href="SearchParameter-insuranceplan-general-cost-value.html">general-cost-value</a></li>
-  <li><a href="SearchParameter-insuranceplan-name.html">name</a></li>
-  <li><a href="SearchParameter-insuranceplan-owned-by.html">owned-by</a></li>
-  <li><a href="SearchParameter-insuranceplan-specific-cost-benefit-type.html">specific-cost-benefit-type</a></li>
-  <li><a href="SearchParameter-insuranceplan-specific-cost-category.html">specific-cost-category</a></li>
-  <li><a href="SearchParameter-insuranceplan-specific-cost-cost-type.html">specific-cost-cost-type</a></li>
-  <li><a href="SearchParameter-insuranceplan-specific-cost-value.html">specific-cost-value</a></li>
-  <li><a href="SearchParameter-insuranceplan-plan-coverage-area.html">plan-coverage-area</a></li>
-  <li><a href="SearchParameter-insuranceplan-plan-identifier.html">plan-identifier</a></li>
-  <li><a href="SearchParameter-insuranceplan-plan-network.html">plan-network</a></li>
-  <li><a href="SearchParameter-insuranceplan-plan-type.html">plan-type</a></li>
-</ul>
-
-<p><strong>VerificationResult</strong></p>
-
-<ul>
-  <li><a href="SearchParameter-verificationresult-attestation-who.html">attestation-who</a></li>
-  <li><a href="SearchParameter-verificationresult-attestation-method.html">attestation-method</a></li>
-  <li><a href="SearchParameter-verificationresult-attestation-onbehalfof.html">attestation-onbehalfof</a></li>
-  <li><a href="SearchParameter-verificationresult-primarysource-date.html">primarysource-date</a></li>
-  <li><a href="SearchParameter-verificationresult-primarysource-who.html">primarysource-who</a></li>
-  <li><a href="SearchParameter-verificationresult-primarysource-type.html">primarysource-type</a></li>
-  <li><a href="SearchParameter-verificationresult-status-date.html">status-date</a></li>
-  <li><a href="SearchParameter-verificationresult-target.html">target</a></li>
-  <li><a href="SearchParameter-verificationresult-validation-status.html">validation-status</a></li>
-  <li><a href="SearchParameter-verificationresult-validator-organization.html">validator-organization</a></li>
-</ul>
+<li><a href="SearchParameter-Endpoint-connection-type.html">NatlDirEndpointQryConnectiontype</a></li>
+<li><a href="SearchParameter-Endpoint-identifier.html">NatlDirEndpointQryIdentifier</a></li>
+<li><a href="SearchParameter-Endpoint-mime-type.html">NatlDirEndpointQryMimetype</a></li>
+<li><a href="SearchParameter-Endpoint-organization.html">NatlDirEndpointQryOrganization</a></li>
+<li><a href="SearchParameter-Endpoint-payload-type.html">NatlDirEndpointQryPayloadtype</a></li>
+<li><a href="SearchParameter-Endpoint-status.html">NatlDirEndpointQryStatus</a></li>
+<li><a href="SearchParameter-Endpoint-usecase-standard.html">NatlDirEndpointQryUsecaseStandard</a></li>
+<li><a href="SearchParameter-Endpoint-usecase-type.html">NatlDirEndpointQryUsecasetype</a></li>
+<li><a href="SearchParameter-HealthcareService-coverage-area.html">HealthcareServiceCoverageAreaSearchParameter</a></li>
+<li><a href="SearchParameter-HealthcareService-endpoint.html">HealthcareServiceCategorySearchParameter</a></li>
+<li><a href="SearchParameter-HealthcareService-location.html">HealthcareServiceLocationSearchParameter</a></li>
+<li><a href="SearchParameter-HealthcareService-name.html">HealthcareServiceNameSearchParameter</a></li>
+<li><a href="SearchParameter-HealthcareService-organization.html">HealthcareServiceOrganizationSearchParameter</a></li>
+<li><a href="SearchParameter-HealthcareService-service-category.html">HealthcareServiceCategorySearchParameter</a></li>
+<li><a href="SearchParameter-HealthcareService-service-type.html">HealthcareServiceServicetypeSearchParameter</a></li>
+<li><a href="SearchParameter-HealthcareService-specialty.html">HealthcareServiceSpecialtySearchParameter</a></li>
+<li><a href="SearchParameter-InsurancePlan-administrated-by.html">InsurancePlanAdministratedbySearchParameter</a></li>
+<li><a href="SearchParameter-InsurancePlan-coverage-area.html">InsurancePlanCoverageAreaSearchParameter</a></li>
+<li><a href="SearchParameter-InsurancePlan-coverage-benefit-type.html">InsurancePlanCoverageBenefittypeSearchParameter</a></li>
+<li><a href="SearchParameter-InsurancePlan-coverage-network.html">InsurancePlanCoverageNetworkSearchParameter</a></li>
+<li><a href="SearchParameter-InsurancePlan-identifier.html">InsurancePlanIdentifierSearchParameter</a></li>
+<li><a href="SearchParameter-InsurancePlan-name.html">InsurancePlanSpecialtySearchParameter</a></li>
+<li><a href="SearchParameter-InsurancePlan-owned-by.html">InsurancePlanOwnedBySearchParameter</a></li>
+<li><a href="SearchParameter-InsurancePlan-type.html">InsurancePlantypeSearchParameter</a></li>
+<li><a href="SearchParameter-Location-address.html">LocationAddressSearchParameter</a></li>
+<li><a href="SearchParameter-Location-endpoint.html">LocationEndpointSearchParameter</a></li>
+<li><a href="SearchParameter-Location-organization.html">LocationOrganizationSearchParameter</a></li>
+<li><a href="SearchParameter-Location-partOf.html">LocationPartOfSearchParameter</a></li>
+<li><a href="SearchParameter-Location-physicalType.html">LocationPhysicalTypeSearchParameter</a></li>
+<li><a href="SearchParameter-Location-type.html">LocationTypeSearchParameter</a></li>
+<li><a href="SearchParameter-Network-coverage-area.html">NetworkCoverageAreaSearchParameter</a></li>
+<li><a href="SearchParameter-Network-name.html">nameSpecialtySearchParameter</a></li>
+<li><a href="SearchParameter-Organization-address.html">OrganizationAddressSearchParameter</a></li>
+<li><a href="SearchParameter-Organization-endpoint.html">OrganizationEndpointSearchParameter</a></li>
+<li><a href="SearchParameter-Organization-identifier.html">OrganizationIdentifierSearchParameter</a></li>
+<li><a href="SearchParameter-Organization-name.html">OrganizationNameSearchParameter</a></li>
+<li><a href="SearchParameter-Organization-partOf.html">OrganizationPartOfSearchParameter</a></li>
+<li><a href="SearchParameter-Organization-type.html">OrganizationTypeSearchParameter</a></li>
+<li><a href="SearchParameter-OrganizationAffiliation-endpoint.html">OrganizationAffiliationEndpointSearchParameter</a></li>
+<li><a href="SearchParameter-OrganizationAffiliation-location.html">OrganizationAffiliationLocationSearchParameter</a></li>
+<li><a href="SearchParameter-OrganizationAffiliation-network.html">OrganizationAffiliationNetworkSearchParameter</a></li>
+<li><a href="SearchParameter-OrganizationAffiliation-participating-organization.html">OrganizationAffiliationParticipatingOrganizationfSearchParameter</a></li>
+<li><a href="SearchParameter-OrganizationAffiliation-primary-organization.html">OrganizationAffiliationPrimaryOrganizationSearchParameter</a></li>
+<li><a href="SearchParameter-OrganizationAffiliation-role.html">OrganizationAffiliationRoleSearchParameter</a></li>
+<li><a href="SearchParameter-OrganizationAffiliation-service.html">OrganizationAffiliationServiceSearchParameter</a></li>
+<li><a href="SearchParameter-OrganizationAffiliation-specialty.html">OrganizationAffiliationSpecialtySearchParameter</a></li>
+<li><a href="SearchParameter-VerificationResult-attestation-who.html">VerificationResultAttestationWhoBySearchParameter</a></li>
+<li><a href="SearchParameter-VerificationResult-primarysource-who.html">VerificationResultPrimarysourceWhoBySearchParameter</a></li>
+<li><a href="SearchParameter-VerificationResult-target.html">VerificationResultTargetbySearchParameter</a></li>
+<li><a href="SearchParameter-careTeam-category.html">careTeamCategorySearchParameter</a></li>
+<li><a href="SearchParameter-careTeam-endpoint.html">careTeamEndpointSearchParameter</a></li>
+<li><a href="SearchParameter-careTeam-location.html">careTeamLocationSearchParameter</a></li>
+<li><a href="SearchParameter-careTeam-name.html">careTeamNameSearchParameter</a></li>
+<li><a href="SearchParameter-careTeam-organization.html">careTeamOrganizationSearchParameter</a></li>
+<li><a href="SearchParameter-careTeam-service.html">careTeamServiceSearchParameter</a></li>
+<li><a href="SearchParameter-practitioner-family.html">practitionerFamilySearchParameter</a></li>
+<li><a href="SearchParameter-practitioner-given.html">practitionerGivenSearchParameter</a></li>
+<li><a href="SearchParameter-practitioner-identifier.html">practitionerIdentifierSearchParameter</a></li>
+<li><a href="SearchParameter-practitioner-identifier-assigner.html">practitionerIdentifierAssignerSearchParameter</a></li>
+<li><a href="SearchParameter-practitioner-name.html">practitionerNameSearchParameter</a></li>
+<li><a href="SearchParameter-practitioner-qualification-code.html">practitionerQualificationCodeSearchParameter</a></li>
+<li><a href="SearchParameter-practitioner-qualification-issuer.html">practitionerQualificationIssuerSearchParameter</a></li>
+<li><a href="SearchParameter-practitionerRole-endpoint.html">practitionerRoleEndpointSearchParameter</a></li>
+<li><a href="SearchParameter-practitionerRole-location.html">practitionerRoleLocationSearchParameter</a></li>
+<li><a href="SearchParameter-practitionerRole-network.html">practitionerRoleNetworkSearchParameter</a></li>
+<li><a href="SearchParameter-practitionerRole-organization.html">practitionerRoleQrganizationSearchParameter</a></li>
+<li><a href="SearchParameter-practitionerRole-practitioner.html">practitionerRolePractitionerSearchParameter</a></li>
+<li><a href="SearchParameter-practitionerRole-role.html">practitionerRoleRoleSearchParameter</a></li>
+<li><a href="SearchParameter-practitionerRole-service.html">practitionerRoleServiceSearchParameter</a></li>
+<li><a href="SearchParameter-practitionerRole-specialty.html">practitionerRoleSpecialtySearchParameter</a></li>
 
 
 
@@ -447,7 +294,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-exchange#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 5, 2022 18:56-0400">2022-04-05</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-exchange#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 17, 2022 09:52-0400">2022-06-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
