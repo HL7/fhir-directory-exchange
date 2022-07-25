@@ -1,9 +1,9 @@
 ﻿ONCFASTNationalDirectory : Validation Results
 =========================================
 
-err = 19, warn = 2, info = 4
+err = 17, warn = 2, info = 4
 IG Publisher Version: 1.1.125 Out of date - current version is 1.1.126
-Generated Mon Jul 25 12:59:07 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-exchange#1.0.0-ballot1 (canonical = http://hl7.org/fhir/us/fhir-directory-exchange)
+Generated Mon Jul 25 14:12:39 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-exchange#1.0.0-ballot1 (canonical = http://hl7.org/fhir/us/fhir-directory-exchange)
  Build Errors : 1 / 0 / 0
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-exchange : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\capabilitystatement-fhir-national-directory : 0 / 0 / 1
@@ -54,7 +54,7 @@ Generated Mon Jul 25 12:59:07 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitioner-JoeSmith : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-AnonRole : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-CounselorRole1 : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-HansSoloRole1 : 2 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-HansSoloRole1 : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-JoeSmithRole1 : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-JoeSmithRole2 : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-JoeSmithRole3 : 0 / 0 / 1
@@ -213,8 +213,6 @@ INFORMATION: Practitioner/HansSolo: Practitioner.extension[0]: This element does
 == fsh-generated\resources\PractitionerRole-AnonRole.json ==
 == fsh-generated\resources\PractitionerRole-CounselorRole1.json ==
 == fsh-generated\resources\PractitionerRole-HansSoloRole1.json ==
-ERROR: PractitionerRole/HansSoloRole1: PractitionerRole.code[0]: None of the codings provided are in the value set 'PractitionerRole Code' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/PractitionerRoleVS), and a coding from this value set is required) (codes = http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole#ph)
-ERROR: PractitionerRole/HansSoloRole1: PractitionerRole.code[0].coding[0]: Unknown Code System 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole'
 == fsh-generated\resources\PractitionerRole-JoeSmithRole1.json ==
 == fsh-generated\resources\PractitionerRole-JoeSmithRole2.json ==
 == fsh-generated\resources\PractitionerRole-JoeSmithRole3.json ==
