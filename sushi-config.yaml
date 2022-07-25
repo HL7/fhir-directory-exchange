@@ -12,7 +12,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.fhir-directory-exchange
 canonical: http://hl7.org/fhir/us/fhir-directory-exchange
-version: 0.0.1 
+version: 1.0.0-ballot1
 name: ONC FAST National Directory
 title: National Directory
 status: active
@@ -28,10 +28,12 @@ dependencies:
   hl7.fhir.us.core: 4.0.0
   hl7.fhir.us.fhir-directory-query:
     id: ONCFASTNationalDirectoryEndpointQuery
-    uri: https://build.fhir.org/ig/HL7/fhir-directory-query/
+    uri:  http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query
     version: current
 parameters:
   show-inherited-invariants: false
+  version-comparison: n/a
+  path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
   
 copyrightYear: 2021+
 releaseLabel: draft
@@ -50,6 +52,7 @@ menu:
     Technical Guidance: technical-guidance.html
     Bulk Data and Subscriptions:          bulk-data.html
   Profiles          : profiles.html
+  Artifacts         : artifacts.html
   Terminology          : terminology.html
   Search Parameters   : searchparameters.html
   Capability Statement: 

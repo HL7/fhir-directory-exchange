@@ -1,8 +1,8 @@
 Instance: JoeSmith
-InstanceOf: NatlDirEndpointQryPractitioner
+InstanceOf: NatlDirExPractitioner
 Description: "Practitioner Dr Joe Smith"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitioner)
+* meta.profile = Canonical(NatlDirExPractitioner)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -16,12 +16,12 @@ Usage: #example
 * qualification[0].code.text = "MD"
 * qualification[0].extension[practitioner-qualification].extension[status].valueCode = $NatlDirectoryQualStatusCS#active 
 * qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* qualification[1].code = $NUCCProviderTaxonomy#207R00000X "Internal Medicine"
+* qualification[1].code = $NUCCProviderTaxonomy#103TC1900X  "Counseling Psychologist"
 * qualification[1].issuer.display = "American Board of Internal Medicine"
 * qualification[1].code.text = "Board Certified Internal Medicine"
 * qualification[1].extension[practitioner-qualification].extension[status].valueCode = $NatlDirectoryQualStatusCS#active 
 * qualification[1].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* qualification[2].code = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease"
+* qualification[2].code = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"
 * qualification[2].issuer.display = "American Board of Internal Medicine"
 * qualification[2].code.text = "Board Certified Cardiovascular Disease"
 * qualification[2].extension[practitioner-qualification].extension[status].valueCode = $NatlDirectoryQualStatusCS#active 
@@ -29,10 +29,10 @@ Usage: #example
 
 
 Instance: HansSolo
-InstanceOf: NatlDirEndpointQryPractitioner
+InstanceOf: NatlDirExPractitioner
 Description: "Solo Practitioner Hans Solo"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitioner)
+* meta.profile = Canonical(NatlDirExPractitioner)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -46,12 +46,12 @@ Usage: #example
 * qualification[0].code.text = "MD"
 * qualification[0].extension[practitioner-qualification].extension[status].valueCode = $NatlDirectoryQualStatusCS#active 
 * qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* qualification[1].code = $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
+* qualification[1].code = $NUCCProviderTaxonomy#103TC1900X  "Counseling Psychologist"
 * qualification[1].issuer.display = "American Board of Internal Medicine"
 * qualification[1].code.text = "Board Certified Internal Medicine"
 * qualification[1].extension[practitioner-qualification].extension[status].valueCode = $NatlDirectoryQualStatusCS#active 
 * qualification[1].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* qualification[2].code = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease Physician"
+* qualification[2].code = $NUCCProviderTaxonomy#207K00000X "Allergy & Immunology Physician"
 * qualification[2].issuer.display = "American Board of Internal Medicine"
 * qualification[2].code.text = "Board Certified Cardiovascular Disease"
 * qualification[2].extension[practitioner-qualification].extension[status].valueCode = $NatlDirectoryQualStatusCS#active 
@@ -60,46 +60,44 @@ Usage: #example
 * communication = $BCP47#ja 
 
 
+
 Instance: HansSoloRole1
-InstanceOf: NatlDirEndpointQryPractitionerRole
+InstanceOf: NatlDirExPractitionerRole
 Description: "Hans Solo is a solo practitioner"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitionerRole)
+* meta.profile = Canonical(NatlDirExPractitionerRole)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = $NatlDirectoryProvdrRoleCS#ph 
+* code = $NatlDirEndpointQryPractitionerRoleCode#ph 
 * practitioner = Reference(HansSolo)
 * organization = Reference(HartfordOrthopedics)
 * healthcareService = Reference(HansSoloService)
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
 * location[0] = Reference(HansSoloClinic)
 * specialty =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
-* extension[qualification].extension[code].valueCodeableConcept = $NUCCProviderTaxonomy#207R00000X 
-* extension[qualification].extension[issuer].valueReference.display = "American Board of Internal Medicine"
-* extension[qualification].extension[status].valueCode = $NatlDirectoryQualStatusCS#active 
 
 // specialty = internal medicine
 // available M-F
 
 Instance: HansSoloService
-InstanceOf: NatlDirEndpointQryHealthcareService
+InstanceOf: NatlDirExHealthCareService
 Description: "Hans Solo Services"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthCareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
 * category = $NatlDirectoryHealthcareServiceCatCS#outpat 
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
 * location[0] = Reference(HansSoloClinic)
 
 Instance: HansSoloClinic
-InstanceOf: NatlDirEndpointQryLocation
+InstanceOf: NatlDirExLocation
 Description: "Location of Hans Solo's clinic"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryLocation) 
+* meta.profile = Canonical(NatlDirExLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -139,10 +137,10 @@ Usage: #example
 
 
 Instance: Counselor
-InstanceOf: NatlDirEndpointQryPractitioner
+InstanceOf: NatlDirExPractitioner
 Description: "Counselor Susie Smith"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitioner)
+* meta.profile = Canonical(NatlDirExPractitioner)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -161,10 +159,10 @@ Usage: #example
 * communication = $BCP47#ru 
 
 Instance: CounselorRole1
-InstanceOf: NatlDirEndpointQryPractitionerRole
+InstanceOf: NatlDirExPractitionerRole
 Description: "Susie  Smith is a counselor via Telemedicine"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitionerRole)
+* meta.profile = Canonical(NatlDirExPractitionerRole)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -177,26 +175,26 @@ Usage: #example
 
 
 Instance: VirtualCounselService
-InstanceOf: NatlDirEndpointQryHealthcareService
+InstanceOf: NatlDirExHealthCareService
 Description: "Virtual Counseling Service"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthCareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
-* language = #en-US
+* language = #en-US 
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#virtual
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#virtual
 * extension[deliverymethod].extension[virtualModalities][0].valueCodeableConcept = $NatlDirectoryVirModalitiesCS#web
 * extension[deliverymethod].extension[virtualModalities][1].valueCodeableConcept = $NatlDirectoryVirModalitiesCS#app 
 * extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = $NatlDirectoryVirModalitiesCS#tdd 
 * extension[deliverymethod].extension[virtualModalities][3].valueCodeableConcept =  $NatlDirectoryVirModalitiesCS#phone 
 * category = $NatlDirectoryHealthcareServiceCatCS#prov "Medical Provider"
-* specialty =  $NUCCProviderTaxonomy#101YP2500X  "Professional Counselor"
+* specialty =  $NUCCProviderTaxonomy#103TC1900X  "Counseling Psychologist"
 
 Instance: JoeSmithRole1
-InstanceOf: NatlDirEndpointQryPractitionerRole
+InstanceOf: NatlDirExPractitionerRole
 Description: "Dr Smith moonlighting as ER Doc at Hartford Hospital"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitionerRole)
+* meta.profile = Canonical(NatlDirExPractitionerRole)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -211,10 +209,10 @@ Usage: #example
 // available M-F
 
 Instance: JoeSmithRole2
-InstanceOf: NatlDirEndpointQryPractitionerRole
+InstanceOf: NatlDirExPractitionerRole
 Description: "Dr Smith Internal Medicine at Burr Clinic"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitionerRole)
+* meta.profile = Canonical(NatlDirExPractitionerRole)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -229,25 +227,25 @@ Usage: #example
 * organization = Reference(BurrClinic)
 
 Instance: JoeSmithRole3
-InstanceOf: NatlDirEndpointQryPractitionerRole
+InstanceOf: NatlDirExPractitionerRole
 Description: "Dr Smith Admitting Privileges at Hartford General"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitionerRole)
+* meta.profile = Canonical(NatlDirExPractitionerRole)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
 * code = $NatlDirectoryProvdrRoleCS#ap 
 * extension[network-reference].valueReference = Reference(AcmeofCTStdNet)
-* specialty[0] = $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
-* specialty[1] = $NUCCProviderTaxonomy#207RC0000X "Cardiovascular Disease Physician"
+* specialty[0] =  $NUCCProviderTaxonomy#207R00000X "Internal Medicine Physician"
+* specialty[1] = $NUCCProviderTaxonomy#207K00000X "Allergy & Immunology Physician"
 * organization = Reference(Hospital)
 * practitioner = Reference(JoeSmith)
 
 Instance: AnonRole
-InstanceOf: NatlDirEndpointQryPractitionerRole
+InstanceOf: NatlDirExPractitionerRole
 Description: "Practitioner role that doesn't refer to a specific practitioner"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryPractitionerRole)
+* meta.profile = Canonical(NatlDirExPractitionerRole)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -260,24 +258,24 @@ Usage: #example
 * practitioner = Reference(HansSolo)
 
 Instance: CancerClinicService
-InstanceOf: NatlDirEndpointQryHealthcareService
+InstanceOf: NatlDirExHealthCareService
 Description: "Cancer Clinic Services"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryHealthcareService)
+* meta.profile = Canonical(NatlDirExHealthCareService)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
 * category = $NatlDirectoryHealthcareServiceCatCS#outpat
 * providedBy = Reference(CancerClinic)
 * specialty = $NUCCProviderTaxonomy#207RX0202X "Medical Oncology Physician"  
 * location[0] = Reference(CancerClinicLoc)
 
 Instance: CancerClinicLoc
-InstanceOf: NatlDirEndpointQryLocation
+InstanceOf: NatlDirExLocation
 Description: "Location1 of Cancer Clinic"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryLocation) 
+* meta.profile = Canonical(NatlDirExLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -311,10 +309,10 @@ Usage: #example
 * hoursOfOperation[0].daysOfWeek[4]  = #fri 
 
 Instance: CancerClinic
-InstanceOf: NatlDirEndpointQryOrganization
+InstanceOf: NatlDirExOrganization
 Description: "HartfordCancerClinicLLC"
 Usage: #example
-* meta.profile = Canonical(NatlDirEndpointQryOrganization)
+* meta.profile = Canonical(NatlDirExOrganization)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true

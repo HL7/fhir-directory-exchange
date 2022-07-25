@@ -16,11 +16,11 @@
     }
   ],
   "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService",
-  "version": "0.0.1",
+  "version": "1.0.0-ballot1",
   "name": "NatlDirExHealthCareService",
   "title": "National Directory HealthcareService",
   "status": "active",
-  "date": "2022-06-17T09:52:28-04:00",
+  "date": "2022-07-25T14:11:25-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -830,6 +830,138 @@
             "code": "Extension",
             "profile": [
               "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/delivery-method"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "HealthcareService.extension:paymentaccepted",
+        "path": "HealthcareService.extension",
+        "sliceName": "paymentaccepted",
+        "short": "Payment Accepted",
+        "definition": "Methods of payment that can be used for a healthcare service.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/paymentAccepted"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "HealthcareService.extension:requiredDocument",
+        "path": "HealthcareService.extension",
+        "sliceName": "requiredDocument",
+        "short": "Required Document",
+        "definition": "Documents that are required in order to access or use services (eg. Gov't issued ID, passport)",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/requiredDocument"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "HealthcareService.extension:fundingSource",
+        "path": "HealthcareService.extension",
+        "sliceName": "fundingSource",
+        "short": "Funding Source",
+        "definition": "The sources of funding for a service or organization",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/fundingSource"
             ]
           }
         ],

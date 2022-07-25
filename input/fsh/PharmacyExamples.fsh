@@ -78,7 +78,7 @@ Usage: #example
 * location[2] = Reference(PharmLoc3)
 * location[3] = Reference(PharmLoc4)
 * telecom.extension[via-intermediary].valueReference = Reference(PharmChain)
-
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = $NatlDirectoryDelvMthdCS#physical
 
 Instance: PharmChainAffil1
 InstanceOf: NatlDirExOrganizationAffiliation
@@ -93,7 +93,7 @@ Usage: #example
 * healthcareService = Reference(PharmChainRetailService)
 * location[0] = Reference(PharmLoc1)
 * location[1] = Reference(PharmLoc2)
-* code = OrganizationAffiliationRoleCS#pharmacy 
+* code = $NatlDirectoryOrgAffRoleCS#pharmacy 
 * specialty = $NUCCProviderTaxonomy#3336C0003X "Community/Retail Pharmacy"
 
 Instance: PharmChainAffil2
@@ -109,7 +109,7 @@ Usage: #example
 * participatingOrganization = Reference (PharmChain)
 * healthcareService = Reference(PharmChainCompService)
 * location[0] = Reference(PharmLoc1)
-* code = OrganizationAffiliationRoleCS#pharmacy 
+* code = $NatlDirectoryOrgAffRoleCS#pharmacy 
 
 Instance: PharmChainAffil3
 InstanceOf: NatlDirExOrganizationAffiliation
@@ -122,7 +122,7 @@ Usage: #example
 * network = Reference(AcmeofCTStdNet)
 * participatingOrganization = Reference (PharmChain)
 * healthcareService = Reference(PharmChainMailService)
-* code = OrganizationAffiliationRoleCS#pharmacy 
+* code = $NatlDirectoryOrgAffRoleCS#pharmacy 
 * specialty = $NUCCProviderTaxonomy#3336M0002X "Mail Order Pharmacy"
 
 
@@ -142,6 +142,8 @@ Usage: #example
 * providedBy = Reference(PharmChain)
 * location[0] = Reference(PharmLoc1)
 * telecom.extension[via-intermediary].valueReference = Reference(PharmLoc1)
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = $NatlDirectoryDelvMthdCS#physical
+
 
 Instance: PharmChainMailService
 InstanceOf: NatlDirExHealthCareService
@@ -152,7 +154,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * name = "Mail Order Pharmacy by OrgA"
-* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryDelvMthdCS#virtual
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = $NatlDirectoryDelvMthdCS#virtual
 * extension[deliverymethod].extension[virtualModalities][0].valueCodeableConcept = $NatlDirectoryVirModalitiesCS#web
 * extension[deliverymethod].extension[virtualModalities][1].valueCodeableConcept = $NatlDirectoryVirModalitiesCS#app 
 * extension[deliverymethod].extension[virtualModalities][2].valueCodeableConcept = $NatlDirectoryVirModalitiesCS#tdd 
@@ -166,7 +168,7 @@ Usage: #example
 * telecom[1].system = #url
 * telecom[1].value = "https://mailorderrx.com"
 * telecom[1].rank = 1
-
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = $NatlDirectoryDelvMthdCS#physical
 
 
 Instance: PharmLoc1

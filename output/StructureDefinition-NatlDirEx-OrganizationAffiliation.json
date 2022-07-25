@@ -16,11 +16,11 @@
     }
   ],
   "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation",
-  "version": "0.0.1",
+  "version": "1.0.0-ballot1",
   "name": "NatlDirExOrganizationAffiliation",
   "title": "National Directory OrganizationAffiliation",
   "status": "active",
-  "date": "2022-06-17T09:52:28-04:00",
+  "date": "2022-07-25T14:11:25-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -678,18 +678,13 @@
       {
         "id": "OrganizationAffiliation.extension",
         "path": "OrganizationAffiliation.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "short": "Extension",
-        "definition": "An Extension",
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "*",
         "base": {
@@ -721,51 +716,13 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "OrganizationAffiliation.extension:qualification",
-        "path": "OrganizationAffiliation.extension",
-        "sliceName": "qualification",
-        "short": "Qualification",
-        "definition": "An extension to add qualifications for an organization (e.g. accreditation) or practitionerRole (e.g. registered to prescribe controlled substances).",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "DomainResource.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
+        "isSummary": false,
+        "mapping": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/qualification"
-            ]
+            "identity": "rim",
+            "map": "N/A"
           }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false
+        ]
       },
       {
         "id": "OrganizationAffiliation.modifierExtension",

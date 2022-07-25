@@ -22,11 +22,11 @@
      fhir:Extension.valueCode [ fhir:value "business" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1"];
+  fhir:StructureDefinition.version [ fhir:value "1.0.0-ballot1"];
   fhir:StructureDefinition.name [ fhir:value "NatlDirExOrganizationAffiliation"];
   fhir:StructureDefinition.title [ fhir:value "National Directory OrganizationAffiliation"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-06-17T09:52:28-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-07-25T14:11:25-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -728,17 +728,16 @@
        fhir:index 15;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.extension" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.extension" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
-         ];
-         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
        ];
-       fhir:ElementDefinition.short [ fhir:value "Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -774,60 +773,14 @@
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
      ], [
        fhir:index 16;
-       fhir:Element.id [ fhir:value "OrganizationAffiliation.extension:qualification" ];
-       fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "qualification" ];
-       fhir:ElementDefinition.short [ fhir:value "Qualification" ];
-       fhir:ElementDefinition.definition [ fhir:value "An extension to add qualifications for an organization (e.g. accreditation) or practitionerRole (e.g. registered to prescribe controlled substances)." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/qualification";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/qualification>
-         ]
-       ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 17;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -884,7 +837,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 18;
+       fhir:index 17;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "Business identifiers that are specific to this role" ];
@@ -926,7 +879,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".id" ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 18;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.identifier.id" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.identifier.id" ];
        fhir:ElementDefinition.representation [
@@ -959,7 +912,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 19;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.identifier.extension" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1023,7 +976,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 20;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.identifier.use" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ];
@@ -1079,7 +1032,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 21;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.identifier.type" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Description of identifier" ];
@@ -1139,7 +1092,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 22;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.identifier.system" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "The namespace for the identifier value" ];
@@ -1190,7 +1143,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 23;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.identifier.value" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "The value that is unique" ];
@@ -1241,7 +1194,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.identifier.period" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
@@ -1285,7 +1238,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.identifier.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ];
@@ -1336,7 +1289,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.active" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.active" ];
        fhir:ElementDefinition.short [ fhir:value "Whether this organization affiliation record is in active use" ];
@@ -1380,7 +1333,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".statusCode" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.period" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.period" ];
        fhir:ElementDefinition.short [ fhir:value "The period during which the participatingOrganization is affiliated with the primary organization" ];
@@ -1421,7 +1374,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".performance[@typeCode <= 'PPRF'].ActDefinitionOrEvent.effectiveTime" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 28;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.organization" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.organization" ];
        fhir:ElementDefinition.short [ fhir:value "Organization where the role is available" ];
@@ -1463,7 +1416,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".scoper" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.participatingOrganization" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.participatingOrganization" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that provides/performs the role (e.g. providing services or is a member of)" ];
@@ -1505,7 +1458,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".player" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.network" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.network" ];
        fhir:ElementDefinition.short [ fhir:value "Health insurance provider network in which the participatingOrganization provides the role's services (if defined) at the indicated locations (if defined)" ];
@@ -1541,7 +1494,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 32;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.code" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.code" ];
        fhir:ElementDefinition.short [ fhir:value "Definition of the role the participatingOrganization plays" ];
@@ -1584,7 +1537,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".code" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.specialty" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.specialty" ];
        fhir:ElementDefinition.short [ fhir:value "Specific specialty of the participatingOrganization in the context of the role" ];
@@ -1627,7 +1580,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".player.HealthCareProvider[@classCode = 'PROV'].code" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.location" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.location" ];
        fhir:ElementDefinition.short [ fhir:value "The location(s) at which the role occurs" ];
@@ -1673,7 +1626,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".performance.ActDefinitionOrEvent.ServiceDeliveryLocation[@classCode = 'SDLOC']" ]
        ]
      ], [
-       fhir:index 35;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.healthcareService" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.healthcareService" ];
        fhir:ElementDefinition.short [ fhir:value "Healthcare services provided through the role" ];
@@ -1714,7 +1667,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".player.QualifiedEntity[@classCode = 'QUAL'].code" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.telecom" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.telecom" ];
        fhir:ElementDefinition.short [ fhir:value "Contact details at the participatingOrganization relevant to this Affiliation" ];
@@ -1751,7 +1704,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".telecom" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 36;
        fhir:Element.id [ fhir:value "OrganizationAffiliation.endpoint" ];
        fhir:ElementDefinition.path [ fhir:value "OrganizationAffiliation.endpoint" ];
        fhir:ElementDefinition.short [ fhir:value "Technical endpoints providing access to services operated for this role" ];
