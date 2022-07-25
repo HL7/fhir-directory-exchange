@@ -2,11 +2,11 @@
   "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange",
   "name": "ONCFASTNationalDirectory",
   "package-id": "hl7.fhir.us.fhir-directory-exchange",
-  "ig-ver": "0.0.1",
-  "date": "Fri, 17 Jun, 2022 09:52:28 -0400",
-  "errs": 8,
-  "warnings": 38,
-  "hints": 5,
+  "ig-ver": "1.0.0-ballot1",
+  "date": "Mon, 25 Jul, 2022 12:57:48 -0400",
+  "errs": 19,
+  "warnings": 2,
+  "hints": 4,
   "version": "4.0.1",
   "tool": "5.0.0-snapshot1 (3)"
 }

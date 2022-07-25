@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ONCFASTNationalDirectory</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange</pre><div><p>National Directory</p>\n</div></div>"
   },
   "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange",
-  "version": "0.0.1",
+  "version": "1.0.0-ballot1",
   "name": "ONCFASTNationalDirectory",
   "title": "National Directory",
   "status": "active",
-  "date": "2022-06-17T09:52:28-04:00",
+  "date": "2022-07-25T12:57:48-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -45,6 +45,12 @@
   ],
   "dependsOn": [
     {
+      "id": "hl7tx",
+      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "packageId": "hl7.terminology.r4",
+      "version": "3.1.0"
+    },
+    {
       "id": "hl7_fhir_us_core",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "packageId": "hl7.fhir.us.core",
@@ -52,7 +58,7 @@
     },
     {
       "id": "ONCFASTNationalDirectoryEndpointQuery",
-      "uri": "https://build.fhir.org/ig/HL7/fhir-directory-query/",
+      "uri": "http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query",
       "packageId": "hl7.fhir.us.fhir-directory-query",
       "version": "current"
     }
@@ -94,6 +100,32 @@
           {
             "url": "value",
             "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "version-comparison"
+          },
+          {
+            "url": "value",
+            "valueString": "n/a"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-expansion-params"
+          },
+          {
+            "url": "value",
+            "valueString": "../../exp-params.json"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -532,34 +564,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/OrganizationAffiliationRoleVS"
-        },
-        "name": "OrganizationAffiliation Roles",
-        "description": "Value Set for Organization Affiliation Roles",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/OrganizationAffiliationRoleCS"
-        },
-        "name": "Organization Affiliation Role",
-        "description": "Codes For Organization Affiliation Role",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Organization"
           }
         ],
@@ -568,7 +572,7 @@
         },
         "name": "Acme",
         "description": "Payer Organization",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
       },
       {
         "extension": [
@@ -582,7 +586,7 @@
         },
         "name": "AcmeOfCTPortalEndpoint",
         "description": "Endpoint for Acme of CT Portal",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Endpoint"
       },
       {
         "extension": [
@@ -596,7 +600,7 @@
         },
         "name": "AcmeQHPBronze",
         "description": "Acme of CT QHP Bronze Plan",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan"
       },
       {
         "extension": [
@@ -610,7 +614,7 @@
         },
         "name": "AcmeQHPGold",
         "description": "Acme of CT QHP Gold Plan",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan"
       },
       {
         "extension": [
@@ -624,7 +628,7 @@
         },
         "name": "AcmeofCTPremNet",
         "description": "Acme of CT Premium Premium Network",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Network"
       },
       {
         "extension": [
@@ -638,7 +642,7 @@
         },
         "name": "AcmeofCTStdNet",
         "description": "Acme of CT Standard Network",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Network"
       },
       {
         "extension": [
@@ -652,7 +656,7 @@
         },
         "name": "AnonRole",
         "description": "Practitioner role that doesn't refer to a specific practitioner",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
       },
       {
         "extension": [
@@ -722,7 +726,7 @@
         },
         "name": "CancerClinic",
         "description": "HartfordCancerClinicLLC",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
       },
       {
         "extension": [
@@ -736,7 +740,7 @@
         },
         "name": "CancerClinicLoc",
         "description": "Location1 of Cancer Clinic",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"
       },
       {
         "extension": [
@@ -750,7 +754,21 @@
         },
         "name": "CancerClinicService",
         "description": "Cancer Clinic Services",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CareTeam"
+          }
+        ],
+        "reference": {
+          "reference": "CareTeam/CareTeam1"
+        },
+        "name": "CareTeam1",
+        "description": "Burr Clinic's Care Team",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-CareTeam"
       },
       {
         "extension": [
@@ -792,7 +810,7 @@
         },
         "name": "Counselor",
         "description": "Counselor Susie Smith",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
       },
       {
         "extension": [
@@ -806,7 +824,7 @@
         },
         "name": "CounselorRole1",
         "description": "Susie  Smith is a counselor via Telemedicine",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
       },
       {
         "extension": [
@@ -974,7 +992,7 @@
         },
         "name": "HansSolo",
         "description": "Solo Practitioner Hans Solo",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
       },
       {
         "extension": [
@@ -988,7 +1006,7 @@
         },
         "name": "HansSoloClinic",
         "description": "Location of Hans Solo's clinic",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"
       },
       {
         "extension": [
@@ -1002,7 +1020,7 @@
         },
         "name": "HansSoloRole1",
         "description": "Hans Solo is a solo practitioner",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
       },
       {
         "extension": [
@@ -1016,7 +1034,7 @@
         },
         "name": "HansSoloService",
         "description": "Hans Solo Services",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [
@@ -1352,7 +1370,7 @@
         },
         "name": "JoeSmith",
         "description": "Practitioner Dr Joe Smith",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
       },
       {
         "extension": [
@@ -1366,7 +1384,7 @@
         },
         "name": "JoeSmithRole1",
         "description": "Dr Smith moonlighting as ER Doc at Hartford Hospital",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
       },
       {
         "extension": [
@@ -1380,7 +1398,7 @@
         },
         "name": "JoeSmithRole2",
         "description": "Dr Smith Internal Medicine at Burr Clinic",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
       },
       {
         "extension": [
@@ -1394,7 +1412,7 @@
         },
         "name": "JoeSmithRole3",
         "description": "Dr Smith Admitting Privileges at Hartford General",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
       },
       {
         "extension": [
@@ -1708,6 +1726,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Consent"
+          }
+        ],
+        "reference": {
+          "reference": "Consent/PatientConsent"
+        },
+        "name": "PatientConsent",
+        "description": "Patient that gives consent",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Restriction"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Organization"
           }
         ],
@@ -1862,6 +1894,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "VerificationResult"
+          }
+        ],
+        "reference": {
+          "reference": "VerificationResult/ProviderAttestation"
+        },
+        "name": "ProviderAttestation",
+        "description": "Patient that gives consent",
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Validation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Location"
           }
         ],
@@ -1870,7 +1916,7 @@
         },
         "name": "StateOfCTLocation",
         "description": "State of CT Area",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"
       },
       {
         "extension": [
@@ -1926,7 +1972,7 @@
         },
         "name": "VirtualCounselService",
         "description": "Virtual Counseling Service",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [

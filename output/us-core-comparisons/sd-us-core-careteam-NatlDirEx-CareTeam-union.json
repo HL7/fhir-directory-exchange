@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "2620ecd4-b8d6-4194-9076-84fd41c5aea0-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/2620ecd4-b8d6-4194-9076-84fd41c5aea0-2",
+  "id" : "9ac92788-c98c-4d8b-9704-319b2ef2426a-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9ac92788-c98c-4d8b-9704-319b2ef2426a-2",
   "name" : "UnionUSCoreCareTeamAndNatlDirExCareTeam",
   "title" : "Union of US Core CareTeam Profile And National Directory Care Team",
   "status" : "active",
-  "date" : "2022-06-17T09:52:51-04:00",
+  "date" : "2022-07-25T12:58:12-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -777,7 +777,7 @@
       "path" : "CareTeam.participant",
       "short" : "Members of the team",
       "definition" : "Identifies all people and organizations who are expected to be involved in the care team.",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "BackboneElement"
@@ -934,7 +934,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Indicates specific responsibility of an individual within the care team, such as Primary physician, Team coordinator, Caregiver, etc.; right: Indicates specific responsibility of an individual within the care team, such as \"Primary physician\", \"Team coordinator\", \"Caregiver\", etc.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2620ecd4-b8d6-4194-9076-84fd41c5aea0-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9ac92788-c98c-4d8b-9704-319b2ef2426a-5"
       },
       "mapping" : [{
         "identity" : "v2",

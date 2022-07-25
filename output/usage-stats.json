@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.us.fhir-directory-exchange",
-  "version": "0.0.1",
+  "version": "1.0.0-ballot1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "US",
   "extensions": [],
@@ -167,6 +167,10 @@
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpointType": [
       "Endpoint"
     ],
+    "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/fundingSource": [
+      "HealthcareService",
+      "Organization"
+    ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/healthcareservice-reference": [
       "CareTeam"
     ],
@@ -191,20 +195,21 @@
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/org-description": [
       "Organization"
     ],
+    "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/paymentAccepted": [
+      "HealthcareService",
+      "Organization"
+    ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification": [
       "Practitioner.qualification"
-    ],
-    "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/qualification": [
-      "Organization",
-      "OrganizationAffiliation",
-      "Practitioner",
-      "PractitionerRole"
     ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/rating": [
       "HealthcareService",
       "Organization",
       "Practitioner",
       "PractitionerRole"
+    ],
+    "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/requiredDocument": [
+      "HealthcareService"
     ],
     "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureEndpoint": [
       "Endpoint"

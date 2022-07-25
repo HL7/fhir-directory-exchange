@@ -18,7 +18,7 @@ This section outlines conformance requirements for the Validated Healthcare Dire
 
 ### Conformance requirements for the Validated Healthcare Directory
 
-Source Resource: [XML](CapabilityStatement-NatlDir.xml.html)/[JSON](CapabilityStatement-NatlDir.json.html)
+Source Resource: [XML](CapabilityStatement-fhir-national-directory.xml.html)/[JSON](CapabilityStatement-fhir-national-directory.json.html)
 
 1. FHIR Version: 4.0
 1. Supported formats: xml, json

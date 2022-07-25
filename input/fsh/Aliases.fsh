@@ -78,7 +78,7 @@ Alias: $NatlDirExOrganizationAffiliation =	http://hl7.org/fhir/us/fhir-directory
 Alias: $NatlDirectoryPractitioner =            	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner
 Alias: $NatlDirEndpointQryPractitionerRole =	http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole
 Alias: $NatlDirectoryRestriction  =	    http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Restriction
-Alias: $NatlDirectoryValidation  =	    http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Validation
+Alias: $NatlDirectoryValidation  =	    http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Verification
 Alias: $NatlDirectoryEndpointTypeCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/EndpointTypeCS
 Alias: $NatlDirectoryHealthcareServiceDeliveryMthdCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/DeliveryMethodCS
 Alias: $NatlDirectoryOrgTypeCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS
@@ -90,9 +90,26 @@ Alias: $NatlDirectoryAccessibilityCS  =	    http://hl7.org/fhir/us/fhir-director
 Alias: $NatlDirectoryHealthcareServiceCatCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS
 Alias: $NatlDirectoryProvdrRoleCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ProviderRoleCS
 Alias: $NatlDirectoryVirModalitiesCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/VirtualModalitiesCS
-Alias: $NatlDirectoryQualStatusCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/QualificationStatusCS
+Alias: $NatlDirectoryQualStatusCS  =	    http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/QualificationStatusCS
 Alias: $NatlDirectoryAcceptPatientsCSCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AcceptingPatientsCS
 Alias: $NatlDirectoryDelvMthdCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/DeliveryMethodCS
 Alias: $NatlDirectoryLangProfCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/LanguageProficiencyCS
+Alias: $NatlDirectoryValidationTypeCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS
+Alias: $NatlDirectoryConsentScopeCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ConsentScopeCS
+Alias: $NatlDirectoryIGTypeCS  =	    http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/IgTypeCS
+Alias: $NatlDirectorytrustFrameworkCS = http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/TrustFrameworkTypeCS
 
+Alias: $NatlDirectoryOrgAffRoleCS = http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrganizationAffiliationRoleCS
+Alias: $NatlDirectoryCredentialStatusCS = http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/CredentialStatusCS
 
+Alias: $loinc = http://loinc.org
+Alias: $IgFormatCodeVS = http://hl7.org/fhir/ValueSet/formatcodes
+
+Alias: $failureActionCS = 	http://terminology.hl7.org/CodeSystem/failure-action
+Alias: $needCS = 	http://terminology.hl7.org/CodeSystem/need
+Alias: $verificationResultStatusCS = 	http://hl7.org/fhir/CodeSystem/status
+Alias: $verificationResultTypeCS = http://terminology.hl7.org/CodeSystem/validation-type
+Alias: $loinc = http://loinc.org
+Alias: $ConsentCS = http://hl7.org/fhir/consent-state-codes
+Alias: $ConsentPolicyCS = http://terminology.hl7.org/CodeSystem/consentpolicycodes
+Alias: $verificationresult-communication-methodCS = http://terminology.hl7.org/CodeSystem/verificationresult-communication-method

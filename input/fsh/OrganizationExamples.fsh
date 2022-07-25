@@ -85,12 +85,12 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
+//* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
 * category = $NatlDirectoryHealthcareServiceCatCS#emerg  
 * specialty =  $NUCCProviderTaxonomy#207P00000X   "Emergency Medicine Physician"
 * providedBy = Reference(Hospital)
 * location[0] = Reference(HospLoc1)
-
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = $NatlDirectoryDelvMthdCS#physical
 
 
 Instance: HospLoc1
@@ -187,12 +187,13 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
+//* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
 * category = $NatlDirectoryHealthcareServiceCatCS#prov 
-* specialty = $NUCCProviderTaxonomy#207X00000X "Orthopedic Surgery"   // Orthopedics
+* specialty = $NUCCProviderTaxonomy#207X00000X "Orthopaedic Surgery Physician"   // Orthopedics
 * providedBy = Reference(HartfordOrthopedics)
 * location[1] = Reference(HospLoc2)
 * location[0] = Reference(HospLoc1)
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = $NatlDirectoryDelvMthdCS#physical
 
 Instance: HartfordOrthopedicAffil
 InstanceOf: NatlDirExOrganizationAffiliation
@@ -218,7 +219,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = OrganizationAffiliationRoleCS#outpatient 
+* code = $NatlDirectoryOrgAffRoleCS#outpatient 
 * healthcareService = Reference(HamiltonClinicServices)
 * participatingOrganization = Reference(HamiltonClinic)
 * location[0] = Reference(HospLoc1)
@@ -233,12 +234,11 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
 * category = $NatlDirectoryHealthcareServiceCatCS#outpat
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
 * providedBy = Reference(HamiltonClinic)
 * location[0] = Reference(HospLoc1)
-
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = $NatlDirectoryDelvMthdCS#physical
 
 Instance: HamiltonClinic
 InstanceOf: NatlDirExOrganization
@@ -276,7 +276,7 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = OrganizationAffiliationRoleCS#outpatient 
+* code = $NatlDirectoryOrgAffRoleCS#outpatient 
 * healthcareService = Reference(BurrClinicServices)
 * participatingOrganization = Reference(BurrClinic)
 * location[0] = Reference(HospLoc2)
@@ -291,12 +291,12 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
+//* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryHealthcareServiceDeliveryMthdCS#physical
 * category = $NatlDirectoryHealthcareServiceCatCS#outpat
 * specialty = $NUCCProviderTaxonomy#207Q00000X "Family Medicine Physician"  
 * providedBy = Reference(BurrClinic)
 * location[0] = Reference(HospLoc1)
-
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = $NatlDirectoryDelvMthdCS#physical
 
 Instance: BurrClinic
 InstanceOf: NatlDirExOrganization
@@ -357,9 +357,27 @@ Usage: #example
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
-* code = OrganizationAffiliationRoleCS#bt
+* code = $NatlDirectoryOrgAffRoleCS#bt
 * participatingOrganization = Reference(BurrClinic)
 * organization = Reference(ConnHIE)
+
+
+Instance: CareTeam1
+InstanceOf: NatlDirExCareTeam
+Description: "Burr Clinic's Care Team" 
+Usage: #example
+* meta.profile = Canonical(NatlDirExCareTeam)
+* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
+* language = #en-US
+* status = #proposed
+* category = $loinc#LA27975-4
+* extension[careteam-alias].valueString = "CareTeam1"
+* extension[endpoint].valueReference = Reference(AcmeOfCTPortalEndpoint) 
+* extension[service].valueReference = Reference(HansSoloService) 
+* identifier.extension[status].valueCode = $NatlDirectoryCredentialStatusCS#active
+* extension[restriction].valueReference = Reference(PatientConsent) 
+//* participant.role[0].valueCodeableConcept = $SCT#2481008
+
 /*
 
 

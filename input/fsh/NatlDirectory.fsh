@@ -1,11 +1,11 @@
-Profile: NatlDirExCareTeam
+Profile: NatlDirExCareTeam 
 Parent: $NatlDirectoryCareTeam
 Id: NatlDirEx-CareTeam
 Title: "National Directory Care Team"
 Description: "Defines the basic constraints and extensions on the CareTeam resource for use in a Validated Healthcare Directory"
 * extension[restriction] ^short = "Restriction"
 * extension[restriction] ^definition = "Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties"
-* participant 1..*
+//* participant 1..*
 
 Profile:        NatlDirExEndPoint
 Parent:         $NatlDirectoryEndPoint
@@ -64,7 +64,7 @@ Id:             NatlDirEx-Organization
 Title:          "National Directory Organization"
 Description:    "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.
 Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"
-* extension[qualification].extension[whereValid].value[x] MS
+//* extension[qualification].extension[whereValid].value[x] MS
 
 Profile:        NatlDirExOrganizationAffiliation
 Parent:         $NatlDirExOrganizationAffiliation
