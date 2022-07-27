@@ -13,6 +13,121 @@ Usage: #definition
 * title = "Capability Statement National Directory"
 * text.status = #generated
 * insert Federated_Query_CapabilityStatement_Expanded
+* rest.documentation =  """
+ Resource Type | Supported Interactions | Supported Profiles | Supported Searches | Supported `_includes` | Supported `_revincludes` | Supported Operations |
+| --- | --- | --- | --- | --- | --- | --- |
+| endpoint |     | [https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html) | identifier, usecase-type |     |     |     |
+| healthcare Service|     | [https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html) | service-category, coverage-area, endpoint, location, name, organization, specialty, service-type |     |     |     |
+| InsurancePlan |     | [https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html) | coverage-area, administrated-by, coverage-benefit-type, coverage-network, identifier, type, name, owned-by |     |     |     |
+| location |     | [https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html) | address, endpoint, organization, physicalType, partOf, type |     |     |     |
+| network |     | [https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html) | coverage-area, name |     |     |     |
+| Organization |     | [https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Organization.html](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Organization.html) | type, address, endpoint, identifier, name, partOf |     |     |     |
+| OrganizationAffiliation |     | [https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html) | endpoint, location, network, participating-organization, primary-organization, role, service, specialty |     |     |     |
+| Practitioner |     | [https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html) | name, family, given, identifier, identifier-assigner, qualification-code, qualification-issuer |     |     |     |
+| PractitionerRole |     | [https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html) | endpoint, location, network, organization, Practicioner, role, service, specialty|     |     |     |
+| Restriction |     | [https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html) | _id, _id, _lastUpdated, plan-type, name, coverage-area, owned=by, administrated-by|     |     |     |
+| Validation |     | [https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html) | attestation-who, primarysource-who, target |     |     |     |
+| CareTeam |     | [https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html) | endpoint, location, name, organization, service, category |     |     |     |
+
+#### CareTeam
+
+Conformance Expectation:\t**SHOULD**
+
+Supported Profiles:
+
+* **SHOULD** support:[(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html)](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-CareTeam.html)
+
+#### endpoint
+
+Conformance Expectation:\t**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html)](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Endpoint.html)
+
+
+#### healthcareService
+
+Conformance Expectation:\t**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html)](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-HealthcareService.html)
+
+#### InsurancePlan
+
+Conformance Expectation:\t**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html)](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html)
+
+#### location
+
+Conformance Expectation:\t**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html)](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-location.html)
+
+#### network
+
+Conformance Expectation:\t**SHOULD**
+
+Supported Profiles:
+
+* **SHOULD** support:[(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html)](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-network.html)
+
+#### organization
+
+Conformance Expectation:\t**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html)](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-organization.html)
+
+#### OrganizationAffiliation
+
+Conformance Expectation:\t**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html)](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html)
+
+#### Practitioner
+
+Conformance Expectation:\t**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html)](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Practitioner.html)
+
+#### PractitionerRole
+
+Conformance Expectation:\t**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html)](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html)
+
+#### Restriction
+
+Conformance Expectation:\t**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html)](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Restriction.html)
+
+#### Validation
+
+Conformance Expectation:\t**MAY**
+
+Supported Profiles:
+
+* **MAY** support:[(https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html)](https://build.fhir.org/ig/HL7/fhir-directory-query/StructureDefinition-NatlDirEndpointQry-Validation.html)
+
+
+"""
 //care team
 * rest[0].resource[10].supportedProfile[0].extension.valueCode = #SHOULD
 //endpoint
@@ -34,5 +149,7 @@ Usage: #definition
 //Restriction
 * rest[0].resource[8].supportedProfile[0].extension.valueCode = #SHALL
 //Verification
-* rest[0].resource[9].supportedProfile[0].extension.valueCode = #MAY
+* rest[0].resource[9].supportedProfile[0].extension.valueCode = #SHALL
+//Organization
+* rest[0].resource[9].supportedProfile[0].extension.valueCode = #SHALL
 
