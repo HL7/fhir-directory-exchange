@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "b360d073-7e46-4cc5-b8b0-001731ef78be-15",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/b360d073-7e46-4cc5-b8b0-001731ef78be-15",
+  "id" : "dcf35400-7682-4fef-8292-f28ece299353-15",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/dcf35400-7682-4fef-8292-f28ece299353-15",
   "name" : "IntersectionHealthcareProviderTaxonomyAndIndividualAndGroupSpecialtiesVS",
   "title" : "Intersection of Healthcare Provider Taxonomy And Individual and Group Specialties",
   "status" : "active",
-  "date" : "2022-07-27T11:09:14-04:00",
+  "date" : "2022-07-27T12:21:11-04:00",
   "compose" : {
     "include" : [{
       "concept" : [{
