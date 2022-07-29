@@ -13,8 +13,8 @@
 id: hl7.fhir.us.fhir-directory-exchange
 canonical: http://hl7.org/fhir/us/fhir-directory-exchange
 version: 1.0.0-ballot1
-name: National Directory
-title: National Directory
+name: NationalHealthcareDirectoryQuery
+title: National Healthcare Directory Query
 status: active
 publisher:
   name: HL7 Patient Administration Working Group
