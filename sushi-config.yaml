@@ -12,9 +12,9 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.fhir-directory-exchange
 canonical: http://hl7.org/fhir/us/fhir-directory-exchange
-version: 1.0.0-ballot1
-name: National Directory
-title: National Directory
+version: 1.0.0
+name: NationalHealthcareDirectoryQuery
+title: National Healthcare Directory Query
 status: active
 publisher:
   name: HL7 Patient Administration Working Group
@@ -36,7 +36,7 @@ parameters:
   path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
   
 copyrightYear: 2021+
-releaseLabel: draft
+releaseLabel: ballot
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
 # │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │

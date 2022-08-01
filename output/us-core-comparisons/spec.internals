@@ -4,8 +4,8 @@
   "tool-version": "5.0.0-snapshot2",
   "tool-build": "3",
   "webUrl": "http://hl7.org/fhir/us/fhir-directory-query",
-  "date": "2022-07-27",
-  "date-time": "20220727020804+0000",
+  "date": "2022-08-01",
+  "date-time": "20220801081330+0000",
   "paths": {
     "http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query|1.0.0-ballot1": "1.0.0-ballot1/ImplementationGuide-hl7.fhir.us.fhir-directory-query.html",
     "http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query": "ImplementationGuide-hl7.fhir.us.fhir-directory-query.html",

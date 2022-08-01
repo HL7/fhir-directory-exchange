@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.us.fhir-directory-exchange",
-  "version": "1.0.0-ballot1",
+  "version": "1.0.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "US",
   "extensions": [],

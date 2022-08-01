@@ -3,588 +3,588 @@
     "id": "fhir-national-directory",
     "type": "CapabilityStatement",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CapabilityStatement/fhir-national-directory",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "CapabilityStatementFhirNationalDirectory"
   },
   {
     "id": "hl7.fhir.us.fhir-directory-exchange",
     "type": "ImplementationGuide",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange",
-    "version": "1.0.0-ballot1",
-    "name": "NationalDirectory"
+    "version": "1.0.0",
+    "name": "NationalHealthcareDirectoryQuery"
   },
   {
     "id": "NatlDirEx-CareTeam",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-CareTeam",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatlDirExCareTeam"
   },
   {
     "id": "NatlDirEx-Endpoint",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Endpoint",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatlDirExEndPoint"
   },
   {
     "id": "NatlDirEx-HealthcareService",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatlDirExHealthCareService"
   },
   {
     "id": "NatlDirEx-InsurancePlan",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatlDirExInsurancePlan"
   },
   {
     "id": "NatlDirEx-Location",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatlDirExLocation"
   },
   {
     "id": "NatlDirEx-Network",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Network",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatlDirExNetwork"
   },
   {
     "id": "NatlDirEx-Organization",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatlDirExOrganization"
   },
   {
     "id": "NatlDirEx-OrganizationAffiliation",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatlDirExOrganizationAffiliation"
   },
   {
     "id": "NatlDirEx-Practitioner",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatlDirExPractitioner"
   },
   {
     "id": "NatlDirEx-PractitionerRole",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatlDirExPractitionerRole"
   },
   {
     "id": "NatlDirEx-Restriction",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Restriction",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatlDirExRestriction"
   },
   {
     "id": "NatlDirEx-Validation",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Validation",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatlDirExValidation"
   },
   {
     "id": "HealthcareService-coverage-area",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareService-coverage-area.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExHealthcareServiceCoverageAreaSearchParameter"
   },
   {
     "id": "HealthcareService-endpoint",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareService-endpoint.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExHealthcareServiceCategorySearchParameter"
   },
   {
     "id": "HealthcareService-location",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareService-location.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExHealthcareServiceLocationSearchParameter"
   },
   {
     "id": "HealthcareService-name",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareService-name.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExHealthcareServiceNameSearchParameter"
   },
   {
     "id": "HealthcareService-organization",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareService-organization.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExHealthcareServiceOrganizationSearchParameter"
   },
   {
     "id": "HealthcareService-service-category",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareService-service-category.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExHealthcareServiceCategorySearchParameter"
   },
   {
     "id": "HealthcareService-service-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareService-service-type.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExHealthcareServiceServicetypeSearchParameter"
   },
   {
     "id": "HealthcareService-specialty",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareService-specialty.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExHealthcareServiceSpecialtySearchParameter"
   },
   {
     "id": "InsurancePlan-administrated-by",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlan-administrated-by.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExInsurancePlanAdministratedbySearchParameter"
   },
   {
     "id": "InsurancePlan-coverage-area",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlan-coverage-area.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExInsurancePlanCoverageAreaSearchParameter"
   },
   {
     "id": "InsurancePlan-coverage-benefit-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlan-coverage-benefit-type.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExInsurancePlanCoverageBenefittypeSearchParameter"
   },
   {
     "id": "InsurancePlan-coverage-network",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlan-coverage-network.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExInsurancePlanCoverageNetworkSearchParameter"
   },
   {
     "id": "InsurancePlan-identifier",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlan-identifier.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExInsurancePlanIdentifierSearchParameter"
   },
   {
     "id": "InsurancePlan-owned-by",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlan-owned-by.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExInsurancePlanOwnedBySearchParameter"
   },
   {
     "id": "InsurancePlan-name",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlan-specialty.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExInsurancePlanSpecialtySearchParameter"
   },
   {
     "id": "InsurancePlan-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlan-type.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExInsurancePlantypeSearchParameter"
   },
   {
     "id": "Location-address",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Location-address.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExLocationAddressSearchParameter"
   },
   {
     "id": "Location-endpoint",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Location-endpoint.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExLocationEndpointSearchParameter"
   },
   {
     "id": "Location-organization",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Location-organization.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExLocationOrganizationSearchParameter"
   },
   {
     "id": "Location-partOf",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Location-partOf.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExLocationPartOfSearchParameter"
   },
   {
     "id": "Location-physicalType",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Location-physicalType.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExLocationPhysicalTypeSearchParameter"
   },
   {
     "id": "Location-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Location-type.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExLocationTypeSearchParameter"
   },
   {
     "id": "Network-coverage-area",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Network-coverage-area.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExNetworkCoverageAreaSearchParameter"
   },
   {
     "id": "Network-name",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Network-name.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExnameSpecialtySearchParameter"
   },
   {
     "id": "Organization-address",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Organization-address.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExOrganizationAddressSearchParameter"
   },
   {
     "id": "Organization-endpoint",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Organization-endpoint.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExOrganizationEndpointSearchParameter"
   },
   {
     "id": "Organization-identifier",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Organization-identifier.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExOrganizationIdentifierSearchParameter"
   },
   {
     "id": "Organization-name",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Organization-name.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExOrganizationNameSearchParameter"
   },
   {
     "id": "Organization-partOf",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Organization-partOf.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExOrganizationPartOfSearchParameter"
   },
   {
     "id": "Organization-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Organization-type.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExOrganizationTypeSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-endpoint",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-OrganizationAffiliation-endpoint.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExOrganizationAffiliationEndpointSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-location",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-OrganizationAffiliation-location.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExOrganizationAffiliationLocationSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-network",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-OrganizationAffiliation-network.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExOrganizationAffiliationNetworkSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-participating-organization",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-OrganizationAffiliation-participating-organization.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExOrganizationAffiliationParticipatingOrganizationfSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-primary-organization",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-OrganizationAffiliation-primary-organization.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExOrganizationAffiliationPrimaryOrganizationSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-role",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-OrganizationAffiliation-role.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExOrganizationAffiliationRoleSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-service",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-OrganizationAffiliation-service.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExOrganizationAffiliationServiceSearchParameter"
   },
   {
     "id": "OrganizationAffiliation-specialty",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-OrganizationAffiliation-specialty.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExOrganizationAffiliationSpecialtySearchParameter"
   },
   {
     "id": "VerificationResult-attestation-who",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-VerificationResult-attestation-who.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExVerificationResultAttestationWhoBySearchParameter"
   },
   {
     "id": "VerificationResult-primarysource-who",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-VerificationResult-primarysource-who.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExVerificationResultPrimarysourceWhoBySearchParameter"
   },
   {
     "id": "VerificationResult-target",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-VerificationResult-target.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExVerificationResultTargetbySearchParameter"
   },
   {
     "id": "careTeam-endpoint",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-careteam-endpoint.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExcareTeamEndpointSearchParameter"
   },
   {
     "id": "careTeam-location",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-careteam-location.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExcareTeamLocationSearchParameter"
   },
   {
     "id": "careTeam-category",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-careteam-name.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExcareTeamCategorySearchParameter"
   },
   {
     "id": "careTeam-name",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-careteam-name.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExcareTeamNameSearchParameter"
   },
   {
     "id": "careTeam-organization",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-careteam-name.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExcareTeamOrganizationSearchParameter"
   },
   {
     "id": "careTeam-service",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-careteam-name.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExcareTeamServiceSearchParameter"
   },
   {
     "id": "Endpoint-connection-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-endpoint-connection-type.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExNatlDirConnectiontype"
   },
   {
     "id": "Endpoint-identifier",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-endpoint-identifier.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExNatlDirEndpointQryIdentifier"
   },
   {
     "id": "Endpoint-mime-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-endpoint-mime-type.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExNatlDirEndpointQryMimetype"
   },
   {
     "id": "Endpoint-organization",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-endpoint-organization.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExNatlDirEndpointQryOrganization"
   },
   {
     "id": "Endpoint-payload-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-endpoint-payload-type.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExNatlDirEndpointQryPayloadtype"
   },
   {
     "id": "Endpoint-status",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-endpoint-status.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExNatlDirEndpointQryStatus"
   },
   {
     "id": "Endpoint-usecase-standard",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-endpoint-usecase-standard.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExNatlDirEndpointQryUsecaseStandard"
   },
   {
     "id": "Endpoint-usecase-type",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-endpoint-usecase-type.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExNatlDirEndpointQryUsecasetype"
   },
   {
     "id": "practitioner-family",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-practitioner-family.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExpractitionerFamilySearchParameter"
   },
   {
     "id": "practitioner-given",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-practitioner-given.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExpractitionerGivenSearchParameter"
   },
   {
     "id": "practitioner-identifier-assigner",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-practitioner-identifier-assigner.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExpractitionerIdentifierAssignerSearchParameter"
   },
   {
     "id": "practitioner-identifier",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-practitioner-identifier.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExpractitionerIdentifierSearchParameter"
   },
   {
     "id": "practitioner-name",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-practitioner-name.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExpractitionerNameSearchParameter"
   },
   {
     "id": "practitioner-qualification-code",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-practitioner-qualification-code.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExpractitionerQualificationCodeSearchParameter"
   },
   {
     "id": "practitioner-qualification-issuer",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-practitioner-qualification-issuer.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExpractitionerQualificationIssuerSearchParameter"
   },
   {
     "id": "practitionerRole-endpoint",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-practitionerRole-endpoint.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExpractitionerRoleEndpointSearchParameter"
   },
   {
     "id": "practitionerRole-location",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-practitionerRole-location.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExpractitionerRoleLocationSearchParameter"
   },
   {
     "id": "practitionerRole-network",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-practitionerRole-network.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExpractitionerRoleNetworkSearchParameter"
   },
   {
     "id": "practitionerRole-organization",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-practitionerRole-organization.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExpractitionerRoleQrganizationSearchParameter"
   },
   {
     "id": "practitionerRole-practitioner",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-practitionerRole-practitioner.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExpractitionerRolePractitionerSearchParameter"
   },
   {
     "id": "practitionerRole-role",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-practitionerRole-role.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExpractitionerRoleRoleSearchParameter"
   },
   {
     "id": "practitionerRole-service",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-practitionerRole-service.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExpractitionerRoleServiceSearchParameter"
   },
   {
     "id": "practitionerRole-specialty",
     "type": "SearchParameter",
     "url": "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-practitionerRole-specialty.html",
-    "version": "1.0.0-ballot1",
+    "version": "1.0.0",
     "name": "NatDirExpractitionerRoleSpecialtySearchParameter"
   }
 ]

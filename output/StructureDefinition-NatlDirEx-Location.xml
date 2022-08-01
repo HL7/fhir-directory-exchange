@@ -8,11 +8,11 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"/>
-  <version value="1.0.0-ballot1"/>
+  <version value="1.0.0"/>
   <name value="NatlDirExLocation"/>
   <title value="National Directory Location"/>
   <status value="active"/>
-  <date value="2022-07-27T12:20:48-04:00"/>
+  <date value="2022-08-01T16:22:39-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>

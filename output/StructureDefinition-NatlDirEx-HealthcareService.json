@@ -16,11 +16,11 @@
     }
   ],
   "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService",
-  "version": "1.0.0-ballot1",
+  "version": "1.0.0",
   "name": "NatlDirExHealthCareService",
   "title": "National Directory HealthcareService",
   "status": "active",
-  "date": "2022-07-27T12:20:48-04:00",
+  "date": "2022-08-01T16:22:39-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {

@@ -1,10 +1,10 @@
-﻿NationalDirectory : Validation Results
+﻿NationalHealthcareDirectoryQuery : Validation Results
 =========================================
 
-err = 15, warn = 2, info = 2
+err = 14, warn = 3, info = 2
 IG Publisher Version: 1.1.125 Out of date - current version is 1.1.127
-Generated Wed Jul 27 12:21:59 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-exchange#1.0.0-ballot1 (canonical = http://hl7.org/fhir/us/fhir-directory-exchange)
- Build Errors : 1 / 0 / 0
+Generated Mon Aug 01 16:23:54 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-exchange#1.0.0 (canonical = http://hl7.org/fhir/us/fhir-directory-exchange)
+ Build Errors : 0 / 1 / 0
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-exchange : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\capabilitystatement-fhir-national-directory : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\careteam-CareTeam1 : 0 / 0 / 1
@@ -143,7 +143,7 @@ Generated Wed Jul 27 12:21:59 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\verificationresult-ProviderAttestation : 0 / 0 / 4
 </table>
 == n/a ==
-ERROR: There is no jira specification file defined with the expected name of FHIR-us-fhir-directory-exchange in the xml folder of the  https://github.com/HL7/Jira-Spec-Artifacts project.  This must exist before ballot or publication.
+WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.  To see the differences, perform a file compare on 'template/jira-current.xml' (a normalized view of what is in Github) and 'template/jira-new.xml' (reflects current IG content)
 == fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-exchange.json ==
 == fsh-generated\resources\CapabilityStatement-fhir-national-directory.json ==
 == fsh-generated\resources\CareTeam-CareTeam1.json ==
