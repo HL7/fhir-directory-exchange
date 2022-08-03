@@ -17,13 +17,13 @@
   <name value="NatlDirExRestriction"/>
   <title value="National Directory Restriction"/>
   <status value="active"/>
-  <date value="2022-08-01T16:22:39-04:00"/>
+  <date value="2022-08-03T13:02:02-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+      <value value="https://www.hl7.org/Special/committees/pafm"/>
     </telecom>
     <telecom>
       <system value="email"/>

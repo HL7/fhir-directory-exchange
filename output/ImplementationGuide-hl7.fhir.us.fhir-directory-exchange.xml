@@ -3,21 +3,21 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.us.fhir-directory-exchange"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>NationalHealthcareDirectoryQuery</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange</pre><div><p>National Directory</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>NationalHealthcareDirectoryExchange</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange</pre><div><p>National Directory</p>
 </div></div>
   </text>
   <url value="http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange"/>
   <version value="1.0.0"/>
-  <name value="NationalHealthcareDirectoryQuery"/>
-  <title value="National Healthcare Directory Query"/>
+  <name value="NationalHealthcareDirectoryExchange"/>
+  <title value="National Healthcare Directory Exchange"/>
   <status value="active"/>
-  <date value="2022-08-01T16:22:39-04:00"/>
+  <date value="2022-08-03T13:02:02-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+      <value value="https://www.hl7.org/Special/committees/pafm"/>
     </telecom>
     <telecom>
       <system value="email"/>

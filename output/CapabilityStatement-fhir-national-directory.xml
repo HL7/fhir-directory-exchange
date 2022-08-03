@@ -109,7 +109,7 @@
     <name value="HL7 Patient Administration Working Group"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+      <value value="https://www.hl7.org/Special/committees/pafm"/>
     </telecom>
     <telecom>
       <system value="email"/>

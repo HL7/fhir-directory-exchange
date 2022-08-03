@@ -13,12 +13,12 @@
 id: hl7.fhir.us.fhir-directory-exchange
 canonical: http://hl7.org/fhir/us/fhir-directory-exchange
 version: 1.0.0
-name: NationalHealthcareDirectoryQuery
-title: National Healthcare Directory Query
+name: NationalHealthcareDirectoryExchange
+title: National Healthcare Directory Exchange
 status: active
 publisher:
   name: HL7 Patient Administration Working Group
-  url: https://www.hl7.org/Special/committees/pafm/index.cfm
+  url: https://www.hl7.org/Special/committees/pafm
   email: pafm@lists.HL7.org
 description: National Directory
 jurisdiction: urn:iso:std:iso:3166#US

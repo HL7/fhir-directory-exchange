@@ -19,7 +19,7 @@
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.hl7.org/Special/committees/pafm/index.cfm"
+          "value": "https://www.hl7.org/Special/committees/pafm"
         },
         {
           "system": "email",
