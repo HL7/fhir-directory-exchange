@@ -16,11 +16,11 @@
     <valueCode value="business"/>
   </extension>
   <url value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"/>
-  <version value="1.0.0"/>
+  <version value="1.0.0-ballot"/>
   <name value="NatlDirExOrganizationAffiliation"/>
   <title value="National Directory OrganizationAffiliation"/>
   <status value="active"/>
-  <date value="2022-08-03T13:02:02-04:00"/>
+  <date value="2022-08-03T17:01:06-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>

@@ -14,7 +14,7 @@
       "version": "1.0.0-ballot",  
       "date": "2021-10-13",
       "desc": "National Directory",
-      "path": "http://hl7.org/fhir/us/fhir-directory-exchange",
+      "path": "http://hl7.org/fhir/us/fhir-directory-exchange/2022Sep",
       "status": "ballot",
       "sequence": "STU 1",
       "fhirversion": "4.0.1"

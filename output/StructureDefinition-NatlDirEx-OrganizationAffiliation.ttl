@@ -22,11 +22,11 @@
      fhir:Extension.valueCode [ fhir:value "business" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"];
-  fhir:StructureDefinition.version [ fhir:value "1.0.0"];
+  fhir:StructureDefinition.version [ fhir:value "1.0.0-ballot"];
   fhir:StructureDefinition.name [ fhir:value "NatlDirExOrganizationAffiliation"];
   fhir:StructureDefinition.title [ fhir:value "National Directory OrganizationAffiliation"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-03T13:02:02-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-03T17:01:06-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
