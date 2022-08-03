@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "hl7.fhir.us.fhir-directory-exchange"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NationalHealthcareDirectoryQuery</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange</pre><div><p>National Directory</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NationalHealthcareDirectoryExchange</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange</pre><div><p>National Directory</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange"];
   fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
-  fhir:ImplementationGuide.name [ fhir:value "NationalHealthcareDirectoryQuery"];
-  fhir:ImplementationGuide.title [ fhir:value "National Healthcare Directory Query"];
+  fhir:ImplementationGuide.name [ fhir:value "NationalHealthcareDirectoryExchange"];
+  fhir:ImplementationGuide.title [ fhir:value "National Healthcare Directory Exchange"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-08-01T16:22:39-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-08-03T13:02:02-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -25,7 +25,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.hl7.org/Special/committees/pafm/index.cfm" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.org/Special/committees/pafm" ]
      ], [
        fhir:index 1;
        fhir:ContactPoint.system [ fhir:value "email" ];

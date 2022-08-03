@@ -26,7 +26,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.hl7.org/Special/committees/pafm/index.cfm" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.org/Special/committees/pafm" ]
      ], [
        fhir:index 1;
        fhir:ContactPoint.system [ fhir:value "email" ];

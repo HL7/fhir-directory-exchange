@@ -1,9 +1,9 @@
-﻿NationalHealthcareDirectoryQuery : Validation Results
+﻿NationalHealthcareDirectoryExchange : Validation Results
 =========================================
 
-err = 14, warn = 3, info = 2
+err = 14, warn = 1, info = 2
 IG Publisher Version: 1.1.125 Out of date - current version is 1.1.127
-Generated Mon Aug 01 16:23:54 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-exchange#1.0.0 (canonical = http://hl7.org/fhir/us/fhir-directory-exchange)
+Generated Wed Aug 03 13:03:24 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-exchange#1.0.0 (canonical = http://hl7.org/fhir/us/fhir-directory-exchange)
  Build Errors : 0 / 1 / 0
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-exchange : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\capabilitystatement-fhir-national-directory : 0 / 0 / 1
@@ -283,7 +283,6 @@ INFORMATION: Practitioner/HansSolo: Practitioner.extension[0]: This element does
 == fsh-generated\resources\SearchParameter-practitionerRole-service.json ==
 == fsh-generated\resources\SearchParameter-practitionerRole-specialty.json ==
 == fsh-generated\resources\StructureDefinition-NatlDirEx-CareTeam.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-CareTeam').baseDefinition: US FHIR Usage rules require that all profiles on CareTeam derive from the core US profile
 == fsh-generated\resources\StructureDefinition-NatlDirEx-Endpoint.json ==
 == fsh-generated\resources\StructureDefinition-NatlDirEx-HealthcareService.json ==
 == fsh-generated\resources\StructureDefinition-NatlDirEx-InsurancePlan.json ==
@@ -293,7 +292,6 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-
 == fsh-generated\resources\StructureDefinition-NatlDirEx-OrganizationAffiliation.json ==
 == fsh-generated\resources\StructureDefinition-NatlDirEx-Practitioner.json ==
 == fsh-generated\resources\StructureDefinition-NatlDirEx-PractitionerRole.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole').baseDefinition: US FHIR Usage rules require that all profiles on PractitionerRole derive from the core US profile
 == fsh-generated\resources\StructureDefinition-NatlDirEx-Restriction.json ==
 ERROR: StructureDefinition/NatlDirEx-Restriction: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
 == fsh-generated\resources\StructureDefinition-NatlDirEx-Validation.json ==

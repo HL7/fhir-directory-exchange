@@ -11,7 +11,7 @@
     "type": "ImplementationGuide",
     "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange",
     "version": "1.0.0",
-    "name": "NationalHealthcareDirectoryQuery"
+    "name": "NationalHealthcareDirectoryExchange"
   },
   {
     "id": "NatlDirEx-CareTeam",

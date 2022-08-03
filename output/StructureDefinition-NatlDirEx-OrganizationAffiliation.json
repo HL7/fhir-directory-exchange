@@ -20,7 +20,7 @@
   "name": "NatlDirExOrganizationAffiliation",
   "title": "National Directory OrganizationAffiliation",
   "status": "active",
-  "date": "2022-08-01T16:22:39-04:00",
+  "date": "2022-08-03T13:02:02-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -28,7 +28,7 @@
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.hl7.org/Special/committees/pafm/index.cfm"
+          "value": "https://www.hl7.org/Special/committees/pafm"
         },
         {
           "system": "email",
