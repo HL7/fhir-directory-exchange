@@ -1,25 +1,25 @@
 ﻿NationalHealthcareDirectoryExchange : Validation Results
 =========================================
 
-err = 14, warn = 1, info = 2
-IG Publisher Version: 1.1.125 Out of date - current version is 1.1.127
-Generated Wed Aug 03 13:03:24 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-exchange#1.0.0 (canonical = http://hl7.org/fhir/us/fhir-directory-exchange)
+err = 1, warn = 1, info = 2
+IG Publisher Version: 1.1.128
+Generated Wed Aug 03 17:02:29 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-exchange#1.0.0-ballot (canonical = http://hl7.org/fhir/us/fhir-directory-exchange)
  Build Errors : 0 / 1 / 0
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-exchange : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\capabilitystatement-fhir-national-directory : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\careteam-CareTeam1 : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\consent-PatientConsent : 0 / 0 / 4
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\endpoint-AcmeOfCTPortalEndpoint : 0 / 0 / 4
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-BurrClinicServices : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-CancerClinicService : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HamiltonClinicServices : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HansSoloService : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HartfordOrthopedicServices : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HospERService : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-PharmChainCompService : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-PharmChainMailService : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-PharmChainRetailService : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-VirtualCounselService : 1 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-BurrClinicServices : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-CancerClinicService : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HamiltonClinicServices : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HansSoloService : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HartfordOrthopedicServices : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-HospERService : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-PharmChainCompService : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-PharmChainMailService : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-PharmChainRetailService : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\healthcareservice-VirtualCounselService : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\insuranceplan-AcmeQHPBronze : 0 / 0 / 4
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\insuranceplan-AcmeQHPGold : 0 / 0 / 4
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\location-CancerClinicLoc : 0 / 0 / 1
@@ -46,9 +46,9 @@ Generated Wed Aug 03 13:03:24 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organizationaffiliation-ConnHIEAffil : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organizationaffiliation-HamiltonClinicAffil : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organizationaffiliation-HartfordOrthopedicAffil : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organizationaffiliation-PharmChainAffil1 : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organizationaffiliation-PharmChainAffil2 : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organizationaffiliation-PharmChainAffil3 : 1 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organizationaffiliation-PharmChainAffil1 : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organizationaffiliation-PharmChainAffil2 : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organizationaffiliation-PharmChainAffil3 : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitioner-Counselor : 0 / 0 / 2
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitioner-HansSolo : 0 / 0 / 2
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitioner-JoeSmith : 0 / 0 / 1
@@ -150,25 +150,15 @@ WARNING: The jira specification file appears to be out of date with the versions
 == fsh-generated\resources\Consent-PatientConsent.json ==
 == fsh-generated\resources\Endpoint-AcmeOfCTPortalEndpoint.json ==
 == fsh-generated\resources\HealthcareService-BurrClinicServices.json ==
-ERROR: HealthcareService/BurrClinicServices: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207Q00000X)
 == fsh-generated\resources\HealthcareService-CancerClinicService.json ==
-ERROR: HealthcareService/CancerClinicService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207RX0202X)
 == fsh-generated\resources\HealthcareService-HamiltonClinicServices.json ==
-ERROR: HealthcareService/HamiltonClinicServices: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207Q00000X)
 == fsh-generated\resources\HealthcareService-HansSoloService.json ==
-ERROR: HealthcareService/HansSoloService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207Q00000X)
 == fsh-generated\resources\HealthcareService-HartfordOrthopedicServices.json ==
-ERROR: HealthcareService/HartfordOrthopedicServices: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207X00000X)
 == fsh-generated\resources\HealthcareService-HospERService.json ==
-ERROR: HealthcareService/HospERService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207P00000X)
 == fsh-generated\resources\HealthcareService-PharmChainCompService.json ==
-ERROR: HealthcareService/PharmChainCompService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#3336C0004X)
 == fsh-generated\resources\HealthcareService-PharmChainMailService.json ==
-ERROR: HealthcareService/PharmChainMailService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#3336M0002X)
 == fsh-generated\resources\HealthcareService-PharmChainRetailService.json ==
-ERROR: HealthcareService/PharmChainRetailService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#3336C0003X)
 == fsh-generated\resources\HealthcareService-VirtualCounselService.json ==
-ERROR: HealthcareService/VirtualCounselService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#103TC1900X)
 == fsh-generated\resources\InsurancePlan-AcmeQHPBronze.json ==
 == fsh-generated\resources\InsurancePlan-AcmeQHPGold.json ==
 == fsh-generated\resources\Location-CancerClinicLoc.json ==
@@ -196,11 +186,8 @@ ERROR: HealthcareService/VirtualCounselService: HealthcareService.specialty[0]: 
 == fsh-generated\resources\OrganizationAffiliation-HamiltonClinicAffil.json ==
 == fsh-generated\resources\OrganizationAffiliation-HartfordOrthopedicAffil.json ==
 == fsh-generated\resources\OrganizationAffiliation-PharmChainAffil1.json ==
-ERROR: OrganizationAffiliation/PharmChainAffil1: OrganizationAffiliation.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#3336C0003X)
 == fsh-generated\resources\OrganizationAffiliation-PharmChainAffil2.json ==
-ERROR: OrganizationAffiliation/PharmChainAffil2: OrganizationAffiliation.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#3336C0004X)
 == fsh-generated\resources\OrganizationAffiliation-PharmChainAffil3.json ==
-ERROR: OrganizationAffiliation/PharmChainAffil3: OrganizationAffiliation.specialty[0]: None of the codings provided are in the value set 'Specialties' (http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#3336M0002X)
 == fsh-generated\resources\Practitioner-Counselor.json ==
 INFORMATION: Practitioner/Counselor: Practitioner.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner
 == fsh-generated\resources\Practitioner-HansSolo.json ==

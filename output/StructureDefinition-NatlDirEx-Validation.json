@@ -16,11 +16,11 @@
     }
   ],
   "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Validation",
-  "version": "1.0.0",
+  "version": "1.0.0-ballot",
   "name": "NatlDirExValidation",
   "title": "National Directory Validation",
   "status": "active",
-  "date": "2022-08-03T13:02:02-04:00",
+  "date": "2022-08-03T17:01:06-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
