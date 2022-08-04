@@ -1,9 +1,9 @@
 ﻿NationalHealthcareDirectoryExchange : Validation Results
 =========================================
 
-err = 1, warn = 1, info = 2
+err = 1, warn = 1, info = 0
 IG Publisher Version: 1.1.128
-Generated Wed Aug 03 17:02:29 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-exchange#1.0.0-ballot (canonical = http://hl7.org/fhir/us/fhir-directory-exchange)
+Generated Thu Aug 04 11:50:25 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-exchange#1.0.0-ballot (canonical = http://hl7.org/fhir/us/fhir-directory-exchange)
  Build Errors : 0 / 1 / 0
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-exchange : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\capabilitystatement-fhir-national-directory : 0 / 0 / 1
@@ -49,8 +49,8 @@ Generated Wed Aug 03 17:02:29 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organizationaffiliation-PharmChainAffil1 : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organizationaffiliation-PharmChainAffil2 : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\organizationaffiliation-PharmChainAffil3 : 0 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitioner-Counselor : 0 / 0 / 2
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitioner-HansSolo : 0 / 0 / 2
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitioner-Counselor : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitioner-HansSolo : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitioner-JoeSmith : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-AnonRole : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\practitionerrole-CounselorRole1 : 0 / 0 / 1
@@ -189,9 +189,7 @@ WARNING: The jira specification file appears to be out of date with the versions
 == fsh-generated\resources\OrganizationAffiliation-PharmChainAffil2.json ==
 == fsh-generated\resources\OrganizationAffiliation-PharmChainAffil3.json ==
 == fsh-generated\resources\Practitioner-Counselor.json ==
-INFORMATION: Practitioner/Counselor: Practitioner.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner
 == fsh-generated\resources\Practitioner-HansSolo.json ==
-INFORMATION: Practitioner/HansSolo: Practitioner.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner
 == fsh-generated\resources\Practitioner-JoeSmith.json ==
 == fsh-generated\resources\PractitionerRole-AnonRole.json ==
 == fsh-generated\resources\PractitionerRole-CounselorRole1.json ==
