@@ -1,3 +1,28 @@
+
+Instance: Counselor
+InstanceOf: NatlDirExPractitioner
+Description: "Counselor Susie Smith"
+Usage: #example
+* meta.profile = Canonical(NatlDirExPractitioner)
+* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
+* language = #en-US
+* active = true
+* identifier[NPI].value = "NPI3238"
+* identifier[NPI].system = $NPICS
+* name.text = "Susie Smith, LPC"
+* name.family = "Smith"
+* name.given[0] = "Susie"
+* qualification[0].code.coding.display = "LPC"
+* qualification[0].code.text = "LPC"
+* qualification[0].issuer.display = "State of Illinois"
+* qualification[0].code.text = "IL"
+* qualification[0].extension[practitioner-qualification].extension[status].valueCode = $NatlDirectoryQualStatusCS#active 
+* qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
+* communication[0].extension[communication-proficiency].valueCodeableConcept = $NatlDirectoryLangProfCS#30
+* communication = $BCP47#ru 
+* extension[rating].extension[ratingType].valueCodeableConcept = $USPSStateCS#IL 
+* extension[rating].extension[ratingValue].valueString = "5"
+
 Instance: JoeSmith
 InstanceOf: NatlDirExPractitioner
 Description: "Practitioner Dr Joe Smith"
@@ -26,7 +51,7 @@ Usage: #example
 * qualification[2].code.text = "Board Certified Cardiovascular Disease"
 * qualification[2].extension[practitioner-qualification].extension[status].valueCode = $NatlDirectoryQualStatusCS#active 
 * qualification[2].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-
+* communication = $BCP47#ru 
 
 Instance: HansSolo
 InstanceOf: NatlDirExPractitioner
@@ -56,7 +81,7 @@ Usage: #example
 * qualification[2].code.text = "Board Certified Cardiovascular Disease"
 * qualification[2].extension[practitioner-qualification].extension[status].valueCode = $NatlDirectoryQualStatusCS#active 
 * qualification[2].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* extension[communication-proficiency].valueCodeableConcept = $NatlDirectoryLangProfCS#30
+* communication[0].extension[communication-proficiency].valueCodeableConcept = $NatlDirectoryLangProfCS#30
 * communication = $BCP47#ja 
 
 
@@ -136,27 +161,6 @@ Usage: #example
 * hoursOfOperation[0].closingTime = 17:00:00
 
 
-Instance: Counselor
-InstanceOf: NatlDirExPractitioner
-Description: "Counselor Susie Smith"
-Usage: #example
-* meta.profile = Canonical(NatlDirExPractitioner)
-* meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
-* language = #en-US
-* active = true
-* identifier[NPI].value = "NPI3238"
-* identifier[NPI].system = $NPICS
-* name.text = "Susie Smith, LPC"
-* name.family = "Smith"
-* name.given[0] = "Susie"
-* qualification[0].code.coding.display = "LPC"
-* qualification[0].code.text = "LPC"
-* qualification[0].issuer.display = "State of Illinois"
-* qualification[0].code.text = "IL"
-* qualification[0].extension[practitioner-qualification].extension[status].valueCode = $NatlDirectoryQualStatusCS#active 
-* qualification[0].extension[practitioner-qualification].extension[whereValid].valueCodeableConcept = $USPSStateCS#IL 
-* extension[communication-proficiency].valueCodeableConcept = $NatlDirectoryLangProfCS#30
-* communication = $BCP47#ru 
 
 Instance: CounselorRole1
 InstanceOf: NatlDirExPractitionerRole
