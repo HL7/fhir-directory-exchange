@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "NationalHealthcareDirectoryExchange"];
   fhir:ImplementationGuide.title [ fhir:value "National Healthcare Directory Exchange"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-08-05T09:45:36-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-08-05T12:05:17-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
