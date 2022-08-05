@@ -1,16 +1,16 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "hl7.fhir.us.fhir-directory-exchange",
+  "id": "hl7.fhir.us.directory-exchange",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NationalHealthcareDirectoryExchange</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange</pre><div><p>National Directory</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NationalHealthcareDirectoryExchange</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/directory-exchange/ImplementationGuide/hl7.fhir.us.directory-exchange</pre><div><p>National Directory</p>\n</div></div>"
   },
-  "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange",
+  "url": "http://hl7.org/fhir/us/directory-exchange/ImplementationGuide/hl7.fhir.us.directory-exchange",
   "version": "1.0.0-ballot",
   "name": "NationalHealthcareDirectoryExchange",
   "title": "National Healthcare Directory Exchange",
   "status": "active",
-  "date": "2022-08-04T11:49:08-04:00",
+  "date": "2022-08-05T09:45:36-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -38,7 +38,7 @@
       ]
     }
   ],
-  "packageId": "hl7.fhir.us.fhir-directory-exchange",
+  "packageId": "hl7.fhir.us.directory-exchange",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
@@ -58,8 +58,8 @@
     },
     {
       "id": "ONCFASTNationalDirectoryEndpointQuery",
-      "uri": "http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query",
-      "packageId": "hl7.fhir.us.fhir-directory-query",
+      "uri": "http://hl7.org/fhir/us/directory-query/ImplementationGuide/hl7.fhir.us.directory-query",
+      "packageId": "hl7.fhir.us.directory-query",
       "version": "current"
     }
   ],
@@ -138,7 +138,7 @@
           },
           {
             "url": "value",
-            "valueString": "http://hl7.org/fhir/us/fhir-directory-exchange/history.html"
+            "valueString": "http://hl7.org/fhir/us/directory-exchange/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -572,7 +572,7 @@
         },
         "name": "Acme",
         "description": "Payer Organization",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization"
       },
       {
         "extension": [
@@ -586,7 +586,7 @@
         },
         "name": "AcmeOfCTPortalEndpoint",
         "description": "Endpoint for Acme of CT Portal",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Endpoint"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint"
       },
       {
         "extension": [
@@ -600,7 +600,7 @@
         },
         "name": "AcmeQHPBronze",
         "description": "Acme of CT QHP Bronze Plan",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan"
       },
       {
         "extension": [
@@ -614,7 +614,7 @@
         },
         "name": "AcmeQHPGold",
         "description": "Acme of CT QHP Gold Plan",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan"
       },
       {
         "extension": [
@@ -628,7 +628,7 @@
         },
         "name": "AcmeofCTPremNet",
         "description": "Acme of CT Premium Premium Network",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Network"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Network"
       },
       {
         "extension": [
@@ -642,7 +642,7 @@
         },
         "name": "AcmeofCTStdNet",
         "description": "Acme of CT Standard Network",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Network"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Network"
       },
       {
         "extension": [
@@ -656,7 +656,7 @@
         },
         "name": "AnonRole",
         "description": "Practitioner role that doesn't refer to a specific practitioner",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
       },
       {
         "extension": [
@@ -670,7 +670,7 @@
         },
         "name": "BigBox",
         "description": "Organization that Manages 2 of PharmChain's pharmacies",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization"
       },
       {
         "extension": [
@@ -684,7 +684,7 @@
         },
         "name": "BurrClinic",
         "description": "Burr Clinic provides service to Hartford Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization"
       },
       {
         "extension": [
@@ -698,7 +698,7 @@
         },
         "name": "BurrClinicAffil",
         "description": "Burr Clinic's affiliation with Acme of CT Provider Network and Hartford General Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
       },
       {
         "extension": [
@@ -712,7 +712,7 @@
         },
         "name": "BurrClinicServices",
         "description": "Burr Clinic Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [
@@ -726,7 +726,7 @@
         },
         "name": "CancerClinic",
         "description": "HartfordCancerClinicLLC",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization"
       },
       {
         "extension": [
@@ -740,7 +740,7 @@
         },
         "name": "CancerClinicLoc",
         "description": "Location1 of Cancer Clinic",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location"
       },
       {
         "extension": [
@@ -754,7 +754,7 @@
         },
         "name": "CancerClinicService",
         "description": "Cancer Clinic Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [
@@ -768,7 +768,7 @@
         },
         "name": "CareTeam1",
         "description": "Burr Clinic's Care Team",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-CareTeam"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam"
       },
       {
         "extension": [
@@ -782,7 +782,7 @@
         },
         "name": "ConnHIE",
         "description": "Connecticut HIE",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization"
       },
       {
         "extension": [
@@ -796,7 +796,7 @@
         },
         "name": "ConnHIEAffil",
         "description": "Burr Clinic's affiliation with Conn HIE",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
       },
       {
         "extension": [
@@ -810,7 +810,7 @@
         },
         "name": "Counselor",
         "description": "Counselor Susie Smith",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
       },
       {
         "extension": [
@@ -824,7 +824,7 @@
         },
         "name": "CounselorRole1",
         "description": "Susie  Smith is a counselor via Telemedicine",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
       },
       {
         "extension": [
@@ -950,7 +950,7 @@
         },
         "name": "HamiltonClinic",
         "description": "Hamilton Clinic (a Division of Hartford Hospital)",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization"
       },
       {
         "extension": [
@@ -964,7 +964,7 @@
         },
         "name": "HamiltonClinicAffil",
         "description": "Hamilton Clinic's affiliation with Acme of CT Provider Network and Hartford General Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
       },
       {
         "extension": [
@@ -978,7 +978,7 @@
         },
         "name": "HamiltonClinicServices",
         "description": "Hamilton Clinic Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [
@@ -992,7 +992,7 @@
         },
         "name": "HansSolo",
         "description": "Solo Practitioner Hans Solo",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
       },
       {
         "extension": [
@@ -1006,7 +1006,7 @@
         },
         "name": "HansSoloClinic",
         "description": "Location of Hans Solo's clinic",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location"
       },
       {
         "extension": [
@@ -1020,7 +1020,7 @@
         },
         "name": "HansSoloRole1",
         "description": "Hans Solo is a solo practitioner",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
       },
       {
         "extension": [
@@ -1034,7 +1034,7 @@
         },
         "name": "HansSoloService",
         "description": "Hans Solo Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [
@@ -1048,7 +1048,7 @@
         },
         "name": "HartfordOrthopedicAffil",
         "description": "Hartford Orthopedic Services affiliation with Acme of CT Provider Network and Hartford General Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
       },
       {
         "extension": [
@@ -1062,7 +1062,7 @@
         },
         "name": "HartfordOrthopedicServices",
         "description": "Hartford Orthopedic Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [
@@ -1076,7 +1076,7 @@
         },
         "name": "HartfordOrthopedics",
         "description": "Hartford Orthpedic Services is a group providing Orthpods for Acme of CT at Hartford General Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization"
       },
       {
         "extension": [
@@ -1202,7 +1202,7 @@
         },
         "name": "HospERService",
         "description": "Hartford General Hospital ER",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [
@@ -1216,7 +1216,7 @@
         },
         "name": "HospLoc1",
         "description": "Location1 of Hartford Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location"
       },
       {
         "extension": [
@@ -1230,7 +1230,7 @@
         },
         "name": "HospLoc2",
         "description": "Location2 of Hartford Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location"
       },
       {
         "extension": [
@@ -1244,7 +1244,7 @@
         },
         "name": "Hospital",
         "description": "Hartford General Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization"
       },
       {
         "extension": [
@@ -1370,7 +1370,7 @@
         },
         "name": "JoeSmith",
         "description": "Practitioner Dr Joe Smith",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
       },
       {
         "extension": [
@@ -1384,7 +1384,7 @@
         },
         "name": "JoeSmithRole1",
         "description": "Dr Smith moonlighting as ER Doc at Hartford Hospital",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
       },
       {
         "extension": [
@@ -1398,7 +1398,7 @@
         },
         "name": "JoeSmithRole2",
         "description": "Dr Smith Internal Medicine at Burr Clinic",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
       },
       {
         "extension": [
@@ -1412,7 +1412,7 @@
         },
         "name": "JoeSmithRole3",
         "description": "Dr Smith Admitting Privileges at Hartford General",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
       },
       {
         "extension": [
@@ -1734,7 +1734,7 @@
         },
         "name": "PatientConsent",
         "description": "Patient that gives consent",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Restriction"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Restriction"
       },
       {
         "extension": [
@@ -1748,7 +1748,7 @@
         },
         "name": "PharmChain",
         "description": "Organization that Provides Pharmacy Services",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization"
       },
       {
         "extension": [
@@ -1762,7 +1762,7 @@
         },
         "name": "PharmChainAffil1",
         "description": "Organization Affiliation for PharmChain (Retail)",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
       },
       {
         "extension": [
@@ -1776,7 +1776,7 @@
         },
         "name": "PharmChainAffil2",
         "description": "Organization Affiliation for PharmChain (Compounding)",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
       },
       {
         "extension": [
@@ -1790,7 +1790,7 @@
         },
         "name": "PharmChainAffil3",
         "description": "Organization Affiliation for PharmChain (MailOrder)",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
       },
       {
         "extension": [
@@ -1804,7 +1804,7 @@
         },
         "name": "PharmChainCompService",
         "description": "Compound Pharmacy Service provided by PharmacyOrganization A",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [
@@ -1818,7 +1818,7 @@
         },
         "name": "PharmChainMailService",
         "description": "Mail Order Pharmacy Service provided by PharmacyOrganization A",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [
@@ -1832,7 +1832,7 @@
         },
         "name": "PharmChainRetailService",
         "description": "Pharmacy Service provided by PharmChain",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [
@@ -1846,7 +1846,7 @@
         },
         "name": "PharmLoc1",
         "description": "Location of Pharmacy1 in PharmChain's network",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location"
       },
       {
         "extension": [
@@ -1860,7 +1860,7 @@
         },
         "name": "PharmLoc2",
         "description": "Location of Pharmacy2 in PharmChain's network",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location"
       },
       {
         "extension": [
@@ -1874,7 +1874,7 @@
         },
         "name": "PharmLoc3",
         "description": "Location of Pharmacy3 in PharmChain's network",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location"
       },
       {
         "extension": [
@@ -1888,7 +1888,7 @@
         },
         "name": "PharmLoc4",
         "description": "Location of Pharmacy4 in PharmChain's network",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location"
       },
       {
         "extension": [
@@ -1902,7 +1902,7 @@
         },
         "name": "ProviderAttestation",
         "description": "Patient that gives consent",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Validation"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Validation"
       },
       {
         "extension": [
@@ -1916,7 +1916,7 @@
         },
         "name": "StateOfCTLocation",
         "description": "State of CT Area",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location"
       },
       {
         "extension": [
@@ -1972,7 +1972,7 @@
         },
         "name": "VirtualCounselService",
         "description": "Virtual Counseling Service",
-        "exampleCanonical": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+        "exampleCanonical": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
       },
       {
         "extension": [
@@ -2294,21 +2294,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "accessibility-diff2.html",
-          "title": "Accessibility Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "accessibility-search.html",
-          "title": "Accessibility Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "accessibility-summary.html",
-          "title": "Accessibility Summary",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "all-examples.html",
           "title": "All Examples",
           "generation": "markdown"
@@ -2324,33 +2309,8 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "careteam-alias-diff2.html",
-          "title": "Careteam Alias Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "careteam-alias-search.html",
-          "title": "Careteam Alias Search",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "careteam-alias-summary.html",
           "title": "Careteam Alias Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "communication-proficiency-diff2.html",
-          "title": "Communication Proficiency Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "communication-proficiency-search.html",
-          "title": "Communication Proficiency Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "communication-proficiency-summary.html",
-          "title": "Communication Proficiency Summary",
           "generation": "markdown"
         },
         {
@@ -2359,113 +2319,8 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "contactpoint-availabletime-diff2.html",
-          "title": "Contactpoint Availabletime Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "contactpoint-availabletime-search.html",
-          "title": "Contactpoint Availabletime Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "contactpoint-availabletime-summary.html",
-          "title": "Contactpoint Availabletime Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "contactpoint-viaintermediary-diff2.html",
-          "title": "Contactpoint Viaintermediary Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "contactpoint-viaintermediary-search.html",
-          "title": "Contactpoint Viaintermediary Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "contactpoint-viaintermediary-summary.html",
-          "title": "Contactpoint Viaintermediary Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "digitalcertificate-diff2.html",
-          "title": "Digitalcertificate Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "digitalcertificate-search.html",
-          "title": "Digitalcertificate Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "digitalcertificate-summary.html",
-          "title": "Digitalcertificate Summary",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "downloads.html",
           "title": "Downloads",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "ehr-diff2.html",
-          "title": "Ehr Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "ehr-search.html",
-          "title": "Ehr Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "ehr-summary.html",
-          "title": "Ehr Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "endpoint-rank-diff2.html",
-          "title": "Endpoint Rank Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "endpoint-rank-search.html",
-          "title": "Endpoint Rank Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "endpoint-rank-summary.html",
-          "title": "Endpoint Rank Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "endpoint-reference-diff2.html",
-          "title": "Endpoint Reference Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "endpoint-reference-search.html",
-          "title": "Endpoint Reference Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "endpoint-reference-summary.html",
-          "title": "Endpoint Reference Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "endpoint-usecase-diff2.html",
-          "title": "Endpoint Usecase Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "endpoint-usecase-search.html",
-          "title": "Endpoint Usecase Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "endpoint-usecase-summary.html",
-          "title": "Endpoint Usecase Summary",
           "generation": "markdown"
         },
         {
@@ -2499,53 +2354,8 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "healthcareservice-reference-diff2.html",
-          "title": "Healthcareservice Reference Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "healthcareservice-reference-search.html",
-          "title": "Healthcareservice Reference Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "healthcareservice-reference-summary.html",
-          "title": "Healthcareservice Reference Summary",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "history.html",
           "title": "History",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "identifier-status-diff2.html",
-          "title": "Identifier Status Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "identifier-status-search.html",
-          "title": "Identifier Status Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "identifier-status-summary.html",
-          "title": "Identifier Status Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "insuranceplan-reference-diff2.html",
-          "title": "Insuranceplan Reference Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "insuranceplan-reference-search.html",
-          "title": "Insuranceplan Reference Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "insuranceplan-reference-summary.html",
-          "title": "Insuranceplan Reference Summary",
           "generation": "markdown"
         },
         {
@@ -2554,158 +2364,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "location-availability-search.html",
-          "title": "Location Availability Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "location-availability-summary.html",
-          "title": "Location Availability Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "location-reference-diff2.html",
-          "title": "Location Reference Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "location-reference-search.html",
-          "title": "Location Reference Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "location-reference-summary.html",
-          "title": "Location Reference Summary",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "logo.html",
           "title": "Logo",
           "generation": "markdown"
         },
         {
-          "nameUrl": "network-reference-diff2.html",
-          "title": "Network Reference Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "network-reference-search.html",
-          "title": "Network Reference Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "network-reference-summary.html",
-          "title": "Network Reference Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "newpatientprofile-diff2.html",
-          "title": "Newpatientprofile Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "newpatientprofile-search.html",
-          "title": "Newpatientprofile Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "newpatientprofile-summary.html",
-          "title": "Newpatientprofile Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "newpatients-diff2.html",
-          "title": "Newpatients Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "newpatients-search.html",
-          "title": "Newpatients Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "newpatients-summary.html",
-          "title": "Newpatients Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "org-alias-period-diff2.html",
-          "title": "Org Alias Period Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "org-alias-period-search.html",
-          "title": "Org Alias Period Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "org-alias-period-summary.html",
-          "title": "Org Alias Period Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "org-alias-type-diff2.html",
-          "title": "Org Alias Type Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "org-alias-type-search.html",
-          "title": "Org Alias Type Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "org-alias-type-summary.html",
-          "title": "Org Alias Type Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "org-description-diff2.html",
-          "title": "Org Description Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "org-description-search.html",
-          "title": "Org Description Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "org-description-summary.html",
-          "title": "Org Description Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "practitioner-qualification-diff2.html",
-          "title": "Practitioner Qualification Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "practitioner-qualification-search.html",
-          "title": "Practitioner Qualification Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "practitioner-qualification-summary.html",
-          "title": "Practitioner Qualification Summary",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "profiles.html",
           "title": "Profiles",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "qualification-diff2.html",
-          "title": "Qualification Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "qualification-search.html",
-          "title": "Qualification Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "qualification-summary.html",
-          "title": "Qualification Summary",
           "generation": "markdown"
         },
         {
@@ -2736,31 +2401,6 @@
         {
           "nameUrl": "todo.html",
           "title": "Todo",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "usage-restriction-diff2.html",
-          "title": "Usage Restriction Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "usage-restriction-search.html",
-          "title": "Usage Restriction Search",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "usage-restriction-summary.html",
-          "title": "Usage Restriction Summary",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "validation-diff2.html",
-          "title": "Validation Diff 2",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "validation-search.html",
-          "title": "Validation Search",
           "generation": "markdown"
         }
       ]

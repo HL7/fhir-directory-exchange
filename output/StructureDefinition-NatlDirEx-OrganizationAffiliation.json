@@ -15,12 +15,12 @@
       "valueCode": "business"
     }
   ],
-  "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation",
+  "url": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation",
   "version": "1.0.0-ballot",
   "name": "NatlDirExOrganizationAffiliation",
   "title": "National Directory OrganizationAffiliation",
   "status": "active",
-  "date": "2022-08-04T11:49:08-04:00",
+  "date": "2022-08-05T09:45:36-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -64,7 +64,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "OrganizationAffiliation",
-  "baseDefinition": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation",
+  "baseDefinition": "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation",
   "derivation": "constraint",
   "snapshot": {
     "element": [
@@ -136,7 +136,7 @@
             "severity": "error",
             "human": "NatlDirEndpointQryOrganizationAffiliation.organization or  NatlDirEndpointQryOrganizationAffiliation.participatingOrganization",
             "expression": "organization.exists() or participatingOrganization.exists()",
-            "source": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation"
+            "source": "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation"
           }
         ],
         "isModifier": false,
@@ -1321,7 +1321,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization"
             ]
           }
         ],
@@ -1361,7 +1361,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization"
             ]
           }
         ],
@@ -1401,7 +1401,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Network"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Network"
             ]
           }
         ],
@@ -1449,7 +1449,7 @@
         "isSummary": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/OrganizationAffiliationRoleVS"
+          "valueSet": "http://hl7.org/fhir/us/directory-query/ValueSet/OrganizationAffiliationRoleVS"
         },
         "mapping": [
           {
@@ -1489,7 +1489,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS"
+          "valueSet": "http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS"
         },
         "mapping": [
           {
@@ -1514,7 +1514,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Location"
             ]
           }
         ],
@@ -1558,7 +1558,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService"
             ]
           }
         ],
@@ -1634,7 +1634,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint"
             ]
           }
         ],

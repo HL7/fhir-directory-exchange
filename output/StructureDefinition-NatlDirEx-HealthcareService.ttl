@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService> a fhir:StructureDefinition;
+<http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "NatlDirEx-HealthcareService"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "business" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"];
+  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"];
   fhir:StructureDefinition.version [ fhir:value "1.0.0-ballot"];
   fhir:StructureDefinition.name [ fhir:value "NatlDirExHealthCareService"];
   fhir:StructureDefinition.title [ fhir:value "National Directory HealthcareService"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-04T11:49:08-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-05T09:45:36-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -66,8 +66,8 @@
   fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
   fhir:StructureDefinition.type [ fhir:value "HealthcareService"];
   fhir:StructureDefinition.baseDefinition [
-     fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService";
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService>
+     fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService";
+     fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService>
   ];
   fhir:StructureDefinition.derivation [ fhir:value "constraint"];
   fhir:StructureDefinition.snapshot [
@@ -783,9 +783,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/rating";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/rating";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/rating>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/rating>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -834,9 +834,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/newpatients";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/newpatients>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -872,8 +872,8 @@
          fhir:ElementDefinition.constraint.human [ fhir:value "If no new patients are accepted, no characteristics are allowed" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "extension('acceptingPatients').valueCodeableConcept.coding.exists(code = 'no') implies extension('characteristics').empty()" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients";
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients>
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/newpatients";
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/newpatients>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
@@ -896,9 +896,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/delivery-method";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/delivery-method";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/delivery-method>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/delivery-method>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -947,9 +947,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/paymentAccepted";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/paymentAccepted";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/paymentAccepted>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/paymentAccepted>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -998,9 +998,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/requiredDocument";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/requiredDocument";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/requiredDocument>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/requiredDocument>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1049,9 +1049,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/fundingSource";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/fundingSource";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/fundingSource>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/fundingSource>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1242,9 +1242,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1307,8 +1307,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/HealthcareServiceCategoryVS";
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/ValueSet/HealthcareServiceCategoryVS>
+           fhir:value "http://hl7.org/fhir/us/directory-query/ValueSet/HealthcareServiceCategoryVS";
+           fhir:link <http://hl7.org/fhir/us/directory-query/ValueSet/HealthcareServiceCategoryVS>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1359,8 +1359,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/HealthcareServiceTypeVS";
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/ValueSet/HealthcareServiceTypeVS>
+           fhir:value "http://hl7.org/fhir/us/directory-query/ValueSet/HealthcareServiceTypeVS";
+           fhir:link <http://hl7.org/fhir/us/directory-query/ValueSet/HealthcareServiceTypeVS>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1403,8 +1403,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS";
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS>
+           fhir:value "http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS";
+           fhir:link <http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1429,9 +1429,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Location";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Location>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1756,9 +1756,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/contactpoint-availabletime";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/contactpoint-availabletime>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1804,9 +1804,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/via-intermediary";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/via-intermediary>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2104,9 +2104,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Location";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Location>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3336,9 +3336,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3414,9 +3414,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService.ttl> .
 
 # -------------------------------------------------------------------------------------
 

@@ -12,12 +12,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-CareTeam"/>
+  <url value="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam"/>
   <version value="1.0.0-ballot"/>
   <name value="NatlDirExCareTeam"/>
   <title value="National Directory Care Team"/>
   <status value="active"/>
-  <date value="2022-08-04T11:49:08-04:00"/>
+  <date value="2022-08-05T09:45:36-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -56,7 +56,7 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="CareTeam"/>
-  <baseDefinition value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam"/>
+  <baseDefinition value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam"/>
   <derivation value="constraint"/>
   <snapshot>
     <element id="CareTeam">
@@ -350,7 +350,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/careteam-alias"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/careteam-alias"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -385,7 +385,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/location-reference"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/location-reference"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -420,7 +420,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/healthcareservice-reference"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/healthcareservice-reference"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -455,7 +455,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-reference"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/endpoint-reference"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -491,7 +491,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/usage-restriction"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -667,7 +667,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/identifier-status"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/identifier-status"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -914,7 +914,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1349,9 +1349,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1509,7 +1509,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1635,7 +1635,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/contactpoint-availabletime"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1670,7 +1670,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/via-intermediary"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2007,7 +2007,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner"/>
       </type>
       <type>
         <code value="string"/>

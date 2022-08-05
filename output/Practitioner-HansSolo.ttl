@@ -5,15 +5,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Practitioner/HansSolo> a fhir:Practitioner;
+<http://hl7.org/fhir/us/directory-exchange/Practitioner/HansSolo> a fhir:Practitioner;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "HansSolo"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner";
+       fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner>
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
@@ -55,7 +55,7 @@
            ]
          ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/practitioner-qualification" ]
      ];
      fhir:Practitioner.qualification.code [
        fhir:CodeableConcept.coding [
@@ -87,7 +87,7 @@
            ]
          ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/practitioner-qualification" ]
      ];
      fhir:Practitioner.qualification.code [
        fhir:CodeableConcept.coding [
@@ -120,7 +120,7 @@
            ]
          ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/practitioner-qualification" ]
      ];
      fhir:Practitioner.qualification.code [
        fhir:CodeableConcept.coding [
@@ -139,11 +139,11 @@
      fhir:index 0;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/communication-proficiency" ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/communication-proficiency" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/LanguageProficiencyCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/LanguageProficiencyCS" ];
            fhir:Coding.code [ fhir:value "30" ]
          ]
        ]
@@ -157,9 +157,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Practitioner/HansSolo.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/Practitioner/HansSolo.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/Practitioner/HansSolo.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/Practitioner/HansSolo.ttl> .
 
 # -------------------------------------------------------------------------------------
 

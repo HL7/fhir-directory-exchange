@@ -4,7 +4,7 @@
   "meta": {
     "lastUpdated": "2020-07-07T13:26:22.0314215+00:00",
     "profile": [
-      "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location"
+      "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location"
     ]
   },
   "language": "en-US",
@@ -20,7 +20,7 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AcceptingPatientsCS",
+                "system": "http://hl7.org/fhir/us/directory-query/CodeSystem/AcceptingPatientsCS",
                 "code": "existptonly"
               }
             ]
@@ -33,25 +33,25 @@
           }
         }
       ],
-      "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients"
+      "url": "http://hl7.org/fhir/us/directory-query/StructureDefinition/newpatients"
     },
     {
-      "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/accessibility",
+      "url": "http://hl7.org/fhir/us/directory-query/StructureDefinition/accessibility",
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS",
+            "system": "http://hl7.org/fhir/us/directory-query/CodeSystem/AccessibilityCS",
             "code": "adacomp"
           }
         ]
       }
     },
     {
-      "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/accessibility",
+      "url": "http://hl7.org/fhir/us/directory-query/StructureDefinition/accessibility",
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS",
+            "system": "http://hl7.org/fhir/us/directory-query/CodeSystem/AccessibilityCS",
             "code": "pubtrans"
           }
         ]
@@ -104,7 +104,7 @@
               "valueTime": "17:00:00"
             }
           ],
-          "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime"
+          "url": "http://hl7.org/fhir/us/directory-query/StructureDefinition/contactpoint-availabletime"
         }
       ],
       "system": "phone",

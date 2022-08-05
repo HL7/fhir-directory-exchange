@@ -5,15 +5,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Location/HospLoc1> a fhir:Location;
+<http://hl7.org/fhir/us/directory-exchange/Location/HospLoc1> a fhir:Location;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "HospLoc1"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location";
+       fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location>
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
@@ -23,21 +23,21 @@
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/accessibility" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/accessibility" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS" ];
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/AccessibilityCS" ];
          fhir:Coding.code [ fhir:value "adacomp" ]
        ]
      ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/accessibility" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/accessibility" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS" ];
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/AccessibilityCS" ];
          fhir:Coding.code [ fhir:value "pubtrans" ]
        ]
      ]
@@ -89,7 +89,7 @@
          fhir:Extension.url [ fhir:value "daysOfWeek" ];
          fhir:Extension.valueCode [ fhir:value "sun" ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/contactpoint-availabletime" ]
      ];
      fhir:ContactPoint.system [ fhir:value "phone" ];
      fhir:ContactPoint.value [ fhir:value "(111)-222-3333" ];
@@ -114,7 +114,7 @@
      fhir:Location.position.latitude [ fhir:value "15"^^xsd:decimal ]
   ];
   fhir:Location.managingOrganization [
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Organization/Hospital>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Organization/Hospital>;
      fhir:Reference.reference [ fhir:value "Organization/Hospital" ]
   ];
   fhir:Location.hoursOfOperation [
@@ -144,13 +144,13 @@
      fhir:Location.hoursOfOperation.allDay [ fhir:value "true"^^xsd:boolean ]
   ] .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/Hospital> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Organization/Hospital> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Location/HospLoc1.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/Location/HospLoc1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/Location/HospLoc1.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/Location/HospLoc1.ttl> .
 
 # -------------------------------------------------------------------------------------
 

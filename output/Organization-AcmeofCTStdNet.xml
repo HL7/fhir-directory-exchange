@@ -4,8 +4,8 @@
   <id value="AcmeofCTStdNet"/>
   <meta>
     <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
-    <profile value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Network"/>
-    <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Network"/>
+    <profile value="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Network"/>
+    <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Network"/>
   </meta>
   <language value="en-US"/>
   <text>
@@ -14,7 +14,7 @@
   <active value="true"/>
   <type>
     <coding>
-      <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS"/>
+      <system value="http://hl7.org/fhir/us/directory-query/CodeSystem/OrgTypeCS"/>
       <code value="ntwk"/>
       <display value="Network"/>
     </coding>
@@ -29,7 +29,7 @@
       <given value="Jane"/>
     </name>
     <telecom>
-      <extension url="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary">
+      <extension url="http://hl7.org/fhir/us/directory-query/StructureDefinition/via-intermediary">
         <valueReference>
           <reference value="Organization/Acme"/>
         </valueReference>

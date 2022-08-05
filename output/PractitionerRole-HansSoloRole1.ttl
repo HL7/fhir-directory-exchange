@@ -5,15 +5,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/PractitionerRole/HansSoloRole1> a fhir:PractitionerRole;
+<http://hl7.org/fhir/us/directory-exchange/PractitionerRole/HansSoloRole1> a fhir:PractitionerRole;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "HansSoloRole1"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole";
+       fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole>
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
@@ -23,26 +23,26 @@
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/network-reference" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/network-reference" ];
      fhir:Extension.valueReference [
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Organization/AcmeofCTStdNet>;
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/Organization/AcmeofCTStdNet>;
        fhir:Reference.reference [ fhir:value "Organization/AcmeofCTStdNet" ]
      ]
   ];
   fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean];
   fhir:PractitionerRole.practitioner [
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Practitioner/HansSolo>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Practitioner/HansSolo>;
      fhir:Reference.reference [ fhir:value "Practitioner/HansSolo" ]
   ];
   fhir:PractitionerRole.organization [
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Organization/HartfordOrthopedics>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Organization/HartfordOrthopedics>;
      fhir:Reference.reference [ fhir:value "Organization/HartfordOrthopedics" ]
   ];
   fhir:PractitionerRole.code [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ProviderRoleCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/ProviderRoleCS" ];
        fhir:Coding.code [ fhir:value "ph" ]
      ]
   ];
@@ -57,30 +57,30 @@
   ];
   fhir:PractitionerRole.location [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Location/HansSoloClinic>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Location/HansSoloClinic>;
      fhir:Reference.reference [ fhir:value "Location/HansSoloClinic" ]
   ];
   fhir:PractitionerRole.healthcareService [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/HealthcareService/HansSoloService>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/HealthcareService/HansSoloService>;
      fhir:Reference.reference [ fhir:value "HealthcareService/HansSoloService" ]
   ] .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/AcmeofCTStdNet> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Organization/AcmeofCTStdNet> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Practitioner/HansSolo> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Practitioner/HansSolo> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/HartfordOrthopedics> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Organization/HartfordOrthopedics> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Location/HansSoloClinic> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Location/HansSoloClinic> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/HealthcareService/HansSoloService> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/HealthcareService/HansSoloService> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/PractitionerRole/HansSoloRole1.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/PractitionerRole/HansSoloRole1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/PractitionerRole/HansSoloRole1.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/PractitionerRole/HansSoloRole1.ttl> .
 
 # -------------------------------------------------------------------------------------
 

@@ -5,15 +5,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/BurrClinic> a fhir:Organization;
+<http://hl7.org/fhir/us/directory-exchange/Organization/BurrClinic> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "BurrClinic"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization";
+       fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization>
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
@@ -31,7 +31,7 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/OrgTypeCS" ];
        fhir:Coding.code [ fhir:value "fac" ];
        fhir:Coding.display [ fhir:value "Facility" ]
      ]
@@ -70,9 +70,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/BurrClinic.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/Organization/BurrClinic.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/Organization/BurrClinic.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/Organization/BurrClinic.ttl> .
 
 # -------------------------------------------------------------------------------------
 

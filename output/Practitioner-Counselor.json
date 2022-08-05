@@ -4,7 +4,7 @@
   "meta": {
     "lastUpdated": "2020-07-07T13:26:22.0314215+00:00",
     "profile": [
-      "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
+      "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
     ]
   },
   "language": "en-US",
@@ -31,7 +31,7 @@
           "valueString": "5"
         }
       ],
-      "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/rating"
+      "url": "http://hl7.org/fhir/us/directory-query/StructureDefinition/rating"
     }
   ],
   "identifier": [
@@ -71,7 +71,7 @@
               }
             }
           ],
-          "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification"
+          "url": "http://hl7.org/fhir/us/directory-query/StructureDefinition/practitioner-qualification"
         }
       ],
       "code": {
@@ -91,11 +91,11 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/communication-proficiency",
+          "url": "http://hl7.org/fhir/us/directory-query/StructureDefinition/communication-proficiency",
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/LanguageProficiencyCS",
+                "system": "http://hl7.org/fhir/us/directory-query/CodeSystem/LanguageProficiencyCS",
                 "code": "30"
               }
             ]

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation> a fhir:StructureDefinition;
+<http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "NatlDirEx-OrganizationAffiliation"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "business" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"];
+  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"];
   fhir:StructureDefinition.version [ fhir:value "1.0.0-ballot"];
   fhir:StructureDefinition.name [ fhir:value "NatlDirExOrganizationAffiliation"];
   fhir:StructureDefinition.title [ fhir:value "National Directory OrganizationAffiliation"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-04T11:49:08-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-05T09:45:36-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -66,8 +66,8 @@
   fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
   fhir:StructureDefinition.type [ fhir:value "OrganizationAffiliation"];
   fhir:StructureDefinition.baseDefinition [
-     fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation";
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation>
+     fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation";
+     fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation>
   ];
   fhir:StructureDefinition.derivation [ fhir:value "constraint"];
   fhir:StructureDefinition.snapshot [
@@ -155,8 +155,8 @@
          fhir:ElementDefinition.constraint.human [ fhir:value "NatlDirEndpointQryOrganizationAffiliation.organization or  NatlDirEndpointQryOrganizationAffiliation.participatingOrganization" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "organization.exists() or participatingOrganization.exists()" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation";
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation>
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation";
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation>
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -1390,9 +1390,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1432,9 +1432,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1474,9 +1474,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Network";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Network";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Network>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Network>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1527,8 +1527,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/OrganizationAffiliationRoleVS";
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/ValueSet/OrganizationAffiliationRoleVS>
+           fhir:value "http://hl7.org/fhir/us/directory-query/ValueSet/OrganizationAffiliationRoleVS";
+           fhir:link <http://hl7.org/fhir/us/directory-query/ValueSet/OrganizationAffiliationRoleVS>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1570,8 +1570,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS";
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS>
+           fhir:value "http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS";
+           fhir:link <http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1596,9 +1596,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Location";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Location>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1642,9 +1642,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1720,9 +1720,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1767,9 +1767,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation.ttl> .
 
 # -------------------------------------------------------------------------------------
 

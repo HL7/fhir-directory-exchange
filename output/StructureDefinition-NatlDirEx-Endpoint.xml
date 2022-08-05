@@ -16,12 +16,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="business"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Endpoint"/>
+  <url value="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint"/>
   <version value="1.0.0-ballot"/>
   <name value="NatlDirExEndPoint"/>
   <title value="National Directory Endpoint"/>
   <status value="active"/>
-  <date value="2022-08-04T11:49:08-04:00"/>
+  <date value="2022-08-05T09:45:36-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -55,7 +55,7 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Endpoint"/>
-  <baseDefinition value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint"/>
+  <baseDefinition value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint"/>
   <derivation value="constraint"/>
   <snapshot>
     <element id="Endpoint">
@@ -602,7 +602,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-usecase"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/endpoint-usecase"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -637,7 +637,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/igsSupported"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/igsSupported"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -673,7 +673,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpointType"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/endpointType"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -709,7 +709,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureExchangeArtifacts"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/secureExchangeArtifacts"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -744,7 +744,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/trustFramework"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/trustFramework"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -779,7 +779,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/dynamicRegistration"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/dynamicRegistration"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -814,7 +814,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/associatedServers"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/associatedServers"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -850,7 +850,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureEndpoint"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/secureEndpoint"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -1346,10 +1346,10 @@
       <isSummary value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet">
-          <valueCanonical value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/MinEndpointConnectionTypeVS"/>
+          <valueCanonical value="http://hl7.org/fhir/us/directory-query/ValueSet/MinEndpointConnectionTypeVS"/>
         </extension>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointConnectionTypeVS"/>
+        <valueSet value="http://hl7.org/fhir/us/directory-query/ValueSet/EndpointConnectionTypeVS"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -1407,7 +1407,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1514,7 +1514,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointPayloadTypeVS"/>
+        <valueSet value="http://hl7.org/fhir/us/directory-query/ValueSet/EndpointPayloadTypeVS"/>
       </binding>
       <mapping>
         <identity value="rim"/>

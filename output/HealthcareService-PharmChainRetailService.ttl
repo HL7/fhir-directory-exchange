@@ -5,15 +5,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/HealthcareService/PharmChainRetailService> a fhir:HealthcareService;
+<http://hl7.org/fhir/us/directory-exchange/HealthcareService/PharmChainRetailService> a fhir:HealthcareService;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "PharmChainRetailService"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService";
+       fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService>
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
@@ -29,12 +29,12 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/DeliveryMethodCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/DeliveryMethodCS" ];
            fhir:Coding.code [ fhir:value "physical" ]
          ]
        ]
      ];
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/delivery-method" ]
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/delivery-method" ]
   ], [
      fhir:index 1;
      fhir:Element.extension [
@@ -43,7 +43,7 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AcceptingPatientsCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/AcceptingPatientsCS" ];
            fhir:Coding.code [ fhir:value "existptonly" ]
          ]
        ]
@@ -51,22 +51,22 @@
        fhir:index 1;
        fhir:Extension.url [ fhir:value "fromNetwork" ];
        fhir:Extension.valueReference [
-         fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Organization/AcmeofCTStdNet>;
+         fhir:link <http://hl7.org/fhir/us/directory-exchange/Organization/AcmeofCTStdNet>;
          fhir:Reference.reference [ fhir:value "Organization/AcmeofCTStdNet" ]
        ]
      ];
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients" ]
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/newpatients" ]
   ];
   fhir:HealthcareService.active [ fhir:value "true"^^xsd:boolean];
   fhir:HealthcareService.providedBy [
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Organization/PharmChain>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Organization/PharmChain>;
      fhir:Reference.reference [ fhir:value "Organization/PharmChain" ]
   ];
   fhir:HealthcareService.category [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/HealthcareServiceCategoryCS" ];
        fhir:Coding.code [ fhir:value "pharm" ];
        fhir:Coding.display [ fhir:value "Pharmacy" ]
      ]
@@ -82,19 +82,19 @@
   ];
   fhir:HealthcareService.location [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Location/PharmLoc1>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Location/PharmLoc1>;
      fhir:Reference.reference [ fhir:value "Location/PharmLoc1" ]
   ], [
      fhir:index 1;
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Location/PharmLoc2>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Location/PharmLoc2>;
      fhir:Reference.reference [ fhir:value "Location/PharmLoc2" ]
   ], [
      fhir:index 2;
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Location/PharmLoc3>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Location/PharmLoc3>;
      fhir:Reference.reference [ fhir:value "Location/PharmLoc3" ]
   ], [
      fhir:index 3;
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Location/PharmLoc4>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Location/PharmLoc4>;
      fhir:Reference.reference [ fhir:value "Location/PharmLoc4" ]
   ];
   fhir:HealthcareService.name [ fhir:value "Pharmacy by PharmChain"];
@@ -102,31 +102,31 @@
      fhir:index 0;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary" ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/via-intermediary" ];
        fhir:Extension.valueReference [
-         fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Organization/PharmChain>;
+         fhir:link <http://hl7.org/fhir/us/directory-exchange/Organization/PharmChain>;
          fhir:Reference.reference [ fhir:value "Organization/PharmChain" ]
        ]
      ]
   ] .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/AcmeofCTStdNet> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Organization/AcmeofCTStdNet> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/PharmChain> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Organization/PharmChain> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Location/PharmLoc1> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Location/PharmLoc1> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Location/PharmLoc2> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Location/PharmLoc2> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Location/PharmLoc3> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Location/PharmLoc3> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Location/PharmLoc4> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Location/PharmLoc4> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/HealthcareService/PharmChainRetailService.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/HealthcareService/PharmChainRetailService.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/HealthcareService/PharmChainRetailService.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/HealthcareService/PharmChainRetailService.ttl> .
 
 # -------------------------------------------------------------------------------------
 

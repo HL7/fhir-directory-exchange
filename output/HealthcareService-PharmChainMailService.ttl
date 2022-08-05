@@ -5,15 +5,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/HealthcareService/PharmChainMailService> a fhir:HealthcareService;
+<http://hl7.org/fhir/us/directory-exchange/HealthcareService/PharmChainMailService> a fhir:HealthcareService;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "PharmChainMailService"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService";
+       fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService>
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
@@ -29,7 +29,7 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/DeliveryMethodCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/DeliveryMethodCS" ];
            fhir:Coding.code [ fhir:value "physical" ]
          ]
        ]
@@ -39,7 +39,7 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/VirtualModalitiesCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/VirtualModalitiesCS" ];
            fhir:Coding.code [ fhir:value "web" ]
          ]
        ]
@@ -49,7 +49,7 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/VirtualModalitiesCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/VirtualModalitiesCS" ];
            fhir:Coding.code [ fhir:value "app" ]
          ]
        ]
@@ -59,7 +59,7 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/VirtualModalitiesCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/VirtualModalitiesCS" ];
            fhir:Coding.code [ fhir:value "tdd" ]
          ]
        ]
@@ -69,23 +69,23 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/VirtualModalitiesCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/VirtualModalitiesCS" ];
            fhir:Coding.code [ fhir:value "phone" ]
          ]
        ]
      ];
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/delivery-method" ]
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/delivery-method" ]
   ];
   fhir:HealthcareService.active [ fhir:value "true"^^xsd:boolean];
   fhir:HealthcareService.providedBy [
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Organization/PharmChain>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Organization/PharmChain>;
      fhir:Reference.reference [ fhir:value "Organization/PharmChain" ]
   ];
   fhir:HealthcareService.category [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/HealthcareServiceCategoryCS" ];
        fhir:Coding.code [ fhir:value "pharm" ];
        fhir:Coding.display [ fhir:value "Pharmacy" ]
      ]
@@ -112,13 +112,13 @@
      fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
   ] .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/PharmChain> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Organization/PharmChain> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/HealthcareService/PharmChainMailService.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/HealthcareService/PharmChainMailService.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/HealthcareService/PharmChainMailService.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/HealthcareService/PharmChainMailService.ttl> .
 
 # -------------------------------------------------------------------------------------
 

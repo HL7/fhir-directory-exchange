@@ -5,15 +5,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/OrganizationAffiliation/BurrClinicAffil> a fhir:OrganizationAffiliation;
+<http://hl7.org/fhir/us/directory-exchange/OrganizationAffiliation/BurrClinicAffil> a fhir:OrganizationAffiliation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "BurrClinicAffil"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation";
+       fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation>
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
@@ -23,52 +23,52 @@
   ];
   fhir:OrganizationAffiliation.active [ fhir:value "true"^^xsd:boolean];
   fhir:OrganizationAffiliation.organization [
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Organization/Hospital>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Organization/Hospital>;
      fhir:Reference.reference [ fhir:value "Organization/Hospital" ]
   ];
   fhir:OrganizationAffiliation.participatingOrganization [
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Organization/BurrClinic>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Organization/BurrClinic>;
      fhir:Reference.reference [ fhir:value "Organization/BurrClinic" ]
   ];
   fhir:OrganizationAffiliation.network [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Organization/AcmeofCTStdNet>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Organization/AcmeofCTStdNet>;
      fhir:Reference.reference [ fhir:value "Organization/AcmeofCTStdNet" ]
   ];
   fhir:OrganizationAffiliation.code [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrganizationAffiliationRoleCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/OrganizationAffiliationRoleCS" ];
        fhir:Coding.code [ fhir:value "outpatient" ]
      ]
   ];
   fhir:OrganizationAffiliation.location [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Location/HospLoc2>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Location/HospLoc2>;
      fhir:Reference.reference [ fhir:value "Location/HospLoc2" ]
   ];
   fhir:OrganizationAffiliation.healthcareService [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/HealthcareService/BurrClinicServices>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/HealthcareService/BurrClinicServices>;
      fhir:Reference.reference [ fhir:value "HealthcareService/BurrClinicServices" ]
   ] .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/Hospital> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Organization/Hospital> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/BurrClinic> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Organization/BurrClinic> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/AcmeofCTStdNet> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Organization/AcmeofCTStdNet> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Location/HospLoc2> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Location/HospLoc2> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/HealthcareService/BurrClinicServices> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/HealthcareService/BurrClinicServices> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/OrganizationAffiliation/BurrClinicAffil.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/OrganizationAffiliation/BurrClinicAffil.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/OrganizationAffiliation/BurrClinicAffil.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/OrganizationAffiliation/BurrClinicAffil.ttl> .
 
 # -------------------------------------------------------------------------------------
 

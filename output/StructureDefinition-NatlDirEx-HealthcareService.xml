@@ -20,12 +20,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="business"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"/>
+  <url value="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"/>
   <version value="1.0.0-ballot"/>
   <name value="NatlDirExHealthCareService"/>
   <title value="National Directory HealthcareService"/>
   <status value="active"/>
-  <date value="2022-08-04T11:49:08-04:00"/>
+  <date value="2022-08-05T09:45:36-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -59,7 +59,7 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="HealthcareService"/>
-  <baseDefinition value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService"/>
+  <baseDefinition value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService"/>
   <derivation value="constraint"/>
   <snapshot>
     <element id="HealthcareService">
@@ -606,7 +606,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/rating"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/rating"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -641,7 +641,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/newpatients"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -665,7 +665,7 @@
         <severity value="error"/>
         <human value="If no new patients are accepted, no characteristics are allowed"/>
         <expression value="extension('acceptingPatients').valueCodeableConcept.coding.exists(code = 'no') implies extension('characteristics').empty()"/>
-        <source value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients"/>
+        <source value="http://hl7.org/fhir/us/directory-query/StructureDefinition/newpatients"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -684,7 +684,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/delivery-method"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/delivery-method"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -719,7 +719,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/paymentAccepted"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/paymentAccepted"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -754,7 +754,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/requiredDocument"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/requiredDocument"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -789,7 +789,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/fundingSource"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/fundingSource"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -937,7 +937,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -984,7 +984,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/HealthcareServiceCategoryVS"/>
+        <valueSet value="http://hl7.org/fhir/us/directory-query/ValueSet/HealthcareServiceCategoryVS"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -1023,7 +1023,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/HealthcareServiceTypeVS"/>
+        <valueSet value="http://hl7.org/fhir/us/directory-query/ValueSet/HealthcareServiceTypeVS"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -1057,7 +1057,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/SpecialtiesVS"/>
+        <valueSet value="http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -1077,7 +1077,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Location"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1334,7 +1334,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/contactpoint-availabletime"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1369,7 +1369,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/via-intermediary"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1608,7 +1608,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Location"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2551,7 +2551,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint"/>
       </type>
       <constraint>
         <key value="ele-1"/>

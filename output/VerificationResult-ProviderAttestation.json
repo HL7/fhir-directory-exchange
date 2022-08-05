@@ -4,8 +4,8 @@
   "meta": {
     "lastUpdated": "2020-07-07T13:26:22.0314215+00:00",
     "profile": [
-      "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Validation",
-      "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Verification"
+      "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Validation",
+      "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDir-Verification"
     ]
   },
   "text": {
@@ -39,7 +39,7 @@
     {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS",
+          "system": "http://hl7.org/fhir/us/directory-query/CodeSystem/ValidationTypeCS",
           "code": "attester"
         }
       ]

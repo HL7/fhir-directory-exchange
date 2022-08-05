@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.FHIR-DIRECTORY-EXCHANGE\National Directory Location - Definitions - FHIR v4.0.1</title>
+    <title>HL7.FHIR.US.DIRECTORY-EXCHANGE\National Directory Location - Definitions - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,8 +45,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"96.76"}
-    h3,h4,h5,h6{--heading-prefix:"96.76"}</style>
+    <style type="text/css">h2{--heading-prefix:"24.76"}
+    h3,h4,h5,h6{--heading-prefix:"24.76"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -170,7 +170,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">National Healthcare Directory Exchange - Local Development build (v1.0.0-ballot). See the <a href="http://hl7.org/fhir/us/fhir-directory-exchange/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">National Healthcare Directory Exchange - Local Development build (v1.0.0-ballot). See the <a href="http://hl7.org/fhir/us/directory-exchange/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -251,7 +251,7 @@
         
           Active
           
-            as of 2022-08-04
+            as of 2022-08-05
           
         
       </td>
@@ -418,7 +418,7 @@ A human language.</p>
   <tr><td>Definition</td><td><p>An extension to describe accessibility options offered by a practitioner or at a location.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-accessibility.html" title="[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/accessibility]]">Accessibility</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-accessibility.html" title="[CanonicalType[http://hl7.org/fhir/us/directory-query/StructureDefinition/accessibility]]">Accessibility</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Location.extension:newpatients"> </a></a><span style="color: grey">18.</span> <b>Location.extension:newpatients</b><a href="#Location.extension:newpatients" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -428,7 +428,7 @@ This extension is included in the PractitionerRole, HealthcareService, and Locat
 This provides needed flexibility for specifying whether a provider accepts new patients by location and network.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-newpatients.html" title="[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients]]">NewPatients</a>)  (Complex Extension)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-newpatients.html" title="[CanonicalType[http://hl7.org/fhir/us/directory-query/StructureDefinition/newpatients]]">NewPatients</a>)  (Complex Extension)</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())<br/><b title="Formal Invariant Identifier">new-patients-characteristics</b>: If no new patients are accepted, no characteristics are allowed (: extension('acceptingPatients').valueCodeableConcept.coding.exists(code = 'no') implies extension('characteristics').empty())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Location.extension:region"> </a></a><span style="color: grey">19.</span> <b>Location.extension:region</b><a href="#Location.extension:region" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -574,7 +574,7 @@ Indicates the type of function performed at the location.</p>
   <tr><td>Definition</td><td><p>An extension representing the days and times a contact point is available</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-contactpoint-availabletime.html" title="[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime]]">ContactPointAvailableTime</a>)  (Complex Extension)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-contactpoint-availabletime.html" title="[CanonicalType[http://hl7.org/fhir/us/directory-query/StructureDefinition/contactpoint-availabletime]]">ContactPointAvailableTime</a>)  (Complex Extension)</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Location.telecom.extension:via-intermediary"> </a></a><span style="color: grey">33.</span> <b>Location.telecom.extension:via-intermediary</b><a href="#Location.telecom.extension:via-intermediary" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -582,7 +582,7 @@ Indicates the type of function performed at the location.</p>
   <tr><td>Definition</td><td><p>A reference to an alternative point of contact (NatlDirEndpointQry-PractitionerRole, NatlDirEndpointQry-Organization, NatlDirEndpointQry-OrganizationAffiliation, or NatlDirEndpointQry-Location) for this organization</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-via-intermediary.html" title="[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary]]">ViaIntermediary</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-PractitionerRole.html" title="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole">NatlDirEndpointQryPractitionerRole</a> | <a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html" title="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation">NatlDirEndpointQryOrganizationAffiliation</a> | <a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-Location.html" title="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location">NatlDirEndpointQryLocation</a> | <a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-Organization.html" title="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization">NatlDirEndpointQryOrganization</a>))</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-via-intermediary.html" title="[CanonicalType[http://hl7.org/fhir/us/directory-query/StructureDefinition/via-intermediary]]">ViaIntermediary</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-PractitionerRole.html" title="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole">NatlDirEndpointQryPractitionerRole</a> | <a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html" title="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation">NatlDirEndpointQryOrganizationAffiliation</a> | <a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-Location.html" title="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Location">NatlDirEndpointQryLocation</a> | <a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-Organization.html" title="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization">NatlDirEndpointQryOrganization</a>))</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Location.telecom.system"> </a><span style="color: grey">34.</span> <b>Location.telecom.system</b><a href="#Location.telecom.system" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -861,7 +861,7 @@ Physical form of the location.</p>
   <tr><td>Definition</td><td><p>The organization responsible for the provisioning and upkeep of the location.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-Organization.html" title="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization">NatlDirEndpointQryOrganization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-Organization.html" title="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization">NatlDirEndpointQryOrganization</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Need to know who manages the location.</p>
 </td></tr>
@@ -873,7 +873,7 @@ Physical form of the location.</p>
   <tr><td>Definition</td><td><p>Another Location of which this Location is physically a part of.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-Location.html" title="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location">NatlDirEndpointQryLocation</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-Location.html" title="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Location">NatlDirEndpointQryLocation</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>For purposes of location, display and identification, knowing which locations are located within other locations is important.</p>
 </td></tr>
@@ -960,7 +960,7 @@ The days of the week.</p>
   <tr><td>Definition</td><td><p>Technical endpoints providing access to services operated for the location.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-Endpoint.html" title="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint">NatlDirEndpointQryEndpoint</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-Endpoint.html" title="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint">NatlDirEndpointQryEndpoint</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Organizations may have different systems at different locations that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.</p>
 </td></tr>
@@ -1020,14 +1020,14 @@ The days of the week.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-exchange#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 4, 2022 11:49-0400">2022-08-04</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.directory-exchange#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 5, 2022 09:45-0400">2022-08-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/fhir-directory-exchange/history.html">Version History</a> |
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/directory-exchange/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
                  <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>

@@ -12,12 +12,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Restriction"/>
+  <url value="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Restriction"/>
   <version value="1.0.0-ballot"/>
   <name value="NatlDirExRestriction"/>
   <title value="National Directory Restriction"/>
   <status value="active"/>
-  <date value="2022-08-04T11:49:08-04:00"/>
+  <date value="2022-08-05T09:45:36-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -61,7 +61,7 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Consent"/>
-  <baseDefinition value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Restriction"/>
+  <baseDefinition value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDir-Restriction"/>
   <derivation value="constraint"/>
   <snapshot>
     <element id="Consent">
@@ -566,7 +566,7 @@
           <valueString value="ConsentScope"/>
         </extension>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/ConsentVS"/>
+        <valueSet value="http://hl7.org/fhir/us/directory-query/ValueSet/ConsentVS"/>
       </binding>
     </element>
     <element id="Consent.category">

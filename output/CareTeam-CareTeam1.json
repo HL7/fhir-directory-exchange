@@ -4,7 +4,7 @@
   "meta": {
     "lastUpdated": "2020-07-07T13:26:22.0314215+00:00",
     "profile": [
-      "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-CareTeam"
+      "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam"
     ]
   },
   "language": "en-US",
@@ -14,23 +14,23 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/careteam-alias",
+      "url": "http://hl7.org/fhir/us/directory-query/StructureDefinition/careteam-alias",
       "valueString": "CareTeam1"
     },
     {
-      "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-reference",
+      "url": "http://hl7.org/fhir/us/directory-query/StructureDefinition/endpoint-reference",
       "valueReference": {
         "reference": "Endpoint/AcmeOfCTPortalEndpoint"
       }
     },
     {
-      "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/healthcareservice-reference",
+      "url": "http://hl7.org/fhir/us/directory-query/StructureDefinition/healthcareservice-reference",
       "valueReference": {
         "reference": "HealthcareService/HansSoloService"
       }
     },
     {
-      "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction",
+      "url": "http://hl7.org/fhir/us/directory-query/StructureDefinition/usage-restriction",
       "valueReference": {
         "reference": "Consent/PatientConsent"
       }
@@ -40,7 +40,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/identifier-status",
+          "url": "http://hl7.org/fhir/us/directory-query/StructureDefinition/identifier-status",
           "valueCode": "active"
         }
       ]
