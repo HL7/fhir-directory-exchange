@@ -15,12 +15,12 @@
       "valueCode": "business"
     }
   ],
-  "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Endpoint",
+  "url": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint",
   "version": "1.0.0-ballot",
   "name": "NatlDirExEndPoint",
   "title": "National Directory Endpoint",
   "status": "active",
-  "date": "2022-08-04T11:49:08-04:00",
+  "date": "2022-08-05T09:45:36-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -64,7 +64,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Endpoint",
-  "baseDefinition": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint",
+  "baseDefinition": "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint",
   "derivation": "constraint",
   "snapshot": {
     "element": [
@@ -733,7 +733,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-usecase"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/endpoint-usecase"
             ]
           }
         ],
@@ -777,7 +777,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/igsSupported"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/igsSupported"
             ]
           }
         ],
@@ -822,7 +822,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpointType"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/endpointType"
             ]
           }
         ],
@@ -867,7 +867,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureExchangeArtifacts"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/secureExchangeArtifacts"
             ]
           }
         ],
@@ -911,7 +911,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/trustFramework"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/trustFramework"
             ]
           }
         ],
@@ -955,7 +955,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/dynamicRegistration"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/dynamicRegistration"
             ]
           }
         ],
@@ -999,7 +999,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/associatedServers"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/associatedServers"
             ]
           }
         ],
@@ -1044,7 +1044,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureEndpoint"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/secureEndpoint"
             ]
           }
         ],
@@ -1655,11 +1655,11 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet",
-              "valueCanonical": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/MinEndpointConnectionTypeVS"
+              "valueCanonical": "http://hl7.org/fhir/us/directory-query/ValueSet/MinEndpointConnectionTypeVS"
             }
           ],
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointConnectionTypeVS"
+          "valueSet": "http://hl7.org/fhir/us/directory-query/ValueSet/EndpointConnectionTypeVS"
         },
         "mapping": [
           {
@@ -1729,7 +1729,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization"
             ]
           }
         ],
@@ -1861,7 +1861,7 @@
         "isSummary": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointPayloadTypeVS"
+          "valueSet": "http://hl7.org/fhir/us/directory-query/ValueSet/EndpointPayloadTypeVS"
         },
         "mapping": [
           {

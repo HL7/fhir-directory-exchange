@@ -4,7 +4,7 @@
   "meta": {
     "lastUpdated": "2020-07-07T13:26:22.0314215+00:00",
     "profile": [
-      "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+      "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
     ]
   },
   "language": "en-US",
@@ -14,7 +14,7 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/network-reference",
+      "url": "http://hl7.org/fhir/us/directory-query/StructureDefinition/network-reference",
       "valueReference": {
         "reference": "Organization/AcmeofCTStdNet"
       }
@@ -31,7 +31,7 @@
     {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ProviderRoleCS",
+          "system": "http://hl7.org/fhir/us/directory-query/CodeSystem/ProviderRoleCS",
           "code": "ap"
         }
       ]

@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/VerificationResult/ProviderAttestation> a fhir:VerificationResult;
+<http://hl7.org/fhir/us/directory-exchange/VerificationResult/ProviderAttestation> a fhir:VerificationResult;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ProviderAttestation"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Validation";
+       fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Validation";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Validation>
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Validation>
      ], [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Verification";
+       fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDir-Verification";
        fhir:index 1;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Verification>
+       fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDir-Verification>
      ]
   ];
   fhir:DomainResource.text [
@@ -26,7 +26,7 @@
   ];
   fhir:VerificationResult.target [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Practitioner/JoeSmith>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Practitioner/JoeSmith>;
      fhir:Reference.reference [ fhir:value "Practitioner/JoeSmith" ]
   ];
   fhir:VerificationResult.need [
@@ -49,7 +49,7 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/ValidationTypeCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/ValidationTypeCS" ];
        fhir:Coding.code [ fhir:value "attester" ]
      ]
   ];
@@ -62,7 +62,7 @@
   ];
   fhir:VerificationResult.attestation [
      fhir:VerificationResult.attestation.who [
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Practitioner/JoeSmith>;
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/Practitioner/JoeSmith>;
        fhir:Reference.reference [ fhir:value "Practitioner/JoeSmith" ]
      ];
      fhir:VerificationResult.attestation.communicationMethod [
@@ -75,13 +75,13 @@
      fhir:VerificationResult.attestation.date [ fhir:value "2020-07-07"^^xsd:date ]
   ] .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Practitioner/JoeSmith> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Practitioner/JoeSmith> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/VerificationResult/ProviderAttestation.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/VerificationResult/ProviderAttestation.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/VerificationResult/ProviderAttestation.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/VerificationResult/ProviderAttestation.ttl> .
 
 # -------------------------------------------------------------------------------------
 

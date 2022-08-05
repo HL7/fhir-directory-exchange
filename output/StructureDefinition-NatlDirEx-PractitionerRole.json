@@ -15,12 +15,12 @@
       "valueCode": "individual"
     }
   ],
-  "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole",
+  "url": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole",
   "version": "1.0.0-ballot",
   "name": "NatlDirExPractitionerRole",
   "title": "National Directory PractitionerRole",
   "status": "active",
-  "date": "2022-08-04T11:49:08-04:00",
+  "date": "2022-08-05T09:45:36-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -74,7 +74,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "PractitionerRole",
-  "baseDefinition": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole",
   "derivation": "constraint",
   "snapshot": {
     "element": [
@@ -146,7 +146,7 @@
             "severity": "error",
             "human": "If NatlDirPractitionerRole.practitioner is absent  ( NatlDirPractitionerRole.organization, NatlDirPractitionerRole.healthcareservice, NatlDirPractitionerRole.location) must be present",
             "expression": "practitioner.exists() or (organization.exists() or healthcareservice.exists() or location.exists())",
-            "source": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole"
+            "source": "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole"
           }
         ],
         "isModifier": false,
@@ -758,7 +758,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/rating"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/rating"
             ]
           }
         ],
@@ -802,7 +802,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/newpatients"
             ]
           }
         ],
@@ -831,7 +831,7 @@
             "severity": "error",
             "human": "If no new patients are accepted, no characteristics are allowed",
             "expression": "extension('acceptingPatients').valueCodeableConcept.coding.exists(code = 'no') implies extension('characteristics').empty()",
-            "source": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients"
+            "source": "http://hl7.org/fhir/us/directory-query/StructureDefinition/newpatients"
           }
         ],
         "isModifier": false
@@ -853,7 +853,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/network-reference"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/network-reference"
             ]
           }
         ],
@@ -1496,7 +1496,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner"
             ]
           }
         ],
@@ -1536,7 +1536,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization"
             ]
           }
         ],
@@ -1594,7 +1594,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/PractitionerRoleVS"
+          "valueSet": "http://hl7.org/fhir/us/directory-query/ValueSet/PractitionerRoleVS"
         },
         "mapping": [
           {
@@ -1643,7 +1643,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/IndividualAndGroupSpecialtiesVS"
+          "valueSet": "http://hl7.org/fhir/us/directory-query/ValueSet/IndividualAndGroupSpecialtiesVS"
         },
         "mapping": [
           {
@@ -1676,7 +1676,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Location"
             ]
           }
         ],
@@ -1724,7 +1724,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-HealthcareService"
             ]
           }
         ],
@@ -1900,7 +1900,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/contactpoint-availabletime"
             ]
           }
         ],
@@ -1942,7 +1942,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/via-intermediary"
             ]
           }
         ],
@@ -2841,7 +2841,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint"
+              "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint"
             ]
           }
         ],

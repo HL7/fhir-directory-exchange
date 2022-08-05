@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "a5b4f59b-f505-41e5-b90f-b3db6c63f43a-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a5b4f59b-f505-41e5-b90f-b3db6c63f43a-3",
+  "id" : "42f66c31-4d3f-4628-a1e0-78ff1903b83a-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/42f66c31-4d3f-4628-a1e0-78ff1903b83a-3",
   "name" : "IntersectionUSCoreCareTeamAndNatlDirExCareTeam",
   "title" : "Intersection of US Core CareTeam Profile And National Directory Care Team",
   "status" : "active",
-  "date" : "2022-08-04T11:49:31-04:00",
+  "date" : "2022-08-05T09:45:59-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -580,7 +580,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1112,7 +1112,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1470,11 +1470,11 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner"]
+        "targetProfile" : ["http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner"]
       },
       {
         "code" : "string",
-        "targetProfile" : ["http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner"]
+        "targetProfile" : ["http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner"]
       }],
       "constraint" : [{
         "key" : "ele-1",

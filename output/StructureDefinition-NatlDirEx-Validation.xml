@@ -12,12 +12,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="business"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Validation"/>
+  <url value="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Validation"/>
   <version value="1.0.0-ballot"/>
   <name value="NatlDirExValidation"/>
   <title value="National Directory Validation"/>
   <status value="active"/>
-  <date value="2022-08-04T11:49:08-04:00"/>
+  <date value="2022-08-05T09:45:36-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -51,7 +51,7 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="VerificationResult"/>
-  <baseDefinition value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Verification"/>
+  <baseDefinition value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDir-Verification"/>
   <derivation value="constraint"/>
   <snapshot>
     <element id="VerificationResult">
@@ -576,7 +576,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/ValidationProcessVS"/>
+        <valueSet value="http://hl7.org/fhir/us/directory-query/ValueSet/ValidationProcessVS"/>
       </binding>
     </element>
     <element id="VerificationResult.frequency">

@@ -1,5 +1,5 @@
 {
-  "ImplementationGuide/hl7.fhir.us.fhir-directory-query": {
+  "ImplementationGuide/hl7.fhir.us.directory-query": {
     "errors": 0,
     "warnings": 0
   },
@@ -799,35 +799,35 @@
     "errors": 0,
     "warnings": 0
   },
-  "CapabilityStatement/fhir-directory-query-basic-endpoint": {
+  "CapabilityStatement/directory-query-basic-endpoint": {
     "errors": 0,
     "warnings": 0
   },
-  "CapabilityStatement/fhir-directory-query-basic-expanded": {
+  "CapabilityStatement/directory-query-basic-expanded": {
     "errors": 0,
     "warnings": 0
   },
-  "CapabilityStatement/fhir-directory-query-health-or-human-services-endpoint": {
+  "CapabilityStatement/directory-query-health-or-human-services-endpoint": {
     "errors": 0,
     "warnings": 0
   },
-  "CapabilityStatement/fhir-directory-query-health-or-human-services-expanded": {
+  "CapabilityStatement/directory-query-health-or-human-services-expanded": {
     "errors": 0,
     "warnings": 0
   },
-  "CapabilityStatement/fhir-directory-query-human-services-endpoint": {
+  "CapabilityStatement/directory-query-human-services-endpoint": {
     "errors": 0,
     "warnings": 0
   },
-  "CapabilityStatement/fhir-directory-query-human-services-expanded": {
+  "CapabilityStatement/directory-query-human-services-expanded": {
     "errors": 0,
     "warnings": 0
   },
-  "CapabilityStatement/fhir-directory-query-provider-endpoint": {
+  "CapabilityStatement/directory-query-provider-endpoint": {
     "errors": 0,
     "warnings": 0
   },
-  "CapabilityStatement/fhir-directory-query-provider-expanded": {
+  "CapabilityStatement/directory-query-provider-expanded": {
     "errors": 0,
     "warnings": 0
   },

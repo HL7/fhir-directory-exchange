@@ -15,12 +15,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Restriction",
+  "url": "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Restriction",
   "version": "1.0.0-ballot",
   "name": "NatlDirExRestriction",
   "title": "National Directory Restriction",
   "status": "active",
-  "date": "2022-08-04T11:49:08-04:00",
+  "date": "2022-08-05T09:45:36-04:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -74,7 +74,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Consent",
-  "baseDefinition": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDir-Restriction",
+  "baseDefinition": "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDir-Restriction",
   "derivation": "constraint",
   "snapshot": {
     "element": [
@@ -678,7 +678,7 @@
             }
           ],
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/ConsentVS"
+          "valueSet": "http://hl7.org/fhir/us/directory-query/ValueSet/ConsentVS"
         }
       },
       {

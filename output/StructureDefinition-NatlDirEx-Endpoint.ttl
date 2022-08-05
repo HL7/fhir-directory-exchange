@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Endpoint> a fhir:StructureDefinition;
+<http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "NatlDirEx-Endpoint"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "business" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Endpoint"];
+  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint"];
   fhir:StructureDefinition.version [ fhir:value "1.0.0-ballot"];
   fhir:StructureDefinition.name [ fhir:value "NatlDirExEndPoint"];
   fhir:StructureDefinition.title [ fhir:value "National Directory Endpoint"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-04T11:49:08-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-05T09:45:36-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -66,8 +66,8 @@
   fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
   fhir:StructureDefinition.type [ fhir:value "Endpoint"];
   fhir:StructureDefinition.baseDefinition [
-     fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint";
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint>
+     fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint";
+     fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Endpoint>
   ];
   fhir:StructureDefinition.derivation [ fhir:value "constraint"];
   fhir:StructureDefinition.snapshot [
@@ -783,9 +783,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-usecase";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/endpoint-usecase";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-usecase>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/endpoint-usecase>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -834,9 +834,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/igsSupported";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/igsSupported";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/igsSupported>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/igsSupported>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -886,9 +886,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpointType";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/endpointType";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpointType>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/endpointType>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -938,9 +938,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureExchangeArtifacts";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/secureExchangeArtifacts";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureExchangeArtifacts>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/secureExchangeArtifacts>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -989,9 +989,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/trustFramework";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/trustFramework";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/trustFramework>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/trustFramework>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1040,9 +1040,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/dynamicRegistration";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/dynamicRegistration";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/dynamicRegistration>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/dynamicRegistration>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1091,9 +1091,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/associatedServers";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/associatedServers";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/associatedServers>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/associatedServers>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1143,9 +1143,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureEndpoint";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/secureEndpoint";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureEndpoint>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/secureEndpoint>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1778,14 +1778,14 @@
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet" ];
            fhir:Extension.valueCanonical [
-             fhir:value "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/MinEndpointConnectionTypeVS";
-             fhir:link <http://hl7.org/fhir/us/fhir-directory-query/ValueSet/MinEndpointConnectionTypeVS>
+             fhir:value "http://hl7.org/fhir/us/directory-query/ValueSet/MinEndpointConnectionTypeVS";
+             fhir:link <http://hl7.org/fhir/us/directory-query/ValueSet/MinEndpointConnectionTypeVS>
            ]
          ];
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointConnectionTypeVS";
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointConnectionTypeVS>
+           fhir:value "http://hl7.org/fhir/us/directory-query/ValueSet/EndpointConnectionTypeVS";
+           fhir:link <http://hl7.org/fhir/us/directory-query/ValueSet/EndpointConnectionTypeVS>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1855,9 +1855,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization";
+           fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization>
+           fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1991,8 +1991,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointPayloadTypeVS";
-           fhir:link <http://hl7.org/fhir/us/fhir-directory-query/ValueSet/EndpointPayloadTypeVS>
+           fhir:value "http://hl7.org/fhir/us/directory-query/ValueSet/EndpointPayloadTypeVS";
+           fhir:link <http://hl7.org/fhir/us/directory-query/ValueSet/EndpointPayloadTypeVS>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2153,9 +2153,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Endpoint.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Endpoint.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint.ttl> .
 
 # -------------------------------------------------------------------------------------
 

@@ -15,7 +15,7 @@
     }
   },
   "externalDocs": {
-    "url": "http://hl7.org/fhir/us/fhir-directory-exchange/CapabilityStatement/fhir-national-directory",
+    "url": "http://hl7.org/fhir/us/directory-exchange/CapabilityStatement/fhir-national-directory",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {

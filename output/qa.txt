@@ -1,11 +1,11 @@
 ﻿NationalHealthcareDirectoryExchange : Validation Results
 =========================================
 
-err = 1, warn = 1, info = 0
+err = 1, warn = 2, info = 0
 IG Publisher Version: 1.1.128
-Generated Thu Aug 04 11:50:25 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-directory-exchange#1.0.0-ballot (canonical = http://hl7.org/fhir/us/fhir-directory-exchange)
+Generated Fri Aug 05 09:46:51 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.directory-exchange#1.0.0-ballot (canonical = http://hl7.org/fhir/us/directory-exchange)
  Build Errors : 0 / 1 / 0
- C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-exchange : 0 / 0 / 1
+ C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.directory-exchange : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\capabilitystatement-fhir-national-directory : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\careteam-CareTeam1 : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\fhir-directory-exchange\fsh-generated\resources\consent-PatientConsent : 0 / 0 / 4
@@ -144,7 +144,7 @@ Generated Thu Aug 04 11:50:25 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.fhir-
 </table>
 == n/a ==
 WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.  To see the differences, perform a file compare on 'template/jira-current.xml' (a normalized view of what is in Github) and 'template/jira-new.xml' (reflects current IG content)
-== fsh-generated\resources\ImplementationGuide-hl7.fhir.us.fhir-directory-exchange.json ==
+== fsh-generated\resources\ImplementationGuide-hl7.fhir.us.directory-exchange.json ==
 == fsh-generated\resources\CapabilityStatement-fhir-national-directory.json ==
 == fsh-generated\resources\CareTeam-CareTeam1.json ==
 == fsh-generated\resources\Consent-PatientConsent.json ==
@@ -268,6 +268,7 @@ WARNING: The jira specification file appears to be out of date with the versions
 == fsh-generated\resources\SearchParameter-practitionerRole-service.json ==
 == fsh-generated\resources\SearchParameter-practitionerRole-specialty.json ==
 == fsh-generated\resources\StructureDefinition-NatlDirEx-CareTeam.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam').baseDefinition: US FHIR Usage rules require that all profiles on CareTeam derive from the core US profile
 == fsh-generated\resources\StructureDefinition-NatlDirEx-Endpoint.json ==
 == fsh-generated\resources\StructureDefinition-NatlDirEx-HealthcareService.json ==
 == fsh-generated\resources\StructureDefinition-NatlDirEx-InsurancePlan.json ==

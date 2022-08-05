@@ -1,12 +1,12 @@
 {
-  "package-id": "hl7.fhir.us.fhir-directory-exchange",
+  "package-id": "hl7.fhir.us.directory-exchange",
   "title": "National Healthcare Directory Exchange",
-  "canonical": "http://hl7.org/fhir/us/fhir-directory-exchange",
+  "canonical": "http://hl7.org/fhir/us/directory-exchange",
   "list": [
     {
       "version": "current",
       "desc": "Continuous Integration Build (latest in version control)",
-      "path": "http://build.fhir.org/ig/HL7/fhir-directory-exchange",
+      "path": "http://build.fhir.org/ig/HL7/directory-exchange",
       "status": "ci-build",
       "current": true
     },
@@ -14,7 +14,7 @@
       "version": "1.0.0-ballot",  
       "date": "2021-10-13",
       "desc": "National Directory",
-      "path": "http://hl7.org/fhir/us/fhir-directory-exchange/2022Sep",
+      "path": "http://hl7.org/fhir/us/directory-exchange/2022Sep",
       "status": "ballot",
       "sequence": "STU 1",
       "fhirversion": "4.0.1"

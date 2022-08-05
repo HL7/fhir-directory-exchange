@@ -4,7 +4,7 @@
   "meta": {
     "lastUpdated": "2020-07-07T13:26:22.0314215+00:00",
     "profile": [
-      "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Organization"
+      "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization"
     ]
   },
   "language": "en-US",
@@ -17,7 +17,7 @@
     {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS",
+          "system": "http://hl7.org/fhir/us/directory-query/CodeSystem/OrgTypeCS",
           "code": "atyprv",
           "display": "Atypical Provider"
         }

@@ -4,7 +4,7 @@
   <id value="HansSolo"/>
   <meta>
     <lastUpdated value="2020-07-07T13:26:22.0314215+00:00"/>
-    <profile value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Practitioner"/>
+    <profile value="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner"/>
   </meta>
   <language value="en-US"/>
   <text>
@@ -21,7 +21,7 @@
     <given value="Hans"/>
   </name>
   <qualification>
-    <extension url="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification">
+    <extension url="http://hl7.org/fhir/us/directory-query/StructureDefinition/practitioner-qualification">
       <extension url="status">
         <valueCode value="active"/>
       </extension>
@@ -46,7 +46,7 @@
     </issuer>
   </qualification>
   <qualification>
-    <extension url="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification">
+    <extension url="http://hl7.org/fhir/us/directory-query/StructureDefinition/practitioner-qualification">
       <extension url="status">
         <valueCode value="active"/>
       </extension>
@@ -72,7 +72,7 @@
     </issuer>
   </qualification>
   <qualification>
-    <extension url="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/practitioner-qualification">
+    <extension url="http://hl7.org/fhir/us/directory-query/StructureDefinition/practitioner-qualification">
       <extension url="status">
         <valueCode value="active"/>
       </extension>
@@ -98,10 +98,10 @@
     </issuer>
   </qualification>
   <communication>
-    <extension url="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/communication-proficiency">
+    <extension url="http://hl7.org/fhir/us/directory-query/StructureDefinition/communication-proficiency">
       <valueCodeableConcept>
         <coding>
-          <system value="http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/LanguageProficiencyCS"/>
+          <system value="http://hl7.org/fhir/us/directory-query/CodeSystem/LanguageProficiencyCS"/>
           <code value="30"/>
         </coding>
       </valueCodeableConcept>

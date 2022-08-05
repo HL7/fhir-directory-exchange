@@ -4,8 +4,8 @@
   "meta": {
     "lastUpdated": "2020-07-07T13:26:22.0314215+00:00",
     "profile": [
-      "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Network",
-      "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Network"
+      "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Network",
+      "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Network"
     ]
   },
   "language": "en-US",
@@ -15,7 +15,7 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/location-reference",
+      "url": "http://hl7.org/fhir/us/directory-query/StructureDefinition/location-reference",
       "valueReference": {
         "reference": "Location/StateOfCTLocation"
       }
@@ -26,7 +26,7 @@
     {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/OrgTypeCS",
+          "system": "http://hl7.org/fhir/us/directory-query/CodeSystem/OrgTypeCS",
           "code": "ntwk",
           "display": "Network"
         }
@@ -49,7 +49,7 @@
         {
           "extension": [
             {
-              "url": "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary",
+              "url": "http://hl7.org/fhir/us/directory-query/StructureDefinition/via-intermediary",
               "valueReference": {
                 "reference": "Organization/Acme"
               }

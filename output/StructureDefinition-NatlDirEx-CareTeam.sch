@@ -70,7 +70,7 @@
   <sch:pattern>
     <sch:title>f:CareTeam/f:identifier</sch:title>
     <sch:rule context="f:CareTeam/f:identifier">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/identifier-status']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/identifier-status': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/directory-query/StructureDefinition/identifier-status']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/directory-query/StructureDefinition/identifier-status': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

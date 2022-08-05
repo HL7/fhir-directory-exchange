@@ -5,15 +5,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Location/PharmLoc2> a fhir:Location;
+<http://hl7.org/fhir/us/directory-exchange/Location/PharmLoc2> a fhir:Location;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "PharmLoc2"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location";
+       fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location>
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
@@ -29,7 +29,7 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AcceptingPatientsCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/AcceptingPatientsCS" ];
            fhir:Coding.code [ fhir:value "existptonly" ]
          ]
        ]
@@ -37,28 +37,28 @@
        fhir:index 1;
        fhir:Extension.url [ fhir:value "fromNetwork" ];
        fhir:Extension.valueReference [
-         fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Organization/AcmeofCTStdNet>;
+         fhir:link <http://hl7.org/fhir/us/directory-exchange/Organization/AcmeofCTStdNet>;
          fhir:Reference.reference [ fhir:value "Organization/AcmeofCTStdNet" ]
        ]
      ];
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/newpatients" ]
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/newpatients" ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/accessibility" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/accessibility" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS" ];
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/AccessibilityCS" ];
          fhir:Coding.code [ fhir:value "adacomp" ]
        ]
      ]
   ], [
      fhir:index 2;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/accessibility" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/accessibility" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/AccessibilityCS" ];
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/AccessibilityCS" ];
          fhir:Coding.code [ fhir:value "pubtrans" ]
        ]
      ]
@@ -103,7 +103,7 @@
          fhir:Extension.url [ fhir:value "allDay" ];
          fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/contactpoint-availabletime" ]
      ], [
        fhir:index 1;
        fhir:Element.extension [
@@ -123,7 +123,7 @@
          fhir:Extension.url [ fhir:value "availableEndTime" ];
          fhir:Extension.valueTime [ fhir:value "17:00:00"^^xsd:time ]
        ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime" ]
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/contactpoint-availabletime" ]
      ];
      fhir:ContactPoint.system [ fhir:value "phone" ];
      fhir:ContactPoint.value [ fhir:value "(777)-888-9999" ];
@@ -148,7 +148,7 @@
      fhir:Location.position.latitude [ fhir:value "18"^^xsd:decimal ]
   ];
   fhir:Location.managingOrganization [
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Organization/BigBox>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Organization/BigBox>;
      fhir:Reference.reference [ fhir:value "Organization/BigBox" ]
   ];
   fhir:Location.hoursOfOperation [
@@ -183,15 +183,15 @@
      fhir:Location.hoursOfOperation.closingTime [ fhir:value "17:00:00"^^xsd:time ]
   ] .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/AcmeofCTStdNet> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Organization/AcmeofCTStdNet> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/BigBox> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Organization/BigBox> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Location/PharmLoc2.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/Location/PharmLoc2.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/Location/PharmLoc2.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/Location/PharmLoc2.ttl> .
 
 # -------------------------------------------------------------------------------------
 
