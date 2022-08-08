@@ -84,7 +84,7 @@ Conformance Expectation:\t**SHALL**
 
 Supported Profiles:
 
-* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-organization.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-organization.html)
+* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html)
 
 #### OrganizationAffiliation
 

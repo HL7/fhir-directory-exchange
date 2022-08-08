@@ -178,7 +178,7 @@ RuleSet: Federated_Query_CapabilityStatement_Common
 
 //organization
 * rest[0].resource[4].type = #Organization
-* rest[0].resource[4].supportedProfile[0] = "https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organization.html"
+* rest[0].resource[4].supportedProfile[0] = "https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-Organization.html"
 * rest[0].resource[4].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[4].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[4].searchParam[0].name = "type"
