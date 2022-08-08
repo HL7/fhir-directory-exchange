@@ -20,7 +20,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 //* rest[0].resource[0].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[0].searchParam[0].name = "identifier"
 * rest[0].resource[0].searchParam[0].type = #token
-* rest[0].resource[0].searchParam[0].definition = "https://build.fhir.org/ig/HL7/directory-exchange/SearchParameter-endpoint-identifier.html"
+* rest[0].resource[0].searchParam[1].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-identifier.html"
 * rest[0].resource[0].searchParam[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest[0].resource[0].searchParam[0].extension.valueCode = #SHALL
 * rest[0].resource[0].searchParam[1].name = "connection-type"
