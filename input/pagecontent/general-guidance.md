@@ -15,7 +15,7 @@ Providers and service organizations often have to submit and manage information 
 
 Due to the high cost of acquiring and maintaining provider, organization and service information, existing healthcare directories often contain information that is inaccurate, out of date, or not validated.
 
-## Healthcare Directory Scope
+## Healthcare Directory Scope 
 
 This implementation guide uses the term ‘healthcare directory’ because it encompasses all individuals and entities that provide services which may impact an individual’s health and well-being. We did not limit the definition of a directory to include only those individuals/entities that are licensed to practice medicine and/or bill for healthcare services. Rather, the directory is intended to include data about community/social service entities and non-licensed administrative/support staff, among others.
 

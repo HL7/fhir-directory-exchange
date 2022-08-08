@@ -29,7 +29,7 @@ dependencies:
   hl7.fhir.us.directory-query:
     id: ONCFASTNationalDirectoryEndpointQuery
     uri:  http://hl7.org/fhir/us/directory-query/ImplementationGuide/hl7.fhir.us.directory-query
-    version: current
+    version: 1.0.0-ballot
 parameters:
   show-inherited-invariants: false
   version-comparison: n/a
