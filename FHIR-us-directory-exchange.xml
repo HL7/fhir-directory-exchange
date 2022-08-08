@@ -153,7 +153,7 @@
 <page key="examples" name="Examples"/>
 <page key="extensions" name="Extensions"/>
 <page key="general-guidance" name="General Guidance"/>
-<page key="general-guidanceOld" name="General Guidance Old"/>
+<page deprecated="true" key="general-guidanceOld" name="General Guidance Old"/>
 <page key="guidance" name="Guidance"/>
 <page key="history" name="History"/>
 <page key="index" name="Home"/>
