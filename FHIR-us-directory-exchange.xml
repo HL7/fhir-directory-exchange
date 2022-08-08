@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/directory-exchange/2022Sep" ciUrl="http://build.fhir.org/ig/HL7/directory-exchange" defaultVersion="1.0.0-ballot" defaultWorkgroup="pa" gitUrl="https://github.com/HL7/fhir-directory-exchange" url="http://hl7.org/fhir/us/directory-exchange">
-<version code="current" url="http://build.fhir.org/ig/HL7/directory-exchange"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/directory-exchange/2022Sep" ciUrl="https://build.fhir.org/ig/HL7/fhir-directory-exchange/" defaultVersion="1.0.0-ballot" defaultWorkgroup="pa" gitUrl="https://github.com/HL7/fhir-directory-exchange" url="http://hl7.org/fhir/us/directory-exchange">
+<version code="current" url="https://build.fhir.org/ig/HL7/fhir-directory-exchange/"/>
 <version code="1.0.0-ballot" url="http://hl7.org/fhir/us/directory-exchange/2022Sep"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -153,7 +153,7 @@
 <page key="examples" name="Examples"/>
 <page key="extensions" name="Extensions"/>
 <page key="general-guidance" name="General Guidance"/>
-<page deprecated="true" key="general-guidanceOld" name="General Guidance Old"/>
+<page key="general-guidanceOld" name="General Guidance Old"/>
 <page key="guidance" name="Guidance"/>
 <page key="history" name="History"/>
 <page key="index" name="Home"/>
