@@ -15,54 +15,54 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 * rest.security.description = "1. See the [General Security Considerations](http://www.hl7.org/fhir/security.html#general) section for requirements and recommendations.\n1. A client **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."
 //endpoint connection-type, identifier, mime-type, organization, payload-type, status, usecase-standard, usecase-type, 
 * rest[0].resource[0].type = #Endpoint
-* rest[0].resource[0].supportedProfile[0] = "https://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint"
+* rest[0].resource[0].supportedProfile[0] = "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint"
 * rest[0].resource[0].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[0].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[0].searchParam[0].name = "identifier"
 * rest[0].resource[0].searchParam[0].type = #token
-* rest[0].resource[0].searchParam[1].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-identifier.html"
+* rest[0].resource[0].searchParam[1].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-identifier"
 * rest[0].resource[0].searchParam[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest[0].resource[0].searchParam[0].extension.valueCode = #SHALL
 * rest[0].resource[0].searchParam[1].name = "connection-type"
 * rest[0].resource[0].searchParam[1].type = #token
-* rest[0].resource[0].searchParam[1].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-connection-type.html"
+* rest[0].resource[0].searchParam[1].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-connection-type"
 * rest[0].resource[0].searchParam[1].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest[0].resource[0].searchParam[1].extension.valueCode = #SHALL
 * rest[0].resource[0].searchParam[2].name = "mime-type"
 * rest[0].resource[0].searchParam[2].type = #token
-* rest[0].resource[0].searchParam[2].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-mime-type.html"
+* rest[0].resource[0].searchParam[2].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-mime-type"
 * rest[0].resource[0].searchParam[2].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest[0].resource[0].searchParam[2].extension.valueCode = #SHALL
 * rest[0].resource[0].searchParam[3].name = "organization"
 * rest[0].resource[0].searchParam[3].type = #token
-* rest[0].resource[0].searchParam[3].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-organization.html"
+* rest[0].resource[0].searchParam[3].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-organization"
 * rest[0].resource[0].searchParam[3].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest[0].resource[0].searchParam[3].extension.valueCode = #SHALL
 * rest[0].resource[0].searchParam[4].name = "payload-type"
 * rest[0].resource[0].searchParam[4].type = #token
-* rest[0].resource[0].searchParam[4].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-payload-type.html"
+* rest[0].resource[0].searchParam[4].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-payload-type"
 * rest[0].resource[0].searchParam[4].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest[0].resource[0].searchParam[4].extension.valueCode = #SHALL
 * rest[0].resource[0].searchParam[5].name = "usecase-standard"
 * rest[0].resource[0].searchParam[5].type = #token
-* rest[0].resource[0].searchParam[5].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-usecase-standard.html"
+* rest[0].resource[0].searchParam[5].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-usecase-standard"
 * rest[0].resource[0].searchParam[5].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest[0].resource[0].searchParam[5].extension.valueCode = #SHALL
 * rest[0].resource[0].searchParam[6].name = "status"
 * rest[0].resource[0].searchParam[6].type = #token
-* rest[0].resource[0].searchParam[6].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-status.html"
+* rest[0].resource[0].searchParam[6].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-status"
 * rest[0].resource[0].searchParam[6].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest[0].resource[0].searchParam[6].extension.valueCode = #SHALL
 * rest[0].resource[0].searchParam[7].name = "usecase-type"
 * rest[0].resource[0].searchParam[7].type = #token
-* rest[0].resource[0].searchParam[7].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-usecase-type.html"
+* rest[0].resource[0].searchParam[7].definition = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-usecase-type"
 * rest[0].resource[0].searchParam[7].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest[0].resource[0].searchParam[7].extension.valueCode = #SHALL
 
 //careteam
 //search parameters: endpoint, location, name, organization, service, category
 * rest[0].resource[10].type = #CareTeam
-* rest[0].resource[10].supportedProfile[0] = "https://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam"
+* rest[0].resource[10].supportedProfile[0] = "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam"
 * rest[0].resource[10].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[9].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[10].searchParam[0].name = "endpoint"
@@ -98,7 +98,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //healthcare service
 * rest[0].resource[1].type = #HealthcareService
-* rest[0].resource[1].supportedProfile[0] = "https://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
+* rest[0].resource[1].supportedProfile[0] = "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService"
 * rest[0].resource[1].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[1].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[1].searchParam[0].name = "service-category"
@@ -144,7 +144,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //Location
 * rest[0].resource[3].type = #Location
-* rest[0].resource[3].supportedProfile[0] = "https://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-location.html"
+* rest[0].resource[3].supportedProfile[0] = "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location"
 * rest[0].resource[3].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[3].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[3].searchParam[0].name = "address"
@@ -183,8 +183,8 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //organization
 * rest[0].resource[4].type = #Organization
-* rest[0].resource[4].supportedProfile[0] = "https://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-organization"
-* rest[0].resource[4].supportedProfile[1] = "https://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-network"
+* rest[0].resource[4].supportedProfile[0] = "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization"
+* rest[0].resource[4].supportedProfile[1] = "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Network"
 * rest[0].resource[4].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[4].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[4].searchParam[0].name = "type"
@@ -232,7 +232,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //OrganizationAffiliation
 * rest[0].resource[5].type = #OrganizationAffiliation
-* rest[0].resource[5].supportedProfile[0] = "https://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-organizationAffiliation"
+* rest[0].resource[5].supportedProfile[0] = "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation"
 * rest[0].resource[5].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[5].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[5].searchParam[0].name = "endpoint"
@@ -279,7 +279,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //Practitioner
 * rest[0].resource[6].type = #Practitioner
-* rest[0].resource[6].supportedProfile[0] = "https://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
+* rest[0].resource[6].supportedProfile[0] = "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner"
 * rest[0].resource[6].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[6].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[6].searchParam[0].name = "name"
@@ -320,7 +320,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //PractitionerRole
 * rest[0].resource[7].type = #PractitionerRole
-* rest[0].resource[7].supportedProfile[0] = "https://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
+* rest[0].resource[7].supportedProfile[0] = "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole"
 * rest[0].resource[7].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[7].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[7].searchParam[0].name = "endpoint"
@@ -366,7 +366,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //Insurance Plan
 * rest[0].resource[2].type = #InsurancePlan
-* rest[0].resource[2].supportedProfile[0] = "https://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan"
+* rest[0].resource[2].supportedProfile[0] = "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan"
 * rest[0].resource[2].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[2].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[2].searchParam[0].name = "coverage-area"
@@ -413,7 +413,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //Restriction
 * rest[0].resource[8].type = #Consent
-* rest[0].resource[8].supportedProfile[0] = "https://hl7.org/fhir/us/directory-exchange/StructureDefinition-NatlDirEx-Restriction"
+* rest[0].resource[8].supportedProfile[0] = "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Restriction"
 * rest[0].resource[8].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[8].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[8].searchParam[0].name = "_id"
@@ -454,7 +454,7 @@ RuleSet: Federated_Query_CapabilityStatement_Expanded
 
 //Validation
 * rest[0].resource[9].type = #VerificationResult
-* rest[0].resource[9].supportedProfile[0] = "https://hl7.org/fhir/us/directory-exchange/StructureDefinition-NatlDirEx-Validation"
+* rest[0].resource[9].supportedProfile[0] = "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Validation"
 * rest[0].resource[9].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 //* rest[0].resource[9].supportedProfile[0].extension.valueCode = #SHALL
 * rest[0].resource[9].searchParam[0].name = "attestation-who"
