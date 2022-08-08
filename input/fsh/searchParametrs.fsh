@@ -7,7 +7,7 @@ Title: "Search by Connection Type in Endpoints"
 * code = #connectiontype
 * name = "NatDirExNatlDirConnectiontype"
 * description = "Accesses the  connection type of an Endpoint"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-connection-type.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-connection-typehttps://hl7.org/fhir/us/directory-exchange"
 * base[0] = #Endpoint
 * type = #token
 * expression = "Endpoint.connectiontype"
@@ -22,7 +22,7 @@ Title: "Search by Indentifer in Endpoints"
 * code = #identifier
 * name = "NatDirExNatlDirEndpointQryIdentifier"
 * description = "Accesses the  identifier of an Endpoint"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-identifier.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-identifierhttps://hl7.org/fhir/us/directory-exchange"
 * base[0] = #Endpoint
 * type = #token
 * expression = "Endpoint.identifier"
@@ -37,7 +37,7 @@ Title: "Search by mime-type in Endpoints"
 * code = #mime-type
 * name = "NatDirExNatlDirEndpointQryMimetype"
 * description = "Accesses the  mime-type of an Endpoint"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-mime-type.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-mime-typehttps://hl7.org/fhir/us/directory-exchange"
 * base[0] = #Endpoint
 * type = #token
 * expression = "Endpoint.mime-type"
@@ -52,7 +52,7 @@ Title: "Search by organization in Endpoints"
 * code = #organization
 * name = "NatDirExNatlDirEndpointQryOrganization"
 * description = "Accesses the  organization of an Endpoint"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-organization.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-organizationhttps://hl7.org/fhir/us/directory-exchange"
 * base[0] = #Endpoint
 * type = #token
 * expression = "Endpoint.organization"
@@ -67,7 +67,7 @@ Title: "Search by payload-type in Endpoints"
 * code = #payload-type
 * name = "NatDirExNatlDirEndpointQryPayloadtype"
 * description = "Accesses the  payload-type of an Endpoint"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-payload-type.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-payload-typehttps://hl7.org/fhir/us/directory-exchange"
 * base[0] = #Endpoint
 * type = #token
 * expression = "Endpoint.payload-type"
@@ -82,7 +82,7 @@ Title: "Search by status in Endpoints"
 * code = #status
 * name = "NatDirExNatlDirEndpointQryStatus"
 * description = "Accesses the status of an Endpoint"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-status.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-statushttps://hl7.org/fhir/us/directory-exchange"
 * base[0] = #Endpoint
 * type = #token
 * expression = "Endpoint.status"
@@ -97,7 +97,7 @@ Title: "Search by usecase-standard in Endpoints"
 * code = #usecase-standard
 * name = "NatDirExNatlDirEndpointQryUsecaseStandard"
 * description = "Accesses the usecase-standard of an Endpoint"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-usecase-standard.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-usecase-standardhttps://hl7.org/fhir/us/directory-exchange"
 * base[0] = #Endpoint
 * type = #token
 * expression = "Endpoint.usecase-standard"
@@ -112,7 +112,7 @@ Title: "Search by usecase-type in Endpoints"
 * code = #usecase-type
 * name = "NatDirExNatlDirEndpointQryUsecasetype"
 * description = "Accesses the  usecase-type of an Endpoint"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-usecase-type.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-endpoint-usecase-typehttps://hl7.org/fhir/us/directory-exchange"
 * base[0] = #Endpoint
 * type = #token
 * expression = "Endpoint.usecase-type"
@@ -125,7 +125,7 @@ Instance: careTeam-endpoint
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by endpoint in CareTeam with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-careteam-endpoint.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-careteam-endpointhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExcareTeamEndpointSearchParameter"
 * status = #active
@@ -139,7 +139,7 @@ Instance: careTeam-location
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by location in CareTeam with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-careteam-location.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-careteam-locationhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExcareTeamLocationSearchParameter"
 * status = #active
@@ -153,7 +153,7 @@ Instance: careTeam-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by name in CareTeam with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-careteam-name.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-careteam-namehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExcareTeamNameSearchParameter"
 * status = #active
@@ -167,7 +167,7 @@ Instance: careTeam-organization
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by organization in CareTeam with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-careteam-name.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-careteam-namehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExcareTeamOrganizationSearchParameter"
 * status = #active
@@ -181,7 +181,7 @@ Instance: careTeam-service
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by service in CareTeam with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-careteam-name.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-careteam-namehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExcareTeamServiceSearchParameter"
 * status = #active
@@ -196,7 +196,7 @@ Instance: careTeam-category
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by category in CareTeam with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-careteam-name.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-careteam-namehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExcareTeamCategorySearchParameter"
 * status = #active
@@ -212,7 +212,7 @@ Instance: HealthcareService-service-category
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by service-category in HealthcareService with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-service-category.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-service-categoryhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExHealthcareServiceCategorySearchParameter"
 * status = #active
@@ -226,7 +226,7 @@ Instance: HealthcareService-coverage-area
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by coverage-area in HealthcareService with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-coverage-area.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-coverage-areahttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExHealthcareServiceCoverageAreaSearchParameter"
 * status = #active
@@ -240,7 +240,7 @@ Instance: HealthcareService-endpoint
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by endpoint in HealthcareService with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-endpoint.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-endpointhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExHealthcareServiceCategorySearchParameter"
 * status = #active
@@ -254,7 +254,7 @@ Instance: HealthcareService-location
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by location in HealthcareService with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-location.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-locationhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExHealthcareServiceLocationSearchParameter"
 * status = #active
@@ -268,7 +268,7 @@ Instance: HealthcareService-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by name in HealthcareService with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-name.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-namehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExHealthcareServiceNameSearchParameter"
 * status = #active
@@ -282,7 +282,7 @@ Instance: HealthcareService-organization
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by organization in HealthcareService with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-organization.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-organizationhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExHealthcareServiceOrganizationSearchParameter"
 * status = #active
@@ -296,7 +296,7 @@ Instance: HealthcareService-specialty
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by specialty in HealthcareService with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-specialty.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-specialtyhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExHealthcareServiceSpecialtySearchParameter"
 * status = #active
@@ -310,7 +310,7 @@ Instance: HealthcareService-service-type
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by service-type in HealthcareService with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-service-type.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-service-typehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExHealthcareServiceServicetypeSearchParameter"
 * status = #active
@@ -325,7 +325,7 @@ Instance: Location-address
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by address in Location with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Location-address.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Location-addresshttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExLocationAddressSearchParameter"
 * status = #active
@@ -339,7 +339,7 @@ Instance: Location-endpoint
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by endpoint in Location with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Location-endpoint.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Location-endpointhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExLocationEndpointSearchParameter"
 * status = #active
@@ -353,7 +353,7 @@ Instance: Location-organization
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by organization in Location with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Location-organization.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Location-organizationhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExLocationOrganizationSearchParameter"
 * status = #active
@@ -367,7 +367,7 @@ Instance: Location-physicalType
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by physicalType in Location with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Location-physicalType.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Location-physicalTypehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExLocationPhysicalTypeSearchParameter"
 * status = #active
@@ -381,7 +381,7 @@ Instance: Location-partOf
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by partOf in Location with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Location-partOf.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Location-partOfhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExLocationPartOfSearchParameter"
 * status = #active
@@ -395,7 +395,7 @@ Instance: Location-type
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by type in Location with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Location-type.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Location-typehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExLocationTypeSearchParameter"
 * status = #active
@@ -410,7 +410,7 @@ Instance: Organization-type
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by type in Organization with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Organization-type.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Organization-typehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExOrganizationTypeSearchParameter"
 * status = #active
@@ -424,7 +424,7 @@ Instance: Organization-address
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by address in Organization with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Organization-address.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Organization-addresshttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExOrganizationAddressSearchParameter"
 * status = #active
@@ -438,7 +438,7 @@ Instance: Organization-endpoint
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by endpoint in Organization with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Organization-endpoint.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Organization-endpointhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExOrganizationEndpointSearchParameter"
 * status = #active
@@ -452,7 +452,7 @@ Instance: Organization-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by identifier in Organization with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Organization-identifier.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Organization-identifierhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExOrganizationIdentifierSearchParameter"
 * status = #active
@@ -466,7 +466,7 @@ Instance: Organization-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by name in Organization with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Organization-name.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Organization-namehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExOrganizationNameSearchParameter"
 * status = #active
@@ -480,7 +480,7 @@ Instance: Organization-partOf
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by partOf in Organization with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Organization-partOf.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Organization-partOfhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExOrganizationPartOfSearchParameter"
 * status = #active
@@ -495,7 +495,7 @@ Instance: OrganizationAffiliation-endpoint
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by endpoint in OrganizationAffiliation with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-endpoint.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-endpointhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExOrganizationAffiliationEndpointSearchParameter"
 * status = #active
@@ -509,7 +509,7 @@ Instance: OrganizationAffiliation-location
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by location in OrganizationAffiliation with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-location.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-locationhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExOrganizationAffiliationLocationSearchParameter"
 * status = #active
@@ -523,7 +523,7 @@ Instance: OrganizationAffiliation-network
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by network in OrganizationAffiliation with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-network.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-networkhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExOrganizationAffiliationNetworkSearchParameter"
 * status = #active
@@ -537,7 +537,7 @@ Instance: OrganizationAffiliation-participating-organization
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by participating-organization in OrganizationAffiliation with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-participating-organization.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-participating-organizationhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExOrganizationAffiliationParticipatingOrganizationfSearchParameter"
 * status = #active
@@ -551,7 +551,7 @@ Instance: OrganizationAffiliation-primary-organization
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by primary-organization in OrganizationAffiliation with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-primary-organization.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-primary-organizationhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExOrganizationAffiliationPrimaryOrganizationSearchParameter"
 * status = #active
@@ -565,7 +565,7 @@ Instance: OrganizationAffiliation-role
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by role in OrganizationAffiliation with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-role.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-rolehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExOrganizationAffiliationRoleSearchParameter"
 * status = #active
@@ -579,7 +579,7 @@ Instance: OrganizationAffiliation-service
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by service in OrganizationAffiliation with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-service.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-servicehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExOrganizationAffiliationServiceSearchParameter"
 * status = #active
@@ -593,7 +593,7 @@ Instance: OrganizationAffiliation-specialty
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by specialty in OrganizationAffiliation with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-specialty.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-OrganizationAffiliation-specialtyhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExOrganizationAffiliationSpecialtySearchParameter"
 * status = #active
@@ -608,7 +608,7 @@ Instance: practitioner-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by name in practitioner with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitioner-name.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitioner-namehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExpractitionerNameSearchParameter"
 * status = #active
@@ -622,7 +622,7 @@ Instance: practitioner-family
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by family name in practitioner with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitioner-family.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitioner-familyhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExpractitionerFamilySearchParameter"
 * status = #active
@@ -636,7 +636,7 @@ Instance: practitioner-given
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by given name in practitioner with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitioner-given.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitioner-givenhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExpractitionerGivenSearchParameter"
 * status = #active
@@ -650,7 +650,7 @@ Instance: practitioner-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by identifier in practitioner with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitioner-identifier.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitioner-identifierhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExpractitionerIdentifierSearchParameter"
 * status = #active
@@ -664,7 +664,7 @@ Instance: practitioner-identifier-assigner
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by identifier-assigner in practitioner with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitioner-identifier-assigner.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitioner-identifier-assignerhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExpractitionerIdentifierAssignerSearchParameter"
 * status = #active
@@ -678,7 +678,7 @@ Instance: practitioner-qualification-code
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by qualification-code in practitioner with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitioner-qualification-code.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitioner-qualification-codehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExpractitionerQualificationCodeSearchParameter"
 * status = #active
@@ -692,7 +692,7 @@ Instance: practitioner-qualification-issuer
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by qualification-issuer in practitioner with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitioner-qualification-issuer.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitioner-qualification-issuerhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExpractitionerQualificationIssuerSearchParameter"
 * status = #active
@@ -708,7 +708,7 @@ Instance: practitionerRole-endpoint
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by endpoint in practitionerRole with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-endpoint.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-endpointhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExpractitionerRoleEndpointSearchParameter"
 * status = #active
@@ -722,7 +722,7 @@ Instance: practitionerRole-location
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by location in practitionerRole with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-location.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-locationhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExpractitionerRoleLocationSearchParameter"
 * status = #active
@@ -736,7 +736,7 @@ Instance: practitionerRole-network
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by network in practitionerRole with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-network.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-networkhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExpractitionerRoleNetworkSearchParameter"
 * status = #active
@@ -750,7 +750,7 @@ Instance: practitionerRole-organization
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by organization in practitionerRole with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-organization.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-organizationhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExpractitionerRoleQrganizationSearchParameter"
 * status = #active
@@ -764,7 +764,7 @@ Instance: practitionerRole-practitioner
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by practitioner in practitionerRole with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-practitioner.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-practitionerhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExpractitionerRolePractitionerSearchParameter"
 * status = #active
@@ -778,7 +778,7 @@ Instance: practitionerRole-role
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by role in practitionerRole with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-role.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-rolehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExpractitionerRoleRoleSearchParameter"
 * status = #active
@@ -792,7 +792,7 @@ Instance: practitionerRole-service
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by service in practitionerRole with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-service.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-servicehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExpractitionerRoleServiceSearchParameter"
 * status = #active
@@ -806,7 +806,7 @@ Instance: practitionerRole-specialty
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by specialty in practitionerRole with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-specialty.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-practitionerRole-specialtyhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExpractitionerRoleSpecialtySearchParameter"
 * status = #active
@@ -821,7 +821,7 @@ Instance: Network-coverage-area
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by coverage-area in Network with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Network-coverage-area.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Network-coverage-areahttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExNetworkCoverageAreaSearchParameter"
 * status = #active
@@ -835,7 +835,7 @@ Instance: Network-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by name in Network with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Network-name.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Network-namehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExnameSpecialtySearchParameter"
 * status = #active
@@ -850,7 +850,7 @@ Instance: InsurancePlan-coverage-area
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by coverage-area in InsurancePlan with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-coverage-area.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-coverage-areahttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExInsurancePlanCoverageAreaSearchParameter"
 * status = #active
@@ -864,7 +864,7 @@ Instance: InsurancePlan-administrated-by
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by administrated-by in InsurancePlan with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-administrated-by.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-administrated-byhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExInsurancePlanAdministratedbySearchParameter"
 * status = #active
@@ -878,7 +878,7 @@ Instance: InsurancePlan-coverage-benefit-type
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by coverage-benefit-type in InsurancePlan with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-coverage-benefit-type.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-coverage-benefit-typehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExInsurancePlanCoverageBenefittypeSearchParameter"
 * status = #active
@@ -892,7 +892,7 @@ Instance: InsurancePlan-coverage-network
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by coverage-network in InsurancePlan with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-coverage-network.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-coverage-networkhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExInsurancePlanCoverageNetworkSearchParameter"
 * status = #active
@@ -906,7 +906,7 @@ Instance: InsurancePlan-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by identifier in InsurancePlan with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-identifier.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-identifierhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExInsurancePlanIdentifierSearchParameter"
 * status = #active
@@ -920,7 +920,7 @@ Instance: InsurancePlan-type
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by type in InsurancePlan with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-type.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-typehttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExInsurancePlantypeSearchParameter"
 * status = #active
@@ -934,7 +934,7 @@ Instance: InsurancePlan-name
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by name in InsurancePlan with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-specialty.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-specialtyhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExInsurancePlanSpecialtySearchParameter"
 * status = #active
@@ -948,7 +948,7 @@ Instance: InsurancePlan-owned-by
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by owned-by in InsurancePlan with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-owned-by.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-owned-byhttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExInsurancePlanOwnedBySearchParameter"
 * status = #active
@@ -963,7 +963,7 @@ Instance: VerificationResult-attestation-who
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by attestation-who in VerificationResult with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-VerificationResult-attestation-who.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-VerificationResult-attestation-whohttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExVerificationResultAttestationWhoBySearchParameter"
 * status = #active
@@ -977,7 +977,7 @@ Instance: VerificationResult-primarysource-who
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by primarysource-who in VerificationResult with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-VerificationResult-primarysource-who.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-VerificationResult-primarysource-whohttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExVerificationResultPrimarysourceWhoBySearchParameter"
 * status = #active
@@ -991,7 +991,7 @@ Instance: VerificationResult-target
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "Search by target in InsurancePlan with multipleOr"
-* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-VerificationResult-target.html"
+* url = "https://hl7.org/fhir/us/directory-exchange/SearchParameter-VerificationResult-targethttps://hl7.org/fhir/us/directory-exchange"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * name = "NatDirExVerificationResultTargetbySearchParameter"
 * status = #active
