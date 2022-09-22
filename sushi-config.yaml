@@ -10,15 +10,15 @@
 # │  supported properties, see:                                                                    │
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.us.fhir-directory-exchange
-canonical: http://hl7.org/fhir/us/fhir-directory-exchange
-version: 1.0.0-ballot1
-name: ONC FAST National Directory
-title: National Directory
+id: hl7.fhir.us.directory-exchange
+canonical: http://hl7.org/fhir/us/directory-exchange
+version: 1.0.0-ballot
+name: NationalHealthcareDirectoryExchange
+title: National Healthcare Directory Exchange
 status: active
 publisher:
   name: HL7 Patient Administration Working Group
-  url: https://www.hl7.org/Special/committees/pafm/index.cfm
+  url: https://www.hl7.org/Special/committees/pafm
   email: pafm@lists.HL7.org
 description: National Directory
 jurisdiction: urn:iso:std:iso:3166#US
@@ -26,17 +26,17 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 4.0.0
-  hl7.fhir.us.fhir-directory-query:
+  hl7.fhir.us.directory-query:
     id: ONCFASTNationalDirectoryEndpointQuery
-    uri:  http://hl7.org/fhir/us/fhir-directory-query/ImplementationGuide/hl7.fhir.us.fhir-directory-query
-    version: current
+    uri:  http://hl7.org/fhir/us/directory-query/ImplementationGuide/hl7.fhir.us.directory-query
+    version: 1.0.0-ballot
 parameters:
   show-inherited-invariants: false
   version-comparison: n/a
   path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
   
 copyrightYear: 2021+
-releaseLabel: draft
+releaseLabel: ballot
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
 # │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │

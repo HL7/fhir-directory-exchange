@@ -67,7 +67,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * name = "Pharmacy by PharmChain"
-* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryDelvMthdCS#physical
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = $NatlDirectoryDelvMthdCS#physical
 * extension[newpatients].extension[acceptingPatients].valueCodeableConcept = $NatlDirectoryAcceptPatientsCSCS#existptonly
 * extension[newpatients].extension[fromNetwork].valueReference = Reference(AcmeofCTStdNet)
 * category = $NatlDirectoryHealthcareServiceCatCS#pharm   "Pharmacy"
@@ -135,7 +135,7 @@ Usage: #example
 * language = #en-US
 * active = true
 * name = "Compounding Pharmacy by OrgA"
-* extension[deliverymethod].extension[type].valueCodeableConcept = $NatlDirectoryDelvMthdCS#physical
+* extension[deliverymethod].extension[deliveryMethodtype].valueCodeableConcept = $NatlDirectoryDelvMthdCS#physical
 * category = $NatlDirectoryHealthcareServiceCatCS#pharm "Pharmacy"
 * specialty = $NUCCProviderTaxonomy#3336C0004X "Compounding Pharmacy"
 * specialty.text = "Compounding Pharmacy"
