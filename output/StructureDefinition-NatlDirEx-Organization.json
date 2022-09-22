@@ -10,7 +10,7 @@
   "name": "NatlDirExOrganization",
   "title": "National Directory Organization",
   "status": "active",
-  "date": "2022-07-25T14:11:25-04:00",
+  "date": "2022-07-25T13:43:16-05:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.\r\nGuidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text",
+  "description": "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.\nGuidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text",
   "jurisdiction": [
     {
       "coding": [

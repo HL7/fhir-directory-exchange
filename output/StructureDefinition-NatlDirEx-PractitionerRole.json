@@ -20,7 +20,7 @@
   "name": "NatlDirExPractitionerRole",
   "title": "National Directory PractitionerRole",
   "status": "active",
-  "date": "2022-07-25T14:11:25-04:00",
+  "date": "2022-07-25T13:43:16-05:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -37,7 +37,7 @@
       ]
     }
   ],
-  "description": "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, \r\nthere may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also \r\nbe a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.",
+  "description": "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, \nthere may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also \nbe a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.",
   "jurisdiction": [
     {
       "coding": [

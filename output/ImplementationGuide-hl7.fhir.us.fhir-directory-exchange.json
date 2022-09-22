@@ -10,7 +10,7 @@
   "name": "ONCFASTNationalDirectory",
   "title": "National Directory",
   "status": "active",
-  "date": "2022-07-25T14:11:25-04:00",
+  "date": "2022-07-25T13:43:16-05:00",
   "publisher": "HL7 Patient Administration Working Group",
   "contact": [
     {
@@ -459,7 +459,7 @@
           "reference": "StructureDefinition/NatlDirEx-Location"
         },
         "name": "National Directory Location",
-        "description": "A Location is the physical place where healthcare services are provided, practitioners are employed, \r\n                 organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.",
+        "description": "A Location is the physical place where healthcare services are provided, practitioners are employed, \n                 organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area.",
         "exampleBoolean": false
       },
       {
@@ -487,7 +487,7 @@
           "reference": "StructureDefinition/NatlDirEx-Organization"
         },
         "name": "National Directory Organization",
-        "description": "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.\r\nGuidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text",
+        "description": "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.\nGuidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text",
         "exampleBoolean": false
       },
       {
@@ -529,7 +529,7 @@
           "reference": "StructureDefinition/NatlDirEx-PractitionerRole"
         },
         "name": "National Directory PractitionerRole",
-        "description": "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, \r\nthere may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also \r\nbe a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.",
+        "description": "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, \nthere may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also \nbe a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization.",
         "exampleBoolean": false
       },
       {

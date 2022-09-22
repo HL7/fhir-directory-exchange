@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "NatlDirExPractitionerRole"];
   fhir:StructureDefinition.title [ fhir:value "National Directory PractitionerRole"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-25T14:11:25-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-07-25T13:43:16-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -41,7 +41,7 @@
        fhir:ContactPoint.value [ fhir:value "pafm@lists.HL7.org" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, \r\nthere may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also \r\nbe a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization."];
+  fhir:StructureDefinition.description [ fhir:value "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, \nthere may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also \nbe a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ONCFASTNationalDirectory"];
   fhir:ImplementationGuide.title [ fhir:value "National Directory"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-07-25T14:11:25-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-07-25T13:43:16-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Administration Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -445,7 +445,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/NatlDirEx-Location" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "National Directory Location" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Location is the physical place where healthcare services are provided, practitioners are employed, \r\n                 organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Location is the physical place where healthcare services are provided, practitioners are employed, \n                 organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 5;
@@ -473,7 +473,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/NatlDirEx-Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "National Directory Organization" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.\r\nGuidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.\nGuidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 7;
@@ -515,7 +515,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/NatlDirEx-PractitionerRole" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "National Directory PractitionerRole" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, \r\nthere may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also \r\nbe a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, \nthere may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also \nbe a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 10;

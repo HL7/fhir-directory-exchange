@@ -21,7 +21,7 @@
   <name value="NatlDirExPractitionerRole"/>
   <title value="National Directory PractitionerRole"/>
   <status value="active"/>
-  <date value="2022-07-25T14:11:25-04:00"/>
+  <date value="2022-07-25T13:43:16-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -34,7 +34,7 @@
       <value value="pafm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, &#xD;&#xA;there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also &#xD;&#xA;be a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization."/>
+  <description value="PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, &#xA;there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also &#xA;be a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

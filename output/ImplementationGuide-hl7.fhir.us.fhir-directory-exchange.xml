@@ -11,7 +11,7 @@
   <name value="ONCFASTNationalDirectory"/>
   <title value="National Directory"/>
   <status value="active"/>
-  <date value="2022-07-25T14:11:25-04:00"/>
+  <date value="2022-07-25T13:43:16-05:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
@@ -302,7 +302,7 @@
         <reference value="StructureDefinition/NatlDirEx-Location"/>
       </reference>
       <name value="National Directory Location"/>
-      <description value="A Location is the physical place where healthcare services are provided, practitioners are employed, &#xD;&#xA;                 organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."/>
+      <description value="A Location is the physical place where healthcare services are provided, practitioners are employed, &#xA;                 organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -324,7 +324,7 @@
         <reference value="StructureDefinition/NatlDirEx-Organization"/>
       </reference>
       <name value="National Directory Organization"/>
-      <description value="An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.&#xD;&#xA;Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"/>
+      <description value="An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.&#xA;Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -357,7 +357,7 @@
         <reference value="StructureDefinition/NatlDirEx-PractitionerRole"/>
       </reference>
       <name value="National Directory PractitionerRole"/>
-      <description value="PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, &#xD;&#xA;there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also &#xD;&#xA;be a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization."/>
+      <description value="PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, &#xA;there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also &#xA;be a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
