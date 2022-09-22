@@ -1,0 +1,156 @@
+﻿NationalHealthcareDirectoryExchange : Validation Results
+=========================================
+
+err = 14, warn = 1, info = 0
+IG Publisher Version: 1.1.126 Out of date - current version is 1.2.3
+Generated Wed Sep 21 22:41:12 EDT 2022. FHIR version 4.0.1 for hl7.fhir.us.directory-exchange#1.0.0-ballot (canonical = http://hl7.org/fhir/us/directory-exchange)
+ Build Errors : 0 / 1 / 0
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.directory-exchange : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/capabilitystatement-fhir-national-directory : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/careteam-CareTeam1 : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/consent-PatientConsent : 0 / 0 / 4
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/endpoint-AcmeOfCTPortalEndpoint : 0 / 0 / 4
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/healthcareservice-BurrClinicServices : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/healthcareservice-CancerClinicService : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/healthcareservice-HamiltonClinicServices : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/healthcareservice-HansSoloService : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/healthcareservice-HartfordOrthopedicServices : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/healthcareservice-HospERService : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/healthcareservice-PharmChainCompService : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/healthcareservice-PharmChainMailService : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/healthcareservice-PharmChainRetailService : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/healthcareservice-VirtualCounselService : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/insuranceplan-AcmeQHPBronze : 0 / 0 / 4
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/insuranceplan-AcmeQHPGold : 0 / 0 / 4
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/location-CancerClinicLoc : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/location-HansSoloClinic : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/location-HospLoc1 : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/location-HospLoc2 : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/location-PharmLoc1 : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/location-PharmLoc2 : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/location-PharmLoc3 : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/location-PharmLoc4 : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/location-StateOfCTLocation : 0 / 0 / 4
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organization-Acme : 0 / 0 / 4
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organization-AcmeofCTPremNet : 0 / 0 / 4
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organization-AcmeofCTStdNet : 0 / 0 / 4
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organization-BigBox : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organization-BurrClinic : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organization-CancerClinic : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organization-ConnHIE : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organization-HamiltonClinic : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organization-HartfordOrthopedics : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organization-Hospital : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organization-PharmChain : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organizationaffiliation-BurrClinicAffil : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organizationaffiliation-ConnHIEAffil : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organizationaffiliation-HamiltonClinicAffil : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organizationaffiliation-HartfordOrthopedicAffil : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organizationaffiliation-PharmChainAffil1 : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organizationaffiliation-PharmChainAffil2 : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/organizationaffiliation-PharmChainAffil3 : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/practitioner-Counselor : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/practitioner-HansSolo : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/practitioner-JoeSmith : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/practitionerrole-AnonRole : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/practitionerrole-CounselorRole1 : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/practitionerrole-HansSoloRole1 : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/practitionerrole-JoeSmithRole1 : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/practitionerrole-JoeSmithRole2 : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/practitionerrole-JoeSmithRole3 : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/structuredefinition-NatlDirEx-CareTeam : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/structuredefinition-NatlDirEx-Endpoint : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/structuredefinition-NatlDirEx-HealthcareService : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/structuredefinition-NatlDirEx-InsurancePlan : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/structuredefinition-NatlDirEx-Location : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/structuredefinition-NatlDirEx-Network : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/structuredefinition-NatlDirEx-Organization : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/structuredefinition-NatlDirEx-OrganizationAffiliation : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/structuredefinition-NatlDirEx-Practitioner : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/structuredefinition-NatlDirEx-PractitionerRole : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/structuredefinition-NatlDirEx-Restriction : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/structuredefinition-NatlDirEx-Validation : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fhir-directory-exchange/fsh-generated/resources/verificationresult-ProviderAttestation : 0 / 0 / 4
+</table>
+== n/a ==
+WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.  To see the differences, perform a file compare on 'template/jira-current.xml' (a normalized view of what is in Github) and 'template/jira-new.xml' (reflects current IG content)
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.us.directory-exchange.json ==
+== fsh-generated/resources/CapabilityStatement-fhir-national-directory.json ==
+== fsh-generated/resources/CareTeam-CareTeam1.json ==
+== fsh-generated/resources/Consent-PatientConsent.json ==
+== fsh-generated/resources/Endpoint-AcmeOfCTPortalEndpoint.json ==
+== fsh-generated/resources/HealthcareService-BurrClinicServices.json ==
+ERROR: HealthcareService/BurrClinicServices: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties Value Set' (http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207Q00000X)
+== fsh-generated/resources/HealthcareService-CancerClinicService.json ==
+ERROR: HealthcareService/CancerClinicService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties Value Set' (http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207RX0202X)
+== fsh-generated/resources/HealthcareService-HamiltonClinicServices.json ==
+ERROR: HealthcareService/HamiltonClinicServices: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties Value Set' (http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207Q00000X)
+== fsh-generated/resources/HealthcareService-HansSoloService.json ==
+ERROR: HealthcareService/HansSoloService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties Value Set' (http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207Q00000X)
+== fsh-generated/resources/HealthcareService-HartfordOrthopedicServices.json ==
+ERROR: HealthcareService/HartfordOrthopedicServices: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties Value Set' (http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207X00000X)
+== fsh-generated/resources/HealthcareService-HospERService.json ==
+ERROR: HealthcareService/HospERService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties Value Set' (http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#207P00000X)
+== fsh-generated/resources/HealthcareService-PharmChainCompService.json ==
+ERROR: HealthcareService/PharmChainCompService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties Value Set' (http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#3336C0004X)
+== fsh-generated/resources/HealthcareService-PharmChainMailService.json ==
+ERROR: HealthcareService/PharmChainMailService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties Value Set' (http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#3336M0002X)
+== fsh-generated/resources/HealthcareService-PharmChainRetailService.json ==
+ERROR: HealthcareService/PharmChainRetailService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties Value Set' (http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#3336C0003X)
+== fsh-generated/resources/HealthcareService-VirtualCounselService.json ==
+ERROR: HealthcareService/VirtualCounselService: HealthcareService.specialty[0]: None of the codings provided are in the value set 'Specialties Value Set' (http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#103TC1900X)
+== fsh-generated/resources/InsurancePlan-AcmeQHPBronze.json ==
+== fsh-generated/resources/InsurancePlan-AcmeQHPGold.json ==
+== fsh-generated/resources/Location-CancerClinicLoc.json ==
+== fsh-generated/resources/Location-HansSoloClinic.json ==
+== fsh-generated/resources/Location-HospLoc1.json ==
+== fsh-generated/resources/Location-HospLoc2.json ==
+== fsh-generated/resources/Location-PharmLoc1.json ==
+== fsh-generated/resources/Location-PharmLoc2.json ==
+== fsh-generated/resources/Location-PharmLoc3.json ==
+== fsh-generated/resources/Location-PharmLoc4.json ==
+== fsh-generated/resources/Location-StateOfCTLocation.json ==
+== fsh-generated/resources/Organization-Acme.json ==
+== fsh-generated/resources/Organization-AcmeofCTPremNet.json ==
+== fsh-generated/resources/Organization-AcmeofCTStdNet.json ==
+== fsh-generated/resources/Organization-BigBox.json ==
+== fsh-generated/resources/Organization-BurrClinic.json ==
+== fsh-generated/resources/Organization-CancerClinic.json ==
+== fsh-generated/resources/Organization-ConnHIE.json ==
+== fsh-generated/resources/Organization-HamiltonClinic.json ==
+== fsh-generated/resources/Organization-HartfordOrthopedics.json ==
+== fsh-generated/resources/Organization-Hospital.json ==
+== fsh-generated/resources/Organization-PharmChain.json ==
+== fsh-generated/resources/OrganizationAffiliation-BurrClinicAffil.json ==
+== fsh-generated/resources/OrganizationAffiliation-ConnHIEAffil.json ==
+== fsh-generated/resources/OrganizationAffiliation-HamiltonClinicAffil.json ==
+== fsh-generated/resources/OrganizationAffiliation-HartfordOrthopedicAffil.json ==
+== fsh-generated/resources/OrganizationAffiliation-PharmChainAffil1.json ==
+ERROR: OrganizationAffiliation/PharmChainAffil1: OrganizationAffiliation.specialty[0]: None of the codings provided are in the value set 'Specialties Value Set' (http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#3336C0003X)
+== fsh-generated/resources/OrganizationAffiliation-PharmChainAffil2.json ==
+ERROR: OrganizationAffiliation/PharmChainAffil2: OrganizationAffiliation.specialty[0]: None of the codings provided are in the value set 'Specialties Value Set' (http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#3336C0004X)
+== fsh-generated/resources/OrganizationAffiliation-PharmChainAffil3.json ==
+ERROR: OrganizationAffiliation/PharmChainAffil3: OrganizationAffiliation.specialty[0]: None of the codings provided are in the value set 'Specialties Value Set' (http://hl7.org/fhir/us/directory-query/ValueSet/SpecialtiesVS), and a coding from this value set is required) (codes = http://nucc.org/provider-taxonomy#3336M0002X)
+== fsh-generated/resources/Practitioner-Counselor.json ==
+== fsh-generated/resources/Practitioner-HansSolo.json ==
+== fsh-generated/resources/Practitioner-JoeSmith.json ==
+== fsh-generated/resources/PractitionerRole-AnonRole.json ==
+== fsh-generated/resources/PractitionerRole-CounselorRole1.json ==
+== fsh-generated/resources/PractitionerRole-HansSoloRole1.json ==
+== fsh-generated/resources/PractitionerRole-JoeSmithRole1.json ==
+== fsh-generated/resources/PractitionerRole-JoeSmithRole2.json ==
+== fsh-generated/resources/PractitionerRole-JoeSmithRole3.json ==
+== fsh-generated/resources/StructureDefinition-NatlDirEx-CareTeam.json ==
+== fsh-generated/resources/StructureDefinition-NatlDirEx-Endpoint.json ==
+== fsh-generated/resources/StructureDefinition-NatlDirEx-HealthcareService.json ==
+== fsh-generated/resources/StructureDefinition-NatlDirEx-InsurancePlan.json ==
+== fsh-generated/resources/StructureDefinition-NatlDirEx-Location.json ==
+== fsh-generated/resources/StructureDefinition-NatlDirEx-Network.json ==
+== fsh-generated/resources/StructureDefinition-NatlDirEx-Organization.json ==
+== fsh-generated/resources/StructureDefinition-NatlDirEx-OrganizationAffiliation.json ==
+== fsh-generated/resources/StructureDefinition-NatlDirEx-Practitioner.json ==
+== fsh-generated/resources/StructureDefinition-NatlDirEx-PractitionerRole.json ==
+== fsh-generated/resources/StructureDefinition-NatlDirEx-Restriction.json ==
+ERROR: StructureDefinition/NatlDirEx-Restriction: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
+== fsh-generated/resources/StructureDefinition-NatlDirEx-Validation.json ==
+== fsh-generated/resources/VerificationResult-ProviderAttestation.json ==
