@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.FHIR-DIRECTORY-EXCHANGE\Artifacts Summary - FHIR v4.0.1</title>
+    <title>HL7.FHIR.US.DIRECTORY-EXCHANGE\Artifacts Summary - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"95"}
-    h3,h4,h5,h6{--heading-prefix:"95.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"24"}
+    h3,h4,h5,h6{--heading-prefix:"24.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -61,9 +61,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">National Directory</span>
+          <p><span style="font-size:12pt;font-weight:bold">National Healthcare Directory Exchange</span>
             <br/>
-            <span style="display:inline-block;">1.0.0-ballot1 - draft
+            <span style="display:inline-block;">1.0.0-ballot - ballot
 
 
 
@@ -176,7 +176,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">National Directory - Local Development build (v1.0.0-ballot1). See the <a href="http://hl7.org/fhir/us/fhir-directory-exchange/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">National Healthcare Directory Exchange - Local Development build (v1.0.0-ballot). See the <a href="http://hl7.org/fhir/us/directory-exchange/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -191,13 +191,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Behavior: Search Parameters</a>
+         <a href="#2">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#3">Structures: Resource Profiles</a>
-      </li>
-      <li>
-         <a href="#4">Example: Example Instances</a>
+         <a href="#3">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -227,648 +224,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="2"> </a>
-   <h3>Behavior: Search Parameters </h3>
-   <p>
-    <p>These define the properties by which a RESTful server can be searched.  They can also be used for sorting and including related resources.</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Endpoint-connection-type.html"
-                     title="SearchParameter/Endpoint-connection-type">Search by Connection Type in Endpoints</a>
-               </td>
-               <td>
-<p>Accesses the  connection type of an Endpoint</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Endpoint-identifier.html"
-                     title="SearchParameter/Endpoint-identifier">Search by Indentifer in Endpoints</a>
-               </td>
-               <td>
-<p>Accesses the  identifier of an Endpoint</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Endpoint-mime-type.html"
-                     title="SearchParameter/Endpoint-mime-type">Search by mime-type in Endpoints</a>
-               </td>
-               <td>
-<p>Accesses the  mime-type of an Endpoint</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Endpoint-organization.html"
-                     title="SearchParameter/Endpoint-organization">Search by organization in Endpoints</a>
-               </td>
-               <td>
-<p>Accesses the  organization of an Endpoint</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Endpoint-payload-type.html"
-                     title="SearchParameter/Endpoint-payload-type">Search by payload-type in Endpoints</a>
-               </td>
-               <td>
-<p>Accesses the  payload-type of an Endpoint</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Endpoint-status.html"
-                     title="SearchParameter/Endpoint-status">Search by status in Endpoints</a>
-               </td>
-               <td>
-<p>Accesses the status of an Endpoint</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Endpoint-usecase-standard.html"
-                     title="SearchParameter/Endpoint-usecase-standard">Search by usecase-standard in Endpoints</a>
-               </td>
-               <td>
-<p>Accesses the usecase-standard of an Endpoint</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Endpoint-usecase-type.html"
-                     title="SearchParameter/Endpoint-usecase-type">Search by usecase-type in Endpoints</a>
-               </td>
-               <td>
-<p>Accesses the  usecase-type of an Endpoint</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-HealthcareService-coverage-area.html"
-                     title="SearchParameter/HealthcareService-coverage-area">Search by coverage-area in HealthcareService with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">coverage-area</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-HealthcareService-endpoint.html"
-                     title="SearchParameter/HealthcareService-endpoint">Search by endpoint in HealthcareService with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">endpoint</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-HealthcareService-location.html"
-                     title="SearchParameter/HealthcareService-location">Search by location in HealthcareService with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">location</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-HealthcareService-name.html"
-                     title="SearchParameter/HealthcareService-name">Search by name in HealthcareService with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">name</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-HealthcareService-organization.html"
-                     title="SearchParameter/HealthcareService-organization">Search by organization in HealthcareService with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">organization</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-HealthcareService-service-category.html"
-                     title="SearchParameter/HealthcareService-service-category">Search by service-category in HealthcareService with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">service-category</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-HealthcareService-service-type.html"
-                     title="SearchParameter/HealthcareService-service-type">Search by service-type in HealthcareService with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">service-type</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-HealthcareService-specialty.html"
-                     title="SearchParameter/HealthcareService-specialty">Search by specialty in HealthcareService with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of HealthcareService by <code class="language-plaintext highlighter-rouge">specialty</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-InsurancePlan-administrated-by.html"
-                     title="SearchParameter/InsurancePlan-administrated-by">Search by administrated-by in InsurancePlan with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">administrated-by</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-InsurancePlan-coverage-area.html"
-                     title="SearchParameter/InsurancePlan-coverage-area">Search by coverage-area in InsurancePlan with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">coverage-area</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-InsurancePlan-coverage-benefit-type.html"
-                     title="SearchParameter/InsurancePlan-coverage-benefit-type">Search by coverage-benefit-type in InsurancePlan with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">coverage-benefit-type</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-InsurancePlan-coverage-network.html"
-                     title="SearchParameter/InsurancePlan-coverage-network">Search by coverage-network in InsurancePlan with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">coverage-network</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-InsurancePlan-identifier.html"
-                     title="SearchParameter/InsurancePlan-identifier">Search by identifier in InsurancePlan with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">identifier</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-InsurancePlan-name.html"
-                     title="SearchParameter/InsurancePlan-name">Search by name in InsurancePlan with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">specialty</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-InsurancePlan-owned-by.html"
-                     title="SearchParameter/InsurancePlan-owned-by">Search by owned-by in InsurancePlan with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">owned-by</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-InsurancePlan-type.html"
-                     title="SearchParameter/InsurancePlan-type">Search by type in InsurancePlan with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of InsurancePlan by <code class="language-plaintext highlighter-rouge">type</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Location-address.html"
-                     title="SearchParameter/Location-address">Search by address in Location with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Location by <code class="language-plaintext highlighter-rouge">address</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Location-endpoint.html"
-                     title="SearchParameter/Location-endpoint">Search by endpoint in Location with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Location by <code class="language-plaintext highlighter-rouge">endpoint</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Location-organization.html"
-                     title="SearchParameter/Location-organization">Search by organization in Location with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Location by <code class="language-plaintext highlighter-rouge">organization</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Location-partOf.html"
-                     title="SearchParameter/Location-partOf">Search by partOf in Location with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Location by <code class="language-plaintext highlighter-rouge">partOf</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Location-physicalType.html"
-                     title="SearchParameter/Location-physicalType">Search by physicalType in Location with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Location by <code class="language-plaintext highlighter-rouge">physicalType</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Location-type.html"
-                     title="SearchParameter/Location-type">Search by type in Location with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Location by <code class="language-plaintext highlighter-rouge">type</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Network-coverage-area.html"
-                     title="SearchParameter/Network-coverage-area">Search by coverage-area in Network with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Network by <code class="language-plaintext highlighter-rouge">coverage-area</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Network-name.html"
-                     title="SearchParameter/Network-name">Search by name in Network with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Network by <code class="language-plaintext highlighter-rouge">name</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Organization-address.html"
-                     title="SearchParameter/Organization-address">Search by address in Organization with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">address</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Organization-endpoint.html"
-                     title="SearchParameter/Organization-endpoint">Search by endpoint in Organization with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">endpoint</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Organization-identifier.html"
-                     title="SearchParameter/Organization-identifier">Search by identifier in Organization with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">identifier</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Organization-name.html"
-                     title="SearchParameter/Organization-name">Search by name in Organization with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">name</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Organization-partOf.html"
-                     title="SearchParameter/Organization-partOf">Search by partOf in Organization with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">partOf</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-Organization-type.html"
-                     title="SearchParameter/Organization-type">Search by type in Organization with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">type</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-OrganizationAffiliation-endpoint.html"
-                     title="SearchParameter/OrganizationAffiliation-endpoint">Search by endpoint in OrganizationAffiliation with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">endpoint</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-OrganizationAffiliation-location.html"
-                     title="SearchParameter/OrganizationAffiliation-location">Search by location in OrganizationAffiliation with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">location</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-OrganizationAffiliation-network.html"
-                     title="SearchParameter/OrganizationAffiliation-network">Search by network in OrganizationAffiliation with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">network</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-OrganizationAffiliation-participating-organization.html"
-                     title="SearchParameter/OrganizationAffiliation-participating-organization">Search by participating-organization in OrganizationAffiliation with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">participating-organization</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-OrganizationAffiliation-primary-organization.html"
-                     title="SearchParameter/OrganizationAffiliation-primary-organization">Search by primary-organization in OrganizationAffiliation with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">primary-organization</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-OrganizationAffiliation-role.html"
-                     title="SearchParameter/OrganizationAffiliation-role">Search by role in OrganizationAffiliation with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">role</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-OrganizationAffiliation-service.html"
-                     title="SearchParameter/OrganizationAffiliation-service">Search by service in OrganizationAffiliation with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">service</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-OrganizationAffiliation-specialty.html"
-                     title="SearchParameter/OrganizationAffiliation-specialty">Search by specialty in OrganizationAffiliation with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Organization by <code class="language-plaintext highlighter-rouge">specialty</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-VerificationResult-attestation-who.html"
-                     title="SearchParameter/VerificationResult-attestation-who">Search by attestation-who in VerificationResult with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of VerificationResult by <code class="language-plaintext highlighter-rouge">attestation-who</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-VerificationResult-primarysource-who.html"
-                     title="SearchParameter/VerificationResult-primarysource-who">Search by primarysource-who in VerificationResult with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of VerificationResult by <code class="language-plaintext highlighter-rouge">primarysource-who</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-VerificationResult-target.html"
-                     title="SearchParameter/VerificationResult-target">Search by target in InsurancePlan with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of VerificationResult by <code class="language-plaintext highlighter-rouge">target</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-careTeam-category.html"
-                     title="SearchParameter/careTeam-category">Search by category in CareTeam with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Careteams by <code class="language-plaintext highlighter-rouge">category</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-careTeam-endpoint.html"
-                     title="SearchParameter/careTeam-endpoint">Search by endpoint in CareTeam with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Careteams by <code class="language-plaintext highlighter-rouge">endpoint</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-careTeam-location.html"
-                     title="SearchParameter/careTeam-location">Search by location in CareTeam with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Careteams by <code class="language-plaintext highlighter-rouge">location</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-careTeam-name.html"
-                     title="SearchParameter/careTeam-name">Search by name in CareTeam with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Careteams by <code class="language-plaintext highlighter-rouge">name</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-careTeam-organization.html"
-                     title="SearchParameter/careTeam-organization">Search by organization in CareTeam with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Careteams by <code class="language-plaintext highlighter-rouge">organization</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-careTeam-service.html"
-                     title="SearchParameter/careTeam-service">Search by service in CareTeam with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of Careteams by <code class="language-plaintext highlighter-rouge">service</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-family.html"
-                     title="SearchParameter/practitioner-family">Search by family name in practitioner with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of practitioner by <code class="language-plaintext highlighter-rouge">family</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-given.html"
-                     title="SearchParameter/practitioner-given">Search by given name in practitioner with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of practitioner by <code class="language-plaintext highlighter-rouge">given</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-identifier.html"
-                     title="SearchParameter/practitioner-identifier">Search by identifier in practitioner with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of practitioner by <code class="language-plaintext highlighter-rouge">identifier</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-identifier-assigner.html"
-                     title="SearchParameter/practitioner-identifier-assigner">Search by identifier-assigner in practitioner with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of practitioner by <code class="language-plaintext highlighter-rouge">identifier-assigner</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-name.html"
-                     title="SearchParameter/practitioner-name">Search by name in practitioner with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of practitioner by <code class="language-plaintext highlighter-rouge">name</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-qualification-code.html"
-                     title="SearchParameter/practitioner-qualification-code">Search by qualification-code in practitioner with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of practitioner by <code class="language-plaintext highlighter-rouge">qualification-code</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitioner-qualification-issuer.html"
-                     title="SearchParameter/practitioner-qualification-issuer">Search by qualification-issuer in practitioner with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of practitioner by <code class="language-plaintext highlighter-rouge">qualification-issuer</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerRole-endpoint.html"
-                     title="SearchParameter/practitionerRole-endpoint">Search by endpoint in practitionerRole with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">endpoint</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerRole-location.html"
-                     title="SearchParameter/practitionerRole-location">Search by location in practitionerRole with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">location</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerRole-network.html"
-                     title="SearchParameter/practitionerRole-network">Search by network in practitionerRole with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">network</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerRole-organization.html"
-                     title="SearchParameter/practitionerRole-organization">Search by organization in practitionerRole with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">organization</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerRole-practitioner.html"
-                     title="SearchParameter/practitionerRole-practitioner">Search by practitioner in practitionerRole with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">practitioner</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerRole-role.html"
-                     title="SearchParameter/practitionerRole-role">Search by role in practitionerRole with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">role</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerRole-service.html"
-                     title="SearchParameter/practitionerRole-service">Search by service in practitionerRole with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">service</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerRole-specialty.html"
-                     title="SearchParameter/practitionerRole-specialty">Search by specialty in practitionerRole with multipleOr</a>
-               </td>
-               <td>
-<p>This SearchParameter enables query of practitionerRole by <code class="language-plaintext highlighter-rouge">specialty</code> with <code class="language-plaintext highlighter-rouge">mutlipleOr</code> enabled.</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="3"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
@@ -992,7 +347,7 @@ be a relationship to an organization. Practitioner participation in healthcare p
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="3"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -1474,14 +829,14 @@ be a relationship to an organization. Practitioner participation in healthcare p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-exchange#1.0.0-ballot1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 25, 2022 13:43-0500">2022-07-25</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.directory-exchange#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 21, 2022 22:39-0400">2022-09-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/fhir-directory-exchange/history.html">Version History</a> |
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/directory-exchange/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
                  <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>

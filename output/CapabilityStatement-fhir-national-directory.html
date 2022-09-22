@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.FHIR-DIRECTORY-EXCHANGE\fhir-national-directory - FHIR v4.0.1</title>
+    <title>HL7.FHIR.US.DIRECTORY-EXCHANGE\fhir-national-directory - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"95.1"}
-    h3,h4,h5,h6{--heading-prefix:"95.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"24.1"}
+    h3,h4,h5,h6{--heading-prefix:"24.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -61,9 +61,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">National Directory</span>
+          <p><span style="font-size:12pt;font-weight:bold">National Healthcare Directory Exchange</span>
             <br/>
-            <span style="display:inline-block;">1.0.0-ballot1 - draft
+            <span style="display:inline-block;">1.0.0-ballot - ballot
 
 
 
@@ -169,7 +169,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">National Directory - Local Development build (v1.0.0-ballot1). See the <a href="http://hl7.org/fhir/us/fhir-directory-exchange/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">National Healthcare Directory Exchange - Local Development build (v1.0.0-ballot). See the <a href="http://hl7.org/fhir/us/directory-exchange/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -219,10 +219,10 @@
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.org/fhir/us/fhir-directory-exchange/CapabilityStatement/fhir-national-directory<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/us/fhir-directory-exchange/CapabilityStatement/fhir-national-directory"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.org/fhir/us/directory-exchange/CapabilityStatement/fhir-national-directory<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/us/directory-exchange/CapabilityStatement/fhir-national-directory"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">1.0.0-ballot1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/us/fhir-directory-exchange/CapabilityStatement/fhir-national-directory|1.0.0-ballot1"/></span>
+      <span class="copy-text">1.0.0-ballot<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/us/directory-exchange/CapabilityStatement/fhir-national-directory|1.0.0-ballot"/></span>
       </td>
     </tr>
 
@@ -277,28 +277,98 @@
 
 
   <div xmlns="http://www.w3.org/1999/xhtml"><h2>CapabilityStatementFhirNationalDirectory</h2><div><p>Capabilities for a validated national directory server</p>
-</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>A Federated Query server <strong>SHALL</strong>:</p>
-<ol>
-<li>Support all profiles defined in this Implementation Guide..</li>
-<li>Implement the RESTful behavior according to the FHIR specification.</li>
-<li>Return the following response classes:
+</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><table class="grid">
+<thead>
+<tr><th>Resource Type</th><th>Supported Interactions</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr>
+</thead>
+<tbody>
+<tr><td>endpoint</td><td/><td><a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html</a></td><td>identifier, usecase-type</td><td/><td/><td/></tr>
+<tr><td>healthcare Service</td><td/><td><a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html</a></td><td>service-category, coverage-area, endpoint, location, name, organization, specialty, service-type</td><td/><td/><td/></tr>
+<tr><td>InsurancePlan</td><td/><td><a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html</a></td><td>coverage-area, administrated-by, coverage-benefit-type, coverage-network, identifier, type, name, owned-by</td><td/><td/><td/></tr>
+<tr><td>location</td><td/><td><a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html</a></td><td>address, endpoint, organization, physicalType, partOf, type</td><td/><td/><td/></tr>
+<tr><td>network</td><td/><td><a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html</a></td><td>coverage-area, name</td><td/><td/><td/></tr>
+<tr><td>Organization</td><td/><td><a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html</a></td><td>type, address, endpoint, identifier, name, partOf</td><td/><td/><td/></tr>
+<tr><td>OrganizationAffiliation</td><td/><td><a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html</a></td><td>endpoint, location, network, participating-organization, primary-organization, role, service, specialty</td><td/><td/><td/></tr>
+<tr><td>Practitioner</td><td/><td><a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html</a></td><td>name, family, given, identifier, identifier-assigner, qualification-code, qualification-issuer</td><td/><td/><td/></tr>
+<tr><td>PractitionerRole</td><td/><td><a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html</a></td><td>endpoint, location, network, organization, Practicioner, role, service, specialty</td><td/><td/><td/></tr>
+<tr><td>Restriction</td><td/><td><a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html</a></td><td>_id, _id, _lastUpdated, plan-type, name, coverage-area, owned=by, administrated-by</td><td/><td/><td/></tr>
+<tr><td>Validation</td><td/><td><a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html</a></td><td>attestation-who, primarysource-who, target</td><td/><td/><td/></tr>
+<tr><td>CareTeam</td><td/><td><a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html</a></td><td>endpoint, location, name, organization, service, category</td><td/><td/><td/></tr>
+</tbody>
+</table>
+<h4>CareTeam</h4>
+<p>Conformance Expectation:	<strong>SHOULD</strong></p>
+<p>Supported Profiles:</p>
 <ul>
-<li>(Status 400): invalid parameter</li>
-<li>(Status 401/4xx): unauthorized request</li>
-<li>(Status 403): insufficient scope</li>
-<li>(Status 404): unknown resource</li>
-<li>(Status 410): deleted resource.</li>
+<li><strong>SHOULD</strong> support:<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html)</a></li>
 </ul>
-</li>
-<li>Support json source formats for all Federated Query interactions.</li>
-<li>Identify the Federated Query  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li>
-<li>Support the searchParameters on each profile individually and in combination.</li>
-</ol>
-<p>The Federated Query Server <strong>SHOULD</strong>:</p>
-<ol>
-<li>Support xml source formats for all Federated Query interactions.</li>
-</ol>
-</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>Endpoint</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-EndpointComplete.html">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-EndpointComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>HealthcareService</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.html">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>InsurancePlan</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-InsurancePlanComplete.html">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-InsurancePlanComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Location</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-locationComplete.html">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-locationComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Organization</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationComplete.html">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationComplete.html</a><br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-networkComplete.html">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-networkComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>OrganizationAffiliation</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationAffiliationComplete.html">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationAffiliationComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Practitioner</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerComplete.html">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>PractitionerRole</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerRoleComplete.html">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerRoleComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Consent</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-Restriction.html">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-Restriction.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>VerificationResult</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-ValidationComplete.html">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-ValidationComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>CareTeam</td><td>Supported profiles:<br/>  <a href="https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-CareTeamComplete.html">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-CareTeamComplete.html</a></td><td></td><td></td><td></td><td></td></tr></table></div>
+<h4>endpoint</h4>
+<p>Conformance Expectation:	<strong>SHALL</strong></p>
+<p>Supported Profiles:</p>
+<ul>
+<li><strong>SHALL</strong> support:<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Endpoint.html">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Endpoint.html)</a></li>
+</ul>
+<h4>healthcareService</h4>
+<p>Conformance Expectation:	<strong>SHALL</strong></p>
+<p>Supported Profiles:</p>
+<ul>
+<li><strong>SHALL</strong> support:<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html)</a></li>
+</ul>
+<h4>InsurancePlan</h4>
+<p>Conformance Expectation:	<strong>SHALL</strong></p>
+<p>Supported Profiles:</p>
+<ul>
+<li><strong>SHALL</strong> support:<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html)</a></li>
+</ul>
+<h4>location</h4>
+<p>Conformance Expectation:	<strong>SHALL</strong></p>
+<p>Supported Profiles:</p>
+<ul>
+<li><strong>SHALL</strong> support:<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html)</a></li>
+</ul>
+<h4>network</h4>
+<p>Conformance Expectation:	<strong>SHOULD</strong></p>
+<p>Supported Profiles:</p>
+<ul>
+<li><strong>SHOULD</strong> support:<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html)</a></li>
+</ul>
+<h4>organization</h4>
+<p>Conformance Expectation:	<strong>SHALL</strong></p>
+<p>Supported Profiles:</p>
+<ul>
+<li><strong>SHALL</strong> support:<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html)</a></li>
+</ul>
+<h4>OrganizationAffiliation</h4>
+<p>Conformance Expectation:	<strong>SHALL</strong></p>
+<p>Supported Profiles:</p>
+<ul>
+<li><strong>SHALL</strong> support:<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html)</a></li>
+</ul>
+<h4>Practitioner</h4>
+<p>Conformance Expectation:	<strong>SHALL</strong></p>
+<p>Supported Profiles:</p>
+<ul>
+<li><strong>SHALL</strong> support:<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html)</a></li>
+</ul>
+<h4>PractitionerRole</h4>
+<p>Conformance Expectation:	<strong>SHALL</strong></p>
+<p>Supported Profiles:</p>
+<ul>
+<li><strong>SHALL</strong> support:<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html)</a></li>
+</ul>
+<h4>Restriction</h4>
+<p>Conformance Expectation:	<strong>SHALL</strong></p>
+<p>Supported Profiles:</p>
+<ul>
+<li><strong>SHALL</strong> support:<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html)</a></li>
+</ul>
+<h4>Validation</h4>
+<p>Conformance Expectation:	<strong>MAY</strong></p>
+<p>Supported Profiles:</p>
+<ul>
+<li><strong>MAY</strong> support:<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html)</a></li>
+</ul>
+</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>Endpoint</td><td>Supported profiles:<br/>  <a href="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint</a></td><td></td><td></td><td></td><td></td></tr><tr><td>HealthcareService</td><td>Supported profiles:<br/>  <a href="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService</a></td><td></td><td></td><td></td><td></td></tr><tr><td>InsurancePlan</td><td>Supported profiles:<br/>  <a href="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Location</td><td>Supported profiles:<br/>  <a href="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Organization</td><td>Supported profiles:<br/>  <a href="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization</a><br/>  <a href="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Network">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Network</a></td><td></td><td></td><td></td><td></td></tr><tr><td>OrganizationAffiliation</td><td>Supported profiles:<br/>  <a href="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Practitioner</td><td>Supported profiles:<br/>  <a href="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner</a></td><td></td><td></td><td></td><td></td></tr><tr><td>PractitionerRole</td><td>Supported profiles:<br/>  <a href="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Consent</td><td>Supported profiles:<br/>  <a href="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Restriction">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Restriction</a></td><td></td><td></td><td></td><td></td></tr><tr><td>VerificationResult</td><td>Supported profiles:<br/>  <a href="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Validation">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Validation</a></td><td></td><td></td><td></td><td></td></tr><tr><td>CareTeam</td><td>Supported profiles:<br/>  <a href="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam</a></td><td></td><td></td><td></td><td></td></tr></table></div>
 
   <!-- insert notes if present -->
   
@@ -329,14 +399,14 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-exchange#1.0.0-ballot1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 25, 2022 13:43-0500">2022-07-25</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.directory-exchange#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 21, 2022 22:39-0400">2022-09-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/fhir-directory-exchange/history.html">Version History</a> |
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/directory-exchange/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
                  <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>

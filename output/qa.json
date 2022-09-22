@@ -1,12 +1,12 @@
 {
-  "url": "http://hl7.org/fhir/us/fhir-directory-exchange/ImplementationGuide/hl7.fhir.us.fhir-directory-exchange",
-  "name": "ONCFASTNationalDirectory",
-  "package-id": "hl7.fhir.us.fhir-directory-exchange",
-  "ig-ver": "1.0.0-ballot1",
-  "date": "Mon, 25 Jul, 2022 13:43:16 -0500",
-  "errs": 17,
-  "warnings": 2,
-  "hints": 4,
+  "url": "http://hl7.org/fhir/us/directory-exchange/ImplementationGuide/hl7.fhir.us.directory-exchange",
+  "name": "NationalHealthcareDirectoryExchange",
+  "package-id": "hl7.fhir.us.directory-exchange",
+  "ig-ver": "1.0.0-ballot",
+  "date": "Wed, 21 Sep, 2022 22:39:35 -0400",
+  "errs": 14,
+  "warnings": 1,
+  "hints": 0,
   "version": "4.0.1",
   "tool": "5.0.0-snapshot2 (3)"
 }

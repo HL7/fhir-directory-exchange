@@ -6,15 +6,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/CareTeam/CareTeam1> a fhir:CareTeam;
+<http://hl7.org/fhir/us/directory-exchange/CareTeam/CareTeam1> a fhir:CareTeam;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CareTeam1"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-CareTeam";
+       fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-CareTeam>
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
@@ -24,27 +24,27 @@
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/careteam-alias" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/careteam-alias" ];
      fhir:Extension.valueString [ fhir:value "CareTeam1" ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-reference" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/endpoint-reference" ];
      fhir:Extension.valueReference [
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Endpoint/AcmeOfCTPortalEndpoint>;
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/Endpoint/AcmeOfCTPortalEndpoint>;
        fhir:Reference.reference [ fhir:value "Endpoint/AcmeOfCTPortalEndpoint" ]
      ]
   ], [
      fhir:index 2;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/healthcareservice-reference" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/healthcareservice-reference" ];
      fhir:Extension.valueReference [
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/HealthcareService/HansSoloService>;
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/HealthcareService/HansSoloService>;
        fhir:Reference.reference [ fhir:value "HealthcareService/HansSoloService" ]
      ]
   ], [
      fhir:index 3;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/usage-restriction" ];
      fhir:Extension.valueReference [
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Consent/PatientConsent>;
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/Consent/PatientConsent>;
        fhir:Reference.reference [ fhir:value "Consent/PatientConsent" ]
      ]
   ];
@@ -52,7 +52,7 @@
      fhir:index 0;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/identifier-status" ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/identifier-status" ];
        fhir:Extension.valueCode [ fhir:value "active" ]
      ]
   ];
@@ -67,17 +67,17 @@
      ]
   ] .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Endpoint/AcmeOfCTPortalEndpoint> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Endpoint/AcmeOfCTPortalEndpoint> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/HealthcareService/HansSoloService> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/HealthcareService/HansSoloService> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Consent/PatientConsent> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Consent/PatientConsent> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/CareTeam/CareTeam1.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/CareTeam/CareTeam1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/CareTeam/CareTeam1.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/CareTeam/CareTeam1.ttl> .
 
 # -------------------------------------------------------------------------------------
 

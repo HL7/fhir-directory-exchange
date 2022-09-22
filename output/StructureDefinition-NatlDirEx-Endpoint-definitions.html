@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.FHIR-DIRECTORY-EXCHANGE\National Directory Endpoint - Definitions - FHIR v4.0.1</title>
+    <title>HL7.FHIR.US.DIRECTORY-EXCHANGE\National Directory Endpoint - Definitions - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,8 +45,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"95.73"}
-    h3,h4,h5,h6{--heading-prefix:"95.73"}</style>
+    <style type="text/css">h2{--heading-prefix:"24.3"}
+    h3,h4,h5,h6{--heading-prefix:"24.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -65,9 +65,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">National Directory</span>
+          <p><span style="font-size:12pt;font-weight:bold">National Healthcare Directory Exchange</span>
             <br/>
-            <span style="display:inline-block;">1.0.0-ballot1 - draft
+            <span style="display:inline-block;">1.0.0-ballot - ballot
 
 
 
@@ -173,7 +173,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">National Directory - Local Development build (v1.0.0-ballot1). See the <a href="http://hl7.org/fhir/us/fhir-directory-exchange/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">National Healthcare Directory Exchange - Local Development build (v1.0.0-ballot). See the <a href="http://hl7.org/fhir/us/directory-exchange/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -254,7 +254,7 @@
         
           Active
           
-            as of 2022-07-25
+            as of 2022-09-21
           
         
       </td>
@@ -421,7 +421,7 @@ A human language.</p>
   <tr><td>Definition</td><td><p>EndpointUseCase is an enumeration of the specific use cases (service descriptions) supported by the endpoint</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-endpoint-usecase.html" title="[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-usecase]]">EndpointUsecase</a>)  (Complex Extension)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-endpoint-usecase.html" title="[CanonicalType[http://hl7.org/fhir/us/directory-query/StructureDefinition/endpoint-usecase]]">EndpointUsecase</a>)  (Complex Extension)</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Endpoint.extension:ig-supported"> </a></a><span style="color: grey">18.</span> <b>Endpoint.extension:ig-supported</b><a href="#Endpoint.extension:ig-supported" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -429,7 +429,7 @@ A human language.</p>
   <tr><td>Definition</td><td><p>IGs Supported document the different types of IGs supported by the Endpoint.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-igsSupported.html" title="[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/igsSupported]]">IGsSupported</a>)  (Complex Extension)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-igsSupported.html" title="[CanonicalType[http://hl7.org/fhir/us/directory-query/StructureDefinition/igsSupported]]">IGsSupported</a>)  (Complex Extension)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
@@ -438,7 +438,7 @@ A human language.</p>
   <tr><td>Definition</td><td><p>Type of Endpoint</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-endpointType.html" title="[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpointType]]">EndpointType</a>)  (Complex Extension)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-endpointType.html" title="[CanonicalType[http://hl7.org/fhir/us/directory-query/StructureDefinition/endpointType]]">EndpointType</a>)  (Complex Extension)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
@@ -447,7 +447,7 @@ A human language.</p>
   <tr><td>Definition</td><td><p>Secure Exchange Artifacts</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-secureExchangeArtifacts.html" title="[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureExchangeArtifacts]]">SecureExchangeArtifacts</a>)  (Complex Extension)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-secureExchangeArtifacts.html" title="[CanonicalType[http://hl7.org/fhir/us/directory-query/StructureDefinition/secureExchangeArtifacts]]">SecureExchangeArtifacts</a>)  (Complex Extension)</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Endpoint.extension:trust-framework"> </a></a><span style="color: grey">21.</span> <b>Endpoint.extension:trust-framework</b><a href="#Endpoint.extension:trust-framework" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -455,7 +455,7 @@ A human language.</p>
   <tr><td>Definition</td><td><p>Trust Framework</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-trustFramework.html" title="[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/trustFramework]]">TrustFramework</a>)  (Complex Extension)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-trustFramework.html" title="[CanonicalType[http://hl7.org/fhir/us/directory-query/StructureDefinition/trustFramework]]">TrustFramework</a>)  (Complex Extension)</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Endpoint.extension:dynamic-registration"> </a></a><span style="color: grey">22.</span> <b>Endpoint.extension:dynamic-registration</b><a href="#Endpoint.extension:dynamic-registration" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -463,7 +463,7 @@ A human language.</p>
   <tr><td>Definition</td><td><p>Dynamic Registration</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-dynamicRegistration.html" title="[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/dynamicRegistration]]">DynamicRegistration</a>)  (Complex Extension)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-dynamicRegistration.html" title="[CanonicalType[http://hl7.org/fhir/us/directory-query/StructureDefinition/dynamicRegistration]]">DynamicRegistration</a>)  (Complex Extension)</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Endpoint.extension:associated-servers"> </a></a><span style="color: grey">23.</span> <b>Endpoint.extension:associated-servers</b><a href="#Endpoint.extension:associated-servers" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -471,7 +471,7 @@ A human language.</p>
   <tr><td>Definition</td><td><p>Associated Servers</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-associatedServers.html" title="[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/associatedServers]]">AssociatedServers</a>)  (Complex Extension)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-associatedServers.html" title="[CanonicalType[http://hl7.org/fhir/us/directory-query/StructureDefinition/associatedServers]]">AssociatedServers</a>)  (Complex Extension)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
@@ -480,7 +480,7 @@ A human language.</p>
   <tr><td>Definition</td><td><p>Is the Endpoint Secured</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-secureEndpoint.html" title="[CanonicalType[http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/secureEndpoint]]">SecureEndpoint</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-secureEndpoint.html" title="[CanonicalType[http://hl7.org/fhir/us/directory-query/StructureDefinition/secureEndpoint]]">SecureEndpoint</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
@@ -612,7 +612,7 @@ The status of the endpoint.</p>
   <tr><td>Definition</td><td><p>A coded value that represents the technical details of the usage of this endpoint, such as what WSDLs should be used in what way. (e.g. XDS.b/DICOM/cds-hook).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://build.fhir.org/ig/HL7/fhir-directory-query//ValueSet-EndpointConnectionTypeVS.html">Endpoint Connection Types</a>; other codes may be used where these codes are not suitable<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr><tr><td style="font-size: 11px"><a href="https://build.fhir.org/ig/HL7/fhir-directory-query//ValueSet-MinEndpointConnectionTypeVS.html" title="http://hl7.org/fhir/us/fhir-directory-query/ValueSet/MinEndpointConnectionTypeVS">Minimum Endpoint Connection Types</a></td><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-minvalueset.html" title="The minimum allowable value set - any conformant system SHALL support all these codes">Min Binding</a></td></tr></table></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/us/directory-query/2022Sep/ValueSet-EndpointConnectionTypeVS.html">Endpoint Connection Types Value Set</a>; other codes may be used where these codes are not suitable<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr><tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/us/directory-query/2022Sep/ValueSet-MinEndpointConnectionTypeVS.html" title="http://hl7.org/fhir/us/directory-query/ValueSet/MinEndpointConnectionTypeVS">Minimum Endpoint Connection Types Value Set</a></td><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-minvalueset.html" title="The minimum allowable value set - any conformant system SHALL support all these codes">Min Binding</a></td></tr></table></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>For additional connectivity details for the protocol, extensions will be used at this point, as in the XDS example.</p>
@@ -630,7 +630,7 @@ The status of the endpoint.</p>
   <tr><td>Definition</td><td><p>The organization that manages this endpoint (even if technically another organization is hosting this in the cloud, it is the organization associated with the data).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-Organization.html" title="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization">NatlDirEndpointQryOrganization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html" title="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization">NatlDirEndpointQryOrganization</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>This property is not typically used when searching for Endpoint resources for usage. The typical usage is via the reference from an applicable Organization/Location/Practitioner resource, which is where the context is provided. Multiple Locations may reference a single endpoint, and don't have to be within the same organization resource, but most likely within the same organizational hierarchy.</p>
 </td></tr>
@@ -654,7 +654,7 @@ The status of the endpoint.</p>
   <tr><td>Definition</td><td><p>The payload type describes the acceptable content that can be communicated on the endpoint.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://build.fhir.org/ig/HL7/fhir-directory-query//ValueSet-EndpointPayloadTypeVS.html">Endpoint Payload Types</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/us/directory-query/2022Sep/ValueSet-EndpointPayloadTypeVS.html">Endpoint Payload Type Value Set</a>; other codes may be used where these codes are not suitable</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Comments</td><td><p>The payloadFormat describes the serialization format of the data, where the payloadType indicates the specific document/schema that is being transferred; e.g. DischargeSummary or CarePlan.</p>
 </td></tr>
@@ -748,14 +748,14 @@ The mime type of an attachment. Any valid mime type is allowed.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-exchange#1.0.0-ballot1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 25, 2022 13:43-0500">2022-07-25</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.directory-exchange#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 21, 2022 22:39-0400">2022-09-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/fhir-directory-exchange/history.html">Version History</a> |
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/directory-exchange/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
                  <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>

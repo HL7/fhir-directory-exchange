@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.FHIR-DIRECTORY-EXCHANGE\fhir-national-directory - XML Representation - FHIR v4.0.1</title>
+    <title>HL7.FHIR.US.DIRECTORY-EXCHANGE\fhir-national-directory - XML Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"95.1"}
-    h3,h4,h5,h6{--heading-prefix:"95.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"24.1"}
+    h3,h4,h5,h6{--heading-prefix:"24.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -63,9 +63,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">National Directory</span>
+          <p><span style="font-size:12pt;font-weight:bold">National Healthcare Directory Exchange</span>
             <br/>
-            <span style="display:inline-block;">1.0.0-ballot1 - draft
+            <span style="display:inline-block;">1.0.0-ballot - ballot
 
 
 
@@ -171,7 +171,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">National Directory - Local Development build (v1.0.0-ballot1). See the <a href="http://hl7.org/fhir/us/fhir-directory-exchange/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">National Healthcare Directory Exchange - Local Development build (v1.0.0-ballot). See the <a href="http://hl7.org/fhir/us/directory-exchange/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -247,32 +247,102 @@
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
     &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;CapabilityStatementFhirNationalDirectory&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Capabilities for a validated national directory server&lt;/p&gt;
-&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Mode&lt;/td&gt;&lt;td&gt;SERVER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Description&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;A Federated Query server &lt;strong&gt;SHALL&lt;/strong&gt;:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Support all profiles defined in this Implementation Guide..&lt;/li&gt;
-&lt;li&gt;Implement the RESTful behavior according to the FHIR specification.&lt;/li&gt;
-&lt;li&gt;Return the following response classes:
+&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Mode&lt;/td&gt;&lt;td&gt;SERVER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Description&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;table class=&quot;grid&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th&gt;Resource Type&lt;/th&gt;&lt;th&gt;Supported Interactions&lt;/th&gt;&lt;th&gt;Supported Profiles&lt;/th&gt;&lt;th&gt;Supported Searches&lt;/th&gt;&lt;th&gt;Supported &lt;code&gt;_includes&lt;/code&gt;&lt;/th&gt;&lt;th&gt;Supported &lt;code&gt;_revincludes&lt;/code&gt;&lt;/th&gt;&lt;th&gt;Supported Operations&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;endpoint&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html&quot;&gt;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;identifier, usecase-type&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;healthcare Service&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html&quot;&gt;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;service-category, coverage-area, endpoint, location, name, organization, specialty, service-type&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;InsurancePlan&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html&quot;&gt;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;coverage-area, administrated-by, coverage-benefit-type, coverage-network, identifier, type, name, owned-by&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;location&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html&quot;&gt;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;address, endpoint, organization, physicalType, partOf, type&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;network&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html&quot;&gt;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;coverage-area, name&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Organization&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html&quot;&gt;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;type, address, endpoint, identifier, name, partOf&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;OrganizationAffiliation&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html&quot;&gt;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;endpoint, location, network, participating-organization, primary-organization, role, service, specialty&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Practitioner&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html&quot;&gt;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;name, family, given, identifier, identifier-assigner, qualification-code, qualification-issuer&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;PractitionerRole&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html&quot;&gt;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;endpoint, location, network, organization, Practicioner, role, service, specialty&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Restriction&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html&quot;&gt;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;_id, _id, _lastUpdated, plan-type, name, coverage-area, owned=by, administrated-by&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Validation&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html&quot;&gt;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;attestation-who, primarysource-who, target&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;CareTeam&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html&quot;&gt;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;endpoint, location, name, organization, service, category&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4&gt;CareTeam&lt;/h4&gt;
+&lt;p&gt;Conformance Expectation:	&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Supported Profiles:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;(Status 400): invalid parameter&lt;/li&gt;
-&lt;li&gt;(Status 401/4xx): unauthorized request&lt;/li&gt;
-&lt;li&gt;(Status 403): insufficient scope&lt;/li&gt;
-&lt;li&gt;(Status 404): unknown resource&lt;/li&gt;
-&lt;li&gt;(Status 410): deleted resource.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SHOULD&lt;/strong&gt; support:&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html&quot;&gt;(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Support json source formats for all Federated Query interactions.&lt;/li&gt;
-&lt;li&gt;Identify the Federated Query  profiles supported as part of the FHIR &lt;code&gt;meta.profile&lt;/code&gt; attribute for each instance.&lt;/li&gt;
-&lt;li&gt;Support the searchParameters on each profile individually and in combination.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The Federated Query Server &lt;strong&gt;SHOULD&lt;/strong&gt;:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Support xml source formats for all Federated Query interactions.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Transaction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System History&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System Search&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;GET a resource (read interaction)&quot;&gt;Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;GET all set of resources of the type (search interaction)&quot;&gt;Search&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;PUT a new resource version (update interaction)&quot;&gt;Update&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;POST a new resource (create interaction)&quot;&gt;Create&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Endpoint&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-EndpointComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-EndpointComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HealthcareService&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InsurancePlan&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-InsurancePlanComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-InsurancePlanComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Location&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-locationComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-locationComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Organization&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationComplete.html&lt;/a&gt;&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-networkComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-networkComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OrganizationAffiliation&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationAffiliationComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationAffiliationComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Practitioner&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PractitionerRole&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerRoleComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerRoleComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Consent&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-Restriction.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-Restriction.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;VerificationResult&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-ValidationComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-ValidationComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;CareTeam&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-CareTeamComplete.html&quot;&gt;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-CareTeamComplete.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+&lt;h4&gt;endpoint&lt;/h4&gt;
+&lt;p&gt;Conformance Expectation:	&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Supported Profiles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support:&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Endpoint.html&quot;&gt;(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Endpoint.html)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;healthcareService&lt;/h4&gt;
+&lt;p&gt;Conformance Expectation:	&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Supported Profiles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support:&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html&quot;&gt;(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;InsurancePlan&lt;/h4&gt;
+&lt;p&gt;Conformance Expectation:	&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Supported Profiles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support:&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html&quot;&gt;(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;location&lt;/h4&gt;
+&lt;p&gt;Conformance Expectation:	&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Supported Profiles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support:&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html&quot;&gt;(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;network&lt;/h4&gt;
+&lt;p&gt;Conformance Expectation:	&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Supported Profiles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SHOULD&lt;/strong&gt; support:&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html&quot;&gt;(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;organization&lt;/h4&gt;
+&lt;p&gt;Conformance Expectation:	&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Supported Profiles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support:&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html&quot;&gt;(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;OrganizationAffiliation&lt;/h4&gt;
+&lt;p&gt;Conformance Expectation:	&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Supported Profiles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support:&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html&quot;&gt;(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Practitioner&lt;/h4&gt;
+&lt;p&gt;Conformance Expectation:	&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Supported Profiles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support:&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html&quot;&gt;(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;PractitionerRole&lt;/h4&gt;
+&lt;p&gt;Conformance Expectation:	&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Supported Profiles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support:&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html&quot;&gt;(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Restriction&lt;/h4&gt;
+&lt;p&gt;Conformance Expectation:	&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Supported Profiles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support:&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html&quot;&gt;(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Validation&lt;/h4&gt;
+&lt;p&gt;Conformance Expectation:	&lt;strong&gt;MAY&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Supported Profiles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MAY&lt;/strong&gt; support:&lt;a href=&quot;http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html&quot;&gt;(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Transaction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System History&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System Search&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;GET a resource (read interaction)&quot;&gt;Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;GET all set of resources of the type (search interaction)&quot;&gt;Search&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;PUT a new resource version (update interaction)&quot;&gt;Update&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=&quot;POST a new resource (create interaction)&quot;&gt;Create&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Endpoint&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint&quot;&gt;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HealthcareService&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService&quot;&gt;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InsurancePlan&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan&quot;&gt;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Location&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location&quot;&gt;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Organization&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization&quot;&gt;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization&lt;/a&gt;&lt;br/&gt;  &lt;a href=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Network&quot;&gt;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Network&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OrganizationAffiliation&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation&quot;&gt;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Practitioner&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner&quot;&gt;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PractitionerRole&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole&quot;&gt;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Consent&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Restriction&quot;&gt;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Restriction&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;VerificationResult&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Validation&quot;&gt;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Validation&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;CareTeam&lt;/td&gt;&lt;td&gt;Supported profiles:&lt;br/&gt;  &lt;a href=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam&quot;&gt;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.url">url</a>
-       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/fhir-directory-exchange/CapabilityStatement/fhir-national-directory&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.0.0-ballot1&quot;/&gt;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/directory-exchange/CapabilityStatement/fhir-national-directory&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.0.0-ballot&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CapabilityStatementFhirNationalDirectory&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Capability Statement National Directory&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
@@ -283,7 +353,7 @@
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HL7 Patient Administration Working Group&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://www.hl7.org/Special/committees/pafm/index.cfm&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://www.hl7.org/Special/committees/pafm&quot;/&gt;
     &lt;/telecom&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
@@ -301,38 +371,132 @@
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.fhirVersion">fhirVersion</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;4.0.1&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.format">format</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;xml&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.format">format</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;json&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.implementationGuide">implementationGuide</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.implementationGuide">implementationGuide</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest">rest</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;server&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.documentation">documentation</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;A Federated Query server **SHALL**:
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot; Resource Type | Supported Interactions | Supported Profiles | Supported Searches | Supported `_includes` | Supported `_revincludes` | Supported Operations |
+| --- | --- | --- | --- | --- | --- | --- |
+| endpoint |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html) | identifier, usecase-type |     |     |     |
+| healthcare Service|     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html) | service-category, coverage-area, endpoint, location, name, organization, specialty, service-type |     |     |     |
+| InsurancePlan |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html) | coverage-area, administrated-by, coverage-benefit-type, coverage-network, identifier, type, name, owned-by |     |     |     |
+| location |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html) | address, endpoint, organization, physicalType, partOf, type |     |     |     |
+| network |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html) | coverage-area, name |     |     |     |
+| Organization |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html) | type, address, endpoint, identifier, name, partOf |     |     |     |
+| OrganizationAffiliation |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html) | endpoint, location, network, participating-organization, primary-organization, role, service, specialty |     |     |     |
+| Practitioner |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html) | name, family, given, identifier, identifier-assigner, qualification-code, qualification-issuer |     |     |     |
+| PractitionerRole |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html) | endpoint, location, network, organization, Practicioner, role, service, specialty|     |     |     |
+| Restriction |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html) | _id, _id, _lastUpdated, plan-type, name, coverage-area, owned=by, administrated-by|     |     |     |
+| Validation |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html) | attestation-who, primarysource-who, target |     |     |     |
+| CareTeam |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html) | endpoint, location, name, organization, service, category |     |     |     |
 
-1. Support all profiles defined in this Implementation Guide..
-1.  Implement the RESTful behavior according to the FHIR specification.
-1. Return the following response classes:
-   - (Status 400): invalid parameter
-   - (Status 401/4xx): unauthorized request
-   - (Status 403): insufficient scope
-   - (Status 404): unknown resource
-   - (Status 410): deleted resource.
-1. Support json source formats for all Federated Query interactions.
-1. Identify the Federated Query  profiles supported as part of the FHIR `meta.profile` attribute for each instance.
-1. Support the searchParameters on each profile individually and in combination.
+#### CareTeam
 
-The Federated Query Server **SHOULD**:
+Conformance Expectation:	**SHOULD**
 
-1. Support xml source formats for all Federated Query interactions.
+Supported Profiles:
+
+* **SHOULD** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html)
+
+#### endpoint
+
+Conformance Expectation:	**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Endpoint.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Endpoint.html)
+
+
+#### healthcareService
+
+Conformance Expectation:	**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html)
+
+#### InsurancePlan
+
+Conformance Expectation:	**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html)
+
+#### location
+
+Conformance Expectation:	**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html)
+
+#### network
+
+Conformance Expectation:	**SHOULD**
+
+Supported Profiles:
+
+* **SHOULD** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html)
+
+#### organization
+
+Conformance Expectation:	**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html)
+
+#### OrganizationAffiliation
+
+Conformance Expectation:	**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html)
+
+#### Practitioner
+
+Conformance Expectation:	**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html)
+
+#### PractitionerRole
+
+Conformance Expectation:	**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html)
+
+#### Restriction
+
+Conformance Expectation:	**SHALL**
+
+Supported Profiles:
+
+* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html)
+
+#### Validation
+
+Conformance Expectation:	**MAY**
+
+Supported Profiles:
+
+* **MAY** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html)
+
 &quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security">security</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.description">description</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;1. See the [General Security Considerations](https://www.hl7.org/fhir/security.html#general) section for requirements and recommendations.
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;1. See the [General Security Considerations](http://www.hl7.org/fhir/security.html#general) section for requirements and recommendations.
 1. A client **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code.&quot;/&gt;
     &lt;/security&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Endpoint&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-EndpointComplete.html&quot;&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
@@ -344,8 +508,6 @@ The Federated Query Server **SHOULD**:
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;identifier&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-identifier&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -355,7 +517,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;connection-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-connection-type.html&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-connection-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -365,7 +527,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;mime-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-mime-type.html&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-mime-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -375,7 +537,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-organization.html&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -385,7 +547,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;payload-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-payload-type.html&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-payload-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -395,7 +557,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;usecase-standard&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-usecase-standard.html&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-usecase-standard&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -405,7 +567,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-status.html&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-status&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -415,14 +577,14 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;usecase-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-usecase-type.html&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-usecase-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HealthcareService&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.html&quot;&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
@@ -435,7 +597,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;service-category&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-service-category&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-service-category&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -445,7 +607,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;coverage-area&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-coverage-area&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-coverage-area&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -455,7 +617,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;endpoint&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-EndpointComplete&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-Endpoint&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -465,7 +627,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;location&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-location&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-location&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -475,7 +637,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;name&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-name&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-name&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -485,7 +647,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-organization&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -495,7 +657,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;specialty&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-specialty&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-specialty&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -505,14 +667,14 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;service-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-service-type&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-service-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;InsurancePlan&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-InsurancePlanComplete.html&quot;&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
@@ -525,7 +687,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;coverage-area&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-coverage-area&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-coverage-area&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -535,7 +697,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;administrated-by&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-administrated-by&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-administrated-by&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -545,7 +707,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;coverage-benefit-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-coverage-benefit-type&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-coverage-benefit-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -555,7 +717,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;coverage-network&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-coverage-network&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-coverage-network&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -565,7 +727,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;identifier&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-identifier&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-identifier&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -575,7 +737,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-type&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -585,7 +747,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;name&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-name&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-name&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -595,14 +757,14 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;owned-by&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-owned-by&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-owned-by&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Location&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-locationComplete.html&quot;&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
@@ -615,7 +777,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;address&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-address&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-address&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -625,7 +787,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;endpoint&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-EndpointComplete&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-Endpoint&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -635,7 +797,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-organization&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -645,7 +807,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;physicalType&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-physicalType&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-physicalType&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -655,7 +817,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;partOf&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-partOf&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-partOf&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -665,21 +827,21 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-type&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Organization&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationComplete.html&quot;&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
         &lt;/extension&gt;
       &lt;/supportedProfile&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-networkComplete.html&quot;/&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Network&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
@@ -687,7 +849,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-type&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -697,7 +859,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;address&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-address&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-address&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -707,7 +869,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;endpoint&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-EndpointComplete&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-Endpoint&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -717,7 +879,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;identifier&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-identifier&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-identifier&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -727,7 +889,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;name&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-name&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-name&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -737,7 +899,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;partOf&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-partOf&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-partOf&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -747,7 +909,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;coverage-area&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-location-coverage-area&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-coverage-area&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -757,14 +919,14 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;NetworkName&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-networkComplete-name&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-network-name&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;OrganizationAffiliation&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationAffiliationComplete.html&quot;&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
@@ -777,7 +939,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;endpoint&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-EndpointComplete&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-Endpoint&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -787,7 +949,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;location&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-location&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-location&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -797,7 +959,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;network&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-network&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-network&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -807,7 +969,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;participating-organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-participating-organization&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-participating-organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -817,7 +979,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;primary-organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-primary-organization&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-primary-organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -827,7 +989,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;role&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-role&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-role&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -837,7 +999,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;service&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-service&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-service&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -847,14 +1009,14 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;specialty&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-specialty&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-specialty&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Practitioner&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerComplete.html&quot;&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
@@ -867,7 +1029,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;name&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-name&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-name&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -877,7 +1039,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;family&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-family&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-family&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -887,7 +1049,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;given&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-given&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-given&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -897,7 +1059,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;identifier&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-identifier&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-identifier&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -907,7 +1069,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;identifier-assigner&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-identifier-assigner&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-identifier-assigner&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -917,7 +1079,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;qualification-code&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-qualification-code&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-qualification-code&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -927,14 +1089,14 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;qualification-issuer&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-qualification-issuer&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-qualification-issuer&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PractitionerRole&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerRoleComplete.html&quot;&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
@@ -947,7 +1109,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;endpoint&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-Endpoint&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-Endpoint&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -957,7 +1119,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;location&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-location&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-location&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -967,7 +1129,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;network&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-network&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-network&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -977,7 +1139,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-organization&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -987,7 +1149,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Practicioner&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-Practicioner&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-Practicioner&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -997,7 +1159,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;role&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-role&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-role&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1007,7 +1169,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;service&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-service&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-service&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1017,14 +1179,14 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;specialty&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-specialty&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-specialty&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Consent&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-Restriction.html&quot;&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Restriction&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
@@ -1037,7 +1199,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;_id&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-identifier&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-identifier&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1047,7 +1209,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;_lastUpdated&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-lastUpdated&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-lastUpdated&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1057,7 +1219,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;plan-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-plan-type&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-plan-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1067,7 +1229,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;name&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-name&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-name&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1077,7 +1239,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;coverage-area&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-coverage-area&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-coverage-area&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1087,7 +1249,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;owned=by&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-owned-by&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-owned-by&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1097,17 +1259,17 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;administrated-by&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-administrated-by&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-administrated-by&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;VerificationResult&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-ValidationComplete.html&quot;&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Validation&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;MAY&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
         &lt;/extension&gt;
       &lt;/supportedProfile&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1117,7 +1279,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;attestation-who&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-ValidationComplete-attestation-who&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Validation-attestation-who&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1127,7 +1289,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;primarysource-who&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-ValidationComplete-primarysource-who&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Validation-primarysource-who&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1137,14 +1299,14 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;target&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-ValidationComplete-target&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-Validation-target&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CareTeam&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-CareTeamComplete.html&quot;&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#canonical#canonical.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
@@ -1157,7 +1319,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;endpoint&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-Endpoint&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-Endpoint&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1167,7 +1329,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;location&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-location&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-location&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1177,7 +1339,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;name&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-name&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-name&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1187,7 +1349,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-organization&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-organization&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1197,7 +1359,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;service&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-service&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-service&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -1207,7 +1369,7 @@ The Federated Query Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-category&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-category&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
       &lt;/searchParam&gt;
     &lt;/resource&gt;
@@ -1242,14 +1404,14 @@ The Federated Query Server **SHOULD**:
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm/index.cfm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.fhir-directory-exchange#1.0.0-ballot1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 25, 2022 13:43-0500">2022-07-25</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.org/Special/committees/pafm">HL7 Patient Administration Working Group</a>.  Package hl7.fhir.us.directory-exchange#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 21, 2022 22:39-0400">2022-09-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/fhir-directory-exchange/history.html">Version History</a> |
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/directory-exchange/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
                  <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>

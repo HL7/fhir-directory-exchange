@@ -5,25 +5,25 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Location/StateOfCTLocation> a fhir:Location;
+<http://hl7.org/fhir/us/directory-exchange/Location/StateOfCTLocation> a fhir:Location;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "StateOfCTLocation"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location";
+       fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-Location>
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location>
      ], [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location";
+       fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Location";
        fhir:index 1;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Location>
+       fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Location>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"StateOfCTLocation\" Updated \"2020-07-07 01:26:22+0000\"  (Language \"en-US\") </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-NatlDirEx-Location.html\">National Directory Location</a>, <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-Location.html\">National Directory Endpoint Qry Exchange Location</a></p></div><p><b>Boundary (GeoJSON)</b>: </p><p><b>status</b>: active</p><p><b>name</b>: State of CT Area</p><p><b>address</b>: CT </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"StateOfCTLocation\" Updated \"2020-07-07 01:26:22+0000\"  (Language \"en-US\") </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-NatlDirEx-Location.html\">National Directory Location</a>, <a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html\">National Directory Endpoint Qry Exchange Location</a></p></div><p><b>Boundary (GeoJSON)</b>: </p><p><b>status</b>: active</p><p><b>name</b>: State of CT Area</p><p><b>address</b>: CT </p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -42,9 +42,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Location/StateOfCTLocation.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/Location/StateOfCTLocation.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/Location/StateOfCTLocation.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/Location/StateOfCTLocation.ttl> .
 
 # -------------------------------------------------------------------------------------
 

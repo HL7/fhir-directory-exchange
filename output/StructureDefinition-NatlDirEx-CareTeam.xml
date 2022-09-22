@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="NatlDirEx-CareTeam"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-NatlDirEx-CareTeam-definitions.html#CareTeam">CareTeam</a><a name="CareTeam"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/HL7/fhir-directory-query//StructureDefinition-NatlDirEndpointQry-CareTeam.html">NatlDirEndpointQryCareTeam</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Planned participants in the coordination and delivery of care for a patient or group</span></td></tr>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-NatlDirEx-CareTeam-definitions.html#CareTeam">CareTeam</a><a name="CareTeam"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html">NatlDirEndpointQryCareTeam</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Planned participants in the coordination and delivery of care for a patient or group</span></td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
@@ -12,18 +12,18 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-CareTeam"/>
-  <version value="1.0.0-ballot1"/>
+  <url value="http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam"/>
+  <version value="1.0.0-ballot"/>
   <name value="NatlDirExCareTeam"/>
   <title value="National Directory Care Team"/>
   <status value="active"/>
-  <date value="2022-07-25T13:43:16-05:00"/>
+  <date value="2022-09-21T22:39:35-04:00"/>
   <publisher value="HL7 Patient Administration Working Group"/>
   <contact>
     <name value="HL7 Patient Administration Working Group"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.hl7.org/Special/committees/pafm/index.cfm"/>
+      <value value="https://www.hl7.org/Special/committees/pafm"/>
     </telecom>
     <telecom>
       <system value="email"/>
@@ -56,7 +56,7 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="CareTeam"/>
-  <baseDefinition value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam"/>
+  <baseDefinition value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam"/>
   <derivation value="constraint"/>
   <snapshot>
     <element id="CareTeam">
@@ -350,7 +350,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/careteam-alias"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/careteam-alias"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -385,7 +385,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/location-reference"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/location-reference"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -420,7 +420,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/healthcareservice-reference"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/healthcareservice-reference"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -455,7 +455,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/endpoint-reference"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/endpoint-reference"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -491,7 +491,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/usage-restriction"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/usage-restriction"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -667,7 +667,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/identifier-status"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/identifier-status"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -914,7 +914,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1349,9 +1349,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-CareTeam"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1509,7 +1509,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1635,7 +1635,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/contactpoint-availabletime"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/contactpoint-availabletime"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1670,7 +1670,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/via-intermediary"/>
+        <profile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/via-intermediary"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2007,7 +2007,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Practitioner"/>
       </type>
       <type>
         <code value="string"/>

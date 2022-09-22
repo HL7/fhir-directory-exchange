@@ -5,15 +5,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/CapabilityStatement/fhir-national-directory> a fhir:CapabilityStatement;
+<http://hl7.org/fhir/us/directory-exchange/CapabilityStatement/fhir-national-directory> a fhir:CapabilityStatement;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "fhir-national-directory"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CapabilityStatementFhirNationalDirectory</h2><div><p>Capabilities for a validated national directory server</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>A Federated Query server <strong>SHALL</strong>:</p>\n<ol>\n<li>Support all profiles defined in this Implementation Guide..</li>\n<li>Implement the RESTful behavior according to the FHIR specification.</li>\n<li>Return the following response classes:\n<ul>\n<li>(Status 400): invalid parameter</li>\n<li>(Status 401/4xx): unauthorized request</li>\n<li>(Status 403): insufficient scope</li>\n<li>(Status 404): unknown resource</li>\n<li>(Status 410): deleted resource.</li>\n</ul>\n</li>\n<li>Support json source formats for all Federated Query interactions.</li>\n<li>Identify the Federated Query  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li>\n<li>Support the searchParameters on each profile individually and in combination.</li>\n</ol>\n<p>The Federated Query Server <strong>SHOULD</strong>:</p>\n<ol>\n<li>Support xml source formats for all Federated Query interactions.</li>\n</ol>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Endpoint</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-EndpointComplete.html\">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-EndpointComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>HealthcareService</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.html\">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>InsurancePlan</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-InsurancePlanComplete.html\">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-InsurancePlanComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Location</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-locationComplete.html\">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-locationComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Organization</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationComplete.html\">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationComplete.html</a><br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-networkComplete.html\">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-networkComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>OrganizationAffiliation</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationAffiliationComplete.html\">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationAffiliationComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Practitioner</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerComplete.html\">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>PractitionerRole</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerRoleComplete.html\">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerRoleComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Consent</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-Restriction.html\">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-Restriction.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>VerificationResult</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-ValidationComplete.html\">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-ValidationComplete.html</a></td><td></td><td></td><td></td><td></td></tr><tr><td>CareTeam</td><td>Supported profiles:<br/>  <a href=\"https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-CareTeamComplete.html\">https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-CareTeamComplete.html</a></td><td></td><td></td><td></td><td></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CapabilityStatementFhirNationalDirectory</h2><div><p>Capabilities for a validated national directory server</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><table class=\"grid\">\n<thead>\n<tr><th>Resource Type</th><th>Supported Interactions</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr>\n</thead>\n<tbody>\n<tr><td>endpoint</td><td/><td><a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html\">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html</a></td><td>identifier, usecase-type</td><td/><td/><td/></tr>\n<tr><td>healthcare Service</td><td/><td><a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html\">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html</a></td><td>service-category, coverage-area, endpoint, location, name, organization, specialty, service-type</td><td/><td/><td/></tr>\n<tr><td>InsurancePlan</td><td/><td><a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html\">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html</a></td><td>coverage-area, administrated-by, coverage-benefit-type, coverage-network, identifier, type, name, owned-by</td><td/><td/><td/></tr>\n<tr><td>location</td><td/><td><a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html\">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html</a></td><td>address, endpoint, organization, physicalType, partOf, type</td><td/><td/><td/></tr>\n<tr><td>network</td><td/><td><a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html\">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html</a></td><td>coverage-area, name</td><td/><td/><td/></tr>\n<tr><td>Organization</td><td/><td><a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html\">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html</a></td><td>type, address, endpoint, identifier, name, partOf</td><td/><td/><td/></tr>\n<tr><td>OrganizationAffiliation</td><td/><td><a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html\">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html</a></td><td>endpoint, location, network, participating-organization, primary-organization, role, service, specialty</td><td/><td/><td/></tr>\n<tr><td>Practitioner</td><td/><td><a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html\">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html</a></td><td>name, family, given, identifier, identifier-assigner, qualification-code, qualification-issuer</td><td/><td/><td/></tr>\n<tr><td>PractitionerRole</td><td/><td><a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html\">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html</a></td><td>endpoint, location, network, organization, Practicioner, role, service, specialty</td><td/><td/><td/></tr>\n<tr><td>Restriction</td><td/><td><a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html\">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html</a></td><td>_id, _id, _lastUpdated, plan-type, name, coverage-area, owned=by, administrated-by</td><td/><td/><td/></tr>\n<tr><td>Validation</td><td/><td><a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html\">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html</a></td><td>attestation-who, primarysource-who, target</td><td/><td/><td/></tr>\n<tr><td>CareTeam</td><td/><td><a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html\">http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html</a></td><td>endpoint, location, name, organization, service, category</td><td/><td/><td/></tr>\n</tbody>\n</table>\n<h4>CareTeam</h4>\n<p>Conformance Expectation:	<strong>SHOULD</strong></p>\n<p>Supported Profiles:</p>\n<ul>\n<li><strong>SHOULD</strong> support:<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html\">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html)</a></li>\n</ul>\n<h4>endpoint</h4>\n<p>Conformance Expectation:	<strong>SHALL</strong></p>\n<p>Supported Profiles:</p>\n<ul>\n<li><strong>SHALL</strong> support:<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Endpoint.html\">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Endpoint.html)</a></li>\n</ul>\n<h4>healthcareService</h4>\n<p>Conformance Expectation:	<strong>SHALL</strong></p>\n<p>Supported Profiles:</p>\n<ul>\n<li><strong>SHALL</strong> support:<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html\">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html)</a></li>\n</ul>\n<h4>InsurancePlan</h4>\n<p>Conformance Expectation:	<strong>SHALL</strong></p>\n<p>Supported Profiles:</p>\n<ul>\n<li><strong>SHALL</strong> support:<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html\">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html)</a></li>\n</ul>\n<h4>location</h4>\n<p>Conformance Expectation:	<strong>SHALL</strong></p>\n<p>Supported Profiles:</p>\n<ul>\n<li><strong>SHALL</strong> support:<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html\">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html)</a></li>\n</ul>\n<h4>network</h4>\n<p>Conformance Expectation:	<strong>SHOULD</strong></p>\n<p>Supported Profiles:</p>\n<ul>\n<li><strong>SHOULD</strong> support:<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html\">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html)</a></li>\n</ul>\n<h4>organization</h4>\n<p>Conformance Expectation:	<strong>SHALL</strong></p>\n<p>Supported Profiles:</p>\n<ul>\n<li><strong>SHALL</strong> support:<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html\">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html)</a></li>\n</ul>\n<h4>OrganizationAffiliation</h4>\n<p>Conformance Expectation:	<strong>SHALL</strong></p>\n<p>Supported Profiles:</p>\n<ul>\n<li><strong>SHALL</strong> support:<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html\">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html)</a></li>\n</ul>\n<h4>Practitioner</h4>\n<p>Conformance Expectation:	<strong>SHALL</strong></p>\n<p>Supported Profiles:</p>\n<ul>\n<li><strong>SHALL</strong> support:<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html\">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html)</a></li>\n</ul>\n<h4>PractitionerRole</h4>\n<p>Conformance Expectation:	<strong>SHALL</strong></p>\n<p>Supported Profiles:</p>\n<ul>\n<li><strong>SHALL</strong> support:<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html\">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html)</a></li>\n</ul>\n<h4>Restriction</h4>\n<p>Conformance Expectation:	<strong>SHALL</strong></p>\n<p>Supported Profiles:</p>\n<ul>\n<li><strong>SHALL</strong> support:<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html\">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html)</a></li>\n</ul>\n<h4>Validation</h4>\n<p>Conformance Expectation:	<strong>MAY</strong></p>\n<p>Supported Profiles:</p>\n<ul>\n<li><strong>MAY</strong> support:<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html\">(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html)</a></li>\n</ul>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Endpoint</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint\">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint</a></td><td></td><td></td><td></td><td></td></tr><tr><td>HealthcareService</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService\">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService</a></td><td></td><td></td><td></td><td></td></tr><tr><td>InsurancePlan</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan\">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Location</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location\">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Organization</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization\">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization</a><br/>  <a href=\"http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Network\">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Network</a></td><td></td><td></td><td></td><td></td></tr><tr><td>OrganizationAffiliation</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation\">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Practitioner</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner\">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner</a></td><td></td><td></td><td></td><td></td></tr><tr><td>PractitionerRole</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole\">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole</a></td><td></td><td></td><td></td><td></td></tr><tr><td>Consent</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Restriction\">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Restriction</a></td><td></td><td></td><td></td><td></td></tr><tr><td>VerificationResult</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Validation\">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Validation</a></td><td></td><td></td><td></td><td></td></tr><tr><td>CareTeam</td><td>Supported profiles:<br/>  <a href=\"http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam\">http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam</a></td><td></td><td></td><td></td><td></td></tr></table></div>"
   ];
-  fhir:CapabilityStatement.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/CapabilityStatement/fhir-national-directory"];
-  fhir:CapabilityStatement.version [ fhir:value "1.0.0-ballot1"];
+  fhir:CapabilityStatement.url [ fhir:value "http://hl7.org/fhir/us/directory-exchange/CapabilityStatement/fhir-national-directory"];
+  fhir:CapabilityStatement.version [ fhir:value "1.0.0-ballot"];
   fhir:CapabilityStatement.name [ fhir:value "CapabilityStatementFhirNationalDirectory"];
   fhir:CapabilityStatement.title [ fhir:value "Capability Statement National Directory"];
   fhir:CapabilityStatement.status [ fhir:value "draft"];
@@ -26,7 +26,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.hl7.org/Special/committees/pafm/index.cfm" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.org/Special/committees/pafm" ]
      ], [
        fhir:index 1;
        fhir:ContactPoint.system [ fhir:value "email" ];
@@ -52,24 +52,24 @@
      fhir:index 1
   ];
   fhir:CapabilityStatement.implementationGuide [
-     fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/";
+     fhir:value "https://hl7.org/fhir/us/directory-exchange/";
      fhir:index 0;
-     fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/>
+     fhir:link <https://hl7.org/fhir/us/directory-exchange/>
   ];
   fhir:CapabilityStatement.rest [
      fhir:index 0;
      fhir:CapabilityStatement.rest.mode [ fhir:value "server" ];
-     fhir:CapabilityStatement.rest.documentation [ fhir:value "A Federated Query server **SHALL**:\n\n1. Support all profiles defined in this Implementation Guide..\n1.  Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401/4xx): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n1. Support json source formats for all Federated Query interactions.\n1. Identify the Federated Query  profiles supported as part of the FHIR `meta.profile` attribute for each instance.\n1. Support the searchParameters on each profile individually and in combination.\n\nThe Federated Query Server **SHOULD**:\n\n1. Support xml source formats for all Federated Query interactions.\n" ];
+     fhir:CapabilityStatement.rest.documentation [ fhir:value " Resource Type | Supported Interactions | Supported Profiles | Supported Searches | Supported `_includes` | Supported `_revincludes` | Supported Operations |\n| --- | --- | --- | --- | --- | --- | --- |\n| endpoint |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html) | identifier, usecase-type |     |     |     |\n| healthcare Service|     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html) | service-category, coverage-area, endpoint, location, name, organization, specialty, service-type |     |     |     |\n| InsurancePlan |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html) | coverage-area, administrated-by, coverage-benefit-type, coverage-network, identifier, type, name, owned-by |     |     |     |\n| location |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html) | address, endpoint, organization, physicalType, partOf, type |     |     |     |\n| network |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html) | coverage-area, name |     |     |     |\n| Organization |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html) | type, address, endpoint, identifier, name, partOf |     |     |     |\n| OrganizationAffiliation |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html) | endpoint, location, network, participating-organization, primary-organization, role, service, specialty |     |     |     |\n| Practitioner |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html) | name, family, given, identifier, identifier-assigner, qualification-code, qualification-issuer |     |     |     |\n| PractitionerRole |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html) | endpoint, location, network, organization, Practicioner, role, service, specialty|     |     |     |\n| Restriction |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html) | _id, _id, _lastUpdated, plan-type, name, coverage-area, owned=by, administrated-by|     |     |     |\n| Validation |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html) | attestation-who, primarysource-who, target |     |     |     |\n| CareTeam |     | [http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html) | endpoint, location, name, organization, service, category |     |     |     |\n\n#### CareTeam\n\nConformance Expectation:	**SHOULD**\n\nSupported Profiles:\n\n* **SHOULD** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-CareTeam.html)\n\n#### endpoint\n\nConformance Expectation:	**SHALL**\n\nSupported Profiles:\n\n* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Endpoint.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Endpoint.html)\n\n\n#### healthcareService\n\nConformance Expectation:	**SHALL**\n\nSupported Profiles:\n\n* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-HealthcareService.html)\n\n#### InsurancePlan\n\nConformance Expectation:	**SHALL**\n\nSupported Profiles:\n\n* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-InsurancePlan.html)\n\n#### location\n\nConformance Expectation:	**SHALL**\n\nSupported Profiles:\n\n* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Location.html)\n\n#### network\n\nConformance Expectation:	**SHOULD**\n\nSupported Profiles:\n\n* **SHOULD** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Network.html)\n\n#### organization\n\nConformance Expectation:	**SHALL**\n\nSupported Profiles:\n\n* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Organization.html)\n\n#### OrganizationAffiliation\n\nConformance Expectation:	**SHALL**\n\nSupported Profiles:\n\n* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation.html)\n\n#### Practitioner\n\nConformance Expectation:	**SHALL**\n\nSupported Profiles:\n\n* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-Practitioner.html)\n\n#### PractitionerRole\n\nConformance Expectation:	**SHALL**\n\nSupported Profiles:\n\n* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDirEndpointQry-PractitionerRole.html)\n\n#### Restriction\n\nConformance Expectation:	**SHALL**\n\nSupported Profiles:\n\n* **SHALL** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Restriction.html)\n\n#### Validation\n\nConformance Expectation:	**MAY**\n\nSupported Profiles:\n\n* **MAY** support:[(http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html)](http://hl7.org/fhir/us/directory-query/2022Sep/StructureDefinition-NatlDir-Verification.html)\n\n" ];
      fhir:CapabilityStatement.rest.security [
-       fhir:CapabilityStatement.rest.security.description [ fhir:value "1. See the [General Security Considerations](https://www.hl7.org/fhir/security.html#general) section for requirements and recommendations.\n1. A client **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code." ]
+       fhir:CapabilityStatement.rest.security.description [ fhir:value "1. See the [General Security Considerations](http://www.hl7.org/fhir/security.html#general) section for requirements and recommendations.\n1. A client **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code." ]
      ];
      fhir:CapabilityStatement.rest.resource [
        fhir:index 0;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "Endpoint" ];
        fhir:CapabilityStatement.rest.resource.supportedProfile [
-         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-EndpointComplete.html";
+         fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint";
          fhir:index 0;
-         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-EndpointComplete.html>;
+         fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Endpoint>;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
@@ -84,10 +84,6 @@
            fhir:Extension.valueCode [ fhir:value "SHALL" ]
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
-         fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-identifier";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-identifier>
-         ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
          fhir:index 1;
@@ -98,8 +94,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "connection-type" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-connection-type.html";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-connection-type.html>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-connection-type";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-connection-type>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -111,8 +107,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "mime-type" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-mime-type.html";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-mime-type.html>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-mime-type";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-mime-type>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -124,8 +120,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "organization" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-organization.html";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-organization.html>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-organization";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-organization>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -137,8 +133,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "payload-type" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-payload-type.html";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-payload-type.html>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-payload-type";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-payload-type>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -150,8 +146,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "usecase-standard" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-usecase-standard.html";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-usecase-standard.html>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-usecase-standard";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-usecase-standard>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -163,8 +159,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-status.html";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-status.html>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-status";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-status>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -176,8 +172,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "usecase-type" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-usecase-type.html";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-EndpointComplete-usecase-type.html>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-usecase-type";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Endpoint-usecase-type>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ]
@@ -185,9 +181,9 @@
        fhir:index 1;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "HealthcareService" ];
        fhir:CapabilityStatement.rest.resource.supportedProfile [
-         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.html";
+         fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService";
          fhir:index 0;
-         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-HealthcareServiceComplete.html>;
+         fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService>;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
@@ -203,8 +199,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "service-category" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-service-category";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-service-category>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-service-category";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-service-category>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -216,8 +212,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "coverage-area" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-coverage-area";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-coverage-area>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-coverage-area";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-coverage-area>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -229,8 +225,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "endpoint" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-EndpointComplete";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-EndpointComplete>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-Endpoint";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-Endpoint>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -242,8 +238,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "location" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-location";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-location>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-location";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-location>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -255,8 +251,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-name";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-name>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-name";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-name>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -268,8 +264,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "organization" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-organization";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-organization>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-organization";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-organization>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -281,8 +277,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "specialty" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-specialty";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-specialty>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-specialty";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-specialty>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -294,8 +290,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "service-type" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-service-type";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-HealthcareServiceComplete-service-type>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-service-type";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-HealthcareService-service-type>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ]
@@ -303,9 +299,9 @@
        fhir:index 2;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "InsurancePlan" ];
        fhir:CapabilityStatement.rest.resource.supportedProfile [
-         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-InsurancePlanComplete.html";
+         fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan";
          fhir:index 0;
-         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-InsurancePlanComplete.html>;
+         fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-InsurancePlan>;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
@@ -321,8 +317,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "coverage-area" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-coverage-area";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-coverage-area>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-coverage-area";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-coverage-area>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -334,8 +330,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "administrated-by" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-administrated-by";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-administrated-by>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-administrated-by";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-administrated-by>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -347,8 +343,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "coverage-benefit-type" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-coverage-benefit-type";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-coverage-benefit-type>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-coverage-benefit-type";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-coverage-benefit-type>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -360,8 +356,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "coverage-network" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-coverage-network";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-coverage-network>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-coverage-network";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-coverage-network>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -373,8 +369,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-identifier";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-identifier>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-identifier";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-identifier>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -386,8 +382,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "type" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-type";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-type>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-type";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-type>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -399,8 +395,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-name";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-name>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-name";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-name>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -412,8 +408,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "owned-by" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-owned-by";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-InsurancePlanComplete-owned-by>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-owned-by";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-InsurancePlan-owned-by>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ]
@@ -421,9 +417,9 @@
        fhir:index 3;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "Location" ];
        fhir:CapabilityStatement.rest.resource.supportedProfile [
-         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-locationComplete.html";
+         fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location";
          fhir:index 0;
-         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-locationComplete.html>;
+         fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Location>;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
@@ -439,8 +435,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "address" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-address";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-address>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-address";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-address>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -452,8 +448,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "endpoint" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-EndpointComplete";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-EndpointComplete>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-Endpoint";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-Endpoint>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -465,8 +461,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "organization" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-organization";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-organization>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-organization";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-organization>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -478,8 +474,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "physicalType" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-physicalType";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-physicalType>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-physicalType";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-physicalType>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -491,8 +487,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "partOf" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-partOf";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-partOf>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-partOf";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-partOf>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -504,8 +500,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "type" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-type";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-locationComplete-type>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-type";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-type>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ]
@@ -513,18 +509,18 @@
        fhir:index 4;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "Organization" ];
        fhir:CapabilityStatement.rest.resource.supportedProfile [
-         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationComplete.html";
+         fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization";
          fhir:index 0;
-         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationComplete.html>;
+         fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Organization>;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
            fhir:Extension.valueCode [ fhir:value "SHOULD" ]
          ]
        ], [
-         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-networkComplete.html";
+         fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Network";
          fhir:index 1;
-         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-networkComplete.html>
+         fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Network>
        ];
        fhir:CapabilityStatement.rest.resource.searchParam [
          fhir:index 0;
@@ -535,8 +531,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "type" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-type";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-type>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-type";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-type>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -548,8 +544,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "address" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-address";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-address>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-address";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-address>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -561,8 +557,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "endpoint" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-EndpointComplete";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-EndpointComplete>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-Endpoint";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-Endpoint>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -574,8 +570,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-identifier";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-identifier>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-identifier";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-identifier>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -587,8 +583,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-name";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-name>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-name";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-name>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -600,8 +596,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "partOf" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-partOf";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationComplete-partOf>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-partOf";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-organization-partOf>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -613,8 +609,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "coverage-area" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-location-coverage-area";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-location-coverage-area>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-coverage-area";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-location-coverage-area>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -626,8 +622,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "NetworkName" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-networkComplete-name";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-networkComplete-name>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-network-name";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-network-name>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ]
@@ -635,9 +631,9 @@
        fhir:index 5;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "OrganizationAffiliation" ];
        fhir:CapabilityStatement.rest.resource.supportedProfile [
-         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationAffiliationComplete.html";
+         fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation";
          fhir:index 0;
-         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-organizationAffiliationComplete.html>;
+         fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation>;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
@@ -653,8 +649,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "endpoint" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-EndpointComplete";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-EndpointComplete>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-Endpoint";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-Endpoint>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -666,8 +662,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "location" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-location";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-location>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-location";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-location>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -679,8 +675,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "network" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-network";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-network>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-network";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-network>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -692,8 +688,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "participating-organization" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-participating-organization";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-participating-organization>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-participating-organization";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-participating-organization>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -705,8 +701,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "primary-organization" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-primary-organization";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-primary-organization>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-primary-organization";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-primary-organization>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -718,8 +714,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "role" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-role";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-role>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-role";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-role>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -731,8 +727,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "service" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-service";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-service>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-service";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-service>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -744,8 +740,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "specialty" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-specialty";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-organizationAffiliationComplete-specialty>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-specialty";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-organizationAffiliation-specialty>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ]
@@ -753,9 +749,9 @@
        fhir:index 6;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "Practitioner" ];
        fhir:CapabilityStatement.rest.resource.supportedProfile [
-         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerComplete.html";
+         fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner";
          fhir:index 0;
-         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerComplete.html>;
+         fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Practitioner>;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
@@ -771,8 +767,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-name";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-name>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-name";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-name>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -784,8 +780,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "family" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-family";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-family>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-family";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-family>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -797,8 +793,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "given" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-given";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-given>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-given";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-given>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -810,8 +806,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-identifier";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-identifier>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-identifier";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-identifier>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -823,8 +819,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier-assigner" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-identifier-assigner";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-identifier-assigner>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-identifier-assigner";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-identifier-assigner>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -836,8 +832,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "qualification-code" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-qualification-code";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-qualification-code>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-qualification-code";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-qualification-code>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -849,8 +845,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "qualification-issuer" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-qualification-issuer";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerComplete-qualification-issuer>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-qualification-issuer";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Practitioner-qualification-issuer>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ]
@@ -858,9 +854,9 @@
        fhir:index 7;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "PractitionerRole" ];
        fhir:CapabilityStatement.rest.resource.supportedProfile [
-         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerRoleComplete.html";
+         fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole";
          fhir:index 0;
-         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-PractitionerRoleComplete.html>;
+         fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-PractitionerRole>;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
@@ -876,8 +872,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "endpoint" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-Endpoint";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-Endpoint>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-Endpoint";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-Endpoint>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -889,8 +885,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "location" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-location";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-location>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-location";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-location>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -902,8 +898,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "network" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-network";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-network>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-network";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-network>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -915,8 +911,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "organization" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-organization";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-organization>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-organization";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-organization>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -928,8 +924,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "Practicioner" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-Practicioner";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-Practicioner>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-Practicioner";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-Practicioner>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -941,8 +937,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "role" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-role";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-role>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-role";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-role>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -954,8 +950,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "service" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-service";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-service>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-service";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-service>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -967,8 +963,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "specialty" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-specialty";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-PractitionerRoleComplete-specialty>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-specialty";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-PractitionerRole-specialty>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ]
@@ -976,9 +972,9 @@
        fhir:index 8;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "Consent" ];
        fhir:CapabilityStatement.rest.resource.supportedProfile [
-         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-Restriction.html";
+         fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Restriction";
          fhir:index 0;
-         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-Restriction.html>;
+         fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Restriction>;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
@@ -994,8 +990,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-identifier";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-identifier>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-identifier";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-identifier>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -1007,8 +1003,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-lastUpdated";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-lastUpdated>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-lastUpdated";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-lastUpdated>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -1020,8 +1016,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "plan-type" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-plan-type";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-plan-type>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-plan-type";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-plan-type>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -1033,8 +1029,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-name";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-name>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-name";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-name>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -1046,8 +1042,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "coverage-area" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-coverage-area";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-coverage-area>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-coverage-area";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-coverage-area>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -1059,8 +1055,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "owned=by" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-owned-by";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-owned-by>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-owned-by";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-owned-by>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -1072,8 +1068,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "administrated-by" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-administrated-by";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-Restriction-administrated-by>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-administrated-by";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Restriction-administrated-by>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ]
@@ -1081,13 +1077,13 @@
        fhir:index 9;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "VerificationResult" ];
        fhir:CapabilityStatement.rest.resource.supportedProfile [
-         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-ValidationComplete.html";
+         fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Validation";
          fhir:index 0;
-         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-ValidationComplete.html>;
+         fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-Validation>;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
-           fhir:Extension.valueCode [ fhir:value "MAY" ]
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
          ]
        ];
        fhir:CapabilityStatement.rest.resource.searchParam [
@@ -1099,8 +1095,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "attestation-who" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-ValidationComplete-attestation-who";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-ValidationComplete-attestation-who>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Validation-attestation-who";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Validation-attestation-who>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -1112,8 +1108,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "primarysource-who" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-ValidationComplete-primarysource-who";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-ValidationComplete-primarysource-who>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Validation-primarysource-who";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Validation-primarysource-who>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -1125,8 +1121,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "target" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-ValidationComplete-target";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-ValidationComplete-target>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-Validation-target";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-Validation-target>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ]
@@ -1134,9 +1130,9 @@
        fhir:index 10;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "CareTeam" ];
        fhir:CapabilityStatement.rest.resource.supportedProfile [
-         fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-CareTeamComplete.html";
+         fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam";
          fhir:index 0;
-         fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/StructureDefinition-NatlDirEndpointQry-CareTeamComplete.html>;
+         fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-CareTeam>;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
@@ -1152,8 +1148,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "endpoint" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-Endpoint";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-Endpoint>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-Endpoint";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-Endpoint>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -1165,8 +1161,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "location" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-location";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-location>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-location";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-location>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -1178,8 +1174,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-name";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-name>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-name";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-name>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -1191,8 +1187,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "organization" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-organization";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-organization>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-organization";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-organization>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -1204,8 +1200,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "service" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-service";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-service>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-service";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-service>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ], [
@@ -1217,8 +1213,8 @@
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "category" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-category";
-           fhir:link <https://build.fhir.org/ig/HL7/fhir-directory-exchange/SearchParameter-CareTeamComplete-category>
+           fhir:value "https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-category";
+           fhir:link <https://hl7.org/fhir/us/directory-exchange/SearchParameter-CareTeam-category>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
        ]
@@ -1227,9 +1223,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/CapabilityStatement/fhir-national-directory.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/CapabilityStatement/fhir-national-directory.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/CapabilityStatement/fhir-national-directory.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/CapabilityStatement/fhir-national-directory.ttl> .
 
 # -------------------------------------------------------------------------------------
 

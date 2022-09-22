@@ -5,21 +5,21 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/HealthcareService/VirtualCounselService> a fhir:HealthcareService;
+<http://hl7.org/fhir/us/directory-exchange/HealthcareService/VirtualCounselService> a fhir:HealthcareService;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "VirtualCounselService"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService";
+       fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-HealthcareService>
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-HealthcareService>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"VirtualCounselService\" Updated \"2020-07-07 01:26:22+0000\"  (Language \"en-US\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NatlDirEx-HealthcareService.html\">National Directory HealthcareService</a></p></div><blockquote><p><b>Delivery Method</b></p><p><b>value</b>: Virtual <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query//CodeSystem-DeliveryMethodCS.html\">Delivery Methods</a>#virtual)</span></p><p><b>value</b>: Website <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query//CodeSystem-VirtualModalitiesCS.html\">Virtual Modalities</a>#web)</span></p><p><b>value</b>: App <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query//CodeSystem-VirtualModalitiesCS.html\">Virtual Modalities</a>#app)</span></p><p><b>value</b>: TDD <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query//CodeSystem-VirtualModalitiesCS.html\">Virtual Modalities</a>#tdd)</span></p><p><b>value</b>: phone <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query//CodeSystem-VirtualModalitiesCS.html\">Virtual Modalities</a>#phone)</span></p></blockquote><p><b>active</b>: true</p><p><b>category</b>: Medical Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/fhir-directory-query//CodeSystem-HealthcareServiceCategoryCS.html\">Healthcare Service Category</a>#prov)</span></p><p><b>specialty</b>: Counseling Psychologist <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (provider-taxonomy#103TC1900X)</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"VirtualCounselService\" Updated \"2020-07-07 01:26:22+0000\"  (Language \"en-US\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NatlDirEx-HealthcareService.html\">National Directory HealthcareService</a></p></div><blockquote><p><b>Delivery Method</b></p><p><b>value</b>: Virtual <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/CodeSystem-DeliveryMethodCS.html\">Delivery Methods Code System</a>#virtual)</span></p><p><b>value</b>: Website <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/CodeSystem-VirtualModalitiesCS.html\">Virtual Modalities Code System</a>#web)</span></p><p><b>value</b>: App <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/CodeSystem-VirtualModalitiesCS.html\">Virtual Modalities Code System</a>#app)</span></p><p><b>value</b>: TDD <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/CodeSystem-VirtualModalitiesCS.html\">Virtual Modalities Code System</a>#tdd)</span></p><p><b>value</b>: phone <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/CodeSystem-VirtualModalitiesCS.html\">Virtual Modalities Code System</a>#phone)</span></p></blockquote><p><b>active</b>: true</p><p><b>category</b>: Medical Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/directory-query/2022Sep/CodeSystem-HealthcareServiceCategoryCS.html\">Healthcare Service Category Code System</a>#prov)</span></p><p><b>specialty</b>: Counseling Psychologist <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (provider-taxonomy#103TC1900X)</span></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -29,7 +29,7 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/DeliveryMethodCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/DeliveryMethodCS" ];
            fhir:Coding.code [ fhir:value "virtual" ]
          ]
        ]
@@ -39,7 +39,7 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/VirtualModalitiesCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/VirtualModalitiesCS" ];
            fhir:Coding.code [ fhir:value "web" ]
          ]
        ]
@@ -49,7 +49,7 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/VirtualModalitiesCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/VirtualModalitiesCS" ];
            fhir:Coding.code [ fhir:value "app" ]
          ]
        ]
@@ -59,7 +59,7 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/VirtualModalitiesCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/VirtualModalitiesCS" ];
            fhir:Coding.code [ fhir:value "tdd" ]
          ]
        ]
@@ -69,19 +69,19 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/VirtualModalitiesCS" ];
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/VirtualModalitiesCS" ];
            fhir:Coding.code [ fhir:value "phone" ]
          ]
        ]
      ];
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/StructureDefinition/delivery-method" ]
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/directory-query/StructureDefinition/delivery-method" ]
   ];
   fhir:HealthcareService.active [ fhir:value "true"^^xsd:boolean];
   fhir:HealthcareService.category [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/fhir-directory-query/CodeSystem/HealthcareServiceCategoryCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/directory-query/CodeSystem/HealthcareServiceCategoryCS" ];
        fhir:Coding.code [ fhir:value "prov" ];
        fhir:Coding.display [ fhir:value "Medical Provider" ]
      ]
@@ -98,9 +98,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/HealthcareService/VirtualCounselService.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/HealthcareService/VirtualCounselService.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/HealthcareService/VirtualCounselService.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/HealthcareService/VirtualCounselService.ttl> .
 
 # -------------------------------------------------------------------------------------
 

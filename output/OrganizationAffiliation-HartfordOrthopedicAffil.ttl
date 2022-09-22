@@ -5,15 +5,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/OrganizationAffiliation/HartfordOrthopedicAffil> a fhir:OrganizationAffiliation;
+<http://hl7.org/fhir/us/directory-exchange/OrganizationAffiliation/HartfordOrthopedicAffil> a fhir:OrganizationAffiliation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "HartfordOrthopedicAffil"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation";
+       fhir:value "http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation>
+       fhir:link <http://hl7.org/fhir/us/directory-exchange/StructureDefinition/NatlDirEx-OrganizationAffiliation>
      ]
   ];
   fhir:Resource.language [ fhir:value "en-US"];
@@ -23,16 +23,16 @@
   ];
   fhir:OrganizationAffiliation.active [ fhir:value "true"^^xsd:boolean];
   fhir:OrganizationAffiliation.organization [
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Organization/Hospital>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Organization/Hospital>;
      fhir:Reference.reference [ fhir:value "Organization/Hospital" ]
   ];
   fhir:OrganizationAffiliation.participatingOrganization [
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Organization/HartfordOrthopedics>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Organization/HartfordOrthopedics>;
      fhir:Reference.reference [ fhir:value "Organization/HartfordOrthopedics" ]
   ];
   fhir:OrganizationAffiliation.network [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Organization/AcmeofCTStdNet>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Organization/AcmeofCTStdNet>;
      fhir:Reference.reference [ fhir:value "Organization/AcmeofCTStdNet" ]
   ];
   fhir:OrganizationAffiliation.code [
@@ -45,36 +45,36 @@
   ];
   fhir:OrganizationAffiliation.location [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Location/HospLoc1>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Location/HospLoc1>;
      fhir:Reference.reference [ fhir:value "Location/HospLoc1" ]
   ], [
      fhir:index 1;
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/Location/HospLoc2>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/Location/HospLoc2>;
      fhir:Reference.reference [ fhir:value "Location/HospLoc2" ]
   ];
   fhir:OrganizationAffiliation.healthcareService [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/fhir-directory-exchange/HealthcareService/HartfordOrthopedicServices>;
+     fhir:link <http://hl7.org/fhir/us/directory-exchange/HealthcareService/HartfordOrthopedicServices>;
      fhir:Reference.reference [ fhir:value "HealthcareService/HartfordOrthopedicServices" ]
   ] .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/Hospital> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Organization/Hospital> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/HartfordOrthopedics> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Organization/HartfordOrthopedics> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Organization/AcmeofCTStdNet> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Organization/AcmeofCTStdNet> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Location/HospLoc1> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Location/HospLoc1> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/Location/HospLoc2> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/Location/HospLoc2> a fhir:us .
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/HealthcareService/HartfordOrthopedicServices> a fhir:us .
+<http://hl7.org/fhir/us/directory-exchange/HealthcareService/HartfordOrthopedicServices> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/fhir-directory-exchange/OrganizationAffiliation/HartfordOrthopedicAffil.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/directory-exchange/OrganizationAffiliation/HartfordOrthopedicAffil.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/fhir-directory-exchange/OrganizationAffiliation/HartfordOrthopedicAffil.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/directory-exchange/OrganizationAffiliation/HartfordOrthopedicAffil.ttl> .
 
 # -------------------------------------------------------------------------------------
 
