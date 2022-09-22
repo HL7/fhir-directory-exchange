@@ -12,9 +12,9 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.directory-exchange
 canonical: http://hl7.org/fhir/us/directory-exchange
-version: 1.1.0
+version: 1.0.0-ballot
 name: NationalHealthcareDirectoryExchange
-title: National Healthcare Directory Exchange
+title: National Healthcare Directory - Exchange
 status: active
 publisher:
   name: HL7 Patient Administration Working Group
