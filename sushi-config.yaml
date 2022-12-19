@@ -14,7 +14,7 @@ id: hl7.fhir.us.directory-exchange
 canonical: http://hl7.org/fhir/us/directory-exchange
 version: 1.0.0-ballot
 name: NationalHealthcareDirectoryExchange
-title: National Healthcare Directory Exchange
+title: National Healthcare Directory - Exchange
 status: active
 publisher:
   name: HL7 Patient Administration Working Group
@@ -50,13 +50,11 @@ menu:
   Guidance:
     General Guidance:                              general-guidance.html
     Technical Guidance: technical-guidance.html
-    Bulk Data and Subscriptions:          bulk-data.html
+    Bulk Data and Subscriptions:          bulk-data.html  
   Profiles          : profiles.html
-  Artifacts         : artifacts.html
-  Terminology          : terminology.html
-  Search Parameters   : searchparameters.html
-  Capability Statement: 
-    Conformance Requirements  : CapabilityStatement-fhir-national-directory.html
+  # Terminology          : terminology.html
+  # Capability Statement: 
+  #   Conformance Requirements  : CapabilityStatement-fhir-national-directory.html
   Examples      : examples.html
   Downloads     : downloads.html
-  
+  Artifcats     : artifacts.html
